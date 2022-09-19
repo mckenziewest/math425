@@ -1,0 +1,422 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 1.3: Integers mod $n$}
+
+\input{../../_python_tools/setup}
+
+\begin{document} 
+	\startdoc
+	\topics{
+		\item Division Algorithm
+		\item GCD
+		\item B\'ezout's Identity
+		\item Euclidean Algorithm
+		\item Prime Factorization Theorem
+	}{
+		\item Congruence modulo $n$
+		\item Relations and Equivalence Classes
+		\item Integers and Arithmetic modulo $n$
+		\item Arithmetic Modulo $n$
+		\item Inverses Modulo $n$
+	}
+
+\slide{
+	\begin{defn}
+		Let $a,b,n\in\Z$ with $n\geq 2$. We say that $a$ and $b$ are \emph{congruent modulo $n$} if 	\[n\mid (a-b).\]
+		In that case, we write $a\equiv b\pmod n$.
+	\end{defn}
+}
+\slide{
+	\begin{statementblock}{Theorem 1.3.1}
+		Congruence modulo $n$ is an equivalence relation on $\Z$.
+	\end{statementblock}
+}
+
+\slide{
+	\begin{exercise}
+		Write the equivalence classes of $(\Z,\equiv\pmod 2)$.
+	\end{exercise}
+	\vskip 1in
+	\begin{exercise}
+		Write the equivalence classes of $(\Z,\equiv\pmod 3)$.
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		If $a\in\Z$, then its equivalence class, $[a]$, with respect to congruence modulo $n$ is called its \emph{residue class modulo $n$} and we write $\overline{a}$ for convenience.
+		
+			\[\overline{a}=\{x\in\Z : x\equiv a\pmod n\}.\]
+	\end{defn}
+}
+%\slide{
+%	\begin{statementblock}{Theorem 1.3.2}
+%		Given $n\geq 2$, $\overline{a}=\overline{b}\Leftrightarrow a\equiv b\pmod n$.
+%	\end{statementblock}
+%%	\begin{block}{Proof Notes.}
+%%		$(\Rightarrow)$ Follows from the definition of $\overline{a}$.
+%%		
+%%		$(\Leftarrow)$ Show the sets are equal!  Let $c\in\overline{a}$, use the fact that\\ $a\equiv b~\pmod n$ to show that $c\in\overline{b}$. 
+%%		
+%%		Do the same for $\overline{b}$ to $\overline{a}$. (Or explain that the argument will be functionally the same.)
+%%	\end{block}
+%}
+%\slide{
+%	\begin{block}{\textbf{Brain Break.}}
+%		What might you say to a non-math person if you wanted to teach them about integers mod $n$?
+%	\end{block}
+%}
+\slide{
+	\begin{defn}
+		The \emph{set of integers modulo $n$} is denoted $\Z_n$ and is given by
+			\[\Z_n=\{\overline{0},\overline{1},\overline{2},\dots,\overline{n-1}\}.\]
+	\end{defn}
+	\begin{exa}
+		$\Z_7=$
+	\end{exa}
+	\begin{exercise}
+		What is $\overline{47}$ in $\Z_7$? What is $\overline{-16}$?
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Claim}
+		Addition and multiplication in $\Z_n$, as defined below, are well-defined:
+			\begin{itemize}
+				\item[(1)] $\overline{a}+\overline{b}=\overline{a+b}$
+				\item[(2)] $\overline{a}\overline{b}=\overline{ab}$
+			\end{itemize}
+	\end{statementblock}
+	\begin{nb}
+		The important point here is that any well-defined arithmetic operation on $\Z_n$ should NOT depend on the choice of residue class representative.
+	\end{nb}
+	\begin{exa}
+		In $\Z_7$, $\overline{48}=\overline{6}$ and $\overline{3}=\overline{10}$.  Is it true that $\overline{48}+\overline{3}=\overline{6}+\overline{10}$?
+	\end{exa}
+}
+\slide{
+	\begin{block}{Proof.}
+		It suffices to show that if $\overline{a_1}=\overline{a_2}$ and $\overline{b_1}=\overline{b_2}$ in $\Z_n$, then
+			\[\overline{a_1+b_1}=\overline{a_2+b_2}\text{ and }\overline{a_1b_1}=\overline{a_2b_2}.\]
+	\end{block}
+}
+\slide{
+	\begin{exercise}
+		Fill out the addition and multiplication tables for $\Z_4$.
+		\Large
+		$$
+		\begin{array}{c|c|c|c|c}
+		+_4&\overline{0}&\overline{1}&\overline{2}&\overline{3}\\\hline
+		\overline{0}&&&&\\\hline
+		\overline{1}&&&&\\\hline
+		\overline{2}&&&&\\\hline
+		\overline{3}&&&&
+		\end{array}
+		\hskip 3em
+		\begin{array}{c|c|c|c|c}
+		\times_4&\overline{0}&\overline{1}&\overline{2}&\overline{3}\\\hline
+		\overline{0}&&&&\\\hline
+		\overline{1}&&&&\\\hline
+		\overline{2}&&&&\\\hline
+		\overline{3}&&&&
+		\end{array}$$
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Claim}
+		An integer $n\in\Z$ is divisible by 9 if and only if the sum of its digits is divisible by 9.
+	\end{statementblock}
+}
+\slide{
+	\begin{block}{\textbf{Summary.}}
+		\begin{itemize}[label=$\bullet$]
+			\item The set of integers modulo $n$ is
+			\[\Z_n=\{\overline{0},\overline{1},\overline{2},\dots,\overline{n-1}\}.\]
+			\item If $r$ is the remainder you get when dividing $a$ by $n$, then
+			\[a\equiv r\pmod{n} \text{ or equivalently } \abar=\overline{r}.\]
+			\item Addition in $\Z_n$ is defined by:
+			\[\overline{a}+\overline{b}=\overline{a+b}.\]
+			\item Multiplication in $\Z_n$ is defined by 
+			\[\overline{a}\overline{b}=\overline{ab}.\]
+		\end{itemize}
+	\end{block}
+}
+\slide{
+	\begin{statementblock}{Theorem 1.3.4}
+		Let $n\geq 2$ be a fixed modulus and let $a,b$ and $c$ denote arbitrary integers. Then the following hold in $\Z_n$.
+		\enumarabic{\item $\abar+\bbar=\bbar+\abar$ and $\abar\bbar=\bbar\abar$.
+			\item $\abar+(\bbar+\cbar)=(\abar+\bbar)+\cbar$ and $\abar(\bbar\cbar)=(\abar\bbar)\cbar$.
+			\item $\abar+\overline{0}=\abar$ and $\abar\overline{1}=\abar$.
+			\item $\abar+\overline{-a}=\overline{0}$.
+			\item $\abar(\bbar+\cbar)=\abar\bbar+\abar\cbar$.
+		}
+	\end{statementblock}
+	\begin{nb}
+		The proof of (5) is in the book.  And (2) is proved in a video.
+	\end{nb}
+}
+\slide{	
+	Moral from last Theorem: Arithmetic in $\Z_n$ behaves very similarly to arithmetic in $\Z$! 
+	\vskip 2em
+	There's a \emph{zero}, $\overline{0}$, and \emph{unity}, $\overline{1}$, in $\Z_n$.
+	\vskip 2em
+	Every $\abar\in\Z_n$ has an \emph{negative} or \emph{additive inverse}, $\overline{-a}$, in $\Z_n$, which we write as $-\abar$ and satisfies
+	\[\abar+\overline{-a}=\overline{0}.\]
+	\vskip 1em
+	\emph{Subtraction} is then naturally defined as
+	\[\abar-\bbar=\abar+\overline{-b}=\overline{a-b}.\]
+}
+\slide{
+	\begin{exercise}
+		What is the additive inverse of $\overline{6}$ in $\Z_8$?
+		
+		%		Be sure to write it as a class in $\{\overline{0},\overline{1},\overline{2},\dots,\overline{7}\}$.
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		We call a class $\abar\in\Z_n$ \emph{invertible} if there is some $\bbar\in Z_n$ such that $\abar\bbar=\overline{1}$.
+	\end{defn}
+	\begin{exa}
+		Consider $\Z_4$.
+%		 $\overline{3}$ is invertible 
+%		%because $\overline{3}\cdot\overline{3}=\overline{9}=\overline{1}$.
+%		\vskip .5in
+%		However, $\overline{2}$ is not invertible 
+		%because we can test everything:
+		%			\enumarabic{\item $\overline{2}\cdot\overline{0}=\overline{0}$
+			%			\item $\overline{2}\cdot\overline{1}=\overline{1}$ 
+			%			\item $\overline{2}\cdot\overline{2}=\overline{4}=\overline{0}$
+			%			\item $\overline{2}\cdot\overline{3}=\overline{6}=\overline{2}$}
+	\end{exa}
+}
+\slide{
+	\begin{exercise}
+		Show $\overline 6\in\Z_8$ has no multiplicative inverse.
+	\end{exercise}
+	\vskip 2in
+	\begin{nb}
+		Looking at this question as a polynomial equation, there is no solution to $\overline{6}x=\overline{1}$ in $\Z_8$.
+	\end{nb}
+}
+\begin{frame}[fragile]
+	\frametitle{\fn}
+	\begin{exercise}
+		\enumalph{
+			\item Solve $\overline{5}x=\overline{1}$ in $\Z_8$, if possible.
+			
+			Brute force is a great plan.
+			\item Solve $\overline{5}x=\overline{2}$ in $\Z_8$, if possible.
+			\item Solve $\overline{6}x=\overline{2}$ in $\Z_8$, if possible.
+		}
+	\end{exercise}
+	\begin{nb}
+		Here's some Sage code for some brute force that will print it nicely.
+		\begin{quote}
+			\begin{verbatim}
+				Zmod8=Integers(8)
+				for a in Zmod8:
+				print(f"5*{a}={5*a} mod 8")
+			\end{verbatim}
+		\end{quote}
+		Use at \url{https://sagecell.sagemath.org/}.
+	\end{nb}
+\end{frame}
+\slide{
+	\begin{question}
+		What do you notice about the relationship between $n$ and the values in $\Z_n$ that have inverses?
+		
+		This slide and the next have multiplication tables for $\Z_7$, $\Z_8$, $\Z_9$, and $\Z_{10}$.  Identify the rows that have a 1 in them - these are the classes with inverses.
+	\end{question}
+	\vskip 1em
+	\begin{minipage}{.45\textwidth}\small
+		Multiplication in $\Z_7$
+		
+		$\begin{array}{r|rrrrrrr}
+			\times & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\\hline
+			0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+			1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+			2 & 0 & 2 & 4 & 6 & 1 & 3 & 5 \\
+			3 & 0 & 3 & 6 & 2 & 5 & 1 & 4 \\
+			4 & 0 & 4 & 1 & 5 & 2 & 6 & 3 \\
+			5 & 0 & 5 & 3 & 1 & 6 & 4 & 2 \\
+			6 & 0 & 6 & 5 & 4 & 3 & 2 & 1
+		\end{array}$
+	\end{minipage}
+	\hskip 2em
+	\begin{minipage}{.45\textwidth}\small
+		Multiplication in $\Z_8$
+		
+		$
+		\begin{array}{r|rrrrrrrr}
+			\times & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\hline
+			0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+			1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+			2 & 0 & 2 & 4 & 6 & 0 & 2 & 4 & 6 \\
+			3 & 0 & 3 & 6 & 1 & 4 & 7 & 2 & 5 \\
+			4 & 0 & 4 & 0 & 4 & 0 & 4 & 0 & 4 \\
+			5 & 0 & 5 & 2 & 7 & 4 & 1 & 6 & 3 \\
+			6 & 0 & 6 & 4 & 2 & 0 & 6 & 4 & 2 \\
+			7 & 0 & 7 & 6 & 5 & 4 & 3 & 2 & 1
+		\end{array}
+		$
+	\end{minipage}
+	
+	{\small * Overlines omitted for the sake of visual appearance.}
+}
+\slide{\hskip -1em
+	\begin{minipage}{.45\textwidth}
+		\small
+		Multiplication in $\Z_9$
+		
+		$
+		\begin{array}{r|rrrrrrrrr}
+			\times & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\hline
+			0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+			1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+			2 & 0 & 2 & 4 & 6 & 8 & 1 & 3 & 5 & 7 \\
+			3 & 0 & 3 & 6 & 0 & 3 & 6 & 0 & 3 & 6 \\
+			4 & 0 & 4 & 8 & 3 & 7 & 2 & 6 & 1 & 5 \\
+			5 & 0 & 5 & 1 & 6 & 2 & 7 & 3 & 8 & 4 \\
+			6 & 0 & 6 & 3 & 0 & 6 & 3 & 0 & 6 & 3 \\
+			7 & 0 & 7 & 5 & 3 & 1 & 8 & 6 & 4 & 2 \\
+			8 & 0 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1
+		\end{array}
+		$
+	\end{minipage}
+	\hskip 2em
+	\begin{minipage}{.45\textwidth}\small
+		Multiplication in $\Z_{10}$
+		
+		$\begin{array}{r|rrrrrrrrrr}
+			0 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\\hline
+			0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+			1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+			2 & 0 & 2 & 4 & 6 & 8 & 0 & 2 & 4 & 6 & 8 \\
+			3 & 0 & 3 & 6 & 9 & 2 & 5 & 8 & 1 & 4 & 7 \\
+			4 & 0 & 4 & 8 & 2 & 6 & 0 & 4 & 8 & 2 & 6 \\
+			5 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5 \\
+			6 & 0 & 6 & 2 & 8 & 4 & 0 & 6 & 2 & 8 & 4 \\
+			7 & 0 & 7 & 4 & 1 & 8 & 5 & 2 & 9 & 6 & 3 \\
+			8 & 0 & 8 & 6 & 4 & 2 & 0 & 8 & 6 & 4 & 2 \\
+			9 & 0 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1
+		\end{array}$
+	\end{minipage}
+	* Overlines omitted for the sake of visual appearance.
+}
+\slide{
+	\begin{statementblock}{Theorem 1.3.5}
+		Let $a,n\in\Z$ with $n\geq 2$. Then $\abar$ has a multiplicative inverse in $\Z_n$ if and only if $a$ and $n$ are relatively prime.
+	\end{statementblock}
+}
+%\slide{
+%	\begin{block}{Brain Break}
+%		If you were a dog, what kind of toy would you prefer?
+%		\vskip .25in
+%		\begin{minipage}{.5\textwidth}	
+%			\enumarabic{\item Fluffy and squeaky \item Crinkle toy \item BALL \item Tough chewer \item Puzzle toy with treats to find}
+%		\end{minipage}
+%	\end{block}
+%}
+\slide{
+	Before starting the proof of Theorem 1.3.5, we recall two important Theorems:
+	\begin{statementblock}{Theorem 1.2.4}
+		Let $m,n\in Z$ not both zero.  Then
+		\begin{center}
+			$m,n$ relatively prime $\Leftrightarrow$ $\exists r,s\in\Z$ such that $1=rm+sn$
+		\end{center}
+	\end{statementblock}
+	\vskip 1em
+	\begin{statementblock}{Theorem 1.3.2}
+		Given $n\geq 2$, $\overline{a}=\overline{b}\Leftrightarrow a\equiv b\pmod n$.
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Theorem 1.3.5}
+		Let $a,n\in\Z$ with $n\geq 2$. Then $\abar$ has a multiplicative inverse in $\Z_n$ if and only if $a$ and $n$ are relatively prime.
+	\end{statementblock}
+%	\begin{proof}
+%		($\Rightarrow$) Assume $\abar$ has a multiplicative inverse in $\Z_n$.
+%		\vskip 4in
+%	\end{proof}
+}
+\slide{
+	\begin{nb}
+		The proof of the reverse direction of Theorem 1.3.5 helps us to find inverses.  
+	\end{nb}
+	\begin{exa}
+		Find the inverse of $\overline{16}$ in $\Z_{35}$.
+		
+		\fbox{\begin{minipage}{2in}
+				Euclidean Algorithm:
+				
+				$\begin{array}{rcl}
+					35&=&2(16)+3\\
+					16&=&5(3)+1\\
+					3&=&3(1)+0
+				\end{array}$
+		\end{minipage}}
+		\fbox{\begin{minipage}{2in}
+				
+				B\'ezout:
+				
+				$\begin{array}{rcl}
+					1&=&16-5(3)\\
+					&=&16-5(35-2(16))\\
+					&=&11(16)-5(35)
+				\end{array}$
+		\end{minipage}}
+		\vskip 1em
+		The equation $1=11(16)-5(35)$ modulo 35 gives:
+		\[1\equiv 11\cdot 16\pmod{35}.\]
+		Therefore, the multiplicative inverse of $\overline{16}$ in $\Z_{35}$ is $\overline{11}$.
+	\end{exa}
+}
+\slide{
+	\begin{exercise}
+		Solve the equation $\overline{16}x=\overline{9},$ in $\Z_{35}$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Solve the system of equations in $\Z_{13}$
+		\[\begin{cases}
+			\overline{5}x+\overline{2}y=\overline{1}\\
+			\overline{2}x+\overline{10}y=\overline{2}.
+		\end{cases}\]
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 1.3.6 (The Chinese Remainder Theorem)}
+		Let $m$ and $n$ be relatively prime integers. If $s$ and $t$ are arbitrary integers, then there is an integer $b$ for which
+		\[b\equiv s\pmod m\text{ and } b\equiv t\pmod n.\]
+	\end{statementblock}
+	\begin{nb}
+		How do we find this $b$?
+		
+		Since $\gcd(m,n)=1$, we can find $p,q\in \Z$ such that $1=mp+nq$. \fbox{why?}
+		
+		Set $b=(mp)t+(nq)s$. \fbox{why does this work???}
+	\end{nb}
+}
+\slide{
+	\begin{statementblock}{Theorem 1.3.7}
+		The following are equivalent for any integer $n\geq 2$.
+		\enumarabic{\item Every element $\abar\neq\overline{0}$ in $\Z_n$ has a multiplicative inverse.
+			\item If $\abar\bbar=\overline{0}$ in $\Z_n$, then either $\abar=\overline{0}$ or $\bbar=\overline{0}$.
+			\item The integer $n$ is prime.
+		}
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Wilson's Theorem - A Corollary to 1.3.7}
+		If $p$ is prime then $(p-1)!\equiv -1\pmod p$.
+	\end{statementblock}
+	\begin{nb}
+		Think about how numbers and their inverses mod $p$ appear in the product
+		\[1\cdot 2\cdot3\cdots (p-1).\]
+	\end{nb}
+	\begin{statementblock}{Theorem 1.3.8 (Fermat's Theorem)}
+		If $p$ is prime then $a^p\equiv a\pmod p$ for all $a\in\Z$.  Moreover, if $\gcd(a,p)=1$, then $a^{p-1}\equiv 1\pmod p$.
+	\end{statementblock}
+}
+\end{document}
+

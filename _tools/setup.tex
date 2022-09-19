@@ -1,0 +1,167 @@
+\usepackage{amsthm,amsmath,amsfonts,hyperref,graphicx,color,multicol,soul}
+\usepackage{enumitem,tikz,tikz-cd,setspace,mathtools}
+
+%%%%%%%%%%
+%Beamer Template Customization
+%%%%%%%%%%
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{theorems}[ams style]
+\setbeamertemplate{blocks}[rounded]
+
+\definecolor{Blu}{RGB}{43,62,133} % UWEC Blue
+\setbeamercolor{structure}{fg=Blu} % Titles
+
+%Unnumbered footnotes:
+\newcommand{\blfootnote}[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+%%%%%%%%%%
+%TikZ Stuff
+%%%%%%%%%%
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes.geometric}
+\tikzset{
+	smaller/.style={
+		draw,
+		regular polygon,
+		regular polygon sides=3,
+		fill=white,
+		node distance=2cm,
+		minimum height=1in,
+		line width = 2pt
+	}
+}
+\tikzset{
+	smsquare/.style={
+		draw,
+		regular polygon,
+		regular polygon sides=4,
+		fill=white,
+		node distance=2cm,
+		minimum height=1in,
+		line width = 2pt
+	}
+}
+
+
+%%%%%%%%%%
+%Custom Commands
+%%%%%%%%%%
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\quats}{\mathbb{H}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\fn}{\insertframenumber}
+
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+
+\newcommand{\blank}[1]{\underline{\hspace*{#1}}}
+
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+\newcommand{\cbar}{\overline{c}}
+
+\newcommand{\nml}{\unlhd}
+
+%%%%%%%%%%
+%Custom Theorem Environments
+%%%%%%%%%%
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+\newtheorem{question}[exercise]{Question}
+\newtheorem{warmup}{Warm-Up}
+\newtheorem*{defn}{Definition}
+\newtheorem*{exa}{Example}
+\newtheorem*{disc}{Group Discussion}
+\newtheorem*{nb}{Note}
+\newtheorem*{recall}{Recall}
+\renewcommand{\emph}[1]{{\color{blue}\texttt{#1}}}
+
+\definecolor{Gold}{RGB}{237, 172, 26}
+%Statement block
+\newenvironment{statementblock}[1]{%
+	\setbeamercolor{block body}{bg=Gold!20}
+	\setbeamercolor{block title}{bg=Gold}
+	\begin{block}{\textbf{#1.}}}{\end{block}}
+\newenvironment{thm}[1]{%
+	\setbeamercolor{block body}{bg=Gold!20}
+	\setbeamercolor{block title}{bg=Gold}
+	\begin{block}{\textbf{Theorem #1.}}}{\end{block}}
+
+
+%%%%%%%%%%
+%Custom Environment Wrappers
+%%%%%%%%%%
+\newcommand{\enumarabic}[1]{
+	\begin{enumerate}[label=\textbf{\arabic*.}]
+		#1
+	\end{enumerate}
+}
+\newcommand{\enumalph}[1]{
+	\begin{enumerate}[label=(\alph*)]
+		#1
+	\end{enumerate}
+}
+\newcommand{\bulletize}[1]{
+	\begin{itemize}[label=$\bullet$]
+		#1
+	\end{itemize}
+}
+\newcommand{\circtize}[1]{
+	\begin{itemize}[label=$\circ$]
+		#1
+	\end{itemize}
+}
+\newcommand{\slide}[1]{
+	\begin{frame}{\fn}
+		#1
+	\end{frame}
+}
+\newcommand{\slidec}[1]{
+\begin{frame}[c]{\fn}
+	#1
+\end{frame}
+}
+\newcommand{\slidet}[2]{
+	\begin{frame}{\fn - #1}
+		#2
+	\end{frame}
+}
+
+
+\newcommand{\startdoc}{
+		\title{Math 425: Abstract Algebra 1}
+		\author{Mckenzie West}
+		\date{Last Updated: \today}
+		\begin{frame}
+			\maketitle
+		\end{frame}
+}
+
+\newcommand{\topics}[2]{
+	\begin{frame}{\insertframenumber}
+		\begin{block}{\textbf{Last Time.}}
+			\begin{itemize}[label=--]
+				#1
+			\end{itemize}
+		\end{block}
+		\begin{block}{\textbf{Today.}}
+			\begin{itemize}[label=--]
+				#2
+			\end{itemize}
+		\end{block}
+	\end{frame}
+}

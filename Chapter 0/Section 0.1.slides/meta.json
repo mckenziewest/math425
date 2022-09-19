@@ -1,0 +1,8 @@
+{
+	"type":"file",
+	"title":"🔭 Section 0.1 Slides",
+	"filename":"ws0-1-proofs.pdf",
+	"modules":["Week 1"],
+	"destination": "slides/Chapter_0",
+  "position": 3
+}

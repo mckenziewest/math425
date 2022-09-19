@@ -1,0 +1,16 @@
+{
+    "link": "https://webwork.uwec.edu/webwork2/425_West/Intro-6_Permutation_Computations/",
+    "ww_name": "Intro-6_Permutation_Computations",
+    "name": "Intro-6",
+    "unlock_at": "2022-09-07T14:00:00",
+    "lock_at": "2022-12-14T16:00:00",
+    "due_at": "2022-10-07T16:00:00",
+    "type": "assignment",
+    "points_possible": 1,
+    "submission_types": "external_tool",
+    "external_tool_tag_attributes": {
+        "url": "https://webwork.uwec.edu/webwork2/425_West/Intro-6_Permutation_Computations/",
+        "new_tab": true
+    },
+  	"omit_from_final_grade":"True"
+}

@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"title":"💻 Chapter0_Theorems.tex",
+	"filename":"../Chapter0_Theorems.tex",
+	"modules":["Theorems and Definitions By Chapter"],
+	"destination": "handouts"
+}

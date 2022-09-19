@@ -1,0 +1,306 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,graphicx,multicol,enumitem,amsthm}
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty}
+\newtheorem*{lem}{Lemma}
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{thm}[1]
+{\renewcommand\theinnercustomthm{#1}\innercustomthm}
+{\endinnercustomthm}
+\newtheorem{cor}{Corollary}[innercustomthm]
+\renewcommand{\thecor}{\arabic{cor}}
+\newcommand{\enumarabic}[1]{
+	\begin{enumerate}[label=\textbf{\arabic*.}]
+		#1
+	\end{enumerate}
+}
+\newcommand{\enumalph}[1]{
+\begin{enumerate}[label=(\alph*)]
+	#1
+\end{enumerate}
+}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+
+
+
+
+%%%%%%%%%%
+%Custom Commands
+%%%%%%%%%%
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\fn}{\insertframenumber}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\im}{\operatorname{im}}
+
+\newcommand{\blank}[1]{\underline{\hspace*{#1}}}
+
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+\newcommand{\cbar}{\overline{c}}
+
+\newcommand{\nml}{\unlhd}
+
+\begin{document}
+			\noindent Math 425: Abstract Algebra I
+		
+		\noindent	Theorems from the Textbook - Sections 2.5-2.10
+\vskip .25in
+
+
+\section*{Theorems}
+\begin{thm}{2.5.1}
+	Let $\phi\colon G\to H$ be a group homomorphism. Then
+	\enumalph{\item $\phi(e_G)=e_H$ \hfill($\phi$ preserves identities)
+		\item $\phi(g^{-1})=\phi(g)^{-1}$ $\forall g\in G$\hfill($\phi$ preserves inverses)
+		\item $\phi(g^k)=\phi(g)^k$ $\forall g\in G,k\in\Z$ \hfill($\phi$ preserves powers)
+	}
+\end{thm}
+\begin{cor}
+	Let $\phi\colon G\to H$ be a homomorphism.  If $g\in G$ has $|g|=n<\infty$, then $|\phi(g)|<\infty$.  Moreover $|\phi(g)|$ divides $|g|$.
+\end{cor}
+\begin{cor}
+	If $\alpha\colon G\to H$ is a homomorphism, write $\alpha(G)=\{\alpha(g)\ |\ g\in G\}$. Then $\alpha(G)$ is a subgroup of $H$.
+\end{cor}
+\begin{thm}{2.5.3}
+	Let $G$, $H$, and $K$ denote groups.
+	\enumarabic{\setlength{\itemsep}{1em}
+		\item The identity map $1_G\colon G\to G$ is an isomorphism for every group $G$.
+		\item If $\sigma\colon G\to H$ is an isomorphism then the inverse mapping $\sigma^{-1}\colon H\to G$ is an isomorphism.
+		\item If $\sigma\colon G\to H$ and $\tau\colon H\to K$ are isomorphisms then $\tau\sigma\colon G\to K$ is an isomorphism.
+	}
+\end{thm}	
+\begin{cor}
+	This isomorphism relation, $\cong$ is an equivalence relation on groups.  That is
+	\enumarabic{
+		\item $G\cong G$,
+		\item if $G\cong H$, then $H\cong G$, and
+		\item if $G\cong H$ and $H\cong K$, then $G\cong K$.
+	}
+\end{cor}
+\begin{cor}
+	If $G$ is a group, then the set of all isomorphisms $G\to G$ forms a group under composition.
+\end{cor}
+\begin{thm}{2.5.4}
+	Let $\sigma\colon G\to G_1$ be an isomorphism. Then $o(\sigma(g))=o(g)$ for all $g\in G$.
+\end{thm}
+\begin{thm}{2.5.5}
+	Every group $G$ of order $n$ is isomorphic to a subgroup of $S_n$.
+\end{thm}
+\begin{thm}{2.6.1}
+	Let $H$ be a subgroup of a group $G$ and let $a,b\in G$.
+	\enumarabic{
+		\item $H=H{e_G}$.
+		\item $Ha=H$ if and only if $a\in H$.
+		\item $Ha=Hb$ if and only if $ab^{-1}\in H$.
+		\item If $a\in Hb$, then $Ha=Hb$.
+		\item Either $Ha=Hb$ or $Ha\cap Hb=\emptyset$.
+		\item The distinct right cosets of $H$ partition $G$.
+	}
+\end{thm}
+\begin{cor}
+	Corresponding statements hold for left cosets. In particular, part (3) becomes
+	\[aH=bH\Leftrightarrow a^{-1}b\in H\Leftrightarrow b^{-1}a\in H.\]
+\end{cor}
+\begin{lem}
+	If $H\leq G$ and $a,b\in G$, then $|Ha|=|Hb|$.
+\end{lem}
+\begin{thm}{2.6.2}[Lagrange's Theorem]
+	Let $H$ be a subgroup of a finite group $G$.  Then $|H|$ divides $|G|$.
+\end{thm}
+\begin{cor}
+	If $G$ is a finite group and $g\in G$, then $|g|$ divides $|G|$.
+\end{cor}
+\begin{cor}
+	If $G$ is a group and $|G|=n$, then $g^n=e$ for all $g\in G$.
+\end{cor}
+\begin{cor}
+	If $p$ is a prime, then every group of order $p$ is cyclic.  In fact, $G=\langle g\rangle$ for every non-identity element $g$ in $G$, so the only subgroups of $G$ are $\{e\}$ and $G$ itself.
+\end{cor}
+\begin{cor}
+	Let $H$ and $K$ be finite subgroups of a group $G$.  If $|H|$ and $|K|$ are relatively prime, then $H\cap K=\{e\}$.
+\end{cor}
+\begin{cor}
+	If $H$ is a subgroup of a finite group $G$, then \[|G:H|=\frac{|G|}{|H|}.\]
+\end{cor}
+\begin{thm}{2.6.3}
+	Let $G$ be a group of order $2p$, where $p$ is prime. Then either $G$ is cyclic or $G\cong D_p$, where $D_p$ is the dihedral group of order $2p$.
+\end{thm}
+\begin{thm}{2.8.1}
+	If $G$ is a group, every subgroup of the center, $Z(G)$ is normal in $G$.  In particular, $Z(G)\nml G$.
+\end{thm}
+\begin{thm}{2.8.2}
+	If $G$ is abelian and $H\leq G$, then $H\nml G$.
+\end{thm}
+\begin{cor}
+	If $G=\langle X\rangle$, a subgroup $H$ is normal in $G$ if and only if $xHx^{-1}\subseteq H$ for all $x\in X$. Similarly, 
+	if $a\in G$, then $\langle a \rangle\nml G$ if and only if $gag^{-1}\in\langle a \rangle$ for all $g\in G$.
+\end{cor}
+\begin{cor}
+	If $H$ is a subgroup of $G$, and if $G$ has no other subgroups isomorphic to $H$, then $H$ is normal in $G$.
+\end{cor}
+\begin{thm}{2.8.3}[Normality Test]
+	The following conditions are equivalent for a subgroup $H$ of a group $G$.
+	\enumarabic{
+		\item $H\nml G$.
+		\item $gHg^{-1}\subseteq H$ for all $g\in G$.
+		\item $gHg^{-1}=H$ for all $g\in G$.
+	}
+\end{thm}
+\begin{thm}{2.8.4}
+	If $H\leq G$ with $|G:H|=2$, then $H\nml G$.
+\end{thm}
+\begin{thm}{2.8.5}
+	Let $H$ and $K$ be subgroups of a group $G$.
+	\enumarabic{
+		\item If $H$ or $K$ is normal in $G$, then $HK=KH$ is a subgroup of $G$.
+		\item If both $H$ and $K$ are normal in $G$, then $HK\nml G$ too.
+	}
+\end{thm}
+\begin{thm}{2.8.6}
+	If $H\nml G$ and $K\nml G$ satisfy $H\cap K=\{e_G\}$, then $HK\cong H\times K$.
+\end{thm}
+\begin{cor}
+	If $G$ is a finite group and $H,K\leq G$ with $H\cap K=\{e_G\}$, then $|HK|=|H||K|$.
+\end{cor}
+\begin{cor}
+	If $G$ is a finite group and $H,K\nml G$ with $H\cap K=\{e_G\}$ and $|HK|=|G|$, then $G\cong H\times K$.
+\end{cor}
+\begin{cor}
+	If $m$ and $n$ are relatively prime integers and $G$ is a cyclic group of order $mn$, then $G\cong C_m\times C_n$.
+\end{cor}
+\begin{cor}
+	Let $G$ be an abelian group of order $p^2$ for some prime $p$.  Then either $G\cong C_{p^2}$ or $G\cong C_p\times C_p$.
+\end{cor}
+\begin{thm}{2.8.7}
+	An abelian group $G\neq\{e_G\}$ is simple if and only if $|G|$ is prime.
+\end{thm}
+\begin{thm}{2.8.8}
+	If $n\geq 5$, then $A_n$ is simple.
+\end{thm}
+\begin{thm}{2.9.1}
+	Let $K\nml G$ and write $G/K=\{Ka\ |\ a\in G\}$, the set of right cosets of $K$. Then
+	\enumarabic{
+		\item $G/K$ is a group under the operation $(Ka)(Kb)=Kab$.
+		\item The mapping $\varphi: G\to G/K$ defined by $\varphi(a)=Ka$ is an onto homorphism.
+		\item If $G$ is abelian, then $G/K$ is abelian.
+		\item If $G=\langle a\rangle$, then $G/K$ is also cyclic with $G/K=\langle Ka\rangle$.
+		\item If $|G:K|$ is finite then $|G/K|=|G:K|$.  If $|G|$ is finite, then $|G/K|=\frac{|G|}{|K|}$.
+	}
+\end{thm}
+\begin{thm}{2.9.2}
+	If $G$ is a group and $G/Z(G)$ is cyclic, then $G$ is abelian.
+\end{thm}
+\begin{thm}{2.9.3}
+	Let $G$ be a group and let $H$ be a subgroup of $G$.
+	\enumarabic{
+		\item $G'$ is a normal subgroup of $G$ and $G/G'$ is abelian.
+		\item $G'\subseteq H$ if and only if $H$ is normal in $G$ and $G/H$ is abelian.
+	}
+\end{thm}
+\begin{thm}{2.10.1}
+	Let $\alpha\colon G\to H$ be a group homomorphism.  Then
+	\enumarabic{
+		\item $\alpha(G)$ is a subgroup of $H$. 
+		\item $\ker(\phi)$ is a normal subgroup of $G$
+	}
+\end{thm}
+\begin{thm}{2.10.2}
+	If $K\nml G$, then $K=\ker\phi$ where $\phi\colon G\to G/K$ is the coset mapping.
+\end{thm}
+\begin{thm}{2.10.3}
+	Let $\alpha\colon G\to H$ be a group homomorphism.  Then $\alpha$ is injective if and only if $\ker(\alpha)=\{e_G\}$.
+\end{thm}
+\begin{thm}{2.10.4}[The First Isomorphism Theorem]
+	Let $\alpha\colon G\to H$ be a group homomorphism and $K = \ker\alpha$  then $G/K\cong im(G)=\alpha(G)$.
+\end{thm}
+\begin{thm}{2.10.5}
+	If $G$ is any group then $G/Z(G)\cong \Inn(G)$, where $\Inn(G)$ is the set if inner automorphisms of $G$.
+\end{thm}
+
+\section*{Definitions}
+\begin{defn}
+	Let $(G,*)$ and $(H,\diamond)$ be groups. Then a mapping $\phi\colon G\to H$ is a \emph{[group] homomorphism} if $\phi(g_1*g_2)=\phi(g_1)\diamond\phi(g_2)$ for all $g_1,g_2\in G$.
+\end{defn}
+\begin{defn}
+	The \emph{trivial homomorphism},	
+	\[\phi\colon G\to H,\quad \phi(g)=e_H\ \forall g\in G\]
+\end{defn}
+\begin{defn}
+	A homomorphism that is both injective and surjective is called an \emph{isomorphism}. If an isomorphism exists from $G$ to $H$, we call $G$ and $H$ \emph{isomorphic} and we write $G\cong H$.
+\end{defn}
+\begin{defn}
+	Let $\phi:G\to H$ be a group homomorphism.
+	The \emph{image of $\phi$} is denoted $\phi(G)$ or $\im(\phi)$ and is defined to be the set
+	\[\{\phi(g)\in H\ |\ g\in G\}=\{h\in H\ |\ \exists g\in G\text{ s.t. }\phi(g)=h\}.\]
+\end{defn}
+\begin{defn}
+	Let $\phi:G\to H$ be a group homomorphism.
+	The \emph{kernel of $\phi$} is denoted $\ker(\phi)$ and is defined to be the set
+	\[\{g\in G\ |\ \phi(g)=e_H\}.\]
+\end{defn}
+\begin{defn}
+	Let $G$ be a group. An \emph{automorphism of $G$} is an isomorphism from $G$ to itself. The set $\Aut(G)$ is the set of all automorphisms of $G$.
+\end{defn}
+\begin{defn}
+	Let $H\leq G$ and let $a\in G$.  Define the two sets
+	\enumarabic{
+		\item $H*a=\{h*a|h\in H\}$ called the \emph{right coset of $H$ by $a$}.
+		\item $a*H=\{a*h|h\in H\}$ called the \emph{left coset of $H$ by $a$}.
+	}
+\end{defn}
+\begin{defn}
+	The \emph{index} of $H$ in $G$, denoted $|G:H|$, is defined to the number of distinct right (or left if you prefer) cosets of $H$ in $G$.
+\end{defn}
+\begin{defn}
+	A \emph{regular $n$-gon} is an $n$-sided polygon whose sides are all congruent.  Denote this figure by $P_n$.
+\end{defn}
+\begin{defn}
+	A \emph{symmetry} of $P_n$ is any action on $P_n$ by a sequence of flips and/or rotation which return $P_n$ to its original position in the plane.
+\end{defn}
+\begin{defn}
+	The \emph{dihedral group} $D_n$ is the group of symmetries of the figure $P_n$.  (Operation is composition.)
+	
+	Alternately, we may use the following definition.
+	
+	Let $n\geq 2$.  The \emph{dihedral group} $D_n$ is the group of order $2n$ presented as follows:
+	
+	\[D_n=\{e,r,r^2,\dots,r^{n-1},f,fr,fr^2,\dots,fr^{n-1}\},\]
+	where $|r|=n$, $|f|=2$, and $r f=fr^{-1}$.
+\end{defn}
+\begin{defn}
+	A subgroup $H$ of $G$ is called a \emph{normal subgroup} of $G$ if $gH=Hg$ for all $g\in G$.
+	If $H$ is a normal subgroup of $G$, we might say \emph{$H$ is normal in $G$} and write $H\nml G$.
+\end{defn}
+\begin{defn}
+	If $H$ is a subgroup of $G$ and $g\in G$, we call $gHg^{-1}$ a \emph{conjugate} of $H$ in $G$.
+\end{defn}
+\begin{defn}
+	A group $G$ is \emph{simple} if its only normal subgroups are $\{e_G\}$ and $G$.
+\end{defn}
+\begin{defn}
+	If $K$ is a normal subgroup of the group $G$, then the group $G/K$ is called the \emph{factor group}, or \emph{quotient group}, of $G$ by $K$.
+	
+	We call the homomorphism $\varphi:G\to G/K$ with $\varphi(a)=Ka$ the \emph{coset map}.
+\end{defn}
+\begin{defn}
+	For $a,b\in G$ we define the \emph{commutator} of $a$ and $b$ to be
+	\[[a,b]=aba^{-1}b^{-1}.\]
+\end{defn}
+\begin{defn}
+	The \emph{commutator subgroup} of $G$ is the group
+	\[\begin{array}{rcl}
+		G'&=&\{\text{all finite products of commutators from }G\}\\\\
+		&=&\langle [a,b]\ |\ a,b\in G\rangle.
+	\end{array}\]
+\end{defn}
+\end{document}

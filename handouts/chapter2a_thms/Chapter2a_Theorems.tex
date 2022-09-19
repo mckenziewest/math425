@@ -1,0 +1,264 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,graphicx,multicol,enumitem,amsthm}
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty}
+\newtheorem{innercustomthm}{Theorem}
+\newtheorem*{cor}{Corollary}
+\newenvironment{thm}[1]
+{\renewcommand\theinnercustomthm{#1}\innercustomthm}
+{\endinnercustomthm}
+\newcommand{\enumarabic}[1]{
+	\begin{enumerate}[label=\textbf{\arabic*.}]
+		#1
+	\end{enumerate}
+}
+\newcommand{\enumalph}[1]{
+\begin{enumerate}[label=(\alph*)]
+	#1
+\end{enumerate}
+}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+
+
+
+
+%%%%%%%%%%
+%Custom Commands
+%%%%%%%%%%
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\fn}{\insertframenumber}
+
+\newcommand{\im}{\operatorname{im}}
+
+\newcommand{\blank}[1]{\underline{\hspace*{#1}}}
+
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+\newcommand{\cbar}{\overline{c}}
+
+\begin{document}
+			\noindent Math 425: Abstract Algebra I
+		
+		\noindent	Theorems from the Textbook - Sections 2.1-2.4
+\vskip .25in
+
+
+\section*{Theorems}
+\begin{thm}{2.1.1}
+	If a binary operation $*$ on a set $S$ has an identity, then it is unique.
+\end{thm}
+\begin{thm}{2.1.4}
+If $(G,*)$ is a group and $g\in G$, then the inverse of $G$ is unique.
+\end{thm}
+\begin{thm}{2.2.1}
+If $(M,*)$ is a monoid, then the set of all unit $M^\times$ is a group using the operation $*$, called the \emph{unit group}.
+\end{thm}
+\begin{thm}{2.2.2}
+If $G_1,G_2,\dots,G_n$ are groups with respective operations $*_1,*_2,\dots,*_n$, then 
+\[G_1\times G_2\times\cdots\times G_n\]
+is a group under component-wise operation
+\[(g_1,g_2,\dots,g_n)*(h_1,h_2,\dots,h_n)=(g_1*_1h_1,g_2*_2h_2,\dots,g_n*_nh_n).\]
+\end{thm}
+\begin{thm}{2.2.3}
+	Let $g,h,g_1,g_2,\dots,g_{n-1},g_n$ be elements of a group $G$ ($n\in \Z_{\geq 1}$).
+	\enumarabic{
+		\item $e^{-1}=e$.
+		\item $(g^{-1})^{-1}=g$.
+		\item $(gh)^{-1}=h^{-1}g^{-1}$.
+		\item $(g_1g_2\cdots g_n)^{-1}=g_n^{-1}g_{n-1}^{-1}\cdots g_2^{-1} g_1^{-1}$.
+		\item $(g^m)^{-1}=(g^{-1})^m$ for all $m\geq 0$.
+	}
+\end{thm}
+\begin{thm}{2.2.4}[Exponent Laws]
+	Let $G$ be a group and $g,h\in G$.
+	\enumarabic{
+		\item $g^ng^m=g^{n+m}$ for all $m,n\in\Z$
+		\item $(g^n)^m=g^{n\cdot m}$ for all $m,n\in\Z$
+		\item If $gh=hg$, then $(gh)^n=g^nh^n$ for all $n\in\Z$
+	}
+\end{thm}
+\begin{thm}{2.2.5}[Cancellation Laws]
+Let $G$ be a group and $g,h,f\in G$.
+\enumarabic{
+	\item If $gh=gf$ then $h=f$ (\emph{left cancellation})
+	\item If $hg=fg$ then $h=f$ (\emph{right cancellation})
+}
+\end{thm}
+\begin{thm}{2.2.6}
+Let $G$ be a group and $g,h\in G$.
+\enumarabic{
+	\item The equation $gx=h$ has a unique solution $x=g^{-1}h$ in $G$.
+	\item The equation $xg=h$ has a unique solution $x=hg^{-1}$ in $G$.
+}
+\end{thm}
+\begin{thm}{2.3.1}[Subgoup Test]
+A subset $H$ of a group $G$ is a subgroup of $G$ if and only if the following conditions are satisfied.
+\enumarabic{
+	\item $1_G\in H$, where $1_G$ is the identity element of $G$.
+	\item If $h\in H$ and $h_1\in H$, then $hh_1\in H$.
+	\item If $h\in H$, then $h^{-1}\in H$, where $h^{-1}\in G$ denotes the inverse of $h$ in $G$.
+}
+
+Note that implicit in these statements, if $H\leq G$ then $H$ and $G$ have the same unity and inverses persist.
+\end{thm}
+\begin{thm}{2.3.3}
+If $G$ is any group, then $Z(G)$ is a subgroup of $G$. Moreover, $Z(G)$ is always abelian.
+\end{thm}
+\begin{thm}{2.4.1}
+Let $g$ be an element of a group $G$, and write
+\[\langle g\rangle =\{g^k:k\in\Z\}.\]
+Then $\langle g\rangle$ is a subgroup of $G$, and $\langle g\rangle\subseteq H$ for every subgroup $H$ of $G$ with $g\in H$.
+\end{thm}
+\begin{thm}{2.4.2}
+Let $g\in G$ with $o(g)=n$.  Then
+\enumarabic{
+	\item $g^k=1$ if and only if $n|k$.
+	\item $g^k=g^m$ if and only if $k\equiv m\pmod n$
+	\item $\langle g\rangle=\{1,g,g^2,\dots, g^{n-1}\}$ where $1,g,g^2,\dots,g^{n-1}$ are all distinct.
+}
+\end{thm}
+\begin{thm}{2.4.3}
+Let $G$ be a group and let $g\in G$ satisfy $o(g)=\infty$.  Then 
+\enumarabic{
+	\item $g^k=1$ if and only if $k=0$.
+	\item $g^k=g^m$ if and only if $k=m$.
+	\item $\langle g\rangle =\{\dots,g^{-2},g^{-1},1,g,g^2,\dots\}$ where the $g^i$ are distinct.
+}
+\end{thm}
+\begin{cor}
+For all $g$ in a group $G$, $|g|=|\langle g\rangle|$.
+\end{cor}
+\begin{thm}{}[{Order in $\Z_n$}]
+Given $\overline{a}\in(\Z_n,+)$, with $1\leq a\leq n-1$, 
+\[|\overline{a}|=\frac{n}{\gcd(a,n)}.\]
+\end{thm}
+\begin{thm}{}
+If $\gamma=(k_1\ k_2\ \dots\ k_r)$ is an $r$-cycle in $S_n$, then $|\gamma|=r$.
+\end{thm}
+\begin{thm}{2.4.4}
+If $\gamma=\sigma_1\sigma_2\dots\sigma_r$ where $\sigma_i$ are disjoint cycles, then
+\[|\gamma|=\operatorname{lcm}(|\sigma_1|,|\sigma_2|,\dots,|\sigma_r|).\]
+\end{thm}
+\begin{thm}{2.4.6}
+Every cyclic group is abelian, but the converse does not hold.
+\end{thm}
+\begin{thm}{2.4.7}
+Every subgroup of a cyclic group is cyclic.
+\end{thm}
+\begin{thm}{2.4.8}
+Let $G=\langle g\rangle$ be a cyclic group, where $o(g)=n$. Then $G=\langle g^k\rangle$ if and only if $\gcd(k,n)=1$.
+\end{thm}
+\begin{thm}{2.4.9}[{The Fundamental Theorem of Finite Cyclic Groups}]
+Let $G=\langle g\rangle$ be a cyclic group of order $n$.
+\enumarabic{
+	\item If $H$ is a subgroup of $G$, then $H=\langle g^d\rangle$ for some $d|n$. Hence $|H|$ divides $n$.
+	\item Conversely if $k|n$, then $\langle g^{n/k}\rangle$ is the unique subgroup of $G$ of order $k$.
+}
+\end{thm}
+\section*{Definitions}
+\begin{defn}
+	A \emph{binary operation}, $*$ on a set $S$ is a function that associates to each ordered pair $(a,b)\in S\times S$ an element of $S$ which we call $a*b$.
+	
+	Since we know that $a*b\in S$ for all $a,b\in S$, we say that the binary operation is \emph{closed under $*$}.
+\end{defn}
+\begin{defn}
+A binary operation $*$ on $S$ is \emph{associative} if 
+\[a*(b*c)=(a*b)*c,\]
+for all $a,b,c\in S$.
+\end{defn}
+\begin{defn}	
+A binary operation $*$ on $S$ is \emph{commutative} if 
+\[a*b=b*a,\]
+for all $a,b\in S$.
+\end{defn}
+\begin{defn}
+An element $e\in S$ is called an \emph{identity} (or \emph{unity}) for the binary operation $*$ if 	
+\[a*e=e*a=a,\]
+for all $a\in S$.
+\end{defn}
+\begin{defn}
+A set $S$ along with a binary operation $*$ is called an \emph{monoid} if $*$ is associate and has an identity.
+
+\vskip 1em
+
+If $(S,*)$ is also commutative, then we say $S$ is a \emph{commutative monoid}.
+\end{defn}
+\begin{defn}
+Let $(M,*)$ be a monoid.  
+
+If $x\in M$, we call $y\in M$ an \emph{inverse of $x$} if 	
+\[xy=e=yx.\]
+An element that has an inverse is called a \emph{unit}.
+\end{defn}
+\begin{defn}
+	Suppose that 
+	\enumarabic{
+		\item $G$ is a set and $*$ is a binary operation on $G$,
+		\item $*$ is associative,
+		\item there is some $e\in G$ such that 
+		\[g*e=e*g=g,\]
+		for all $g\in G$, and
+		\item for all $g\in G$, the is an $h\in G$ such that $g*h=e=h*g$.
+	}
+	Then $(G,*)$ is a \emph{GROUP}.
+\end{defn}
+\begin{defn}
+The \emph{$n$th roots of unity} are the complex numbers that are the roots of 
+\[x^n-1.\]
+Denote the set of roots as $\mathcal{U}_n$
+\end{defn}
+\begin{defn}
+	If the operation of a group $G$ is commutative, we call $G$ an \emph{abelian group}.
+\end{defn}
+\begin{defn}
+A \emph{Cayley table} is essentially a multiplication table for a given binary operation.
+\end{defn}
+\begin{defn}
+We call $C_n=\{1,a,a^2,\dots,a^{n-1}\}$ the cyclic group of order $n$. Multiplication is defined by $a^xa^y=a^{x+y}$ and $a^n=a^0=1$.
+\end{defn}
+\begin{defn}
+A subsets $H$ of a group $G$ is call a \emph{subgroup} of $G$ if $H$ is also a group using the same operation as $G$.
+We denote subgroups using the notation $H\leq G$.
+
+If $H\leq G$ and $H\neq G$, we call $H$ a \emph{proper subgroup of G}.
+\end{defn}
+\begin{defn}
+The \emph{subset of $G$ generated by $g\in G$} in multiplicative notation is
+\[\langle g\rangle=\{g^k | k\in Z\}=\{\dots,g^{-3},g^{-2},g^{-1},1,g,g^2,\dots\}.\]
+The \emph{subset of $G$ generated by $g\in G$} in additive notation is
+\begin{align*}
+\langle g\rangle&=\{kg | k\in Z\}\\&=\{\dots,-g-g-g,-g-g,-g,0,g,g+g,g+g+g,\dots\}.
+\end{align*}
+\end{defn}
+\begin{defn}
+The \emph{subgroup lattice} of a group $G$ is a schematic picture of the subgroups of $G$.  A line going up from one group to another indicates that the bottom group is a subgroup of the top one.
+\end{defn}
+\begin{defn}
+The \emph{center} of the group $G$ is the set
+\[Z(G) = \{z\in G|zg=gz\ \forall g\in G\}.\]
+\end{defn}
+\begin{defn}
+A group $G$ is \emph{cyclic} if there is some $g\in G$ for which $G=\langle g\rangle$.
+\end{defn}
+\begin{defn}
+If $G$ is a finite group, the \emph{order of a group} $G$ is denoted $|G|$ and is the cardinality of the set $G$.
+
+The \emph{order of an element} $g\in G$ is denoted $|g|$ or $o(g)$ and equals the smallest positive integer $n$ such that $g^n=e$.
+\end{defn}
+\begin{defn}
+In general, if $X$ is a nonempty subset of a group $G$, then the \emph{subgroup of $G$ generated by $X$} is defined as	
+\[\begin{array}{rcl}
+\langle X\rangle &=& \{\text{products of powers (not nec. distinct) of elements of X}\}\\
+&=&\{x_1^{k_1}x_2^{k_2}\cdots x_m^{k_m}\ |\ x_i\in X,\ k_i\in \Z,\ m\geq 1\}
+\end{array}\]
+We will always have $\langle X\rangle\leq G$.
+\end{defn}
+\end{document}

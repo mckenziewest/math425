@@ -1,0 +1,283 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,graphicx,multicol,enumitem,amsthm}
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty}
+\newtheorem*{lem}{Lemma}
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{thm}[1]
+{\renewcommand\theinnercustomthm{#1}\innercustomthm}
+{\endinnercustomthm}
+\newtheorem{cor}{Corollary}[innercustomthm]
+\renewcommand{\thecor}{\arabic{cor}}
+\newcommand{\enumarabic}[1]{
+	\begin{enumerate}[label=\textbf{\arabic*.}]
+		#1
+	\end{enumerate}
+}
+\newcommand{\enumalph}[1]{
+\begin{enumerate}[label=(\alph*)]
+	#1
+\end{enumerate}
+}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+
+
+
+
+%%%%%%%%%%
+%Custom Commands
+%%%%%%%%%%
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\fn}{\insertframenumber}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\im}{\operatorname{im}}
+
+\newcommand{\blank}[1]{\underline{\hspace*{#1}}}
+
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+\newcommand{\cbar}{\overline{c}}
+
+\newcommand{\nml}{\unlhd}
+
+\newcommand{\bulletize}[1]{%
+	\begin{itemize}
+		#1
+	\end{itemize}
+}
+
+\begin{document}
+			\noindent Math 425: Abstract Algebra I
+		
+		\noindent	Theorems from the Textbook - Chapter 3
+\vskip .25in
+
+
+\section*{Theorems}
+\begin{thm}{3.1.1}
+	If $0$ is the zero of a ring $R$, then $0r=0=r0$ for every $r\in R$.
+\end{thm}
+\begin{thm}{3.1.2}
+Let $r$ and $s$ be arbitrary elements of a ring $R$.
+\enumarabic{
+	\item $(-r)s=r(-s)=-rs$
+	\item $(-r)(-s)=rs$
+	\item $(mr)(ns)=(mn)(rs)$ for all integers $m$ and $n$
+}
+\end{thm}
+\begin{thm}{3.1.3}
+	If $R$ is a ring and $\operatorname{char} R=n$, then
+	\enumarabic{
+		\item If $\operatorname{char} R=n>0$, then $kR=\{0\}$ if and only if $n$ divides $k$.
+		\item If $\operatorname{char} R=0$, then $kR=0$ if and only if $k=0$.
+	}
+\end{thm}
+\begin{thm}{3.1.5}[The Subring Test]
+	Let $(R,+,\cdot)$ be a ring and $S$ a non-empty subset of $R$.  Then $S$ is a subring of $R$ if
+	\enumarabic{
+		\item $s_1-s_2\in S$ for all $s_1,s_2\in S$
+		\item $s_1s_2\in S$ for all $s_1,s_2\in S$
+		\item $1_R\in S$ (if $1_R$ exists)
+	}
+\end{thm}\begin{thm}{3.2.1}
+	The following are equivalent for a ring $R$.
+	\enumarabic{
+		\item If $ab=0$ in $R$, then $a=0$ or $b=0$.
+		\item If $ab=ac$ in $R$ and $a\neq 0$, then $b=c$.
+		\item If $ba=ca$ in $R$ and $a\neq 0$, then $b=c$.}
+\end{thm}
+\begin{thm}{3.2.2}
+	The characteristic of any domain is either zero or a prime.
+\end{thm}
+\begin{thm}{3.2.3}
+	Every finite integral domain is a field.
+\end{thm}
+\begin{thm}{}[Wedderburn's Theorem]
+	Every finite division ring is a field.
+\end{thm}
+\begin{thm}{3.3.1}
+	Let $I$ be an ideal of the ring $R$ (with unity).  Then the additive group $(R/I,+)$ becomes a ring with multiplication $(r+I)(s+I)=rs+I$ called the \emph{factor ring} or \emph{quotient ring}.  The unity of $R/I$ is $1+I$ and if $R$ is commutative, then $R/I$ is commutative.
+\end{thm}
+\begin{thm}{3.3.2}
+	If $I$ is an ideal of the ring $R$ (that has unity), then the following are equivalent
+	\enumarabic{
+		\item $1\in I$
+		\item $I$ contains a unit
+		\item $I=R$
+	}
+\end{thm}
+\begin{thm}{3.3.3}
+	If $R$ is a commutative ring, an ideal $P\neq R$ of $R$ is a prime ideal if and only if $R/P$ is an integral domain.
+\end{thm}
+\begin{thm}{3.3.4}
+	Let $I$ be an ideal of the ring $R$. There is a correspondence
+	\[\left\{
+	\begin{array}{c}
+		\text{ideals of }R\\
+		\text{containing }I
+	\end{array}
+	\right\}\leftrightarrow\left\{
+	\text{ideals of }R/I
+	\right\}.\]
+	Moreover, this correspondence respects containment.
+\end{thm}	
+\begin{thm}{3.3.5}
+	If $R$ is a commutative ring with identity, then $R$ is simple if and only if it is a field.
+\end{thm}
+\begin{thm}{3.3.6}
+	Let $M$ be an ideal of a ring $R$.  Then $M$ is maximal if and only if $R/A$ is simple.
+\end{thm}
+\begin{cor}
+	Let $R$ be a commutative ring, with unity. Let $M$ be an ideal of $R$.  Then $M$ is maximal if and only if $R/M$ is a field.
+\end{cor}
+\begin{cor}
+	Let $R$ be a commutative ring, with unity.  If $M$ is a maximal ideal of $R$, then $M$ is a prime ideal.
+\end{cor}
+\begin{lem}{Lemma 3.3.3}
+	Let $R$ be a ring with unity and $n\geq 1$.  Every ideal of $M_n(R)$ has the form $M_n(A)$ for some ideal $A$ of $R$.
+\end{lem}
+\begin{thm}{3.3.7}
+	If $R$ is a ring with unity then $M_n(R)$ is simple if and only if $R$ is simple.
+\end{thm}
+\begin{cor}
+	If $R$ is a division ring then $M_n(R)$ is simple.
+\end{cor}
+\begin{thm}{3.4.1}
+	Let $\theta\colon R\to R_1$ be a ring homomorphism and let $r\in R$.
+	\enumarabic{
+		\item $\theta(0)=0$
+		\item $\theta(-r)=-\theta(r)$ for all $r\in R$
+		\item $\theta(kr)=k\theta(r)$ for all $r\in R$ and $k\in\Z$
+		\item $\theta(r^n)=\theta(r)^n$ for all $r\in R$ and $n\geq0$ in $\Z$
+		\item If $u\in \R^*$, $\theta(u^k)=\theta(u)^k$ for all $k\in\Z$.
+	}
+\end{thm}
+\begin{thm}{3.4.2}
+	Let $R\neq 0$ be a commutative ring with characteristic $p$, and define \[\phi:R\to R\quad\text{by}\quad\phi(r)=r^p\text{ for all }r\in R.\]
+	Then $\phi$ is a ring homomorphism.
+	
+	We call this $\phi$ the \emph{Frobenius Endomorphism}.  If $\phi$ is a finite field, we call $\phi$ the \emph{Frobenius Automorphism}, which is an isomorphism.
+\end{thm}
+\begin{thm}{3.4.3}
+	Let $\theta\colon R\to S$ be a ring homomorphism.  Then
+	\enumarabic{
+		\item $\theta(R)$ is a subring of $S$
+		\item $\ker\theta$ is an ideal of $R$
+	}
+\end{thm}
+\begin{thm}{3.4.4}[First Isomorphism Theorem for Rings]
+	Let $\theta:R\to S$ be a ring homomorphism and write $A=\ker \theta$.  Then $\theta$ induces a ring isomorphism
+	\[\bar\theta:R/A\to \theta(R)\quad\text{given by}\quad \bar\theta(r+A)=\theta(r)\text{ for all }r\in R.\]
+\end{thm}
+\begin{cor}
+	Let $A$ and $B$ be ideals of the rings $R$ and $S$, respectively.  Then $A\times B$ is an ideal of $R\times S$ and 	
+	\[\frac{R\times S}{A\times B}\cong \frac{R}{A}\times\frac{S}{B}.\]
+\end{cor}
+\begin{cor}
+	Let $A$ be an ideal of the ring $R$.  Then $M_n(A)$ is an ideal of $M_n(R)$ and 	
+	\[\frac{M_n(R)}{M_n(A)}\cong M_n(R/A).\]
+\end{cor}
+
+\section*{Definitions}
+
+\begin{defn}
+	Suppose $R$ is a set and it has two binary operations on it (written as $+$ and $\cdot$), then the set $R$ is a \emph{ring} if 
+	\enumarabic{
+		\item $(R,+)$ is an abelian group
+		\item $\cdot$ is associative (i.e., $r_1(r_2r_3)=(r_1r_2)r_3$)
+		\item the distributive laws hold:
+		\bulletize{\item $r_1(r_2+r_3)=r_1r_2+r_1r_3$\item $(r_1+r_2)r_3=r_1r_3+r_2r_3$}
+	}
+\end{defn}
+\begin{defn}
+	The \emph{direct product} $R_1\times R_2$ of rings $R_1$ and $R_2$ is also a ring with componentwise operations:
+	\bulletize{\item $(a,b)+(c,d)=(a+c,b+d)$\item $(a,b)\cdot(c,d)=(ac,bd)$} 
+\end{defn}
+\begin{defn}
+	Given a ring $(R,+,\cdot)$,
+	\enumarabic{
+		\item If $\cdot$ is commutative, then we call $R$ a \emph{commutative ring}.
+		\item The \emph{additive identity} element in $R$ is denoted $0$ or $0_R$.
+		\item If there exists a \emph{multiplicative identity} element in $R$, it is denoted $1$ or $1_R$.  A ring that has a $1_R$ is called a \emph{ring with unity}.
+		\item A non-zero element $a\in R$ is called a \emph{zero-divisor} if there is some non-zero $b\in R$ such that $ab=0$ or $ba=0$.
+		\item An element $a\in R$ is called \emph{nilpotent} if there is some $n\in \Z^+$ such that $a^n=0$.
+		\item Suppose $R$ is a rings with unity.  Then an element $a\in R$ is called a \emph{unit} if there is some $b\in R$ such that $ab=ba=1$.
+		\item The \emph{center} $Z(R)$ of a ring $R$ is defined to be 
+		\[Z(R)=\{x\in R\ |\ xr=rx\ \forall r\in R\}.\]
+		\item A ring $R\neq\{0\}$ is called a \emph{division ring} if every non-zero element in $R$ is a unit.
+		\item A \emph{field} is a commutative division ring.
+	}
+\end{defn}
+\begin{defn}
+	Given variables $i,j,k$ satisfying  $i^2=j^2=k^2=-1$, $ij=-ji=k$, $jk=-kj=i$, $ki=-ik=j$, the set
+	\[\mathbb{H}=\{a+bi+cj+dk\ |\ a,b,c,d\in\R\}\]
+	is a ring under under addition and multiplication called the \emph{quaternions}. 
+\end{defn}
+\begin{defn}
+	The \emph{characteristic} of a ring $R$ is the order of $1_R$ in the additive group $(R,+)$ if the order is finite.  Otherwise we say $\operatorname{char} R=0$.  Denote this value by $\operatorname{char} R$.
+\end{defn}
+\begin{defn}
+	A subset $S$ of a ring $(R,+,\cdot)$ is called a \emph{subring} if $(S,+,\cdot)$ is also a ring.
+\end{defn}
+\begin{defn}
+	Let $R$ and $S$ be rings. A \emph{ring isomorphism} is a bijective map $\phi:R\to S$ such that for all $r_1,r_2\in R$,
+	\enumarabic{
+		\item $\phi(r_1+r_2)=$
+		\item $\phi(r_1r_2)=$
+		\item $\phi(1_R)=1_S$
+	}
+	In this case we say $R$ and $S$ are \emph{isomorphic} and write $R\cong S$.
+\end{defn}
+\begin{defn}
+	A ring $R\neq\{0\}$ is called a \emph{domain} if $ab=0$ implies that either $a=0$ or $b=0$.
+\end{defn}
+\begin{defn}
+	A commutative domain is called an \emph{integral domain}.
+\end{defn}
+\begin{defn}
+	Let $(R,+,\cdot)$ be a ring. An additive subgroup $(I,+)$ of $(R,+)$ is an \emph{ideal of $R$} if $rI\subseteq I$ and $Ir\subseteq I$ for all $r\in R$.
+\end{defn}
+\begin{defn}
+	Equivalent definitions of an \emph{ideal} $I$ of a ring $R$: (given $(I,+)\leq (R,+)$)
+	\bulletize{
+		\item for all $i\in I$, $iR\subseteq I$ and $Ri\subseteq I$
+		\item for all $i\in I$ and $r\in R$, $ir\in I$ and $ri\in I$.
+	}
+\end{defn}
+\begin{defn}
+	If $a\in Z(R)$, then $Ra=aR$ and we call this set the \emph{principal ideal of $R$ generated by $a$}.  Denote this set by $(a)$.
+\end{defn}
+\begin{defn}
+	We call a proper ideal $P$ of a ring $R$ \emph{prime} if 
+	\[rs\in P\quad\Rightarrow\quad r\in P\text{ or }s\in P.\]
+\end{defn}
+\begin{defn}
+	A ring $R$ is a \emph{simple ring} if $R\neq\{0\}$ and the only ideals of $R$ are $\{0\}$ and $R$.
+\end{defn}
+\begin{defn}
+	Let $R$ be a ring (not necessarily commutative), and let $M$ be an ideal of $R$.  We call $M$ a \emph{maximal ideal} of $R$ if
+	\enumarabic{
+		\item $M\neq R$, and
+		\item if $I$ is an ideal of $R$ satisfying $M\subseteq I\subseteq R$, then $I=M$ or $I=R$.
+	}
+\end{defn}
+\begin{defn}
+	If $R$ and $S$ are rings with unity, we call a map $\theta:R\to S$ a \emph{ring homomorphism} if
+	\enumarabic{
+		\item $\theta(r_1+r_2)=\theta(r_1)+\theta(r_2)$ for all $r_1,r_2\in R$
+		\item $\theta(r_1r_2)=\theta(r_1)\theta(r_2)$ for all $r_1,r_2\in R$
+		\item $\theta(1_R)=1_S$
+	}
+\end{defn}
+
+\end{document}

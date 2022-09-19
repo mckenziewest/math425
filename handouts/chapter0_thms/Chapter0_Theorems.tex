@@ -1,0 +1,206 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,graphicx,multicol,enumitem,amsthm}
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty}
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{thm}[1]
+{\renewcommand\theinnercustomthm{#1}\innercustomthm}
+{\endinnercustomthm}
+\newcommand{\enumarabic}[1]{
+	\begin{enumerate}[label=\textbf{\arabic*.}]
+		#1
+	\end{enumerate}
+}
+\newcommand{\enumalph}[1]{
+\begin{enumerate}[label=(\alph*)]
+	#1
+\end{enumerate}
+}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+
+
+
+
+%%%%%%%%%%
+%Custom Commands
+%%%%%%%%%%
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\fn}{\insertframenumber}
+
+\newcommand{\im}{\operatorname{im}}
+
+\newcommand{\blank}[1]{\underline{\hspace*{#1}}}
+
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+\newcommand{\cbar}{\overline{c}}
+
+\begin{document}
+			\noindent Math 425: Abstract Algebra I
+		
+		\noindent	Theorems from the Textbook - Chapter 0
+\vskip .25in
+
+\section*{Notation}
+\begin{tabular}{cll}
+	\textbf{Symbol}&\textbf{Description}&\textbf{Example}\\\hline
+	$\N$&Natural Numbers&\{0,1,2,3,\dots\}\\
+	$\Z$&Integers&\{\dots,-2,-1,0,1,2,3,\dots\}\\
+	$\Q$&Rational Numbers&Ratios of integers\\
+	$\R$&Real Numbers&The standard number line\\
+	$\C$&Complex Numbers&$\{a+bi\ |\ a,b\in\R,\ i^2=-1, \text{ and } si=is\ \forall\ s\in\R\}$\\
+	$\in$&element of&  $2\in\{1,2,3\}$\\
+	$\subseteq$&subset of & $\{2\}\subseteq\{1,2,3\}$ and $\{1,2,3\}\subseteq\{1,2,3\}$\\
+	$\subset$ or $\subsetneq$&proper subset of &$\{2\}\subset\{1,2,3\}$ but $\{1,2,3\}\not\subset\{1,2,3\}$\\
+	$\cap$& intersection&$\{1,2,3\}\cap\{2,3,4\}=\{2,3\}$\\
+	$\cup$& union&$\{1,2,3\}\cup\{2,3,4\}=\{1,2,3,4\}$\\
+	$\times$&Cartesian product&$\{1,2\}\times\{3,4\}=\{(1,3),(1,4),(2,3),(2,4)\}$\\
+	$A\xrightarrow{\alpha}B$&mapping $\alpha$ from $A$ to $B$ & $\alpha:\Z\to\R$ defined by $\alpha(n)=e^n$ for all $n\in \Z$\\
+	$1_A=\textrm{id}_A$&identity map on $A$& $1_A:A\to A$ is defined by $1_A(a)=a$ for all $a\in A$\\
+	$\im(\alpha)$&the image of the map $\alpha$&Given $\alpha:\Z\to\R$ defined by $\alpha(n)=e^n$ for all $n\in \Z$,\\
+	&&$\textrm{im}(\alpha)=\{e^n : n\in\Z\}$\\
+	$\beta\alpha$&composition of maps& Given $\alpha:\Z\to \R$ defined by $\alpha(n)=e^n$ and\\&&  $\beta: \R\to \C$ defined by $\beta(x)= \sqrt{x}$,\\&&
+	$\beta\alpha:\Z\to\C$ is defined by $\beta\alpha(n)=\beta(\alpha(n))=\sqrt{e^n}$.\\
+	$\equiv$&relation&for $a,b\in\Z$ we say $a\equiv b$ if $5$ divides $a-b$\\
+	$[\cdot]$&equivalence class& for the relation just above, $[1]=\{\cdots,-4,1,6,11,\dots\}$\\
+	$A_\equiv$&quotient of $A$ by $\equiv$&the collection of unique equivalence classes
+\end{tabular}
+
+\section*{Theorems}
+\begin{thm}{0.3.3}
+	Let $A\xrightarrow{\alpha}B\xrightarrow{\beta}C\xrightarrow{\gamma}D$ be mappings on sets.  Then
+	\enumarabic{
+		\item (identity) $\alpha 1_A=\alpha$ and $1_B\alpha=\alpha$
+		\item (associativity) $\gamma(\beta\alpha)=(\gamma\beta)\alpha$
+		\item If $\alpha$ and $\beta$ are both one-to-one (resp.~onto), then $\beta\alpha$ is one-to-one (resp.~onto) too.
+	}
+\end{thm}
+\begin{thm}{0.3.4}
+	If $\alpha:A\to B$ has an inverse, then the inverse mapping is unique.
+\end{thm}
+\begin{thm}{0.3.5}
+Let $\alpha:A\to B$ and $\beta: B \to C$ denote mappings.
+\enumarabic{
+	\item The identity map, $1_A:A\to A$ is invertible and $1_A^{-1}=1_A$.
+	\item If $\alpha$ is invertible, then $\alpha^{-1}$ is invertible and $(\alpha^{-1})^{-1}=\alpha$.
+	\item If $\alpha$ and $\beta$ are both invertible, then $\beta\alpha$ is invertible with $(\beta\alpha)^{-1}=\alpha^{-1}\beta^{-1}$.
+}
+\end{thm}
+\begin{thm}{0.3.6}[Invertibility Theorem]
+A mapping $\alpha:A\to B$ is invertible if and only if $\alpha$ is a bijection.
+\end{thm}	
+\begin{thm}{0.4.1}
+	Let $\equiv$ be an equivalence on a set $A$ and let $a$ and $b$ denote elements of $A$. Then
+	\enumarabic{
+		\item $a\in[a]$ for every $a\in A$.
+		\item $[a]=[b]$ if and only if $a\equiv b$.
+		\item If $a\in[b]$, then $[a]=[b]$.
+		\item If $[a]\neq [b]$ then $[a]\cap [b]=\emptyset$.
+	}
+\end{thm}
+\begin{thm}{0.4.2}[Partition Theorem]
+	If $\equiv$ is any equivalence on a nonempty set $A$, then the collection of all equivalence classes of $A$ under $\equiv$ partitions $A$.
+\end{thm}
+\section*{Definitions}
+\begin{defn}[Principle of Set Equality]
+	If $A$ and $B$ are sets, then
+	\begin{center}
+		$A=B$\quad if and only if $A\subseteq B$ and $B\subseteq A$.
+	\end{center}
+\end{defn}
+\begin{defn}
+	If $A$ has $n$-elements then we say the \emph{cardinality} of $A$ is $n$ and we write $|A|=n$. Such sets are called \emph{finite} sets.  
+	Sets with an infinite number of elements are \emph{infinite} sets.
+\end{defn}
+\begin{defn}
+	The \emph{power set} of a set $A$ is the set $P(A)$ consisting of all subsets of $A$.
+\end{defn}
+\begin{defn}
+The \emph{Cartesian Product} of the sets $A$ and $B$ is the set
+\[A\times B:=\{(a,b):a\in A\text{ and }b\in B\}.\]
+Note that the elements, $(a,b)$, are ordered pairs.
+\end{defn}
+\begin{defn}
+A \emph{mapping} or \emph{function} $\alpha$ from $A$ to $B$ is a rule that assigns to every input $a\in A$ exactly one output $\alpha(a)\in B$.  The notation here is
+\[\alpha:A\to B\textup{ or }A\xrightarrow{\alpha}B.\]
+
+Once we have verified that each input maps to exactly one output then we say the mapping is \emph{well-defined}.
+\end{defn}
+\begin{defn} Assume $\alpha:A \to B$ is a mapping.
+\begin{itemize}[label=--]
+	\item We call $A$ the \emph{domain} of $\alpha$ and $B$ the \emph{codomain} of $\alpha$.
+	\item If $C\subseteq A$, then the \emph{image} of $C$ is \[f(C)=\{b\in B : b=f(c)\text{ for some } c\in C\}.\] 
+	\item The \emph{range} of $\alpha$ is the image of the domain, \[\im(\alpha)=f(A)=\{f(a)\in B : a\in A\}.\]
+\end{itemize}
+\end{defn}
+\begin{defn}
+We will call two maps $\alpha:A\to B$ and $\beta:A\to B$ equal if $\alpha(a)=\beta(a)$ for all $a\in A$.
+\end{defn}
+\begin{defn}
+Let $\alpha:A\to B$ be a mapping.
+\enumalph{
+	\item We call $\alpha$ \emph{one-to-one} or \emph{injective} if for all $a_1,a_2\in A$ if $\alpha(a_1)=\alpha(a_2)$, then $a_1=a_2$.
+	\item We call $\alpha$ \emph{onto} or \emph{surjective} if for all $b\in B$ there is an $a\in A$ such that $\alpha(a)=b$.
+	\item We call $\alpha$ a \emph{bijection} or \emph{bijective} if $\alpha$ is both one-to-one and onto.
+}
+
+\end{defn}
+\begin{defn}
+The \emph{identity map} for the set $A$ is the map $1_A:A\to A$ defined by $1_A(a)=a$ for all $a\in A$.
+
+If $\alpha:A\to B$ and $\beta:B\to C$ are mappings, we can write
+\[A\xrightarrow{\alpha}B\xrightarrow{\beta}C,\]
+and the \emph{composition} of the maps is the mapping $\beta\alpha:A\to C$ defined by
+\[\beta\alpha(a)=\beta[\alpha(a)]\text{ for all }a\in A.\]
+\end{defn}
+\begin{defn}
+If $\alpha:A\to B$ is a mapping of sets, then we call $\beta:B\to A$ an \emph{inverse} of $\alpha$ if
+\[\beta\alpha = 1_A\text{ and }\alpha\beta=1_B.\]
+\end{defn}
+\begin{defn}
+If $A$ is a set, any subset of $A\times A$ is called a \emph{relation} on $A$.
+\end{defn}
+\begin{defn}
+A relation $\equiv$ on a set $A$ is called an \emph{equivalence relation} if it satisfies all of the following conditions for all $a,b,c\in A$,
+\enumarabic{
+	\item $a\equiv a$ (\emph{reflexivity}),
+	\item If $a\equiv b$ then $b\equiv a$ (\emph{symmetric}),
+	\item If $a\equiv b$ and $b\equiv c$, then $a\equiv c$ (\emph{transitive}).
+}
+\end{defn}
+\begin{defn}
+An equivalence relation $\mathcal{R}$ on a set $S$ partitions $S$ into disjoint pieces $S_i$ such that 	
+\[S=S_1\cup S_2\cup\cdots.\]
+Each $S_i$ is called an \emph{equivalence class} - see next definition.
+
+We can pick any member of each class to be a \emph{representative} of the class $S_i$. We denote this class by square brackets or overbar.
+\end{defn}
+\begin{defn}
+Given an equivalence relation $\equiv$ on a set $A$, we define the \emph{equivalence class} of $a$ to be the set
+\[[a]=\{x\in A\ |\ x\equiv a\}.\]
+\end{defn}
+\begin{defn}
+	Two sets are \emph{disjoint} if their intersection is empty.
+	
+	A collection of sets $\cal P$ is \emph{pairwise disjoint} if $X\cap Y=\emptyset$ for all $X\neq Y$ in $\cal P$.
+\end{defn}
+\begin{defn}
+	A \emph{partition} of the set $A$ is a collection $\cal P$ of subsets of $A$ such that
+	\enumarabic{
+		\item $\emptyset\not\in\cal P$.
+		\item $\cal P$ is pairwise disjoint.
+		\item Every element of $A$ is in some element of $\cal P$.
+	}
+\end{defn}
+\begin{defn}
+	The mapping $\phi:A\to A_{\equiv}$ given by $\phi(a)=[a]$ for all $a\in A$ is called the \emph{natural mapping}.
+\end{defn}
+\end{document}

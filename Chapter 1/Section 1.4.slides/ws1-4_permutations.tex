@@ -1,0 +1,388 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 1.4: Permutations}
+
+\input{../../_python_tools/setup}
+
+\begin{document} 
+	\startdoc
+	\topics{
+			\item Arithmetic Modulo $n$
+			\item Some further results
+		}
+		{
+			\item Permutations
+			\item Notation for Permutations
+			\item Composition of Permutations
+			\item Cycles
+			\item Disjoint Cycles
+			\item Transpositions
+			\item Even vs Odd Permutations
+		}
+
+\slide{
+	\begin{defn}
+		A \emph{permutation} of $T_n=\{1,2,\dots,n\}$ is 
+		a mapping $\sigma\colon T_n\to T_n$ that is both one-to-one and onto (a bijection).
+		\vskip 1em
+		We call the collection of all permutations of $T_n$ the \emph{symmetric group of order $n$}, and we write
+			\[S_n:=\{\sigma\colon T_n\to T_n\ |\ \sigma\text{ is a permutation}\}.\]
+	\end{defn}
+%}
+%\slide{
+	\begin{nb}
+		We can define a \emph{permutation on any set $X$} to be a bijection $\sigma\colon X\to X$.  And the set of all permutation on $X$ is the set of \emph{symmetries of $X$}:
+			\[S_X:=\{\sigma\colon X\to X\ |\ \sigma\text{ is a bijection}\}.\]
+	\end{nb}
+}
+\slide{
+	\begin{nb}
+		The set $S_n$ has an operation, composition. With this operation on $S_n$, we have
+		\begin{enumerate}[label=(\alph*)]
+			\item an identity, $\varepsilon$, the identity map,
+			\item associativity, $\sigma\circ(\tau\circ\gamma)=(\sigma\circ\tau)\circ\gamma$, and
+			\item inverses, if $\sigma\in S_n$, then $\sigma^{-1}\in S_n$.
+		\end{enumerate}
+		\vskip 1em
+		A look ahead to the future: This is why we can call $S_n$ a \textit{group}.
+	\end{nb}
+}
+\slidet{Notation 1 - Two-Line Notation}{
+	\begin{exa}
+		In the case of $\sigma:T_4\to T_4$, $\left(\begin{array}{cccc}1&2&3&4\\3&2&4&1\end{array}\right)$ means
+			\begin{multicols}{4}
+				\enumalph{\item $\sigma(1)=3$\item $\sigma(2)={\color{white}3}$\item $\sigma(3)={\color{white}3}$\item $\sigma(4)={\color{white}3}$}
+			\end{multicols}
+	\end{exa}
+	\vskip .5in
+	\begin{defn}[\emph{Two-Line Notation}]
+		For $\sigma:T_n\to T_n$, we can write
+%			\[\left(\begin{array}{cccc}1&2&\dots&n\\
+%				\sigma(1)&\sigma(2)&\dots&\sigma(n)\end{array}\right).\]
+	\end{defn}
+}
+\slidet{Notation 2 - One-Line Notation}{
+
+	\begin{exa}
+		For the previous example, the permutation in two-line notation \[\left(\begin{array}{cccc}1&2&3&4\\3&2&4&1\end{array}\right)\] can instead be written as
+			\[\sigma = 3\ 2\ 4\ 1.\]
+	\end{exa}
+	\vskip .15in
+	\begin{defn}[\emph{One-Line Notation}]
+		For $\sigma:T_n\to T_n$, we can write
+%			\[\sigma = \sigma(1)\ \sigma(2)\ \dots\ \sigma(n).\]
+	\end{defn}
+}
+\slide{\begin{exa}
+	There are 6 permutations in $S_3$, written in one-line notation as:
+%		\enumarabic{\setlength{\itemsep}{5em}\item Identity:\item Transpositions: \item No Fixed Points:}
+\end{exa}}
+\begin{frame}[fragile]
+	\frametitle{\fn\ - Notation 3 - Braid or Arrow Notation}
+		\begin{exa}
+			For $\sigma=3\ 2\ 4\ 1$:
+		\begin{center}
+			\setlength{\unitlength}{0.8cm}
+			\begin{tikzcd}
+				1\arrow[-,bend right=20]{rrdd}&&1\\2\arrow[-]{rr}&&2\\3\arrow[-,bend left=10]{rrd}&&3\\4\arrow[-,bend left=10]{rruuu}&&4
+			\end{tikzcd}
+		\end{center}
+		\end{exa}
+\end{frame}
+\slidet{Notation 4 - Permutation Matrices}{
+		Recall: Standard basis for $\R^n$, $\{\vec{e}_1,\vec{e}_2,\dots,\vec{e}_n\}$
+		
+		We can view permutations as ``permuting'' the indices of the $\vec{e}_i$.
+		
+		\begin{exa}
+			The permutation $\sigma=3\ 2\ 4\ 1$ corresponds to the linear transformation $T:\R^4\to\R^4$ defined by
+			\[T(\vec{e}_1)=\vec{e}_3,\quad T(\vec{e}_2)=\vec{e}_2,\quad T(\vec{e}_3)=\vec{e}_4,\quad T(\vec{e}_4)=\vec{e}_1\]
+%				\[\small T\begin{pmatrix}1\\0\\0\\0\end{pmatrix}=\begin{pmatrix}0\\0\\1\\0\end{pmatrix},\ 
+%				T\begin{pmatrix}0\\1\\0\\0\end{pmatrix}=\begin{pmatrix}0\\1\\0\\0\end{pmatrix},\ 
+%				T\begin{pmatrix}0\\0\\1\\0\end{pmatrix}=\begin{pmatrix}0\\0\\0\\1\end{pmatrix},\]
+%				\[\small\text{and }
+%				T\begin{pmatrix}0\\0\\0\\1\end{pmatrix}=\begin{pmatrix}1\\0\\0\\0\end{pmatrix}.\pause\cdots \sigma\leftrightarrow\begin{pmatrix}0&{\color{white}0}&{\color{white}0}&{\color{white}0}\\0&&&\\1&&&\\0&&&\end{pmatrix}.\]
+		\end{exa}
+}
+\slidet{Notation 4 - Permutation Matrices}{
+		\begin{defn}
+			A \emph{permutation matrix} is an $n\times n$ matrix that has exactly one 1 in each row and column and every other entry is 0.
+		\end{defn}
+		\begin{nb}
+			Every permutation matrix has determinant $\pm 1$, and can be constructed by swapping columns (or rows) of the identity matrix.
+		\end{nb}
+}
+\slide{	
+		\begin{block}{\textbf{Brain Break.}}
+		Black Licorice?
+		\end{block}
+	\begin{center}
+		%\includegraphics[width=2in]{images/licorice}
+		%https://www.calliescandy.com/product/black-licorice-twists-6oz/
+	\end{center}
+}
+\slide{
+	\begin{block}{\textbf{Composition (aka Multiplicaiton in $S_n$).}}
+		Let $\sigma=\begin{pmatrix}
+		1&2&3&4\\3&2&4&1
+		\end{pmatrix}$ and $\tau=\begin{pmatrix}
+		1&2&3&4\\2&4&1&3
+		\end{pmatrix}$.
+		\vskip 1em
+		Compute $\tau \sigma$ 
+		
+%		\[\tau\sigma=\begin{pmatrix}
+%		1&2&3&4\\2&4&1&3
+%		\end{pmatrix}\begin{pmatrix}
+%		1&2&3&4\\3&2&4&1
+%		\end{pmatrix}=\begin{pmatrix}
+%		1&2&3&4\\1&4
+%		\end{pmatrix}.\]
+	\end{block}
+}
+\begin{frame}[fragile]
+	\frametitle{\fn}
+	\begin{exa}
+		Same operation in terms of braids, computing $\tau\sigma$:
+		
+		\begin{center}
+			\small
+			\setlength{\unitlength}{0.5cm}
+			\begin{tikzcd}
+			1\arrow[-,bend right=20]{rrdd}&&1\arrow[-,bend right=10]{rrd}&&1\\
+			2\arrow[-]{rr}&&2\arrow[-,bend left=10]{rrdd}&&2\\
+			3\arrow[-,bend left=10]{rrd}&&3\arrow[-,bend right=10]{rruu}&&3\\
+			4\arrow[-,bend left=10]{rruuu}&&4\arrow[-,bend left=10]{rru}&&4\\
+			&\sigma&&\tau
+			\end{tikzcd}
+			$\dashrightarrow$
+			\begin{tikzcd}
+			1&&1\\2&&2\\3&&3\\4&&4\\&\tau\sigma
+			\end{tikzcd}
+		\end{center}
+	\end{exa}
+\end{frame}
+\slidet{Notation 5 - Cycle Notation}{
+		\begin{defn}
+			The $r$-cycle $(x_1\ x_2\ \dots\ x_r)$ in $S_n$ is the permutation that sends
+			$$\begin{matrix}
+				x_1&\mapsto&x_2\\
+				x_2&\mapsto&x_3\\
+				x_3&\mapsto&x_4\\
+				&\vdots\\
+				x_{r-1}&\mapsto&x_r\\
+				x_r&\mapsto&x_1.
+			\end{matrix}$$
+		\end{defn}
+}
+\slidet{Notation 5 - Cycle Notation}{
+		\begin{exa}
+			$(2\ 4\ 1)\in S_5$ does the following
+				$$\begin{matrix}
+				2&\mapsto& 4\\
+				4&\mapsto&1\\
+				1&\mapsto&2
+				\end{matrix}$$
+		\end{exa}
+		\begin{question}
+			What does  this permutation do to $3$ and $5$?
+		\end{question}
+}
+\slide{
+	\begin{nb}
+		There are several equivalent ways to write $(2\ 4\ 1)$:
+			%\[(4\ 1\ 2)=(1\ 2\ 4)=(2\ 4\ 1).\]
+		%Our convention: Write the smallest element in the cycle first.
+	\end{nb}
+}
+\slide{
+	\begin{exercise}
+		Write our original $\sigma$ and $\tau$ in cycle notation
+		\vskip 2em
+		$\sigma=\begin{pmatrix}
+		1&2&3&4\\3&2&4&1
+		\end{pmatrix}$
+		\vskip 1em
+		$\tau=\begin{pmatrix}
+		1&2&3&4\\2&4&1&3
+		\end{pmatrix}$
+		\vskip 1em
+		$\tau\sigma=\begin{pmatrix}
+		1&2&3&4\\1&4&3&2
+		\end{pmatrix}$
+	\end{exercise}
+}
+\slidet{Multiplying Cycles - Right to Left}{
+	\begin{exa}
+		Let $\sigma=(1\ 3\ 2)$, and $\tau=(1\ 5\ 3)$
+	\end{exa}
+}
+\slide{
+	\begin{block}{\textbf{Exponents.}}
+		We write exponents to mean the repeated composition of :
+		\[\sigma^k\coloneqq\underbrace{\sigma\sigma\cdots\sigma}_k.\]
+	\end{block}
+	\begin{exercise}
+		Let $\sigma=(1\ 4\ 2\ 6)\in S_6$. Compute $\sigma^k$ for $k=2,3,4,5,\dots$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Recall that permutations are bijective maps, so they ALL have inverses! (Woo!)
+		
+		\enumalph{
+			\setlength{\itemsep}{2em}
+			\item Find the inverse of the cycle $(1\ 2)$.
+			\item Find the inverse of the cycle $(1\ 4\ 2\ 5\ 3\ 6)$.
+			%\item Find the inverse of the permutation $(1\ 2\ 3)(4\ 5)$.
+		}
+		\vskip 1in
+		\begin{nb}
+			The notation for the \emph{identity permutation} is $\varepsilon$.
+		\end{nb}
+	\end{exercise}
+}
+\slide{
+	\begin{block}{\textbf{Inverses.}}
+		The inverse of the cycle $(x_1\ x_2\ \dots\ x_r)$ is the cycle $(x_r\ x_{r-1}\ \dots\ x_2\ x_1)$.
+	\end{block}
+	\begin{exercise}
+		If $\sigma = (1\ 2\ 3)$ and $\tau = (3\ 2\ 1)$, verify that $\sigma\tau=\varepsilon$ and $\tau\sigma=\varepsilon$.
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Theorem 0.3.5(3) - Specialized}
+		Let $\sigma,\tau\in S_n$, then 
+		\[(\sigma\tau)^{-1}=\tau^{-1}\sigma^{-1}.\]
+	\end{statementblock}
+	\begin{exercise}
+		Let $\sigma = (1\ 5\ 3\ 4)$ and $\tau = ( 2\ 6)$.
+		
+		Use Theorem 0.3.5 to compute $(\sigma\tau)^{-1}$.
+	\end{exercise}
+}
+
+\slide{
+	\begin{defn}
+		Two cycles $(x_1\ x_2\ \dots\ x_r)$ and $(y_1\ y_2\ \dots\ y_s)$ are \emph{disjoint} if 	
+		\[\{x_1,x_2,\dots,x_r\}\cap\{y_1,y_2,\dots,y_s\}=\emptyset.\]
+	\end{defn}
+	%	\begin{exa}
+		%		\enumalph{
+			%			\item $(2\ 4\ 5\ 6)$ and $(3\ 7\ 8)$ are disjoint cycles
+			%			\item Non-example: $(1\ 2\ 3)$ and $(3\ 2\ 4)$ are not disjoint cycles
+			%		}
+		%	\end{exa}
+	%}
+%\slide{
+	\vskip 1in
+	\begin{statementblock}{Theorem}
+		Disjoint cycles commute.  That is if $\sigma$ and $\tau$ are disjoint cycles then $\sigma\tau=\tau\sigma$.
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Theorem 1.4.5 (Cycle Decomposition Theorem)}
+		Every $\sigma \in S_n$ with $\sigma\neq\varepsilon$ can be written as a product of disjoint cycles.
+	\end{statementblock}
+	%	\begin{exa}
+		%		$\begin{pmatrix}
+			%		1&2&3&4&5&6\\4&5&3&1&6&2
+			%		\end{pmatrix}=(14)(256)$
+		%	\end{exa}
+	%}
+%\slide{
+	\begin{exercise}
+		Write
+		\[\sigma=\begin{pmatrix}
+			1&2&3&4&5&6&7&8\\
+			3&5&7&4&2&8&1&6
+		\end{pmatrix}\in S_8\]
+		as a product of disjoint cycles.
+		%		\enumalph{
+			%			\item Start with 1 to get the first cycle.
+			%			\item Continue to the next smallest number not in the cycle above.
+			%			\item Continue with the next smallest number not in the previous cycles.
+			%			\item[$\dots$]
+			%		}
+	\end{exercise}
+}
+
+\slide{
+	\begin{defn}
+		A \emph{transposition} is a cycle of length 2.
+	\end{defn}
+	\begin{statementblock}{Theorem 1.4.6}
+		If $n\geq 2$, then every cycle in $S_n$ can be written as a product of transpositions.
+	\end{statementblock}
+	\begin{proof}[``Proof.'']
+		\begin{equation}\label{eq:transpositions}
+			(x_1\ x_2\ \dots\ x_r)=(x_1\ x_r)(x_1\ x_{r-1})\cdots(x_1\ x_3)(x_1\ x_2)
+		\end{equation}
+	\end{proof}
+	\begin{exercise}
+		Verify that $(1\ 2\ 5\ 3) = (1\ 3)(1\ 5)(1\ 2)$.
+	\end{exercise}
+}
+
+\slide{
+	\begin{defn}
+		A permutation $\sigma\in S_n$ is called \emph{even} if it can be written as a product of an even number of transpositions.
+		
+		Similarly, permutations can be called \emph{odd}.
+	\end{defn}
+	\begin{statementblock}{The Parity Theorem (Theorem 1.4.7)}
+		If a permutation has two factorizations	
+		\[\sigma = \gamma_n\cdots \gamma_2\gamma_1=\mu_m\cdots\mu_s\mu_1,\]
+		where each of $\gamma_i$ and $\mu_j$ are transpositions, then $m\equiv n\pmod 2$ ($m$ and $n$ have the same parity).
+	\end{statementblock}
+}
+\slide{
+	\begin{defn}
+		The \emph{alternating group of degree $n$} is the set of even permutations in $S_n$.  We call it $A_n$.
+	\end{defn}
+	\begin{exercise}
+		Determine $A_3$. 
+	\end{exercise}
+	\vskip 1in
+	\begin{question}
+		How do you think $|A_n|$ compares with $|S_n|$?
+	\end{question}
+}
+\slide{
+	\begin{exercise}
+		Let $f=(7\ 3)(2\ 6\ 1\ 9\ 4\ 8\ 7)$ and $g=(6\ 7\ 8\ 3\ 1\ 4\ 9)$.  
+		\enumalph{
+			\item Begin by re-writing $f$ and $g$ so that the smallest number comes first in each cycle.
+			\vskip .5in
+			\item Compute 
+			\begin{enumerate}[label=\roman*.]
+				\setlength{\itemsep}{1em}
+				\item $fg$
+				\item $g^{-1}$
+				\item $f^{-1}$
+				\item $fgf^{-1}$
+			\end{enumerate}
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		The \emph{order} of a permutation, $\sigma\in S_n$ is the smallest positive integer $k$ such that $\sigma^k=\varepsilon$.
+	\end{defn}
+	\begin{exercise}
+		\enumalph{
+			\item What is the order of $(1\ 2)(3\ 4)$?\vskip .5in
+			\item What is the order of $(1\ 2)(3\ 4\ 5)$?
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{question}
+		Assuming $\sigma\in S_n$ can be written as $k$ disjoint cycles $\rho_1\rho_2\cdots\rho_k$ where cycle $\rho_i$ has order $n_i$.  Conjecture a value for the order of $\sigma\in S_n$.
+	\end{question}
+	\begin{nb}
+		You might want to first try some more examples.
+	\end{nb}
+}
+\end{document}
+

@@ -1,0 +1,287 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,graphicx,multicol,enumitem,amsthm}
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty}
+\newtheorem*{lem}{Lemma}
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{thm}[1]
+{\renewcommand\theinnercustomthm{#1}\innercustomthm}
+{\endinnercustomthm}
+\newtheorem{cor}{Corollary}[innercustomthm]
+\renewcommand{\thecor}{\arabic{cor}}
+\newcommand{\enumarabic}[1]{
+	\begin{enumerate}[label= (\arabic*)]
+		#1
+	\end{enumerate}
+}
+\newcommand{\enumalph}[1]{
+\begin{enumerate}[label=(\alph*)]
+	#1
+\end{enumerate}
+}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+
+
+
+
+%%%%%%%%%%
+%Custom Commands
+%%%%%%%%%%
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\ds}{\displaystyle}
+
+\newcommand{\fn}{\insertframenumber}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\im}{\operatorname{im}}
+
+\newcommand{\blank}[1]{\underline{\hspace*{#1}}}
+
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+\newcommand{\cbar}{\overline{c}}
+
+\newcommand{\nml}{\unlhd}
+
+\newcommand{\bulletize}[1]{%
+	\begin{itemize}
+		#1
+	\end{itemize}
+}
+
+\begin{document}
+			\noindent Math 425: Abstract Algebra I
+		
+		\noindent	Theorems from the Textbook - Chapter 4
+\vskip .25in
+
+
+\section*{Theorems}
+
+\begin{thm}{4.1.1}
+	Let $R$ be a ring and let $x$ be an indeterminate over $R$.  Then
+	\enumarabic{
+		\item $R[x]$ is a ring.
+		\item $R$ is the subring of all constant polynomials in $R[x]$.
+		\item If $Z=Z(R)$ denotes the center of $R$, then the center of $R[x]$ is $Z[x]$.
+		\item In fact, $x$ is in the center of $R[x]$.
+		\item If $R$ is commutative, then $R[x]$ is commutative.
+	}
+\end{thm}
+\begin{thm}{4.1.2}
+	Let $R$ be a domain.  Then
+	\enumarabic{
+		\item $R[x]$ is a domain.
+		\item If $f\neq 0$ and $g\neq 0$ in $R[x]$, then $\deg(fg)=\deg(f)+\deg(g)$.
+		\item The units in $R[x]$ are the units in $R$.
+	}
+\end{thm}
+\begin{thm}{4.1.3}
+	Let $R$ be any ring and let $f\neq 0$ and $g\neq 0$ be polynomials in $R[x]$. If the leading coefficient of either $f$ or $g$ is a unit in $R$, then
+		\enumarabic{\item $fg\neq 0$ in $R[x]$\item $\deg(fg)=\deg(f)+\deg(g)$}
+\end{thm}
+\begin{thm}{4.1.4}[Division Algorithm]
+	Let $R$ be any ring and let $f$ and $g$ be polynomials in $R[x]$.  Assume $f\neq 0$ and that the leading coefficient of $f$ is a unit in $R$.  Then there exist unique $q,r\in R[x]$ such that
+		\enumarabic{\item $g=qf+r$.\item Either $r=0$ or $\deg r<\deg f$.}
+\end{thm}
+\begin{thm}{4.1.5}
+	Let $R$ be a ring and $a\in Z(R)$, the center of $R$.  Define $\phi_a: R[x]\to R$ by
+		\[\phi_a(a_0+a_1x+a_2x^2+\cdots+a_nx^n)=a_0+a_1(a)+a_2(a)^2+\cdots+a_n(a)^n.\]
+	Then the map $\phi_a$ is an onto ring homomorphism.
+\end{thm}
+\begin{thm}{4.1.6 (1)}[Factor Theorem]
+	Let $R$ be a commutative ring, $a\in R$, and $f\in R[x]$.
+	Then $f(a)=0$ if and only if $f=(x-a)g$ for some $g\in R[x]$.
+\end{thm}
+\begin{thm}{4.1.6 (2)}[Remainder Theorem]
+	Moreover, in general, when dividing $f$ by $x-a$, we get $f=(x-a)q + f(a)$.  That is, the remainder when dividing $f$ by $x-a$ is $f(a)\in R$.
+\end{thm}
+\begin{cor}
+	Let $R$ be a commutative ring, $a\in R$, and $\phi_a:R[x]\to R$ the evaulation map at $a$. Then $$\ker(\phi_a)=(x-a)=\{(x-a)g\ |\ g\in R[x]\}$$ and $R[x]/(x-a)\cong R$.
+\end{cor}
+\begin{thm}{4.1.8}
+	Let $R$ be an integral domain and let $f$ be a nonzero polynomial of degree $n$ in $R[x]$.  Then $f$ has at most $n$ roots in $R$.
+\end{thm}
+\begin{thm}{4.1.9}[Rational Roots Theorem]
+	Let $f=a_0+a_1x+a_2x^2+\cdots+a_nx^n$ be a polynomial in $\Z[x]$ with $a_0,a_n\neq 0$.   Then every root of $f$ in $\Q$ is of the form $\frac{c}{d}$ where $c\mid a_0$ and $d\mid a_n$. 
+\end{thm}
+\begin{thm}{4.2.1}
+	Let $F$ be a field and consider $p$ in $F[x]$ where $\deg p\geq 2$.
+	\enumarabic{
+		\item If $p$ is irreducible, then $p$ has no root in $F$.
+		\item If $\deg p$ is 2 or 3, then $p$ is irreducible if and only if it has no root in $F$.
+	}
+\end{thm}
+\begin{thm}{4.2.2}[Fundamental Theorem of Algebra]
+	If $f\in \C[x]$ with $\deg f>0$, then $f$ has at least one root in $\C$.
+\end{thm}
+\begin{thm}{4.2.3}
+\enumarabic{
+	\item If $\deg f=n\geq 1$, $f\in \C[x]$, then $f$ factors completely as
+	\[f=u(x-a_1)(x-a_2)\cdots(x-a_n),\]
+	for $u\neq 0$, $a_1,a_2,\dots,a_n\in \C$.
+	\item The only irreducible polynomials in $\C[x]$ are linear.
+}
+\end{thm}
+\begin{thm}{4.2.4}
+	Every nonconstant polynomial $f\in \R[x]$ factors as
+		\[f=u(x-r_1)(x-r_2)\cdots(x-r_m)q_1q_2\cdots q_k,\]
+	where $r_1,r_2,\dots,r_m$ are the real roots of $f$ and $q_1,q_2,\dots,q_k$ are monic irreducible quadratics in $\R[x]$.
+\end{thm}
+\begin{cor}
+	The irreducible polynomials in $\R[x]$ are either linear or quadratic.
+\end{cor}
+\begin{thm}{4.2.5}[Gauss' Lemma]
+	Let $f=gh$ in $\Z[x]$.  If a prime $p\in\Z$ divides every coefficient of $f$, then $p$ divides every coefficient of $g$ or $p$ divides every coefficient of $h$.
+\end{thm}
+\begin{thm}{4.2.6}
+	Let $f\in \Z[x]$ be a non-constant polynomial.
+	\enumarabic{
+		\item If $f=gh$ with $g,h\in\Q[x]$, then $f=g_0h_0$ where $g_0,h_0\in\Z[x]$, $\deg g=\deg g_0$, and $\deg h=\deg h_0$.
+		\item $f$ is irreducible in $\Q[x]$ if and only if $f=ag$ where $a\in\Z$ are the only factorizations of $f$ in $\Z[x]$.
+	}
+\end{thm}
+\begin{thm}{4.2.7}[Modular Irreducibility]
+	Let $0\neq f\in\Z[x]$ and suppose that a prime $p$ exists such that
+	\enumarabic{
+		\item $p$ does not divide the leading coefficient of $f$.
+		\item The reduction, $\bar f$ of $f$ modulo $p$ is irreducible in $\Z_p[x]$.
+	}
+	Then $f$ is irreducible over $\Q$.
+\end{thm}
+\begin{thm}{4.2.8}[Eisenstein's Criterion]
+	Consider $f=a_0+a_1x+a_2x^2+\cdots+a_nx^n$ in $\Z[x]$, where $n\geq 1$ and $a_0\neq 0$.  Let $p\in\Z$ be a prime number satisfying
+	\enumarabic{
+		\item $p$ divides each of $a_0,a_1,a_2,\dots,a_{n-1}$.
+		\item $p$ does not divide $a_n$.
+		\item $p^2$ does not divide $a_0$.
+	}
+	Then $f$ is irreducible in $\Q[x]$.
+\end{thm}
+\begin{thm}{4.2.9}
+	Let $F$ be a field and let $f$ and $g$ be nonzero monic polynomials in $F[x]$, each of which divides the other. Then $f=g$.
+\end{thm}
+\begin{cor}
+	If $F$ is a field and $p\in F[x]$ is monic, the following are equivalent:
+	\enumarabic{
+		\item $p$ is irreducible.
+		\item If $d$ is a monic divisor of $p$, then either $d=1$ or $d=p$.
+	}
+\end{cor}
+\begin{thm}{4.2.10}
+	Let $f$ and $g$ be nonzero polynomials in $F[x]$, where $F$ is a field. Then a uniquely determined polynomial $d$ exists in $F[x]$ satisfying the following conditions:
+	\enumarabic{
+		\item $d$ is monic.
+		\item $d$ divides both $f$ and $g$.
+		\item If $h$ divides both $f$ and $g$, then $h$ divides $d$.
+		\item $d=uf+vg$ for some polynomials $u$ and $v$ in $F[x]$.
+	}
+	Moreover $d$ is the unique polynomial satisfying (1), (2) and (3).
+\end{thm}
+\begin{thm}{4.2.11}
+	Let $p\in F[x]$ be irreducible, $F$ a field. If $p$ divides the product $f_1f_2\cdots f_n$ of nonzero polynomials in $F[x]$, then $p$ divides $f_i$ for some $i$.
+\end{thm}
+\begin{thm}{4.2.12}[Unique Factorization Theorem]
+	Let $F$ be a field and $f$ be a nonconstant polynomial in $F[x]$.  Then
+	\enumarabic{
+		\item $f=ap_1p_2\cdots p_m$, where $a\in F$ and $p_1,p_2,\dots,p_m$ are monic irreducible polynomials in $F[x]$.
+		\item The factorization is unique up to the order of the factors.
+	}
+\end{thm}
+\begin{thm}{4.3.1}
+	If $F$ is a field, then every ideal $A$ of $F[x]$ is principal. In fact, if $A\neq 0$, then there is a unique monic polynomial $h\in F[x]$ for which $A=(h)$.
+\end{thm}
+\begin{thm}{4.3.2}
+	Let $h$ be a monic polynomial of degree $m\geq 1$ in $F[x]$, there $F$ is a field.  Then
+	$$F[x]/(h)\cong\{a_0+a_1 t+a_2 t^2+\cdots + a_{m-1}t^{m-1}\ | a_i\in F, h(t)=0\}.$$
+	Moreover, this representation is unique.  That is,
+	\[a_0+a_1t+a_2t^2+\cdots+a_{m-1}t^{m-1}=b_0+b_1t+b_2t^2+\cdots+b_{m-1}t^{m-1}\]
+	if and only if $a_i=b_i$ for all $i$.
+\end{thm}
+\begin{thm}{4.3.3}
+	Let $h$ be a monic polynomial of degree $m\geq 1$ in $F[x]$, there $F$ is a field.  Then $F[x]/(h)$ is a field if and only if $h$ is irreducible. 
+\end{thm}
+\begin{thm}{4.3.4}[Kronecker's Theorem]
+	Let $F$ be a field and $h\in F[x]$ an irreducible polynomial.  Then there is some field $K$ containing $F$ that has a root of $h$.
+\end{thm}
+
+\section*{Definitions}
+
+\begin{defn}
+	A symbol, $x$ is called an \emph{indeterminate} over a ring $R$ if given $a_0,a_1,a_2,\dots,a_n\in R$ satisfying
+		\[a_0+a_1x+a_2 x^2+\cdots+a_nx^n=0,\]
+	then $a_i=0$ for all $i$.
+\end{defn}
+\begin{defn}
+	Given a ring $R$ and an indeterminate $x$, the \emph{ring of polynomials} over $R$ in $x$ is the set
+		\[R[x] = \{a_0+a_1x+a_2x^2+\cdots+a_nx^n\ |\ n\geq 0,\ a_0,a_1,a_2,\dots,a_n\in R\}\]
+	along with the operations given as follows:
+	
+	Let $f = a_0+a_1 x+a_2 x^2 +\cdots$ and $g = b_0+b_1 x+b_2 x^2+\cdots$.
+	\begin{itemize}
+		\item Addition: $f+g = (a_0+b_0) + (a_1+b_1)x + (a_2+b_2)x^2 + \cdots$
+		\item Multiplication $fg = c_0+c_1x+c_2x^2+\cdots$ where
+			\[c_i = a_0 b_i+a_1b^{i-1}+\cdots+a_{i-1}b_1+a_i b_0 = \sum_{k=0}^i a_k b_{i-k}\]
+	\end{itemize}
+\end{defn}
+\begin{defn}
+	We call two polynomials \emph{equal} if the corresponding coefficients are equal.  
+\end{defn}
+\begin{defn}
+	We call $a_0$ the \emph{constant term} or \emph{constant coefficient}. 
+\end{defn}
+\begin{defn}
+	A polynomial of the form $f=a_0$ is a \emph{constant polynomial}.
+\end{defn}
+\begin{defn}
+	The \emph{zero} of $R[x]$ is $0_R$ and the \emph{unity} is $1_R$.
+\end{defn}
+\begin{defn}
+ 	The \emph{negative} of $f=a_0+a_1x+a_2x^2+\cdots$ is $-f=-a_0-a_1x-a_2x^2-\cdots$.
+\end{defn}
+\begin{defn}
+ The \emph{degree} of $f$ is the highest power of $x$ that has a nonzero coefficient.  We write $\deg(f)$ for the degree.
+\end{defn}
+\begin{defn}
+	If $f=a_0+a_1x+a_2x^2+\cdots +a_nx^n$ has degree $n$, then we call $a_n$ the \emph{leading coefficient} of $f$.\\  If $a_n=1$, we call $f$ \emph{monic}.
+\end{defn}
+\begin{defn} Given a polynomial $f\in R[x]$,
+	\bulletize{
+		\item If $\deg(f)=1$, we call $f$ a \emph{linear} polynomial.
+		\item If $\deg(f)=2$, we call $f$ a \emph{quadratic} polynomial.
+		\item If $\deg(f)=3$, we call $f$ a \emph{cubic} polynomial.
+		\item If $\deg(f)=4$, we call $f$ a \emph{quartic} polynomial.
+		\item If $\deg(f)=5$, we call $f$ a \emph{quintic} polynomial.
+	}
+\end{defn}
+\begin{defn}
+	If $R$ is a ring, $a\in Z(R)$, and $\phi_a$ is the map described in Theorem 4.1.5, then we call $\phi_a$ the evaluation map at $a$.
+\end{defn}
+\begin{defn}
+	Let $f\in R[x]$ and $a\in R$.  We call $a$ a \emph{root} or $f$ if the following conditions (which are all equivalent) are true:
+	\enumarabic{\item $f(a)=0$.\item $f=(x-a)g$ for some $g\in R[x]$.\item $f\in (x-a)$.}
+	
+	If $a\in R$ is a root of $f$, we say it has multiplicity $m\in \Z_{>0}$ if $f=(x-a)^mq$ and $q(a)\neq 0$.
+\end{defn}
+\begin{defn}
+	Let $F$ be a field and $p\neq 0$ in $F[x]$ a polynomial.  We call $p$ \emph{irreducible over $F$} if $\deg(p)\geq 1$ and
+	\[\text{If }p=fg\text{ for }f,g\in F[x]\text{, then either}\deg f=0\text{ or }\deg g=0.\]
+	
+	Otherwise we call $p$ \emph{reducible}.
+\end{defn}
+\begin{defn}
+	Given a commutative ring $R$ and polynomials $f,q\in R[x]$, we say $q$ divides $f$ if there is some $d\in R[x]$ with $f=qd$.
+\end{defn}
+\begin{defn}
+	If $F$ is a field and $f,g\in F[x]$. Then the \emph{greatest common divisor} of $f$ and $g$ is the unique monic polynomial $d$ that satisfies properties (1), (2), and (3) of Theorem 4.2.10.
+	
+	We say $f$ and $g$ are relatively prime if $\gcd(f,g)=1$.
+\end{defn}
+\end{document}

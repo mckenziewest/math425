@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[margin=.75in]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+
+
+
+\begin{document}
+Name: \underline{\hspace*{3in}}
+\vskip .25in
+
+\textbf{(Supp-7)} Use proof by induction to show that  If $\abar_1,\abar_2,\dots,\abar_m$ all have inverses in $\Z_n$, show that the same is true for the product $\abar_1\abar_2\cdots\abar_m$ for all $m\geq 2$.
+\vskip .25in
+\begin{proof} 
+	Let $n\geq 2$ be an integer. We use induction on the value of $m$.
+	
+	\textbf{Base Case:} Let $m=2$. Assume $\abar_1$ and $\abar_2\in\Z_n$ have inverses. 
+	
+	\fbox{Show that $\abar_1\abar_2$ has an inverse. Use the definition of inverse here.}
+	
+	\vskip 1.5in
+	
+	\textbf{Inductive Step:} Let $k\geq 2$ be an integer. Assume the statement holds for $m=k$. Let $\abar_1,\abar_2,\dots,\abar_{k+1}\in\Z_n$ all have inverses. 
+	
+	\fbox{\begin{minipage}{.95\textwidth}Use the base case and the inductive hypothesis to show that $\abar_1\abar_2\cdots\abar_{k+1}$ has an inverse. Again, use the definition of inverse.\end{minipage}}
+	
+	\vfill\mbox{}
+\end{proof}
+
+
+
+\end{document}

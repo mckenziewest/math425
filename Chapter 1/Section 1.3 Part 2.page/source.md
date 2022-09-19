@@ -1,0 +1,15 @@
+## Outcomes
+After class time today you will be able to
+
+* find inverses modulo \\(n\\),
+* solve modular equations or state why that's not possible, and
+* understand the statements of the Chinese Remainder Theorem and Fermat's Theorem.
+
+## Watch
+<iframe style="width: 400px; height: 225px;" title="m425-Arithmetic_Mod_n" src="https://uweau.instructure.com/courses/496410/external_tools/retrieve?display=borderless&amp;url=https%3A%2F%2F2370711-5.kaf.kaltura.com%2Fbrowseandembed%2Findex%2Fmedia%2Fentryid%2F1_yisnr57w%2FshowDescription%2Ffalse%2FshowTitle%2Ffalse%2FshowTags%2Ffalse%2FshowDuration%2Ffalse%2FshowOwner%2Ffalse%2FshowUploadDate%2Ffalse%2FplayerSize%2F400x225%2FplayerSkin%2F42909941%2F" width="400" height="225" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *; autoplay *"></iframe>
+
+##Recommended Practice
+Section 1.3 Exercise 11
+
+## Optional Reading
+pages 47-49

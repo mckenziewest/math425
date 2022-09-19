@@ -1,0 +1,168 @@
+\documentclass[t]{beamer}
+
+\subtitle{Introduction\\and\\Section 0.1: Proofs}
+
+\input{../../_python_tools/setup}
+
+\begin{document} 
+\startdoc
+
+\topics{
+	% Last Time
+	\item Hmmm....
+}
+{
+	% This time
+	\item Course Introduction
+	\item Direct Proofs
+	\item Cases
+	\item Contrapositive
+	\item Contradiction
+	\item Counterexamples
+}
+
+
+\slide{
+	\begin{exercise}[3 Minutes]
+		At your pods do the following: 
+			\enumalph{
+				\item Introduce yourself, share your name and any relevant information, such as your preferred toothpaste brand.\vskip 1cm
+				\item Decide on one ``class time rule'', something that will help strengthen the group's learning experience.\vskip 1cm
+				\item Decide who is going to report back to the group.
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{center}
+		Syllabus stuff!  Please take time to read it.
+	\end{center}
+	\begin{statementblock}{Key Notes}
+		\bulletize{
+			\setlength{\itemsep}{.5em}
+			\item Group work hours: Wed 10-11 and Fri 11-12 (HHH 311)
+			\item Office Hours: Tu 2-3 (HHH 524/507)
+			\item Welcoming environment
+			\item Grading - Specs!
+				\begin{itemize}[label=$\circ$]
+					\item Objective Exercises
+					\item Supplemental Exercises
+					\item Project
+				\end{itemize}
+			\item Collaboration
+			\item How to use the internet
+		}
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Objective Exercises}
+		\bulletize{
+			\item 27 Objectives, categorized by topic: Intro, Group, Ring
+			\item About 2 assigned per week, due on Fridays
+			\item Grading scale: Unsatisfactory/Satisfactory/Exceptional
+			\item Credit earned for both S and E marks 
+			\item May retry objectives: Must complete a \emph{new} exercise listed for the objective, rewrites due Wednesdays
+			\item Your grade: number of objectives complete/22 (max 100\%)
+		}
+	\end{statementblock}
+}
+\slide{ 
+	\begin{statementblock}{Supplemental Exercises}
+	\bulletize{
+		\item About 2 assigned per week.
+		\item Grading scale: Unsatisfactory/Satisfactory/Exceptional
+		\item 1\% earned for E marks
+		\item 0.5\% earned for S marks
+		\item Maximum of 15\% can be earned in this way
+		\item May retry Supplemental Exercises: Must rewrite the \emph{same} exercise, rewrites due Wednesdays
+	}
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Benefits}
+		\bulletize{
+			\item Flexibility
+			\item Room for growth and learning
+			\item Focus on the main content
+			\item More time for me to answer your questions
+			\item Faster grading turnaround
+		}
+	\end{statementblock}
+}
+\slidec{
+	\begin{center}
+		\large Section 0.1: Proofs
+	\end{center}
+}
+\slide{
+	\begin{block}{Method of Direct Proof.}
+		To prove a statement ``if $P$, then $Q$'', we assume $P$ is true and show that $Q$ must then also be true.
+		\enumarabic{
+			\item Express your statement in the form
+				\[\forall x\in D,\ \text{if}\ P(x),\text{ then }Q(x).\]\vskip .5cm
+			\item Start the proof by letting $x$ be an arbitrary element of $D$.  Assume $x$ satisfies the condition $P(x)$.\vskip 1cm
+			\item Show that $Q(x)$ is true.
+		}
+	\end{block}
+}
+\slide{
+	\begin{exa}
+		Prove that the sum of any two even integers is even.
+			\enumarabic{
+				\item For all \pause integers $x$ and $y$, if $x$ and $y$ are even, then $x+y$ is even.
+			}
+			\begin{block}{Proof.}
+				Let $x$ and $y$ be integers.  Assume $x$ and $y$ are even.
+%			\enumarabic{
+%				\item[\textbf{2.}] \pause
+%				\item[\textbf{3.}] By the definition of even, there exist integers $r$ and $s$ such that $x=2r$ and $y=2s$.\pause
+%				
+%				Using basic arithmetic,
+%					\[x+y=2r+2s=2(r+s).\]\pause
+%				Let $t=r+s$.  Notice that since $r$ and $s$ are integers, so is $t$.  Thus $x+y=2t$ is even by definition.
+%			}
+		\end{block}
+	\end{exa}
+}
+\slide{
+	\begin{block}{Method of Reduction to Cases.}
+		\begin{exa}
+			Prove that if $n$ is an integer, then $5n^2+n-72$ is even.
+		\begin{block}{Proof.}
+				Let $n\in \Z$.  We consider two cases: $n$ is even or $n$ is odd.\pause
+			\begin{description}
+				\item[Case 1.] Assume $n$ is even.  Then there is a $s\in \Z$ such that $n=2s$.  Compute
+					\begin{eqnarray*}
+					5n^2+n-72 &=& 5(2s)^2+(2s)-72\\
+						&=&5(4s^2) + 2s-72\\
+						&=&2(10s^2+s-36)
+					\end{eqnarray*}
+				Since $s$ is an integer, so is $10s^2+s-36$. Thus $5n^2+n-72=2(10s^2+s-36)$ is even by definition whenever $n=2s$ is even.
+			\end{description}
+		\end{block}
+		\end{exa}
+	\end{block}
+}
+\slide{
+	\begin{description}
+		\item[Case 2.] Assume now that $n$ is odd.  Then there is a $s\in \Z$ such that $n=2s+1$.  Compute
+		\begin{eqnarray*}
+			5n^2+n-72 &=& 5(2s+1)^2+(2s+1)-72\\
+			&=&5(4s^2+4s+1) + 2s-71\\
+			&=&20s^2+20s+5+2s-71\\
+			&=&2(10s^2+11s-33)
+		\end{eqnarray*}
+		Since $s$ is an integer, so is $10s^2+11s-33$. Thus $5n^2+n-72=2(10s^2+11s-33)$ is by definition even when $n=2s+1$ is odd.\hfill$\square$
+	\end{description}
+}
+
+%\begin{frame}{\fn}
+%	\begin{block}{\textbf{Brain Break.}}
+%		What is your favorite word?
+%		
+%		\begin{center}
+%			\includegraphics[width=2in]{images/word}
+%		\end{center}
+%	\end{block}
+%\end{frame}
+\end{document}
+

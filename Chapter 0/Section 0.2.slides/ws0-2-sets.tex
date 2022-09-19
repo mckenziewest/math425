@@ -1,0 +1,220 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 0.2: Sets}
+
+\input{../../_python_tools/setup}
+
+\begin{document} 
+\startdoc
+
+\topics{
+	% Last Time
+	\item Course Introduction
+	\item Direct Proofs
+	\item Cases
+}
+{
+	% This time
+	\item Contradiction
+	\item Counterexamples
+	\item Contrapositive/Converse
+	\item Sets and Operations
+	\item Cardinality
+	\item Power Sets
+	\item Cartesian Products
+}
+\slide{
+\begin{block}{Method of Proof by Contradiction.}
+	To prove ``if $P$ then $Q$'' using contradiction, assume $P$ is true and $Q$ is false then show that something is terribly wrong.
+	\begin{exa}
+		Prove that there are no integers $x$ and $y$ satisfying $24x+12y=1$.
+		%\enumarabic{\item If $x$ and $y$ are integers then $24x+12y=1$.}
+	\end{exa}
+\end{block}
+}
+\slide{
+\begin{block}{Proof.}
+	Let $x$ and $y$ be integers.  Assume, toward contradiction, that $24x+12y=1$.
+	%\pause
+	%Divide both sides of the equation $24x+12y=1$ by $12$ to get
+	%	\[2x+y=\frac{1}{12}.\]\pause
+	%Notice that since $x$ and $y$ are integers, so is $2x+y$.  However $\frac{1}{12}$ is not an integer, contradicting that fact that $2x+y=\frac{1}{12}$.
+	
+	%Therefore, the assumption that $24x+12y=1$ cannot be true.
+\end{block}	
+}
+\slide{
+	\begin{exercise}
+		Using the last proof as inspiration, what do you think must be true about $m$ and $n$ if 	\[mx+ny=1\]
+		is satisfied for integers $x$ and $y$?
+		
+		Thank about what property(ies) $m=24$ and $n=12$ had that caused a problem.  Why does $m=4$ and $n=9$ have an integer solution with $x=-2$ and $y=1$?
+	\end{exercise}
+}
+\slide{
+	\begin{block}{Counterexamples.}
+		Sometimes we can prove a universal statement is false by finding a simple counterexample.
+		\vskip 1cm
+		\begin{exa}
+			Prove the result or give a counterexample.
+			\begin{quote}
+				If $n^2=1$ then $n=1$.
+			\end{quote}
+			\pause
+			\begin{block}{Solution.}
+				This statement is false because if $n=-1$ then $n^2=1$ while $n\neq 1$.
+			\end{block}
+		\end{exa}
+	\end{block}
+}
+\slide{
+	\begin{defn}
+		The \emph{contrapositive} of the statement $P\Rightarrow Q$ is $\sim Q\Rightarrow \sim P$.
+		
+		The \emph{converse} of the statement $P\Rightarrow Q$ is $Q\Rightarrow P$.
+	\end{defn}
+	\vskip 1cm
+	\begin{nb}
+		The contrapositive of a statement is logically equivalent to it - and is sometimes easier to prove!
+		
+		The converse of a statement is NOT logically equivalent to it.  
+	\end{nb}
+}
+\slide{
+	\begin{exercise}
+		\enumarabic{
+			\item If $n$ is an even integer then $n^2$ is a multiple of 4.
+			\enumalph{
+				\item State the converse and the contrapositive. 
+				\item Which of the converse and contrapositive are true?
+				\item If either is false, give a counterexample.
+			}
+			\item If $m+n=25$, where $n$ and $m$ are integers, then\\exactly one of $n$ and $m$ is greater than $12$.
+			\enumalph{
+				\item State the converse and the contrapositive. 
+				\item Which of the converse and contrapositive are true?
+				\item If either is false, give a counterexample.
+			}
+			\item For all integers $n$, if $n\geq 2$, then $n^3\geq 2^n$.
+			\enumalph{
+				\item State the converse and the contrapositive. 
+				\item Which of the converse and contrapositive are true?
+				\item If either is false, give a counterexample.
+			}
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		A \emph{set} is a collection of objects called \emph{elements}.
+	\end{defn}
+	\begin{block}{\textbf{Notation.}}
+		If $S$ is a set with an element $a$, then we write $a{\color{blue}\in} S$.
+	\end{block}
+	\begin{exa}
+		\bulletize{
+			\item $\Z$
+			\item $\R$
+			\item $\C$
+			\item $\Q$
+			\item $\N$
+			\item $\Z^+$
+		}
+	\end{exa}
+}
+\slide{
+	\begin{exa}
+		Sets can be represented in many ways:
+		\bulletize{
+			\item Listing all elements: $\{1,4,7,322\}$
+			\item Giving a formula: $\{3a-2\in\Z\ |\ a\in\Z\}$
+			\item Giving a criteria: $\{a\in\R\ :\ 2^a>5\}$
+		}
+	\end{exa}
+	\begin{exercise}
+		Determine the elements of the following sets:
+		\enumalph{\setlength{\itemsep}{1em}
+			\item $\{n\in \Z\ :\ |n-2|\leq 1\}$
+			\item $\{10k\ :\ k\in \Z\}$
+			\item $\{m+1\ |\ m\in \N \text{ and }m\text{ is even}\}$
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		If $A$ has $n$-elements then we say the \emph{cardinality} of $A$ is $n$ and we write $|A|=n$. Such sets are called \emph{finite} sets.  
+		Sets with an infinite number of elements are \emph{infinite} sets.
+	\end{defn}
+	\begin{exa}
+		$|\emptyset|=0$
+	\end{exa}
+	\begin{exercise}
+		Compute $|A|$ and $|B|$ given
+		\[A=\{1,\{2\}\}\text{ and }B=\{\emptyset,\{1\},\{2\},\{1,2\}\}.\]
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		For sets $A$ and $B$ we say that \emph{$A$ is a subset of $B$} if every element of $A$ is also an element of $B$. In mathematical notation we would write
+		\[\forall a\in A,\ a\in B.\]
+	\end{defn}
+	\begin{block}{\textbf{Notation.}}
+		If $A$ is a subset of $B$ we write $A\ {\color{blue}\subseteq}\ B$.
+	\end{block}
+}
+\slide{
+	\begin{exercise}
+		Let $A=\{x\in\R\ |\ x^2-1<1\}$ and $B=\{x\in\R\ |\ x<3\}$. Show that $A\subseteq B$.
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		The \emph{power set} of a set $A$ is the set $P(A)$ consisting of all subsets of $A$.
+	\end{defn}
+	\begin{exa}
+		$B=\{\emptyset,\{1\},\{2\},\{1,2\}\}=P(\{1,2\})$
+	\end{exa}
+	\begin{exercise}
+		If $A=\{4,5,6\}$, what is $P(A)$ and $|P(A)|$?
+	\end{exercise}
+}
+\slidec{
+	\begin{statementblock}{Principle of Set Equality}
+		If $A$ and $B$ are sets then
+		\begin{center}
+			$A=B$\quad if and only if \quad $A\subseteq B$ and $B\subseteq A$
+		\end{center}
+	\end{statementblock}
+}
+\slide{
+	\begin{defn}
+		The \emph{intersection} of the sets $A$ and $B$, denotes $A\cap B$ is the set of all elements that appear in both $A$ and in $B$.
+	\end{defn}
+	\begin{defn}
+		The \emph{union} of the sets $A$ and $B$, denotes $A\cup B$ is the set of all elements that appear in at least one of $A$ or $B$.
+	\end{defn}
+	\begin{exercise}
+		Use the Principle of Set Equality to show that for sets $A$, $B$, and $C$, 
+			\[A\cap (B\cup C) = (A\cap B)\cup (A\cap C).\]
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		The \emph{Cartesian Product} of the sets $A$ and $B$ is the set
+		\[A\times B:=\{(a,b):a\in A\text{ and }b\in B\}.\]
+		Note that the elements, $(a,b)$, are ordered pairs.
+	\end{defn}
+	\begin{exercise}
+		Compute $A\times B$ if $A=\{3,4\}$ and $B=\{a,b,c\}$.
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		\enumalph{
+			\item Compute $A\times A$ if $A=\{2,4,6\}$.\vskip 1in
+			
+			\item Consider $A=[-2,6)$ and $B=(5,9)$ as intervals in $\R$.  What is $A\times B$?}
+	\end{exercise}
+}
+\end{document}
+

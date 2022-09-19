@@ -1,0 +1,8 @@
+{
+  "name": "🏠 Homework 1", 
+  "type": "assignment",
+  "allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload"],
+  "modules": ["Week 2"],
+  "due_at": "2022-09-16T16:00:00Z"
+}

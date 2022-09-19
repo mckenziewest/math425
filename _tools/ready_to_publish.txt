@@ -1,0 +1,43 @@
+..\course_calendar.page
+..\syllabus.page
+..\course_objectives.page
+..\assignments_with_submissions\Homework 1.assignment
+..\assignments_with_submissions\Homework 2.assignment
+..\assignments_with_submissions\Homework 3.assignment
+..\assignments_with_submissions\Rewrites 1.assignment
+..\assignments_with_submissions\Rewrites 2.assignment
+..\Chapter 0\Section 0.1.page
+..\Chapter 0\Section 0.1.slides
+..\Chapter 0\Section 0.2.page
+..\Chapter 0\Section 0.2.slides
+..\Chapter 0\Section 0.3.page
+..\Chapter 0\Section 0.3.slides
+..\Chapter 0\Section 0.4.page
+..\Chapter 0\Section 0.4.slides
+..\Chapter 1\Section 1.1.page
+..\Chapter 1\Section 1.1.slides
+..\Chapter 1\Section 1.2.page
+..\Chapter 1\Section 1.3 Part 1.page
+..\Chapter 1\Section 1.3 Part 2.page
+..\Chapter 1\Section 1.3.slides
+..\Chapter 1\Section 1.4 Part 1.page
+..\Chapter 1\Section 1.4 Part 2.page
+..\objective_assignments\Intro-1.assignment
+..\objective_assignments\Intro-2.assignment
+..\objective_assignments\Intro-3.assignment
+..\objective_assignments\Intro-4.assignment
+..\objective_assignments\Intro-5.assignment
+..\objective_assignments\Intro-6.assignment
+..\objective_assignments\Intro-7.assignment
+..\supplemental_assignments\Supp-1.assignment
+..\supplemental_assignments\Supp-2.assignment
+..\supplemental_assignments\Supp-3.assignment
+..\supplemental_assignments\Supp-4.assignment
+..\supplemental_assignments\Supp-5.assignment
+..\supplemental_assignments\Supp-6.assignment
+..\supplemental_assignments\Supp-7.assignment
+..\supplemental_assignments\Supp-8.assignment
+..\handouts\latex_examples\tex.file
+..\handouts\latex_examples\pdf.file
+..\handouts\chapter0_thms\pdf.file
+..\handouts\chapter0_thms\tex.file
