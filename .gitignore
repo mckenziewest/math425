@@ -6,8 +6,10 @@ _tools/publish_this_time.txt
 
 ## Unneeded pdfs for note slides
 Chapter [0-5]/*.slides/*.pdf
-assignments_with_submissions/**/hw?.pdf
-assignments_with_submissions/Homework [0-15].assignment/hw[0-15].pdf
+assignments_with_submissions/**/hw*.pdf
+objective_assignments/**/*.pdf
+supplemental_assignments/**/*.pdf
+
 ## Python
 *.pyc
 
