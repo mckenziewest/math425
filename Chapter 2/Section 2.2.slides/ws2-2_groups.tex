@@ -1,0 +1,259 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 2.2: Groups}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+
+	\topics{ 
+		\item Binary Operations
+		\item Monoids
+	}{
+		\item Groups
+	}
+\slide{
+	\begin{defn}
+		Suppose that 
+		\enumarabic{
+			\item $G$ is a set and $*$ is a binary operation on $G$,
+			\item $*$ is associative,
+			\item there is some $e\in G$ such that 
+				\[g*e=e*g=g,\]
+				for all $g\in G$, and
+			\item for all $g\in G$, there is an $h\in G$ such that $g*h=e=h*g$.
+		}
+		Then $(G,*)$ is a \emph{GROUP}.
+	\end{defn}
+	\begin{nb}
+		A group is a monoid where every element has an inverse!
+	\end{nb}
+}
+\slide{
+	\begin{exercise}
+		Group or not?
+		\begin{multicols}{2}
+			\enumalph{\setlength\itemsep{.75em}
+				\item $(\Z,+)$
+				\item $(\R,+)$
+				\item $(\mathbb{N},+)$
+				\item $(\Z_n,+)$
+				\item $(M_n(\R),+)$
+				\item $(M_n(\R),\cdot)$
+				\item $(\R,\cdot)$
+				\item $(\Z,\cdot)$
+				\item $(\Z_4,\cdot)$
+				\item $(\Z_n,\cdot)$
+				\item $(\Z_p,\cdot)$
+				\item $(S_3,\circ)$
+			}
+		\end{multicols}
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		The \emph{$n$th roots of unity} are the complex numbers that are the roots of 
+		\[x^n-1.\]
+		Denote the set of roots as $\mathcal{U}_n$
+	\end{defn}
+}
+
+\slide{\begin{defn}
+		If the operation of a group $G$ is commutative, we call $G$ an \emph{abelian group}.
+\end{defn}}
+
+\slide{
+	\begin{thm}{2.1.4}
+		If $(G,*)$ is a group and $g\in G$, then the inverse of $g$ is unique.
+	\end{thm}
+}
+\slide{
+	\begin{thm}{2.2.1}
+		If $(M,*)$ is a monoid, then the set of all units $M^\times$ is a group using the operation $*$, called the \emph{unit group}.
+	\end{thm}
+	\begin{exa}
+		\bulletize{
+			\setlength{\itemsep}{1em}
+			\item $(\R,\cdot)$ has units $\R^\times=$
+			\item $(\Z,\cdot)$ has units $\Z^\times=$
+			\item $(\Z_4,\cdot)$ has units $\Z_4^\times=$
+		}
+	\end{exa}
+}
+\slide{
+	\begin{thm}{2.2.2}
+		If $G_1,G_2,\dots,G_n$ are groups with respective operations $*_1,*_2,\dots,*_n$, then 
+		\[G_1\times G_2\times\cdots\times G_n\]
+		is a group under component-wise operation
+		\[(g_1,g_2,\dots,g_n)*(h_1,h_2,\dots,h_n)=(g_1*_1h_1,g_2*_2h_2,\dots,g_n*_nh_n).\]
+	\end{thm}
+}
+\slide{
+	\begin{thm}{2.2.3}
+		Let $g,h,g_1,g_2,\dots,g_{n-1},g_n$ be elements of a group $G$ ($n\in \Z_{\geq 1}$).
+		\enumarabic{
+			\setlength{\itemsep}{2em}
+			\item $e^{-1}=$
+			\item $(g^{-1})^{-1}=$
+			\item $(gh)^{-1}=$
+			\item $(g_1g_2\cdots g_n)^{-1}=$
+			\item $(g^m)^{-1}=\qquad\qquad\qquad\qquad$ for all $m\geq 0$.
+		}
+	\end{thm}
+}
+\slide{
+	\begin{thm}{2.2.4 (Exponent Laws)}
+		Let $G$ be a group and $g,h\in G$. Then for all $m,n\in\Z$, the following hold,
+		\enumarabic{
+			\setlength{\itemsep}{2em}
+			\item $g^ng^m=$
+			\item $(g^n)^m=$
+			\item If $gh=hg$, then $(gh)^n=$
+		}
+	\end{thm}
+}
+\slide{
+	\begin{thm}{2.2.5 (Cancellation Laws)}
+		Let $G$ be a group and $g,h,f\in G$.
+		\enumarabic{
+			\item If $gh=gf$ then $h=f$ (\emph{left cancellation})
+			\item If $hg=fg$ then $h=f$ (\emph{right cancellation})
+		}
+	\end{thm}
+}
+\slide{
+	\begin{thm}{2.2.6}
+		Let $G$ be a group and $g,h\in G$.
+		\enumarabic{
+			\item The equation $gx=h$ has a unique solution $x=g^{-1}h$ in $G$.
+			\item The equation $xg=h$ has a unique solution $x=hg^{-1}$ in $G$.
+		}
+	\end{thm}
+}
+\slide{
+	\begin{defn}
+		A \emph{Cayley table} is essentially a multiplication table for a given binary operation.
+	\end{defn}
+	\begin{exa}
+		$$\begin{array}{c||c|c|c}
+			*&e&a&b\\\hline\hline
+			e&e&a&b\\\hline
+			a&a&a^2&a*b\\\hline
+			b&b&b*a&b^2
+		\end{array}$$
+	\end{exa}
+}
+\slide{
+	\begin{exercise}
+		Complete the Table for $(\Z_3,+)$
+		\setlength{\arraycolsep}{20pt}
+		\renewcommand{\arraystretch}{1.5}
+		$$\begin{array}{c||c|c|c}
+			+&\overline{0}&\overline{1}&\overline{2}\\\hline\hline
+			\overline{0}&&&\\\hline
+			\overline{1}&&&\\\hline
+			\overline{2}&&&
+		\end{array}$$
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Consider operation $*$ with the Cayley table
+		$$\begin{array}{c||c|c|c|c}
+			*&e&a&b&c\\\hline\hline
+			e&e&a&b&c\\\hline
+			a&a&a&b&e\\\hline
+			b&b&b&c&c\\\hline
+			c&c&e&c&e
+		\end{array}$$
+		\enumalph{
+			\setlength{\itemsep}{.1in}
+			\item Is $*$ commutative? Why?
+			\item Is there an identity?
+			\item Determine $a*(b*c)$ and $(a*b)*c$.  Is $*$ associative?
+			\item Is it a monoid?!
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{question}
+		How many groups are there with 1 element?
+		
+		Since $e$ must be in EVERY group then $G=\{e\}$ is the \textit{only} group with one element.
+	\end{question}
+}
+\slide{
+	\begin{question}
+		How many groups are there with 2 elements?
+		
+		Let $G=\{e,g\}$ be a group with 2 elements. Complete the Cayley table.
+		\setlength{\arraycolsep}{20pt}
+		\renewcommand{\arraystretch}{1.5}
+		$$\begin{array}{c||c|c}
+			*&e&g\\\hline\hline
+			e&e&g\\\hline
+			a&g&{{\color{white}\large e}\hskip .3in}	
+		\end{array}$$
+		
+		(Recall that in a group, every element must have an inverse!)
+	\end{question}
+}
+\slide{
+	\begin{nb}
+		Note that if $(G,*)$ is a group, every element appears exactly 1 time in every row and every column.
+	\end{nb}
+	\begin{exercise}
+		If $G=\{e,g,h\}$ is a group, complete the Cayley table,
+		\setlength{\arraycolsep}{20pt}
+		\renewcommand{\arraystretch}{1.5}
+		$$\begin{array}{c||c|c|c}
+			*&e&g&h\\\hline\hline
+			e&e&g&h\\\hline
+			g&g&&\\\hline
+			h&h&&
+		\end{array}$$
+	\end{exercise}
+}
+\slide{
+	\begin{nb}
+		\setstretch{1.5}
+		We will say `up to isomorphism' there is only one group of order 3.  
+		
+		That is all of the following have the same structure.
+		\enumalph{
+			\item $(\Z_3,+)$ - equivalences modulo 3
+			\item $(A_3,\circ)$ - the alternating group on 3 elements
+			\item $(\mathcal{U}_n,\cdot)$ - the third roots of unity
+		}
+	\end{nb}
+}
+\slide{
+	\begin{exercise}
+		What about a group with 4 elements, is there 1 or are there more?
+		
+		\setlength{\arraycolsep}{20pt}
+		\renewcommand{\arraystretch}{1.5}
+		$$\begin{array}{c||c|c|c|c}
+			*&e&g&h&k\\\hline\hline
+			e&e&g&h&k\\\hline
+			g&g&&&\\\hline
+			h&h&&&\\\hline
+			k&k&&&
+		\end{array}$$
+		
+	\end{exercise}
+}
+\slide{
+	\begin{nb}\setstretch{2}
+		There are actually two basic structures for groups with 4 elements.
+		\begin{itemize}[label=--]
+			\item One where $g^2=e$ for every $g\in G$, as with $\Z_2\times \Z_2$.
+			
+			\item One with some $g\in G$ for which $g,g^2,g^3\neq e$ and $g^4=e$. For example $\Z_4$ or $\mathcal{U}_4=\{1,-1,i,-i\}$.
+		\end{itemize}
+	\end{nb}
+}
+
+\end{document}
+

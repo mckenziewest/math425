@@ -1,0 +1,174 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 2.1: Binary Operations}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+
+	\topics{ 
+		\item Disjoint Cycles
+		\item Transpositions
+		\item Even vs Odd Permutations
+	}{
+		\item Binary Operations
+		\item Monoids
+	}
+
+\slide{
+	\begin{defn}
+		A \emph{binary operation}, $*$ on a set $S$ is a function that associates to each ordered pair $(a,b)\in S\times S$ an element of $S$ which we call $a*b$.
+		
+		Since we know that $a*b\in S$ for all $a,b\in S$, we say that the binary operation is \emph{closed under $*$}.
+	\end{defn}\vskip 1in
+%	\begin{exa}\begin{itemize}[label=$\bullet$]
+%			\item $+,-,\cdot,\div$ are all binary operations on $\R$
+%			\item $+,-,\cdot$ are all binary operations on $\Z$ and on $\Z_n$
+%			\item $\circ$ is a binary operation on $S_n$
+%		\end{itemize}
+%	\end{exa}
+	\begin{nb}
+		 Sometimes we write $(S,*)$ to mean $*$ is a binary operation on $S$.
+	\end{nb}
+}
+
+\slide{
+	\begin{defn}
+		A binary operation $*$ on $S$ is \emph{associative} if 
+		\[a*(b*c)=(a*b)*c,\]
+		for all $a,b,c\in S$.
+	\end{defn}
+}
+\slide{
+	\begin{defn}	
+		A binary operation $*$ on $S$ is \emph{commutative} if 
+		\[a*b=b*a,\]
+		for all $a,b\in S$.
+	\end{defn}
+}
+\slide{
+	\begin{defn}
+		An element $e\in S$ is called an \emph{identity} (or \emph{unity}) for the binary operation $*$ if 	
+			\[a*e=e*a=a,\]
+		for all $a\in S$.
+	\end{defn}
+}
+\slide{
+	\begin{statementblock}{Theorem 2.1.1}
+		If a binary operation $*$ on a set $S$ has an identity, then it is unique.
+	\end{statementblock}
+}
+
+\slide{
+	\begin{defn}
+		A set $S$ along with a binary operation $*$ is called an \emph{monoid} if $*$ is associative and has an identity.
+		
+		\vskip 1em
+		
+		If $(S,*)$ is also commutative, then we say $S$ is a \emph{commutative monoid}.
+	\end{defn}
+	\begin{exa}
+		\bulletize{
+			\item $(\Z,\cdot)$
+			\item $(S_n,\circ)$
+		}
+	\end{exa}
+}
+\slide{
+	\huge\textbf{Let's play}
+	\begin{center}
+		\includegraphics[width=3.5in]{monoid_game_level}
+	\end{center}
+}
+\begin{frame}[fragile]
+	\frametitle{\fn}
+\begin{exercise}
+	Let $*$ be the binary operation on $\mathbb{N}$ given by \[a*b:=a^b.\]  
+	\enumalph{
+		\item Associative?
+		\vskip 2em
+		\item Identity?
+		\vskip 2em
+		\item Commutative?
+		\vskip 2em
+	}
+	Therefore, $(\mathbb{N},$\verb|^|$)$ is ...
+\end{exercise}
+\begin{picture}(0,0)
+\put(150,140){\includegraphics[width=2.5in]{monoid_game}}
+\end{picture}
+\end{frame}
+\slide{
+\begin{exercise}
+	Let $*$ be the binary operation on $\mathbb{Z}$ given by \[a*b:=a-b.\]  
+	\enumalph{
+		\item Associative?
+		\vskip 2em
+		\item Identity?
+		\vskip 2em
+		\item Commutative?
+		\vskip 2em
+	}
+	Therefore, $(\mathbb{Z},-)$ is ...
+\end{exercise}
+\begin{picture}(0,0)
+\put(150,140){\includegraphics[width=2.5in]{monoid_game}}
+\end{picture}
+}
+\slide{
+\begin{exercise}
+	Let $*$ be the binary operation on $GL_2(\R)$given by \[A*B:=AB.\]  
+	\enumalph{
+		\item Associative?
+		\vskip 2em
+		\item Identity?
+		\vskip 2em
+		\item Commutative?
+		\vskip 2em
+	}
+	Therefore, $(GL_2(\R),\cdot)$ is ...
+\end{exercise}
+\begin{picture}(0,0)
+\put(150,140){\includegraphics[width=2.5in]{monoid_game}}
+\put(160,0){\rotatebox{15}{$GL_2(\R)$ - $2\times 2$ invertible matrices}}
+\end{picture}
+}
+\slide{
+	\begin{defn}
+		Let $(M,*)$ be a monoid.  
+		
+		If $x\in M$, we call $y\in M$ an \emph{inverse of $x$} if 	
+			\[xy=e=yx.\]
+		An element that has an inverse is called a \emph{unit}.
+	\end{defn}
+}
+\slide{\vskip -.25in
+	\begin{exercise}
+		Fill in the table
+		
+			\def\arraystretch{1.5}
+			$\begin{array}{c|c|c}
+			\text{Monoid}&\quad e\quad &\quad \text{Set of Units}\quad\\
+			\hline\hline
+			(\Z,+)&&\\\hline
+			(\R,+)&&\\\hline
+			(\Z_n,+)&&\\\hline
+			(M_n(\R),+)&&\\\hline
+			(M_n(\R),\cdot)&&\\\hline
+			(\R,\cdot)&&\\\hline
+			(\Z_4,\cdot)&&\\\hline
+			(\Z_n,\cdot)&&\\\hline
+			(\Z_p,\cdot)&&\\\hline
+			(S_3,\circ)&&\\\hline
+			\end{array}$
+			
+		\begin{picture}(0,0)
+		\put(195,132){$\leftarrow$ Matrices with real entries}
+		\put(195,30){$\leftarrow$ $p$ is prime}
+		\end{picture}
+	\end{exercise}
+}
+
+\end{document}
+
