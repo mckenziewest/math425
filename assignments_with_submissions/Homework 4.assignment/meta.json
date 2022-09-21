@@ -1,0 +1,8 @@
+{
+  "name": "🏠 Homework 4", 
+  "type": "assignment",
+  "allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload"],
+  "modules": ["Week 5"],
+  "due_at": "2022-10-07T16:00:00Z"
+}

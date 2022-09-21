@@ -5,6 +5,7 @@
 
 
 
+\newcommand{\N}{\mathbb{N}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\abar}{\overline{a}}
@@ -13,15 +14,16 @@
 \setlength{\parindent}{0pt}
 \begin{document}
 	\begin{center}
-		{\Large \bf Math 425 Assignment 3}
+		{\Large \bf Math 425 Assignment 4}
 	\end{center}
 	\section*{Purpose}
 		\begin{itemize}
-			\item Assess objectives and additional exercises from sections 1.2 and 1.3, namely
+			\item Assess objectives and additional exercises from sections 1.4, 2.1 and 2.2, namely
 				\begin{itemize}
-					\item Intro-4: Execute the division algorithm and Aryabhata’s (Bézout’s) algorithm.
-					\item Intro-5: Solve congruence equations.
-					\item Supplemental exercises Supp-6, Supp-7, and Supp-8. 
+					\item Intro-6: Complete algebraic computations with permutations. Then determine whether those permutations are even or odd.
+					\item Intro-7: Complete the composition table of an order 6 subgroup of a symmetric group.
+					\item Group-1: Use the definition of a group to prove or disprove that a set along with an operation is a group.
+					\item Supplemental exercise Supp-9. 
 				\end{itemize}
 			\item Build a strong foundation of creative critical thinking and proof-writing techniques.
 		\end{itemize}
@@ -55,49 +57,21 @@
 	
 \newpage
 
-\textbf{(Intro-4)} Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Intro-4}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
+\textbf{(Intro-6)} Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Intro-6}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
 \vskip .5in
-\textbf{(Intro-5)} Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Intro-5}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
-
-\newpage
-Name: \underline{\hspace*{3in}}
-\vskip .25in
-
-\textbf{(Supp-6)} Show that no integers of the form $k^2+1$ are a multiple of 7. 
-
-\vskip .25in
-
-Hint: In the context of equivalence mod $7$, this would be equivalent to saying \textit{no integer $k$ satisfies the congruence equation $k^2+1\equiv 0\pmod 7$}.
+\textbf{(Intro-7)} Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Intro-7}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
 	
 \newpage
 Name: \underline{\hspace*{3in}}
 \vskip .25in
 
-\textbf{(Supp-7)} Use proof by induction to show that  If $\abar_1,\abar_2,\dots,\abar_m$ all have inverses in $\Z_n$, show that the same is true for the product $\abar_1\abar_2\cdots\abar_m$ for all $m\geq 2$.
-\vskip .25in
-\begin{proof} 
-Let $n\geq 2$ be an integer. We use induction on the value of $m$.
-
-\textbf{Base Case:} Let $m=2$. Assume $\abar_1$ and $\abar_2\in\Z_n$ have inverses. 
-
-\fbox{Show that $\abar_1\abar_2$ has an inverse. Use the definition of inverse here.}
-
-\vskip 1.5in
-
-\textbf{Inductive Step:} Let $k\geq 2$ be an integer. Assume the statement holds for $m=k$. Let $\abar_1,\abar_2,\dots,\abar_{k+1}\in\Z_n$ all have inverses. 
-
-\fbox{\begin{minipage}{.95\textwidth}Use the base case and the inductive hypothesis to show that $\abar_1\abar_2\cdots\abar_{k+1}$ has an inverse. Again, use the definition of inverse.\end{minipage}}
-
-\vfill\mbox{}
-\end{proof}
+\textbf{(Group-1)} Consider the set $M=\{\sigma:\N\to\N | \sigma\text{ is one-to-one}\}$.  Show that $M$ is a monoid but it is not a group.  (Make sure to reference appropriate Theorems from Section 0.3 when necessary!)
 
 \newpage
 Name: \underline{\hspace*{3in}}
 \vskip .25in
 
-\textbf{(Supp-8)} Let $a$ and $n$ be integers with $n\geq 2$.  Let $d=\gcd(a,n)$.  Show that for any integer $b$, the equation $ax\equiv b\pmod n$ has a solution if and only if $d|b$.
-\vskip .25in 
-Hint: You'll probably want to use Aryabhata's (B\'ezout's) identity here.
+\textbf{(Supp-9)} If $\sigma = (1\ 2\ 3\ \cdots n)$, show that $\sigma^n=\varepsilon$ and that $n$ is the smallest \textbf{positive} integer with this property. 
 
 
 	
