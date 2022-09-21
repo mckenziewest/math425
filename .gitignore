@@ -5,8 +5,7 @@ _tools/maccess.py
 _tools/publish_this_time.txt
 
 ## Unneeded pdfs for note slides
-Chapter [0-5]/Section [0-5].[1-10]/*.pdf
-assignments_with_submissions/Homework [0-15].assignment/hw[0-15].pdf
+Chapter [0-5]/*.slides/*.pdf
 assignments_with_submissions/**/hw?.pdf
 
 ## Python
