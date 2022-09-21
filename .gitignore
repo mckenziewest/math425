@@ -7,6 +7,7 @@ _tools/publish_this_time.txt
 ## Unneeded pdfs for note slides
 Chapter [0-5]/Section [0-5].[1-10]/*.pdf
 assignments_with_submissions/Homework [0-15].assignment/hw[0-15].pdf
+assignments_with_submissions/**/hw?.pdf
 
 ## Python
 *.pyc
@@ -312,4 +313,3 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
-assignments_with_submissions/Homework 3.assignment/hw3.pdf
