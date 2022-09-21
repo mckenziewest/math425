@@ -6,6 +6,7 @@
 ..\assignments_with_submissions\Homework 3.assignment
 ..\assignments_with_submissions\Rewrites 1.assignment
 ..\assignments_with_submissions\Rewrites 2.assignment
+..\assignments_with_submissions\Rewrites 3.assignment
 ..\Chapter 0\Section 0.1.page
 ..\Chapter 0\Section 0.1.slides
 ..\Chapter 0\Section 0.2.page
