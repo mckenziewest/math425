@@ -4,6 +4,10 @@ _tools/maccess.py
 ## Updated too much
 _tools/publish_this_time.txt
 
+## Unneeded pdfs for note slides
+Chapter*.pdf
+assignments_with_submissions*.pdf
+
 ## Python
 *.pyc
 
