@@ -1,1 +1,5 @@
-{"name": "\ud83d\udcd3 Section 2.1 and 2.2 Part 1", "type": "page"}
+{
+  "name": "\ud83d\udcd3 Section 2.1", 
+  "type": "page",
+  "modules": ["Week 4"]
+}
