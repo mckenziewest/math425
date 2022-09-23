@@ -43,6 +43,8 @@
 ..\supplemental_assignments\Supp-6.assignment
 ..\supplemental_assignments\Supp-7.assignment
 ..\supplemental_assignments\Supp-8.assignment
+..\supplemental_assignments\Supp-9.assignment
+..\supplemental_assignments\Supp-10.assignment
 ..\handouts\latex_examples\tex.file
 ..\handouts\latex_examples\pdf.file
 ..\handouts\chapter0_thms\pdf.file
