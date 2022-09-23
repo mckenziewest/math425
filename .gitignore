@@ -9,6 +9,7 @@ Chapter [0-5]/*.slides/*.pdf
 assignments_with_submissions/**/hw*.pdf
 objective_assignments/**/*.pdf
 supplemental_assignments/**/*.pdf
+**/results.html
 
 ## Python
 *.pyc
