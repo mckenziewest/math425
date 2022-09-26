@@ -9,4 +9,4 @@ After class time today you will be able to
 <iframe src="//www.youtube.com/embed/8A84sA1YuPw" width="560" height="314" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe>
 
 ## Recommended practice
-If \(G = \mathbb{Z}_3\times\mathbb{Z}_3\), compute \(H=\langle (\bar 1,\bar 1)\rangle\).
+If \\(G = \mathbb{Z}_3\times\mathbb{Z}_3\\), compute \\(H=\langle (\bar 1,\bar 1)\rangle\\).

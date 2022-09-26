@@ -4,6 +4,7 @@
 ..\assignments_with_submissions\Homework 1.assignment
 ..\assignments_with_submissions\Homework 2.assignment
 ..\assignments_with_submissions\Homework 3.assignment
+..\assignments_with_submissions\Homework 4.assignment
 ..\assignments_with_submissions\Rewrites 1.assignment
 ..\assignments_with_submissions\Rewrites 2.assignment
 ..\assignments_with_submissions\Rewrites 3.assignment
@@ -25,10 +26,15 @@
 ..\Chapter 1\Section 1.4 Part 2.page
 ..\Chapter 1\Section 1.4.slides
 ..\Chapter 2\Section 2.1.page
-..\Chapter 2\Section 2.2.slides
+..\Chapter 2\Section 2.1.slides
 ..\Chapter 2\Section 2.2 Part 1.page
-..\Chapter 2\Section 2.2.slides
 ..\Chapter 2\Section 2.2 Part 2.page
+..\Chapter 2\Section 2.2.slides
+..\Chapter 2\Section 2.3 Part 1.page
+..\Chapter 2\Section 2.3.slides
+..\Chapter 2\Section 2.3 Part 2 and 2.4 Part 1.page
+..\Chapter 2\Section 2.4 Part 2.page
+..\Chapter 2\Section 2.4.slides
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
 ..\objective_assignments\Intro-3.assignment
