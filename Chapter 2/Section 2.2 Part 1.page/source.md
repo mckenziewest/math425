@@ -10,4 +10,4 @@ After class time today you will be able to
 Section 2.2 Exercise 1ab
 
 ## Optional reading
-pages 81-82 (starting with the corollary near the bottom of the page)
+pages 76-77
