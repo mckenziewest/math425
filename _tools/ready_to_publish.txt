@@ -42,6 +42,7 @@
 ..\objective_assignments\Intro-5.assignment
 ..\objective_assignments\Intro-6.assignment
 ..\objective_assignments\Intro-7.assignment
+..\objective_assignments\Group-1.assignment
 ..\supplemental_assignments\Supp-1.assignment
 ..\supplemental_assignments\Supp-2.assignment
 ..\supplemental_assignments\Supp-3.assignment
