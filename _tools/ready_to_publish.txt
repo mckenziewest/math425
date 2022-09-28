@@ -57,3 +57,6 @@
 ..\handouts\latex_examples\pdf.file
 ..\handouts\chapter0_thms\pdf.file
 ..\handouts\chapter0_thms\tex.file
+..\handouts\chapter1_thms\pdf.file
+..\handouts\chapter1_thms\tex.file
+..\handouts\objective_checks.file
