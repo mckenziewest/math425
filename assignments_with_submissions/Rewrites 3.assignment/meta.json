@@ -4,5 +4,6 @@
 	"allowed_extensions": ["pdf"],
   "submission_types": ["online_upload"],
   "modules": ["Week 5"],
-  "due_at": "2022-10-05T21:00:00Z"
+  "due_at": "2022-10-05T21:00:00Z",
+  "grading_type": "pass_fail"
 }
