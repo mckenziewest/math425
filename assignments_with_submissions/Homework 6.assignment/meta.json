@@ -1,0 +1,9 @@
+{
+  "name": "🏠 Homework 6", 
+  "type": "assignment",
+  "allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload"],
+  "modules": ["Week 7"],
+  "due_at": "2022-10-21T21:00:00Z",
+  "grading_type": "pass_fail"
+}

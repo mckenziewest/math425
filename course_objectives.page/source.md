@@ -92,7 +92,7 @@
         <a href="..\objective_assignments\Group-4.assignment\Group-4.tex">(tex)</a>
     </div>
     
-    <h2 id="Group-5" class="section">Group-5: 	Prove that a map is a homomorphism and prove whether or not it is an isomorphism.</h2>
+    <h2 id="Group-5" class="section">Group-5: Prove that a map is a homomorphism and prove whether or not it is an isomorphism.</h2>
     <div class="content">
         First Due: <a href="assignment: 🏠 Homework 7">🏠 Homework 7</a>, 10/28<br />
         Additional Exercises <a href="..\objective_assignments\Group-5.assignment\Group-5.pdf">(pdf)</a>
