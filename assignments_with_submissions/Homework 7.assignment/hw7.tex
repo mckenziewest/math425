@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,enumitem}
+\usepackage[margin=.75in]{geometry}
+\pagestyle{empty}
+
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\abar}{\overline{a}}
+\newcommand{\bbar}{\overline{b}}
+
+\setlength{\parindent}{0pt}
+\begin{document}
+	\begin{center}
+		{\Large \bf Math 425 Assignment 7}
+	\end{center}
+	\section*{Purpose}
+	\begin{itemize}
+		\item Assess objectives and additional exercises from section 2.5, namely
+		\begin{itemize}
+			\item Group-5: Prove that a map is a homomorphism and prove whether or not it is an isomorphism.
+			\item Group-6: Determine the automorphism group of a particular group.
+			\item Supplemental exercises Supp-15 and Supp-16.
+		\end{itemize}
+		\item Build a strong foundation of creative critical thinking and proof-writing techniques.
+	\end{itemize}
+	\section*{Task}
+	\begin{itemize}
+		\item Complete the exercises listed on the following page(s) of this document and submit your solutions as a pdf to Canvas.
+		\item I strongly recommend you use LaTeX to typeset your proofs.
+		\item You may work in groups but everyone should submit their own assignment written in their own words.  Do NOT copy your classmates.
+		\item Allowed resources: our textbook, classmates, your notes, videos linked in Canvas.
+		\item Unacceptable resources: anything you find on an internet search. Do NOT use a homework help website (e.g., Chegg). Their solutions are often wrong or use incorrect context.  I want you to practice making arguments that are yours. Take some ownership.
+	\end{itemize}
+	\section*{Criteria}
+	All items will earn a score using the following scale:
+	\begin{itemize}
+		\item \textbf{Exceptional} - Solution is succinct, references the correct theorems and definitions, and is entirely correct.
+		\item \textbf{Satisfactory} - Solution is nearly correct. It still references the correct theorems and definitions. 
+		It may be longer than necessary, have minor errors, or have some grammatical mistakes.
+		\item \textbf{Unsatisfactory} - Solution has major errors, references content not covered in class or in the textbook, or is incomplete in some major way.
+	\end{itemize}
+	Recall from the syllabus
+	\begin{itemize}
+		\item If you earn either an \textbf{Exceptional} or \textbf{Satisfactory} mark on an objective exercise (labeled Intro-, Group-, or Ring-) then you may consider that item complete. 
+		\item If you earn an \textbf{Unsatisfactory} mark on a an objective exercise (labeled Intro-, Group-, or Ring-) then you have not yet completed this objective.
+		\item You may submit a new attempt at completing that objective on a future Wednesday. You must select a new exercise listed under the given objective, you cannot resubmit a version you have attempted previously.  The only limit you have on number of attempts is the number of exercises available for the objective.
+		\item Some objectives will be completed through WeBWorK.  You must access these through the course on Canvas. Once you earn full credit on the assignment with at most 5 attempts, then you will have completed that objective.
+		\item If you earn an \textbf{Exceptional} mark on an additional exercise (labeled A-) then you will earn one point toward the fifteen total points in that section of your overall grade. You can consider the exercise complete.
+		\item If you earn an \textbf{Satisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0.5 points toward the fifteen total points in that section of your overall grade. You may submit a new attempt at this exercise on a future Wednesday. Unlike the objective exercises, you must submit an attempt at the exact same exercise rather than another in a similar theme.
+		\item If you earn an \textbf{Unsatisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0 points toward the fifteen total points in that section of your overall grade. You may submit a new attempt at this exercise on a future Wednesday. Unlike the objective exercises, you must submit an attempt at the exact same exercise rather than another in a similar theme.
+	\end{itemize}
+	
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-3)} Let $G = \Z_{26}^*$ be the multiplicative group of units modulo 26.  
+		\begin{enumerate}[label=(\alph*)]
+			\item Determine the order of $G$.\\
+				(Recall that the elements of $G$ are exactly the $\abar\in \Z_{26}$ such that $\gcd(a,26)=1$.)
+				\vskip 1in
+			\item Prove that $G$ is cyclic by finding a generator of $G$.
+				\vskip 2in
+			\item Draw the subgroup lattice of $G$.
+		\end{enumerate}
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-4)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-4}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Supp-13)} Let $G$ be a group and $g,h\in G$.
+		\begin{enumerate}[label=(\alph*)]
+			\item Assume $gh=hg$ and that $o(g)$ and $o(h)$ are finite, show that $o(gh)$ is also finite.
+				\vfill
+			\item Show that (a) fails if $gh\neq hg$ by considering the group of $2\times2$ invertible matrices under the operation of matrix multiplication, $GL_2(\mathbb{R})$, and the elements $$g=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\quad\text{ and }   h=\begin{bmatrix}0&1\\-1&-1\end{bmatrix}.$$
+				\vskip 2in
+		\end{enumerate}
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Supp-14)} Assume $G$ is a cyclic group with generator $g$ and $H$ is a cyclic group with generator $h$.  That is, $G=\langle g\rangle$ and $H=\langle h\rangle$.  Show that $G\times H = \langle(g,e_H),(e_G,h)\rangle$.
+	
+	
+\end{document}
