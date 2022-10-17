@@ -13,6 +13,7 @@
 ..\assignments_with_submissions\Rewrites 3.assignment
 ..\assignments_with_submissions\Rewrites 4.assignment
 ..\assignments_with_submissions\Rewrites 5.assignment
+..\assignments_with_submissions\Rewrites 6.assignment
 
 ..\Chapter 0\Section 0.1.page
 ..\Chapter 0\Section 0.1.slides
