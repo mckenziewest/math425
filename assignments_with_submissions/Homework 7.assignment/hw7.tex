@@ -10,6 +10,7 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\abar}{\overline{a}}
 \newcommand{\bbar}{\overline{b}}
+\newcommand{\aut}{\operatorname{aut}}
 
 \setlength{\parindent}{0pt}
 \begin{document}
@@ -58,39 +59,37 @@
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-3)} Let $G = \Z_{26}^*$ be the multiplicative group of units modulo 26.  
-		\begin{enumerate}[label=(\alph*)]
-			\item Determine the order of $G$.\\
-				(Recall that the elements of $G$ are exactly the $\abar\in \Z_{26}$ such that $\gcd(a,26)=1$.)
-				\vskip 1in
-			\item Prove that $G$ is cyclic by finding a generator of $G$.
-				\vskip 2in
-			\item Draw the subgroup lattice of $G$.
-		\end{enumerate}
+	\textbf{(Group-5.1)} Let $G$ be a group. Define $\sigma:G\to G\times G$ by $\sigma(g)=(g,g)$. 
+	\begin{enumerate}[label=(\alph*)]
+		\item Prove that $\sigma$ is a homomorphism.\vfill
+		\item Prove whether or not $\sigma$ is one-to-one.\vfill
+		\item Prove whether or not $\sigma$ is onto.\vfill
+		\item Prove whether or not $\sigma$ is an isomorphism.\vskip 1in
+	\end{enumerate}
+
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-6.1)}
+	\begin{enumerate}[label=(\alph*)]
+		\item Find all $a\in \Z_{10}$ such that $\langle a\rangle = \Z_{10}$. (Theorem 2.4.8 will be useful here.)\vskip 1in
+		\item For $a\in \Z_{10}$, define the mapping $f_a:\Z_{10}\to\Z_{10}$ by $f_a(g)=ag$ for all $g\in \Z_{10}$. Show that $f_a$ is a homomorphism for all $a\in\Z_{10}$.\vskip 2in
+		\item Show that if $\langle a\rangle=\Z_{10}$, then $f_a$ is in fact an isomorphism.\vskip 2in
+		\item Use the ideas of Example 18 in Section 2.5 to show that $\aut(\Z_{10})=\{f_a\ |\ \langle a\rangle=\Z_{10}\}$.
+	\end{enumerate}
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-4)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-4}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
+	\textbf{(Supp-15)} Fix an element $g$ of a group $G$. Define $S(g)=\{\sigma\in\aut(G)\ |\ \sigma(g)=g\}$.  Show that $S(g)$ is a subgroup of $\aut(G)$.
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Supp-13)} Let $G$ be a group and $g,h\in G$.
-		\begin{enumerate}[label=(\alph*)]
-			\item Assume $gh=hg$ and that $o(g)$ and $o(h)$ are finite, show that $o(gh)$ is also finite.
-				\vfill
-			\item Show that (a) fails if $gh\neq hg$ by considering the group of $2\times2$ invertible matrices under the operation of matrix multiplication, $GL_2(\mathbb{R})$, and the elements $$g=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\quad\text{ and }   h=\begin{bmatrix}0&1\\-1&-1\end{bmatrix}.$$
-				\vskip 2in
-		\end{enumerate}
-	
-	\newpage
-	Name: \underline{\hspace*{3in}}
-	\vskip .25in
-	
-	\textbf{(Supp-14)} Assume $G$ is a cyclic group with generator $g$ and $H$ is a cyclic group with generator $h$.  That is, $G=\langle g\rangle$ and $H=\langle h\rangle$.  Show that $G\times H = \langle(g,e_H),(e_G,h)\rangle$.
+	\textbf{(Supp-16)} Fix an element $a$ in the group $G$. Let $\sigma_a$ be the inner automorphism of $G$ defined by $a$.  This means that $\sigma_a:G\to G$ is defined by $\sigma_a(g)=aga^{-1}$ for all $g\in G$.  Show that $\sigma_a=id_G$, the identity map, if and only if $a\in Z(G)$.
 	
 	
 \end{document}

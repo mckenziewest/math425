@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,enumitem}
+\usepackage[margin=.75in]{geometry}
+\pagestyle{empty}
+
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\abar}{\overline{a}}
+\newcommand{\aut}{\operatorname{aut}}
+
+\setlength{\parindent}{0pt}
+\begin{document}
+	\begin{center}
+		{\Large \bf Math 425 Objective Group-5 Exercises}
+	\end{center}
+	\section*{Purpose}
+	\begin{itemize}
+		\item This document is intended to provide additional opportunities to complete the objective
+		
+		\textbf{Group-6:}  Determine the automorphism group of a particular group.
+	\end{itemize}
+	\section*{Task}
+	\begin{itemize}
+		\item If you have not yet earned a \textbf{Satisfactory} or \textbf{Exceptional} mark on an exercise labeled with the objective here, you may submit a single one of the following exercises, that you have not yet attempted via Canvas by 4pm on any following Wednesday.
+		\item I strongly recommend you use LaTeX to typeset your proofs.
+		\item You may work in groups but everyone should submit their own assignment written in their own words.  Do NOT copy your classmates.
+		\item Allowed resources: our textbook, classmates, your notes, videos linked in Canvas.
+		\item Unacceptable resources: anything you find on an internet search. Do NOT use a homework help website (e.g., Chegg). Their solutions are often wrong or use incorrect context.  I want you to practice making arguments that are yours. Take some ownership.
+	\end{itemize}
+	\section*{Criteria}
+	All items will earn a score using the following scale:
+	\begin{itemize}
+		\item \textbf{Exceptional} - Solution is succinct, references the correct theorems and definitions, and is entirely correct.
+		\item \textbf{Satisfactory} - Solution is nearly correct. It still references the correct theorems and definitions. 
+		It may be longer than necessary, have minor errors, or have some grammatical mistakes.
+		\item \textbf{Unsatisfactory} - Solution has major errors, references content not covered in class or in the textbook, or is incomplete in some major way.
+	\end{itemize}
+	Recall from the syllabus
+	\begin{itemize}
+		\item If you earn either an \textbf{Exceptional} or \textbf{Satisfactory} mark on an objective exercise (labeled Intro-, Group-, or Ring-) then you may consider that item complete. 
+		\item If you earn an \textbf{Unsatisfactory} mark on an objective exercise (labeled Intro-, Group-, or Ring-) then you have not yet completed this objective.
+		\item You may submit a new attempt at completing that objective on a future Wednesday. You must select a new exercise listed under the given objective, you cannot resubmit a version you have attempted previously.  The only limit you have on number of attempts is the number of exercises available for the objective.
+	\end{itemize}
+	
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-6.2)} Let $G=\Z_2\times \Z_2=\{e,a,b,c\}$ where $e=(\overline{0},\overline{0})$, $a=(\overline{1},\overline{0})$, $b=(\overline{0},\overline{1})$, and $c=(\overline{1},\overline{1})$.
+	\begin{enumerate}[label=(\alph*)]
+		\item For $x,y\in G$, define $\sigma_{x,y}:G\to G$ by 
+			\begin{equation*}
+				\sigma_{x,y}(g) = 
+				\begin{cases}
+					e&\text{if }g=e,\\
+					x&\text{if }g=a,\\
+					y&\text{if }g=b,\\
+					x+y&\text{if }g=c.
+				\end{cases}
+			\end{equation*}
+		    Show that $\sigma_{x,y}$ is a homomorphism for all $x,y\in G$.
+		    \vfill
+		\item Show that $\sigma_{x,y}$ is an isomorphism if and only if $x\neq y$, $x\neq e$, and $y\neq e$.\vfill
+		\item Explain why $\aut(G)=\{\sigma_{a,b},\sigma_{a,c},\sigma_{b,a},\sigma_{b,c},\sigma_{c,a},\sigma_{c,b}\}$.\vfill
+	\end{enumerate}
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-6.3)} Let $p$ be a prime number. 
+	\begin{enumerate}[label=(\alph*)]
+		\item Find all $a\in \Z_{p}$ such that $\langle a\rangle = \Z_{p}$. (Theorem 2.4.8 will be useful here.)\vskip 1in
+		\item For $a\in \Z_{p}$, define the mapping $f_a:\Z_{p}\to\Z_{p}$ by $f_a(g)=ag$ for all $g\in \Z_{p}$. Show that $f_a$ is a homomorphism for all $a\in\Z_{p}$.\vskip 2in
+		\item Show that if $\langle a\rangle=\Z_{p}$, then $f_a$ is in fact an isomorphism.\vskip 2in
+		\item Use the ideas of Example 18 in Section 2.5 to show that $\aut(\Z_{p})=\{f_a\ |\ \langle a\rangle=\Z_{p}\}$.
+	\end{enumerate}
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-6.4)}  
+	\begin{enumerate}[label=(\alph*)]
+		\item Find all $a\in \Z_{26}^\times$ such that $\langle a\rangle = \Z_{26}^\times$.\vskip 1in
+		
+		\item We know that $\Z_{26}^\times=\langle \overline{7}\rangle$. For $0< m< |\Z_{26}^\times|$, define the mapping $f_m:\Z_{26}^\times\to\Z_{26}^\times$ by $f_m(g)=\overline{7^{mb}}$ for all $\overline{7^b}\in\Z_{26}^\times$. Show that $f_m$ is a homomorphism for all $0< m< |\Z_{26}^\times|$.\vskip 2in
+		
+		\item Show that if $\gcd(m,|\Z_{26}^\times|) = 1$, then $f_m$ is in fact an isomorphism.\vskip 2in
+		
+		\item Use the ideas of Example 18 in Section 2.5 to show that $$\aut(\Z_{26}^\times)=\{f_m\ |\ 1\leq m<26\text{ with }\gcd(m,|\Z_{26}^\times|) = 1\}.$$
+	\end{enumerate}
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-6.5)} Let $G=\Z_2\times \Z_4$. Show that $\aut(G)=\langle \sigma,\tau\rangle$ where $\sigma:G\to G$ is given by $\sigma(a,b)=(a+b,2a+b)$ and $\tau(a,b)=(a,3b)$.
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-6.6)} Let $G=S_4$, the symmetric group of order 4. Show that $\aut(S_4)\cong S_4$.
+	
+	
+	
+\end{document}
