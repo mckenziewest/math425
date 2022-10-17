@@ -18,27 +18,3 @@ Pages 139-141
 ## Long Video with Examples (Optional)
 
 <a class=" inline_disabled" href="https://youtu.be/BE8lhcGfSiI">Link to video</a>
-
-<h2>Outcomes</h2>
-<ul>
-<li>After class time today you will be able to
-<ul>
-<li></li>
-</ul>
-</li>
-</ul>
-<h2>Preparation</h2>
-<ul>
-<li>Watch<br></li>
-<li>Optional Reading
-<ul>
-<li>pages </li>
-</ul>
-</li>
-<li>Practice Exercise
-<ul>
-<li></li>
-</ul>
-</li>
-<li></li>
-</ul>

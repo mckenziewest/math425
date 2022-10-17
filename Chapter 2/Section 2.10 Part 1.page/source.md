@@ -13,7 +13,7 @@ After class time today you will be able to
 
 Define \\(\alpha\colon S_n\to \mathbb{Z}_2\\) by 
 \\(\alpha(\sigma)=\begin{cases}
-\overline{0}&\text{ if }\sigma\text{ is even,}\\
+\overline{0}&\text{ if }\sigma\text{ is even,}\\\\
 \overline{1}&\text{ if }\sigma\text{ is odd.}\end{cases}\\)
 
 Convince yourself that is a homomorphism and compute \\(\operatorname{ker}(\alpha)\\).
