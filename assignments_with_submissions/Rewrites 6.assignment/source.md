@@ -9,6 +9,7 @@ Useful links available here:
 <li><a href="assignment:🏠 Homework 3">🏠 Homework 3</a></li>
 <li><a href="assignment:🏠 Homework 4">🏠 Homework 4</a></li>
 <li><a href="assignment:🏠 Homework 5">🏠 Homework 5</a></li>
+<li><a href="assignment:🏠 Homework 6">🏠 Homework 6</a></li>
 <li>
   Objectives Assigned by this Time
   <ul>
@@ -21,6 +22,8 @@ Useful links available here:
     <li><a href="assignment:Intro-7">Intro-7</a></li>
     <li><a href="assignment:Group-1">Group-1</a></li>
     <li><a href="assignment:Group-2">Group-2</a></li>
+    <li><a href="assignment:Group-3">Group-3</a></li>
+    <li><a href="assignment:Group-4">Group-4</a></li>
   </ul>
 </li>
 <li>
@@ -38,6 +41,8 @@ Useful links available here:
     <li><a href="assignment:Supp-10">Supp-10</a></li>
     <li><a href="assignment:Supp-11">Supp-11</a></li>
     <li><a href="assignment:Supp-12">Supp-12</a></li>
+    <li><a href="assignment:Supp-13">Supp-13</a></li>
+    <li><a href="assignment:Supp-14">Supp-14</a></li>
   </ul>
 </li>
 
