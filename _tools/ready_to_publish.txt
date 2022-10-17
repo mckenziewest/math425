@@ -59,6 +59,11 @@
 ..\Chapter 2\Section 2.5 Part 3.page
 ..\Chapter 2\Section 2.5.slides
 
+..\Chapter 2\Section 2.6 Part 1.page
+..\Chapter 2\Section 2.6 Part 2.page
+
+..\Chapter 2\Section 2.7.page
+
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
 ..\objective_assignments\Intro-3.assignment
@@ -94,5 +99,7 @@
 ..\handouts\chapter1_thms\pdf.file
 ..\handouts\chapter1_thms\tex.file
 ..\handouts\chapter2a_thms\pdf.file
-..\handouts\chapter3a_thms\tex.file
+..\handouts\chapter2a_thms\tex.file
+..\handouts\chapter2b_thms\pdf.file
+..\handouts\chapter2b_thms\tex.file
 ..\handouts\objective_checks.file
