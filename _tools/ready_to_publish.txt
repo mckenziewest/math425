@@ -64,6 +64,14 @@
 
 ..\Chapter 2\Section 2.7.page
 
+..\Chapter 2\Section 2.8 Part 1.page
+..\Chapter 2\Section 2.8 Part 2.page
+
+..\Chapter 2\Section 2.9.page
+
+..\Chapter 2\Section 2.10 Part 1.page
+..\Chapter 2\Section 2.10 Part 2.page
+
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
 ..\objective_assignments\Intro-3.assignment
