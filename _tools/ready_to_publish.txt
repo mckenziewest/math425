@@ -63,6 +63,7 @@
 
 ..\Chapter 2\Section 2.6 Part 1.page
 ..\Chapter 2\Section 2.6 Part 2.page
+..\Chapter 2\Section 2.6.slides
 
 ..\Chapter 2\Section 2.7.page
 
