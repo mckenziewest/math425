@@ -1,4 +1,5 @@
 {
-  "name": "🦕 Artifact Description: Lesson Plan",
-  "type": "page"
+  "name": "🦕 Artifact Description: Video Presentation",
+  "type": "page",
+  "modules": ["Final Project"]
 }
