@@ -4,5 +4,6 @@
   "submission_types": ["None"],
   "modules": ["Final Project","Week 12"],
   "due_at": "2022-11-21T21:00:00Z",
-  "grading_type": "pass_fail"
+  "grading_type": "points",
+  "points_possible": 10
 }
