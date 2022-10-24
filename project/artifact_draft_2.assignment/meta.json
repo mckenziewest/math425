@@ -1,0 +1,9 @@
+{
+  "name": "🌱 Artifact Draft 2", 
+  "type": "assignment",
+	"allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload","online_text_entry"],
+  "modules": ["Final Project","Week 13"],
+  "due_at": "2022-12-02T21:00:00Z",
+  "grading_type": "pass_fail"
+}

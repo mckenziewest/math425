@@ -120,3 +120,14 @@
 ..\handouts\chapter2b_thms\pdf.file
 ..\handouts\chapter2b_thms\tex.file
 ..\handouts\objective_checks.file
+
+..\project\instructions.file
+..\project\idea_choice.assignment
+..\project\peer_review_agreement.assignment
+..\project\source_and_questions.assignment 
+..\project\artifact_draft_1.assignment
+..\project\peer_review_1.assignment
+..\project\artifact_draft_2.assignment
+..\project\peer_review_2.assignment
+..\project\artifact-lesson_plan.page 
+..\project\artifact-video.page 

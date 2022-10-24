@@ -5,7 +5,6 @@ The audience for the video is something you will choose and make clear in the co
 <br><br>
 What follows describes the components I expect between your video and slides. The scores listed are guidelines and adjustments will be made for partial credit between the listed values.
 
-*******Not done!*********
 <table class="bordered">
 <tr>
   <th style="width:30%"> Component </th>
