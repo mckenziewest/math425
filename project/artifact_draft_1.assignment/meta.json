@@ -1,9 +1,9 @@
 {
   "name": "🌱 Artifact Draft 1", 
   "type": "assignment",
-	"allowed_extensions": ["pdf"],
-  "submission_types": ["online_upload","online_text_entry"],
+  "submission_types": ["online_upload","online_text_entry","online_url","media_recording"],
   "modules": ["Final Project","Week 11"],
-  "due_at": "2022-11-18T21:00:00Z",
-  "grading_type": "pass_fail"
+  "due_at": "2022-11-18T22:00:00Z",
+  "grading_type": "points",
+  "points_possible": 4
 }

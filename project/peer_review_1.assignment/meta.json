@@ -1,9 +1,8 @@
 {
-  "name": "🤗 Peer Review 1", 
+  "name": "🔢 Peer Review 1", 
   "type": "assignment",
-  "submission_types": ["None"],
   "modules": ["Final Project","Week 12"],
-  "due_at": "2022-11-21T21:00:00Z",
+  "due_at": "2022-11-21T22:00:00Z",
   "grading_type": "points",
   "points_possible": 10
 }

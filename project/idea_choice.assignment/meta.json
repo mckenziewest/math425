@@ -5,5 +5,6 @@
   "submission_types": ["online_upload","online_text_entry"],
   "modules": ["Final Project","Week 9"],
   "due_at": "2022-10-31T21:00:00Z",
-  "grading_type": "pass_fail"
+  "grading_type": "points",
+  "points_possible": 4
 }

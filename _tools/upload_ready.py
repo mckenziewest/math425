@@ -40,8 +40,7 @@ def make_mc_obj(f,course):
 
 for f in ready_files:
     print(f)
-    obj = make_mc_obj(f,course)
-
+    obj = make_mc_obj(f.strip(),course)
     if not dry_run:
         obj.publish(course, overwrite=True)
     else:

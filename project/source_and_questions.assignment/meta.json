@@ -4,6 +4,7 @@
 	"allowed_extensions": ["pdf"],
   "submission_types": ["online_upload"],
   "modules": ["Final Project","Week 10"],
-  "due_at": "2022-11-09T21:00:00Z",
-  "grading_type": "pass_fail"
+  "due_at": "2022-11-09T22:00:00Z",
+  "grading_type": "points",
+  "points_possible": 4
 }

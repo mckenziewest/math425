@@ -1,0 +1,9 @@
+{
+  "name": "🔢 Question Reflection", 
+  "type": "assignment",
+	"allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload"],
+  "modules": ["Final Project","Week 16"],
+  "due_at": "2022-12-21T00:50:00Z",
+  "points_possible": 20
+}

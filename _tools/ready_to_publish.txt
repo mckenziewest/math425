@@ -129,5 +129,9 @@
 ..\project\peer_review_1.assignment
 ..\project\artifact_draft_2.assignment
 ..\project\peer_review_2.assignment
+..\project\artifact_final_1.assignment
+..\project\artifact_final_2.assignment
+..\project\question_reflection.assignment
+..\project\response_to_comments.assignment
 ..\project\artifact-lesson_plan.page 
 ..\project\artifact-video.page 
