@@ -72,8 +72,10 @@
 
 ..\Chapter 2\Section 2.8 Part 1.page
 ..\Chapter 2\Section 2.8 Part 2.page
+..\Chapter 2\Section 2.8.slides
 
 ..\Chapter 2\Section 2.9.page
+..\Chapter 2\Section 2.9.slides
 
 ..\Chapter 2\Section 2.10 Part 1.page
 ..\Chapter 2\Section 2.10 Part 2.page
@@ -92,6 +94,7 @@
 ..\objective_assignments\Group-4.assignment
 ..\objective_assignments\Group-5.assignment
 ..\objective_assignments\Group-6.assignment
+..\objective_assignments\Group-7.assignment
 
 ..\supplemental_assignments\Supp-1.assignment
 ..\supplemental_assignments\Supp-2.assignment
