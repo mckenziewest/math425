@@ -113,6 +113,7 @@
 ..\supplemental_assignments\Supp-14.assignment
 ..\supplemental_assignments\Supp-15.assignment
 ..\supplemental_assignments\Supp-16.assignment
+..\supplemental_assignments\Supp-17.assignment
 
 ..\handouts\latex_examples\tex.file
 ..\handouts\latex_examples\pdf.file
