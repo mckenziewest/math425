@@ -2,6 +2,7 @@
 \usepackage{amsmath,amsthm,amssymb,hyperref,enumitem}
 \usepackage[margin=.75in]{geometry}
 \pagestyle{empty}
+\usepackage{tikz}
 
 
 
@@ -60,25 +61,41 @@
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-7.1)}
+	\textbf{(Group-7)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-7}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
 
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-8.1)}
+	\textbf{(Group-8.1)} Let $p$ be a prime number and $G$ be a group with $|G|=p^2$. Show that every proper subgroup of $G$ is cyclic.
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-9.1)}
+	\textbf{(Group-9.1)} Consider the hexagon as follows. (For clarity: The two horizontal edges are the same length. The 4 shorter edges are all the same length, which is smaller than the length of the horizontal edges. The angles at nodes 1,2,4,and 5 are all equal and the angles at nodes 3 and 6 are equal.)
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\setlength{\unitlength}{1in}
+			\draw (0,0) -- (1,1) -- (5,1) -- (6,0) -- (5,-1) -- (1,-1) -- (0,0) node[anchor=east] {6} (1,1) node[anchor=south] {1} (5,1) node[anchor=south]{2} (6,0) node[anchor=west]{3} (5,-1) node[anchor=north] {4} (1,-1) node[anchor=north]{5};
+		\end{tikzpicture}
+	\end{center}
+
+	\begin{enumerate}[label=(\alph*)]
+		\item Using $r$ as rotation by $60^\circ$ and $f$ as a flip along the vertical axis at the center of this figure, as in $D_6$, write all of the symmetries of this hexagon in terms of $r$ and $f$.  That is, which combinations of $r$ and $f$ return this shape to the same location, possibly with the numbers swapping?
+		\vskip 2in
+		\item Write and complete a Cayley table for the group you found in part (a).
+		\vfill 
+		\item What group ($\Z_n$, $\Z_m\times\Z_n$, $S_n$, $D_n$, $\dots$) is this group of symmetries isomorphic to?
+		\vskip 1in
+	\end{enumerate}
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Supp-17)}
+	\textbf{(Supp-17)} Let $G$ be a group and fix elements $a,b\in G$. Let $H$ be a subgroup of $G$ such that $Ha=bH$.  Show that $aH=Hb$.
 	
 	
 \end{document}

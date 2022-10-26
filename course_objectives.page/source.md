@@ -110,8 +110,9 @@
     <h2 id="Group-7" class="section">Group-7:	Compute the right and left cosets of a subgroup of a group.</h2>
     <div class="content">
         First Due: <a href="assignment: 🏠 Homework 8">🏠 Homework 8</a>, 11/4<br />
-        Additional Exercises <a href="..\objective_assignments\Group-7.assignment\Group-7.pdf">(pdf)</a>
-        <a href="..\objective_assignments\Group-7.assignment\Group-7.tex">(tex)</a>
+        This is a WeBWorK exercise. To access it, click the link from the 
+        <a href="assignment: Intro-7">assignment for the objective</a>.<br>
+        You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
     </div>
     
     <h2 id="Group-8" class="section">Group-8:	Use Lagrange’s theorem or its corollaries to prove a property of a group.</h2>

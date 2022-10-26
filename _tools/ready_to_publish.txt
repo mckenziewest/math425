@@ -9,6 +9,7 @@
 ..\assignments_with_submissions\Homework 5.assignment
 ..\assignments_with_submissions\Homework 6.assignment
 ..\assignments_with_submissions\Homework 7.assignment
+..\assignments_with_submissions\Homework 8.assignment
 ..\assignments_with_submissions\Rewrites 1.assignment
 ..\assignments_with_submissions\Rewrites 2.assignment
 ..\assignments_with_submissions\Rewrites 3.assignment
