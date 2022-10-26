@@ -1,0 +1,210 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 2.8: Normal Subgroups}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		\item Dihedral Groups
+		\item Groups of order 2p
+	}{
+		\item Normal Subgroups
+		\item Products of Groups
+		\item Simple Groups
+	}
+
+\slide{
+	Recall from Section 2.6:
+	\begin{defn}
+		If $H\leq G$ and $a\in G$, then we call $Ha=\{ha : h\in H\}$ a \emph{right coset} of $H$.  Similarly we call $aH=\{ah : h\in H\}$ a \emph{left coset} of $H$.
+	\end{defn}
+	\begin{exercise}
+		Let $G=S_3$.
+		\enumalph{
+			\item What are the left and right cosets of $H=\{\varepsilon,(1\ 2)\}$?\vskip .65in
+			\item What are the left and right cosets of $K=\{\varepsilon,(1\ 2\ 3),(1\ 3\ 2)\}$?\vskip 1in\mbox{}
+		}
+	\end{exercise}
+}
+
+
+
+\slide{
+	\begin{defn}
+		A subgroup $H$ of $G$ is called a \emph{normal subgroup} of $G$ if $gH=Hg$ for all $g\in G$.
+		If $H$ is a normal subgroup of $G$, we might say \emph{$H$ is normal in $G$} and write $H\nml G$.
+	\end{defn}
+}
+\slide{
+	\begin{thm}{2.8.2}
+		If $G$ is abelian and $H\leq G$, then $H\nml G$.
+	\end{thm}
+}
+\slide{
+	\begin{thm}{2.8.1}
+		If $G$ is a group, every subgroup of the center, $Z(G)$ is normal in $G$.  In particular, $Z(G)\nml G$.
+	\end{thm}
+}
+
+\slide{
+	\begin{statementblock}{Normality Test (Theorem 2.8.3)}
+		The following conditions are equivalent for a subgroup $H$ of a group $G$.
+		\enumarabic{
+			\item $H\nml G$.
+			\item $gHg^{-1}\subseteq H$ for all $g\in G$.
+			\item $gHg^{-1}=H$ for all $g\in G$.
+		}
+	\end{statementblock}
+}
+\slide{
+	\begin{statementblock}{Corollary 1}
+		If $G=\langle g_1,g_2,\dots,g_n\rangle$, then a subgroup $H$ of $G$ is normal if and only if $g_iHg_i^{-1}\subseteq H$ for all $1\leq i\leq n$.
+	\end{statementblock}
+}
+\slide{
+	\begin{defn}
+		If $H$ is a subgroup of $G$ and $g\in G$, we call $gHg^{-1}$ a \emph{conjugate} of $H$ in $G$.
+	\end{defn}
+	\begin{statementblock}{Corollary 2}
+		If $H$ is a subgroup of $G$, then $gHg^{-1}$ is also a subgroup of $G$, isomorphic to $H$, for all $g\in G$.  Moreover if $G$ has no other subgroups isomorphic to $H$ then $H\nml G$.
+	\end{statementblock}
+}
+\slide{
+	\begin{exa}
+		Let $G=GL_2(\R)$ and $H=SL_2(\R)$, the subgroup containing all $2\times2$ matrices with determinant 1.
+		
+		Claim: $H\nml G$
+	\end{exa}
+}	
+\slide{
+	\begin{statementblock}{Theorem}
+		If $a\in G$, then $\langle a \rangle\nml G$ if and only if $gag^{-1}\in\langle a \rangle$ for all $g\in G$.
+	\end{statementblock}
+	\begin{statementblock}{Theorem}
+		If $a_1,a_2,\dots,a_n\in G$ and $H= \langle a_1,a_2,\dots,a_n\rangle$, then $H\nml G$ if and only if $ga_ig^{-1}\in H$ for all $g\in G$ and all $1\leq i\leq n$.
+	\end{statementblock}
+}
+\slide{
+	\begin{thm}{2.8.4}
+		If $H\leq G$ with $|G:H|=2$, then $H\nml G$.
+	\end{thm}
+}
+\slide{
+	\begin{exercise}
+		Show $A_n\nml S_n$. Using Theorem 2.8.4.\vskip 2in
+	\end{exercise}
+}
+\slide{
+\begin{defn}
+	The \emph{product} of the subgroups $H,K\leq G$ is the set
+	\[HK=\{hk\ :\ h\in H,\ k\in K\}.\]
+\end{defn}
+\begin{exa}
+	$S_3=\{\varepsilon,\sigma,\sigma^2,\tau,\tau\sigma,\tau\sigma^2\}$, $H=\{\varepsilon,\tau\}$, $K=\{\varepsilon,\tau\sigma\}$\vskip .5in
+	$HK=$\vskip .5in\mbox{}
+\end{exa}
+}
+\slide{
+\begin{thm}{2.8.5}
+	Let $H$ and $K$ be subgroups of a group $G$.
+	\enumarabic{\item If $H$ or $K$ is normal in $G$, then $HK=KH$ is a subgroup of $G$.
+		\item If both $H$ and $K$ are normal in $G$, then $HK\nml G$ too.}
+\end{thm}
+\begin{exa}
+	$G=D_6$, $H=\{e,r^2,r^4\}$, $K=\{e,r^3\}$\vskip 2in\mbox{}
+\end{exa}
+}
+\slide{
+\begin{thm}{2.8.6}
+	If $H\nml G$ and $K\nml G$ satisfy $H\cap K=\{e_G\}$, then $HK\cong H\times K$.
+\end{thm}
+\begin{block}{Proof Idea.}
+	Define $\phi: H\times K \to HK$ by $\phi(h,k)=hk$.
+	\bulletize{\item (Onto) True no matter $H$ and $K$.\item (One-to-One) True because $H\cap K=\{e_G\}$\item (Homomorphism) True because $H$ and $K$ are normal and $H\cap K=\{e_G\}$.}
+\end{block}
+}
+\slide{
+\begin{exa}
+	$G=\Z_6$, $H=\{\overline{0},\overline{2},\overline{4}\}$, $K=\{\overline{0},\overline{3}\}$.
+	
+	\[H+K=\{\overline{0},\overline{3},\overline{2},\overline{5},\overline{4},\overline{7}\}=\Z_6\cong H\times K\]
+\end{exa}
+\begin{exercise}
+	$G=D_6$, $H=\{e,r^2,r^4\}$, $K=\{e,r^3\}$
+	
+	Verify $H\times K\cong HK$.\vskip 2in\mbox{}
+\end{exercise}
+}
+\slide{
+	\begin{exercise}[We're not going to do this together. But take a look on your own.]
+		We saw $SL_2(\R)$, the set of $2\times 2$ matrices with determinant 1, is a normal subgroup of $GL_2(\R)$, the multiplicative group of $2\times 2$ invertible matrices.  
+		\enumalph{
+			\item Verify that $D_2(\R)=\left\{\begin{bmatrix}a&0\\0&a\end{bmatrix}\ |\ a\in\R^\times\right\}$ is also an normal subgroup of $GL_2(\R)$.\\{\footnotesize (Recall $\R^\times$ is the multiplicative group on the set $\R-\{0\}$.)}
+			\item Compute $D_2(\R)\cap SL_2(\R)$.
+			\item Make conclusions about $D_2(\R)\cdot SL_2(\R)$ and $D_2(\R)\times SL_2(\R)$.
+			\item Show that $D_2(\R)$ is the center of $GL_2(\R)$.
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Corollary 1}
+		If $G$ is a finite group and $H,K\leq G$ with $H\cap K=\{e_G\}$, then $|HK|=|H||K|$.
+	\end{statementblock}
+	\vskip .75in
+	\begin{statementblock}{Corollary 2}
+		If $G$ is a finite group and $H,K\nml G$ with $H\cap K=\{e_G\}$ and $|HK|=|G|$, then $G\cong H\times K$.
+	\end{statementblock}
+}
+\slide{
+\begin{statementblock}{Theorem}
+	If $m$ and $n$ are relatively prime integers and $G$ is a cyclic group of order $mn$, then $G\cong C_m\times C_n$.
+\end{statementblock}
+\vskip .75in
+\begin{statementblock}{Theorem}
+	Let $G$ be an abelian group of order $p^2$ for some prime $p$.  Then either $G\cong C_{p^2}$ or $G\cong C_p\times C_p$.
+\end{statementblock}
+}
+\slide{
+\begin{exa}
+	A non-abelian group where every subgroup is normal.
+	
+	$Q=\{\pm 1,\pm i,\pm j\pm k\}$ with relations
+	\[i^2=j^2=k^2=-1=ijk\]
+	\[ij=k=-ji\]
+	\[jk=i=-kj\]
+	\[ki=j=-ik\]
+	
+	Why? Either $H\subseteq\{1,-1\}=Z(G)$ or $|Q:H|=1$ or $2$.
+\end{exa}
+}
+\slide{
+\begin{defn}
+	A group $G$ is \emph{simple} if its only normal subgroups are $\{e_G\}$ and $G$.
+\end{defn}
+\begin{exa}
+	$\Z_p$ is simple for all primes $p$
+\end{exa}
+}
+\slide{
+\begin{thm}{2.8.7}
+	An abelian group $G\neq\{e_G\}$ is simple if and only if $|G|$ is prime.
+\end{thm}
+}
+\slide{
+\begin{thm}{2.8.8}
+	If $n\geq 5$, then $A_n$ is simple.
+\end{thm}
+\begin{block}{Proof Idea.}
+	\bulletize{
+		\item Every non-identity element of $A_n$ can be written as a product of 3-cycles.
+		\[(ij)(ij)=\varepsilon\quad (i\ j)(i\ k)=(i\ k\ j)\quad (i\ j)(k\ l)=(i\ l\ k)(i\ j\ k).\]
+		\item If $H\lhd A_n$ and $H$ contains a 3-cycle, then $H$ contains all 3 cycles. So by the previous note, $H=A_n$.
+		\item Use a contradiction to the minimality of the number of elements of $\{1,2,\dots,n\}$ that are changed by $\tau\in H$.
+	}
+\end{block}
+}
+\end{document}
+
