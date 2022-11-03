@@ -85,6 +85,9 @@
 ..\Chapter 2\Section 2.10 Part 2.page
 ..\Chapter 2\Section 2.10.slides
 
+..\Chapter 3\Section 3.1 Part 1.page
+..\Chapter 3\Section 3.1 Part 2.page
+
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
 ..\objective_assignments\Intro-3.assignment
