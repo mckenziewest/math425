@@ -13,13 +13,13 @@
 \setlength{\parindent}{0pt}
 \begin{document}
 	\begin{center}
-		{\Large \bf Math 425 Objective Group-6 Exercises}
+		{\Large \bf Math 425 Objective Group-8 Exercises}
 	\end{center}
 	\section*{Purpose}
 	\begin{itemize}
 		\item This document is intended to provide additional opportunities to complete the objective
 		
-		\textbf{Group-6:}  Determine the automorphism group of a particular group.
+		\textbf{Group-8:}  Use Lagrange’s theorem or its corollaries to prove a property of a group.
 	\end{itemize}
 	\section*{Task}
 	\begin{itemize}
@@ -49,62 +49,31 @@
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-6.2)} Let $G=\Z_2\times \Z_2=\{e,a,b,c\}$ where $e=(\overline{0},\overline{0})$, $a=(\overline{1},\overline{0})$, $b=(\overline{0},\overline{1})$, and $c=(\overline{1},\overline{1})$.
-	\begin{enumerate}[label=(\alph*)]
-		\item For $x,y\in G$, define $\sigma_{x,y}:G\to G$ by 
-			\begin{equation*}
-				\sigma_{x,y}(g) = 
-				\begin{cases}
-					e&\text{if }g=e,\\
-					x&\text{if }g=a,\\
-					y&\text{if }g=b,\\
-					x+y&\text{if }g=c.
-				\end{cases}
-			\end{equation*}
-		    Show that $\sigma_{x,y}$ is a homomorphism for all $x,y\in G$.
-		    \vfill
-		\item Show that $\sigma_{x,y}$ is an isomorphism if and only if $x\neq y$, $x\neq e$, and $y\neq e$.\vfill
-		\item Explain why $\aut(G)=\{\sigma_{a,b},\sigma_{a,c},\sigma_{b,a},\sigma_{b,c},\sigma_{c,a},\sigma_{c,b}\}$.\vfill
-	\end{enumerate}
+	\textbf{(Group-8.2)} Let $n\geq 3$. Show that $|\Z_n^\times|$ is even.
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-6.3)} Let $p$ be a prime number. 
-	\begin{enumerate}[label=(\alph*)]
-		\item Find all $a\in \Z_{p}$ such that $\langle a\rangle = \Z_{p}$. (Theorem 2.4.8 will be useful here.)\vskip 1in
-		\item For $a\in \Z_{p}$, define the mapping $f_a:\Z_{p}\to\Z_{p}$ by $f_a(g)=ag$ for all $g\in \Z_{p}$. Show that $f_a$ is a homomorphism for all $a\in\Z_{p}$.\vskip 2in
-		\item Show that if $\langle a\rangle=\Z_{p}$, then $f_a$ is in fact an isomorphism.\vskip 2in
-		\item Use the ideas of Example 18 in Section 2.5 to show that $\aut(\Z_{p})=\{f_a\ |\ \langle a\rangle=\Z_{p}\}$.
-	\end{enumerate}
+	\textbf{(Group-8.3)} Let $G$ be a group of order $n$ and let $m$ be an integer with $\gcd(m,n)=1$.  If $g\in G$ satisfies $g^m=1$, show that $g=1$.
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-6.4)}  
-	\begin{enumerate}[label=(\alph*)]
-		\item Find all $a\in \Z_{26}^\times$ such that $\langle a\rangle = \Z_{26}^\times$.\vskip 1in
-		
-		\item We know that $\Z_{26}^\times=\langle \overline{7}\rangle$. For $0< m< |\Z_{26}^\times|$, define the mapping $f_m:\Z_{26}^\times\to\Z_{26}^\times$ by $f_m(g)=\overline{7^{mb}}$ for all $\overline{7^b}\in\Z_{26}^\times$. Show that $f_m$ is a homomorphism for all $0< m< |\Z_{26}^\times|$.\vskip 2in
-		
-		\item Show that if $\gcd(m,|\Z_{26}^\times|) = 1$, then $f_m$ is in fact an isomorphism.\vskip 2in
-		
-		\item Use the ideas of Example 18 in Section 2.5 to show that $$\aut(\Z_{26}^\times)=\{f_m\ |\ 1\leq m<26\text{ with }\gcd(m,|\Z_{26}^\times|) = 1\}.$$
-	\end{enumerate}
+	\textbf{(Group-8.4)}  Let $p$ be a prime number and $G$ a group of order $p^3$.  Prove that if $G$ is not cyclic, then $g^{p^2}=1$ for all $g\in G$.
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-6.5)} Let $G=\Z_2\times \Z_4$. Show that $\aut(G)=\langle \sigma,\tau\rangle$ where $\sigma:G\to G$ is given by $\sigma(a,b)=(a+b,2a+b)$ and $\tau(a,b)=(a,3b)$.
+	\textbf{(Group-8.5)} Let $G$ be a group with elements $a,b\in G$.  Assume $a^k=b^k$.  Write $m=o(a)$ and $n=o(b)$.  Show that if $m$ and $n$ are relatively prime then $mn$ divides $k$.
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-6.6)} Let $G=S_4$, the symmetric group of order 4. Show that $\aut(S_4)\cong S_4$.
+	\textbf{(Group-8.6)} If $G$ is a group of order $p^k$ where $p$ is some prime and $k\geq 1$.  Show that $G$ must have an element of order $p$.
 	
 	
 	
