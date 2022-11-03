@@ -18,6 +18,8 @@
 ..\assignments_with_submissions\Rewrites 5.assignment
 ..\assignments_with_submissions\Rewrites 6.assignment
 ..\assignments_with_submissions\Rewrites 7.assignment
+..\assignments_with_submissions\Rewrites 8.assignment
+..\assignments_with_submissions\Rewrites 9.assignment
 
 ..\Chapter 0\Section 0.1.page
 ..\Chapter 0\Section 0.1.slides
@@ -81,6 +83,7 @@
 
 ..\Chapter 2\Section 2.10 Part 1.page
 ..\Chapter 2\Section 2.10 Part 2.page
+..\Chapter 2\Section 2.10.slides
 
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
@@ -97,6 +100,10 @@
 ..\objective_assignments\Group-5.assignment
 ..\objective_assignments\Group-6.assignment
 ..\objective_assignments\Group-7.assignment
+..\objective_assignments\Group-8.assignment
+..\objective_assignments\Group-9.assignment
+..\objective_assignments\Group-11.assignment
+..\objective_assignments\Group-12.assignment
 
 ..\supplemental_assignments\Supp-1.assignment
 ..\supplemental_assignments\Supp-2.assignment
@@ -133,7 +140,7 @@
 ..\project\instructions.file
 ..\project\idea_choice.assignment
 ..\project\peer_review_agreement.assignment
-..\project\source_and_questions.assignment
+..\project\source_and_questions.assignment 
 ..\project\artifact_draft_1.assignment
 ..\project\peer_review_1.assignment
 ..\project\artifact_draft_2.assignment
@@ -142,6 +149,6 @@
 ..\project\artifact_final_2.assignment
 ..\project\question_reflection.assignment
 ..\project\response_to_comments.assignment
-..\project\artifact-lesson_plan.page
-..\project\artifact-video.page
-..\project\artifact-paper.page
+..\project\artifact-lesson_plan.page 
+..\project\artifact-video.page 
+..\project\artifact-paper.page 

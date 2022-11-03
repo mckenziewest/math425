@@ -1,6 +1,6 @@
 {
-    "link": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
-    "ww_name": "Group_11-",
+    "link": "https://webwork.uwec.edu/webwork2/425_West/Group-11_Subgroups_of_Dihedral_Groups",
+    "ww_name": "Group-11_Subgroups_of_Dihedral_Groups",
     "name": "Group-11",
     "unlock_at": "2022-11-04T16:00:00",
     "lock_at": "2022-12-14T16:00:00",
@@ -9,7 +9,7 @@
     "points_possible": 1,
     "submission_types": "external_tool",
     "external_tool_tag_attributes": {
-        "url": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
+        "url": "https://webwork.uwec.edu/webwork2/425_West/Group-11_Subgroups_of_Dihedral_Groups",
         "new_tab": true
     },
   	"omit_from_final_grade":"True"

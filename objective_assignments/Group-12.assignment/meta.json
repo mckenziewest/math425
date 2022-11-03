@@ -1,6 +1,6 @@
 {
-    "link": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
-    "ww_name": "Group_12-",
+    "link": "https://webwork.uwec.edu/webwork2/425_West/Group-12_Quotient_Group/",
+    "ww_name": "Group-12_Quotient_Group",
     "name": "Group-12",
     "unlock_at": "2022-11-04T16:00:00",
     "lock_at": "2022-12-14T16:00:00",
@@ -9,7 +9,7 @@
     "points_possible": 1,
     "submission_types": "external_tool",
     "external_tool_tag_attributes": {
-        "url": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
+        "url": "https://webwork.uwec.edu/webwork2/425_West/Group-12_Quotient_Group/",
         "new_tab": true
     },
   	"omit_from_final_grade":"True"
