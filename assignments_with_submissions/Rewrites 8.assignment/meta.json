@@ -1,0 +1,9 @@
+{
+  "name": "🎡 Rewrites 8",
+  "type": "assignment",
+	"allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload"],
+  "modules": ["Week 10"],
+  "due_at": "2022-11-09T16:00:00",
+  "grading_type": "pass_fail"
+}

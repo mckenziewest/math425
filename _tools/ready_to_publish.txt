@@ -10,6 +10,7 @@
 ..\assignments_with_submissions\Homework 6.assignment
 ..\assignments_with_submissions\Homework 7.assignment
 ..\assignments_with_submissions\Homework 8.assignment
+..\assignments_with_submissions\Homework 9.assignment
 ..\assignments_with_submissions\Rewrites 1.assignment
 ..\assignments_with_submissions\Rewrites 2.assignment
 ..\assignments_with_submissions\Rewrites 3.assignment
@@ -114,6 +115,8 @@
 ..\supplemental_assignments\Supp-15.assignment
 ..\supplemental_assignments\Supp-16.assignment
 ..\supplemental_assignments\Supp-17.assignment
+..\supplemental_assignments\Supp-18.assignment
+..\supplemental_assignments\Supp-19.assignment
 
 ..\handouts\latex_examples\tex.file
 ..\handouts\latex_examples\pdf.file
@@ -130,7 +133,7 @@
 ..\project\instructions.file
 ..\project\idea_choice.assignment
 ..\project\peer_review_agreement.assignment
-..\project\source_and_questions.assignment 
+..\project\source_and_questions.assignment
 ..\project\artifact_draft_1.assignment
 ..\project\peer_review_1.assignment
 ..\project\artifact_draft_2.assignment
@@ -139,6 +142,6 @@
 ..\project\artifact_final_2.assignment
 ..\project\question_reflection.assignment
 ..\project\response_to_comments.assignment
-..\project\artifact-lesson_plan.page 
-..\project\artifact-video.page 
-..\project\artifact-paper.page 
+..\project\artifact-lesson_plan.page
+..\project\artifact-video.page
+..\project\artifact-paper.page
