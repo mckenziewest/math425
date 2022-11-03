@@ -1,6 +1,16 @@
 {
-	"name":"Group-12",
-	"type":"assignment",
-	"assignment_group_name":"Completion of Objectives",
-	"omit_from_final_grade":"True"
+    "link": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
+    "ww_name": "Group_12-",
+    "name": "Group-12",
+    "unlock_at": "2022-11-04T16:00:00",
+    "lock_at": "2022-12-14T16:00:00",
+    "due_at": "2022-11-11T16:00:00",
+    "type": "assignment",
+    "points_possible": 1,
+    "submission_types": "external_tool",
+    "external_tool_tag_attributes": {
+        "url": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
+        "new_tab": true
+    },
+  	"omit_from_final_grade":"True"
 }

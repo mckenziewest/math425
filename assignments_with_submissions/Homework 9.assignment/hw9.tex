@@ -4,14 +4,8 @@
 \pagestyle{empty}
 \usepackage{tikz}
 
-
-
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
 \newcommand{\Z}{\mathbb{Z}}
-\newcommand{\abar}{\overline{a}}
-\newcommand{\bbar}{\overline{b}}
-\newcommand{\aut}{\operatorname{aut}}
 
 \setlength{\parindent}{0pt}
 \begin{document}
@@ -25,7 +19,7 @@
 			\item Group-10:	Prove that a subgroup is normal.
 			\item Group-11:	Compute the subgroups of a dihedral group and determine which of those subgroups are normal in the group.
 			\item Group-12:	Compute the Cayley table for a quotient group of a group.
-			\item Supplemental exercise Supp-18.
+			\item Supplemental exercises Supp-18 and Supp-19.
 		\end{itemize}
 		\item Build a strong foundation of creative critical thinking and proof-writing techniques.
 	\end{itemize}
@@ -61,41 +55,72 @@
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-7)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-7}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
-
-	\newpage
-	Name: \underline{\hspace*{3in}}
-	\vskip .25in
-	
-	\textbf{(Group-8.1)} Let $p$ be a prime number and $G$ be a group with $|G|=p^2$. Show that every proper subgroup of $G$ is cyclic.
-	
-	\newpage
-	Name: \underline{\hspace*{3in}}
-	\vskip .25in
-	
-	\textbf{(Group-9.1)} Consider the hexagon as follows. (For clarity: The two horizontal edges are the same length. The 4 shorter edges are all the same length, which is smaller than the length of the horizontal edges. The angles at nodes 1,2,4,and 5 are all equal and the angles at nodes 3 and 6 are equal.)
-	
-	\begin{center}
-		\begin{tikzpicture}
-			\setlength{\unitlength}{1in}
-			\draw (0,0) -- (1,1) -- (5,1) -- (6,0) -- (5,-1) -- (1,-1) -- (0,0) node[anchor=east] {6} (1,1) node[anchor=south] {1} (5,1) node[anchor=south]{2} (6,0) node[anchor=west]{3} (5,-1) node[anchor=north] {4} (1,-1) node[anchor=north]{5};
-		\end{tikzpicture}
-	\end{center}
-
+	\textbf{(Group-10.1)} Let $H$ and $K$ be subgroups of a group $G$.
 	\begin{enumerate}[label=(\alph*)]
-		\item Using $r$ as rotation by $60^\circ$ and $f$ as a flip along the vertical axis at the center of this figure, as in $D_6$, write all of the symmetries of this hexagon in terms of $r$ and $f$.  That is, which combinations of $r$ and $f$ return this shape to the same location, possibly with the numbers swapping?
-		\vskip 2in
-		\item Write and complete a Cayley table for the group you found in part (a).
-		\vfill 
-		\item What group ($\Z_n$, $\Z_m\times\Z_n$, $S_n$, $D_n$, $\dots$) is this group of symmetries isomorphic to? Specifically you should be considering the following questions: What is the order of the group? Is this group cyclic? If it is not cyclic is it at least abelian?
-		\vskip 1in
+		\item Use the subgroup test to show $H\cap K\leq G$.\vfill 
+		\item Assume $H\lhd G$ and $K\lhd G$.  Show that $H\cap K\lhd G$.\vfill
 	\end{enumerate}
 	
 	\newpage
+	
+	\textbf{(Group-11)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-11}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
+	
+	\newpage
+	
+	\textbf{(Group-12)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-12}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
+	\vskip .25in
+	To help, I will provide some blank tables for you.  These do not need to be filled out but are available for you to use for your work.
+	
+	\textbf{Exercise 1}
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c||c|c|c|c}
+		+&0+H&1+H&2+H&3+H\\\hline\hline
+		0+H&0+H&1+H&2+H&3+H\\\hline
+		1+H&1+H&&&\\\hline
+		2+H&2+H&&&\\\hline
+		3+H&3+H&&&\\
+		\end{array}$$
+	
+	\textbf{Exercise 2} This exercise includes randomization that doesn't allow as much filling on my end.
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c||c|c|c|c|c|c}
+		\cdot&1H&\hspace*{.25in}&\hspace*{.25in}&\hspace*{.25in}&\hspace*{.25in}&\hspace*{.25in}\\\hline\hline
+		1H&1H&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\
+	\end{array}$$
+
+	\textbf{Exercise 3} This exercise has no randomization.
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c||c|c|c|c|c|c}
+		\circ&eH&(1,2)H&(1,3)H&(1,4)H&(1,2,3)H&(1,3,2)H\\\hline\hline
+		eH&eH&(1,2)H&(1,3)H&(1,4)H&(1,2,3)H&(1,3,2)H\\\hline
+		(1,2)H&(1,2)H&&&&&\\\hline
+		(1,3)H&(1,3)H&&&&&\\\hline
+		(1,4)H&(1,4)H&&&&&\\\hline
+		(1,2,3)H&(1,2,3)H&&&&&\\\hline
+		(1,3,2)H&(1,3,2)H&&&&&\\
+	\end{array}$$
+	
+	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Supp-17)} Let $G$ be a group and fix elements $a,b\in G$. Let $H$ be a subgroup of $G$ such that $Ha=bH$.  Show that $aH=Hb$.
+	\textbf{(Supp-18)} Let $G$ be a group with normal subgroup $K$. Assume $g\in G$ has $o(g)=n$.  Show that the order of the coset $gK$ has order dividing $n$ as an element of the quotient group $G/K$.
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Supp-19)} Consider the quotient group $\Q/\Z$.  Show that this is an infinite group in which every element has finite order.  
+	
+	(Note: Recall that the operation in $\Q$ is addition, so the operation in $\Q/\Z$ is coset addition. Thus the order of an element $q+\Z\in \Q/\Z$ is the smallest positive integer $k$ such that $k(q+\Z)=\Z$.)
 	
 	
 \end{document}
