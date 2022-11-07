@@ -49,20 +49,18 @@
 \slide{
 	\begin{thm}{2.10.1}
 		Let $\alpha:G\to H$ be a group homomorphism.  Then
-		\enumarabic{\item $\alpha(G)$ is a subgroup of $H$. \item $\ker(\phi)$ is a \textbf{normal} subgroup of $G$}
+		\enumarabic{\item $\alpha(G)$ is a subgroup of $H$. \item $\ker(\alpha)$ is a \textbf{normal} subgroup of $G$}
 	\end{thm}
-	\begin{proof} We will show $\ker(\phi)\lhd G$.
-		\vskip 1.75in
-	\end{proof}
 }
 \slide{
 	\begin{exercise}
-		\enumalph{\item Prove $SL_2(\R)\lhd GL_2(\R)$.\vskip 1in \item Prove $A_n\lhd S_n$.\vskip 1in \mbox{}}
+		\enumalph{
+			\item Prove $SL_2(\R)\lhd GL_2(\R)$.\vskip 1in 
+			\item Prove $A_n\lhd S_n$.
+		}
 	\end{exercise}
 }
-\slide{\begin{question}
-		\enumarabic{\item If $\phi$ is surjective, then $\phi(G)$ is the largest it can be?\vskip .75in \item If $\phi$ is the trivial homomorphism, then $\ker(\phi)$ is the largest it can be?\vskip .75in\item If $\ker(\phi)$ is as small as it can be then is $\phi$ surjective?\vskip .75in\mbox{}}
-\end{question}}
+
 \slide{
 	\begin{thm}{2.10.3}
 		Let $\alpha:G\to H$ be a group homomorphism.  Then $\alpha$ is injective if and only if $\ker(\alpha)=\{e_G\}$.
@@ -71,14 +69,14 @@
 
 \slide{
 	\begin{statementblock}{The First Isomorphism Theorem (2.10.4)}
-		Let $\alpha: G\to H$ be a group homomorphism then $G/K\cong im(G)=\alpha(G)$.
+		Let $\alpha: G\to H$ be a group homomorphism. Then $$G/\ker\alpha\cong im(G)=\alpha(G).$$
 	\end{statementblock}
 }
 
 \slide{
 	So here we have a map $\alpha:G\to H$. Let $K=\ker(\alpha)$. 
 		\vskip 2em
-	Define $\overline{\alpha}: G/K\to im(\alpha)$ given by $\overline{\alpha}(aK)=\alpha(a)$.
+	Define $\overline{\alpha}: G/K\to im(\alpha)$ by $\overline{\alpha}(aK)=\alpha(a)$ for all $a\in G$.
 		\vskip 2em
 	Claim: $\overline{\alpha}$ is an isomorphism.
 	
