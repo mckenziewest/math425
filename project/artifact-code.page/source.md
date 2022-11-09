@@ -1,10 +1,14 @@
-<!--
 <div id="uws-droplets-page">
-If you are submitting a lesson plan as one of your major artifacts, you will submit a typed pdf document describing the lesson plan.
+If you are submitting a code as one of your major artifacts, you will submit both the code you produce and the description of how to use the code and what the code does. 
 <br><br>
-The audience for the lesson is something you will choose and make clear in the components below.
+My primary experience is with Python and Sage. My preference would be for you to use a Jupyter Notebook, <a href="https://jupyter.org/try">learn more here</a>. The language you use is not restricted to Python however, what you do use must be easily obtainable so that I can run your code on my computer.
 <br><br>
-What follows describes the components I expect. Each of these should be clearly identified with headers in a single document. The scores listed are guidelines and adjustments will be made for partial credit between the listed values.
+The primary advantage of using a Jupyter notebook is that you can embed markdown explanations side-by-side with the code. If you do not use markdown in Jupyter, then your code must be accompanied by a second document that describes what it does and how it does it.
+<br><br>
+There must be example uses of your code, convincing the reader they could and would want to use it. You must also include at least one result and proof. This might be a proof of your algorithm or a proof related to your algorithm.  Please ask questions if you have them.
+<br><br>
+What follows describes the components I expect. The scores listed are guidelines and adjustments will be made for partial credit between the listed values.
+
 
 <table class="bordered">
 <tr>
@@ -14,138 +18,118 @@ What follows describes the components I expect. Each of these should be clearly 
 </tr>
 <tr>
   <td>
-    <b>Contextualization</b>
-    <br>Description of how this lesson sits in the context of Math 425, and a description of the audience for the lesson. A timeline for how long you would expect to spend on this content.
+    <b>Code Content</b>
+    <br>
+    Does your code contain substantive content that pertains to your topic?
   </td>
   <td>
     <ul>
-      <li>10pts: The audience is well-defined and the context listed is relevant to that audience and relevant to what we have discussed in Math 425. The expected amount of time to complete the content is stated.</li>
-      <li>8pts: The audience is well-defined and the relevance of the context can be easily explained by the instructor.</li>
-      <li>4pts: The context for the lesson is loosely written and its relationship to Math 425 requires interpretation.</li>
+      <li>15pts: The code submitted pertains directly to the topic. The code is substantive and properly reflects the content of the course.</li>
+      <li>10pts: The code relates to the topic and the course but there is 1 or 2 small components that are missing that would make the code more applicable or substantive.</li>
+      <li>5pts: The code relates to the topic but is not completed at the level of the course.</li>
+    </ul>
+  </td>
+  <td>15</td>
+</tr>
+<tr>
+  <td>
+    <b>Code Execution</b>
+    <br>
+    Does your code work and do what you say it will do?
+  </td>
+  <td>
+    <ul>
+      <li>10pts: The code runs cleanly and produces the results expected when tested.</li>
+      <li>5pts: The code work correctly in most cases but in some edge cases there are computational errors.</li>
     </ul>
   </td>
   <td>10</td>
 </tr>
 <tr>
   <td>
-    <b>Essential Question(s)</b>
+    <b>Code Practice</b>
     <br>
-    What question(s) will the students be answering with this lesson? How do those questions relate to the contextualization?
+    Is your code well-organized with comments and appropriate white space to be understandable.
   </td>
   <td>
     <ul>
-      <li>5pts: The questions relate directly to the contextualization for the topic and the students will see how they fit.</li>
-      <li>4pts: The questions relate directly to the contextualization for the topic and after some the instructor explains, the students will see how they fit.</li>
-      <li>2pts: The questions relate tangentially to the contextualization for the topic and after the instructor explains, the students will see how they fit.</li>
+      <li>5pts: The code is well commented and white space is used appropriately to make the code more readable.</li>
+      <li>3pts: There are some comments but the viewer needs to work some steps on their own to understand the content. White space is used to make the code readable.</li>
+      <li>1pt: White space is used somewhat appropriately to make the code look presentable, but there are no comments.</li>
     </ul>
   </td>
   <td>5</td>
 </tr>
+
 <tr>
   <td>
-    <b>Hook</b>
+    <b>Usability</b>
     <br>
-    What will you use to catch the students' interests? 
-    This could be an interesting example, a connection to past content, or whatever you think will be interesting enough to motivate the students to learn the content.
+    You must include documentation on:
+    <ul>
+      <li>what language is used and what version is recommended;</li>
+      <li>what compiler/IDE is used/recommended.</li>
+    </ul>
+    How accessible is your code for use? Can I run it on my computer? Of course, some installation or updates might be required. If this is the case, you should include documentation.
   </td>
   <td>
     <ul>
-      <li>3pts: The introduction has an attention grabbing method that relates the topic to the students' experience.  For example, if the audience is math 425, then there is a description of the way you will relate this to the course.</li>
-      <li>1pts: The topic is introduced but there isn't a particular hook.
+      <li>5pts: It is easy to run the code on my computer. If packages or software needs to be installed, then this is well-documented.</li>
+      <li>3pts: There is some effort on my part to get the code to run on my computer beyond the documentation provided by the student, resulting from the way the code is written.</li>
     </ul>
   </td>
-  <td>3</td>
+  <td>5</td>
 </tr>
 
 <tr>
   <td>
-    <b>Exploration</b>
+    <b>Explanation</b>
     <br>
-    Provide ways for a student to explore the topic of the lesson. This may include a link to an article, a reference to our textbook, a link to a YouTube video, a podcast, etc.
+    Does the documentation for your code describe the purpose of each piece, provide examples, and teach others how to use the code?
   </td>
   <td>
     <ul>
-      <li>4pts: There are 4 ways for the student to explore the topic.</li>
-      <li>2pts: There are 2 ways for the student to explore the topic.</li>
+      <li>10pts: Functions have documentation on their input and output. Every function/block of code includes examples of how to use it.</li>
+      <li>7pts: All functions are explained. Some functions/blocks of code do not have sufficient examples.</li>
+      <li>5pts: There are not examples but the functions are well-documented.</li>
+      <li>2pts: Some functions are well-documented.</li>
     </ul>
   </td>
-  <td>4</td>
+  <td>10</td>
 </tr>
 
 <tr>
   <td>
-    <b>Explain</b>
+    <b>Statement with Proof</b>
     <br>
-    This section will include content of your instruction for this section. This should include notes you could use to either lecture from or generate a handout on the content that the students would complete during a class time. This section of your lesson plan must include all of the following:
-      <ul>
-        <li>precise definitions;</li>
-        <li>two illustrative examples per definition;</li>
-        <li>at least one theorem relevant to the topic;</li>
-        <li>at least one proof of a theorem that you are ready to present. Note that I expect you to have notes within the proof about how you would explain it.</li>
-      </ul>
+    Is there a formal statement of at least one algorithm with proof that the algorithm will provide the result that is expected.
   </td>
   <td>
     <ul>
-      <li>20pts: All necessary content is given in detail, so that an instructor could use them as class notes.</li>
-      <li>15pts: All necessary content is given. One or two components might not have sufficient detail.</li>
-      <li>10pts: All but one of the 4 listed necessary content are given with some detail, but maybe not a sufficient amount of detail</li>
-      <li>5pts: There's a start for at least 2 of the list necessary content, but it would be hard to lecture on the content.</li>
+      <li>10pts: There is a formal statement of at least one algorithm in the code with well-written proof that it completes the indicated task.</li>
+      <li>7pts: There is a proof of an algorithm but some of the formality in terms of writing the algorithm or the proof is not complete.</li>
+      <li>5pts: This is some statement related indirectly to one of the algorithms in the code and is fully proved. However the connection is not obvious.</li>
+      <li>2pts: There is a statement and proof but it does not relate to the code.</li>
     </ul>
   </td>
-  <td>20</td>
+  <td>10</td>
 </tr>
 
 <tr>
   <td>
-    <b>Differentiation</b>
+    <b>Exercises</b>
     <br>
-    Use this section of the lesson to describe some ways that you can make your explanation accessible to all students.
+    Are there suggestions of exercises for the user to implement using your code?
   </td>
   <td>
     <ul>
-      <li>2pts: There is some description of how the content will be made accessible to at least one of: students with ADHD, students who are deaf/hard of hearing, students who are learning English.</li>
-    </ul>
-  </td>
-  <td>2</td>
-</tr>
-
-<tr>
-  <td>
-    <b>Assessment</b>
-    <br>
-    Create an assessment for students to apply what they learn. The assessment should be used by the teacher to evaluate a student’s understanding of the content. This may be as straight forward as a list of exercises or as complicated as a project.
-  </td>
-  <td>
-    <ul>
-      <li>6pts: The assignment has clear directions and at least one template or description of the artifact the student needs to create.
-      </li>
-      <li>4pts: The assignment has somewhat directions, however the assignment might be difficult to complete due to limited instructions.
-      </li>
-      <li>2pts: The assignment has a vague description.
-      </li>
-    </ul>
-  </td>
-  <td>6</td>
-</tr>
-
-<tr>
-  <td>
-    <b>Extend</b>
-    <br>
-    Add an activity that will allow a student who wants to know more about the content explore further.
-  </td>
-  <td>
-    <ul>
-      <li>5pts: The student has at least three resources to engage in to further their knowledge of the material
-      </li>
-      <li>4pts: The student has two resources to engage in to further their knowledge of the material
-      </li>
-      <li>2pts: The student has one resource to engage in to further their knowledge of the material
-      </li>
+      <li>5pts: There are at least 3 exercises for a user to try to use the code for.</li>
+      <li>3pts: There are 2 exercises for a user to try to use the code for.</li>
+      <li>2pts: There is 1 exercise for a user to try to use the code for.</li>
+      <li>1pt: There are exercises but they do not use the submitted code in their solving.</li>
     </ul>
   </td>
   <td>5</td>
 </tr>
 </table>
 </div>
--->

@@ -156,3 +156,5 @@
 ..\project\artifact-lesson_plan.page 
 ..\project\artifact-video.page 
 ..\project\artifact-paper.page 
+..\project\artifact-wiki.page 
+..\project\artifact-code.page 
