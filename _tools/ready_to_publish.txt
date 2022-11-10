@@ -92,11 +92,14 @@
 ..\Chapter 3\Section 3.1.slides
 
 ..\Chapter 3\Section 3.2.page
+..\Chapter 3\Section 3.2.slides
 
 ..\Chapter 3\Section 3.3 Part 1.page
 ..\Chapter 3\Section 3.3 Part 2.page
+..\Chapter 3\Section 3.3.slides
 
 ..\Chapter 3\Section 3.4.page
+..\Chapter 3\Section 3.4.slides
 
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment

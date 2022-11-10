@@ -1,0 +1,152 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 3.4: Homomorphisms}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		\item Ideals
+		\item Principal Ideals
+		\item Prime Ideals
+		\item Maximal Ideals
+	}{
+		\item Ring Homomorphisms
+		\item First Isomorphism Theorem for Rings
+	}
+
+\slide{
+	\begin{exercise}
+		Consider $\theta\colon M_2(\Z)\to M_2(\Z)$ defined by
+		\[\theta\left(\begin{bmatrix}a&b\\c&d\end{bmatrix}\right)=\begin{bmatrix}a& b\\0&d\end{bmatrix}.\]
+		\enumalph{
+			\item What is $\theta\left(\begin{bmatrix}7&23\\67&-535\end{bmatrix} \right)$?
+				\vskip .25in
+			\item Does $\theta$ satisfy $\theta(A+B)=\theta(A)+\theta(B)$?
+			\vskip .25in
+			\item Does $\theta$ satisfy $\theta(AB)=\theta(A)\theta(B)$?
+			\vskip .25in
+			\item What is $\theta^{-1}\left(\begin{bmatrix}\bar0&\bar0\\\bar0&\bar0\end{bmatrix} \right)$?
+		}	
+	\end{exercise}
+}
+
+\slide{
+	\begin{defn}
+		If $R$ and $S$ are rings with unity, we call a map $\theta:R\to S$ a \emph{ring homomorphism} if
+		\enumarabic{
+			\item $\theta(r_1+r_2)=\blank{3in}$\vskip .25in
+			\item $\theta(r_1r_2)=\blank{3in}$\vskip .25in
+			\item $\theta(1_R)=1_S$
+		}
+	\end{defn}
+}
+
+\slide{
+	\begin{exa}
+		\enumalph{\setlength{\itemsep}{2em}
+			\item $\theta: \Z\to \Z_n$, $\theta(a)=\overline{a}$
+			\item $\theta: R\to R/I$, $\theta(r) = r+I$
+			\item $\pi_1: R_1\times R_2\to R_1$, $\pi_1(r_1,r_2)=r_1$
+		}
+	\end{exa}
+}
+
+\slide{
+	\begin{thm}{3.4.1}
+		Let $\theta: R\to R_1$ be a ring homomorphism and let $r\in R$.
+		\enumarabic{
+			\item $\theta(0)=0$
+			\item $\theta(-r)=-\theta(r)$ for all $r\in R$
+			\item $\theta(kr)=k\theta(r)$ for all $r\in R$ and $k\in\Z$
+			\item $\theta(r^n)=\theta(r)^n$ for all $r\in R$ and $n\geq0$ in $\Z$
+			\item If $u\in \R^*$, $\theta(u^k)=\theta(u)^k$ for all $k\in\Z$.
+		}
+	\end{thm}
+}
+\slide{
+	\begin{exercise}
+		Consider $\theta:\Z\to \Z_9$ with $\theta(a)=\overline{a}$.
+		
+		Use this map and contradiction to show there are no integers $a,b,c$ for which 
+			\[a^3+b^3+c^3=31.\]\vskip 2in\mbox{}
+	\end{exercise}
+}
+\slide{
+	\begin{thm}{3.4.2}
+		Let $R\neq 0$ be a commutative ring with characteristic $p$, and define \[\phi:R\to R\quad\text{by}\quad\phi(r)=r^p\text{ for all }r\in R.\]
+		Then $\phi$ is a ring homomorphism.
+		
+		We call this $\phi$ the \emph{Frobenius Endomorphism}.  If $\phi$ is a finite field, we call $\phi$ the \emph{Frobenius Automorphism}, which is an isomorphism.
+	\end{thm}
+}
+
+\begin{frame}{\fn}
+	\begin{defn}
+		If $\theta:R\to S$ is a ring homomorphism, then the \emph{kernel} of $\theta$ is
+			\[\ker(\theta)=\{r\in R\ |\ \theta(r)=0_{S}\}.\]
+		The \emph{image} of $\theta$ is
+			\[\im(\theta)=\theta(R)=\{\theta(r)\ |\ r\in R\}.\]
+	\end{defn}
+	\begin{thm}{3.4.3}
+		Let $\theta:R\to S$ be a ring homomorphism.  Then\vskip 2em
+			\enumarabic{\setlength{\itemsep}{2em}
+				\item $\theta(R)$ is \blank{2in} of \blank{.5in}
+				\item $\ker\theta$ is \blank{2in} of \blank{.5in}
+			}
+	\end{thm}
+\end{frame}
+
+\slide{
+	\begin{statementblock}{First Isomorphism Theorem for Rings (Theorem 3.4.4)}
+		Let $\theta:R\to S$ be a ring homomorphism and write $A=\ker \theta$.  Then $\theta$ induces a ring isomorphism
+			\[\bar\theta:R/A\to \theta(R)\quad\text{given by}\quad \bar\theta(r+A)=\theta(r)\text{ for all }r\in R.\]
+	\end{statementblock}
+	\begin{proof}
+		Let $\theta:R\to S$ be a ring homomorphism and write $A=\ker \theta$. Define $\bar\theta: R/A\to \theta(R)$ by 
+		\[\bar\theta(r+A)=\theta(r)\text{ for all }r\in R.\]
+		\vskip 3in
+	\end{proof}
+}
+
+\slide{
+	\begin{nb}
+		Now's a great time to discuss some notation.
+		
+		In $R/A$, elements look like $r+A$ where $r\in R$.
+		
+		If $A$ is clear, we can simplify our notation by writing $\overline{r}$.
+		
+		\begin{exa}
+			In $\Z/n\Z$, elements are of the form $k+n\Z$ for $k\in \Z$.  These correspond to $\overline{k}$ in $\Z_n$.
+		\end{exa}
+		\begin{exa}
+			Though to make our lives easier, if $m|n$, we might want to use the longer version in the restriction map, $$\phi:\Z_n\to \Z_m\quad\text{with}\quad\phi(k+n\Z)=k+m\Z.$$
+		\end{exa}
+	\end{nb}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		Let $A$ and $B$ be ideals of the rings $R$ and $S$, respectively.  Then $A\times B$ is an ideal of $R\times S$ and 	
+			\[\frac{R\times S}{A\times B}\cong \frac{R}{A}\times\frac{S}{B}.\]
+	\end{statementblock}
+	\begin{proof}
+		\vskip 3in
+	\end{proof}
+}
+\slide{
+	\begin{statementblock}{Corollary}
+		Let $A$ be an ideal of the ring $R$.  Then $M_n(A)$ is an ideal of $M_n(R)$ and 	
+		\[\frac{M_n(R)}{M_n(A)}\cong M_n(R/A).\]
+	\end{statementblock}
+	\begin{proof}
+		\vskip 3in
+	\end{proof}
+}
+
+
+\end{document}
+
+	
