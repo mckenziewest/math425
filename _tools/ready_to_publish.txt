@@ -11,6 +11,7 @@
 ..\assignments_with_submissions\Homework 7.assignment
 ..\assignments_with_submissions\Homework 8.assignment
 ..\assignments_with_submissions\Homework 9.assignment
+..\assignments_with_submissions\Homework 10.assignment
 ..\assignments_with_submissions\Rewrites 1.assignment
 ..\assignments_with_submissions\Rewrites 2.assignment
 ..\assignments_with_submissions\Rewrites 3.assignment
@@ -20,6 +21,7 @@
 ..\assignments_with_submissions\Rewrites 7.assignment
 ..\assignments_with_submissions\Rewrites 8.assignment
 ..\assignments_with_submissions\Rewrites 9.assignment
+..\assignments_with_submissions\Rewrites 10.assignment
 
 ..\Chapter 0\Section 0.1.page
 ..\Chapter 0\Section 0.1.slides
