@@ -118,8 +118,11 @@
 ..\objective_assignments\Group-7.assignment
 ..\objective_assignments\Group-8.assignment
 ..\objective_assignments\Group-9.assignment
+..\objective_assignments\Group-10.assignment
 ..\objective_assignments\Group-11.assignment
 ..\objective_assignments\Group-12.assignment
+
+..\objective_assignments\Ring-1.assignment
 
 ..\supplemental_assignments\Supp-1.assignment
 ..\supplemental_assignments\Supp-2.assignment
@@ -140,6 +143,7 @@
 ..\supplemental_assignments\Supp-17.assignment
 ..\supplemental_assignments\Supp-18.assignment
 ..\supplemental_assignments\Supp-19.assignment
+..\supplemental_assignments\Supp-20.assignment
 
 ..\handouts\latex_examples\tex.file
 ..\handouts\latex_examples\pdf.file
