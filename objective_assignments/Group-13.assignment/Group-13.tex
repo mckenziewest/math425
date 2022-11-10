@@ -3,17 +3,21 @@
 \usepackage[margin=.75in]{geometry}
 \pagestyle{empty}
 
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\lcm}{\operatorname{lcm}}
 
 \setlength{\parindent}{0pt}
 \begin{document}
 	\begin{center}
-		{\Large \bf Math 425 Objective Group-10 Exercises}
+		{\Large \bf Math 425 Objective Group-13 Exercises}
 	\end{center}
 	\section*{Purpose}
 	\begin{itemize}
 		\item This document is intended to provide additional opportunities to complete the objective
 		
-		\textbf{Group-10:} Prove that a subgroup is normal.
+		\textbf{Group-13:}  Use the first isomorphism theorem to prove that a quotient of a group is isomorphic to another group.
 	\end{itemize}
 	\section*{Task}
 	\begin{itemize}
@@ -43,20 +47,30 @@
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-10.2)} Given a group $G$, let $D=\{(g,g)\ |\ g\in G\}$. Show that $D\lhd G\times G$ if and only if $G$ is abelian.
+	\textbf{(Group-13.2)} Let $G=\left.\left\{\begin{bmatrix}a&b\\0&c\end{bmatrix}\ \right|\ a,b,c\in \R \text{ and }ac\neq 0\right\}$. Let $K=\left.\left\{\begin{bmatrix}1&b\\0&1\end{bmatrix}\ \right|\ b\in \R\right\}$. Use the first isomorphism theorem to show that $K\lhd G$ and $G\cong \R^*\times \R^*$.
 	
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-10.3)} Let $K\lhd G$ where $K$ is cyclic. Show that every subgroup of $K$ is normal in $G$.
+	\textbf{(Group-13.3)} If $a,b\in \R$ define $\tau_{a,b}:\R\to \R$ by $\tau_{a,b}(x)=ax+b$ for all $x\in \R$.  Let $G=\{\tau_{a,b}\ |\ a,b\in\R; a\neq 0\}$.  This is a group under the operation of function composition.
+	
+	Show that $K=\{\tau_{1,b}\ |\ b\in \R\}$ is a normal subgroup of $G$ and $G/K\cong\R^*$.
 	
 	
 	\newpage
 	Name: \underline{\hspace*{3in}}
 	\vskip .25in
 	
-	\textbf{(Group-10.4)} If $G=D_4$, $K=\langle f\rangle$ and $H=\langle r^2,f\rangle$, show that $K\lhd H\lhd G$ but $K\ntriangleleft G$.
+	\textbf{(Group-13.4)} Let $s=\lcm(m,n)$.  Show that $\Z/s\Z$ is isomorphic to a subgroup of $\Z_m\times \Z_n$.
+	
+	
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-13.5)} Consider $M_2(\Z)$ as a group under addition. For $n\geq 2$, show that $M_2(n\Z)\lhd M_2(\Z)$ and $M_2(\Z)/M_2(n\Z)\cong M_2(\Z_n)$.
 		
 \end{document}

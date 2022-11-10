@@ -121,6 +121,7 @@
 ..\objective_assignments\Group-10.assignment
 ..\objective_assignments\Group-11.assignment
 ..\objective_assignments\Group-12.assignment
+..\objective_assignments\Group-13.assignment
 
 ..\objective_assignments\Ring-1.assignment
 
