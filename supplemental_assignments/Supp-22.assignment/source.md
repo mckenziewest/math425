@@ -1,6 +1,6 @@
-This exercise first appeared in Homework 10.
+This exercise first appeared in Homework 11.
 
-Standalone version of the exercise: [pdf](Supp-20.pdf) [tex](Supp-20.tex).
+Standalone version of the exercise: [pdf](Supp-22.pdf) [tex](Supp-22.tex).
 
 You may improve your mark on this assignment by submitted rewrites of it on future assignments.
 

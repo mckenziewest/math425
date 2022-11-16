@@ -12,6 +12,7 @@
 ..\assignments_with_submissions\Homework 8.assignment
 ..\assignments_with_submissions\Homework 9.assignment
 ..\assignments_with_submissions\Homework 10.assignment
+..\assignments_with_submissions\Homework 11.assignment
 ..\assignments_with_submissions\Rewrites 1.assignment
 ..\assignments_with_submissions\Rewrites 2.assignment
 ..\assignments_with_submissions\Rewrites 3.assignment
@@ -124,6 +125,9 @@
 ..\objective_assignments\Group-13.assignment
 
 ..\objective_assignments\Ring-1.assignment
+..\objective_assignments\Ring-2.assignment
+..\objective_assignments\Ring-3.assignment
+..\objective_assignments\Ring-4.assignment
 
 ..\supplemental_assignments\Supp-1.assignment
 ..\supplemental_assignments\Supp-2.assignment
@@ -145,6 +149,8 @@
 ..\supplemental_assignments\Supp-18.assignment
 ..\supplemental_assignments\Supp-19.assignment
 ..\supplemental_assignments\Supp-20.assignment
+..\supplemental_assignments\Supp-21.assignment
+..\supplemental_assignments\Supp-22.assignment
 
 ..\handouts\latex_examples\tex.file
 ..\handouts\latex_examples\pdf.file
@@ -156,6 +162,8 @@
 ..\handouts\chapter2a_thms\tex.file
 ..\handouts\chapter2b_thms\pdf.file
 ..\handouts\chapter2b_thms\tex.file
+..\handouts\chapter3_thms\pdf.file
+..\handouts\chapter3_thms\tex.file
 ..\handouts\objective_checks.file
 
 ..\project\instructions.file
