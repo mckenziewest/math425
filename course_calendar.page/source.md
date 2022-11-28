@@ -89,18 +89,18 @@
 	<th>Week 13</th>
 	<td>11/28 - Section 3.4 Homomorphisms</td>
 	<td>11/30 - Section 4.1 Polynomials</td>
-	<td>12/2 - Section 4.2 Factorization of Polynomials</td>
+	<td>12/2 - Section 4.1 Polynomials</td>
 </tr>
 <tr>
 	<th>Week 14</th>
-	<td>12/5 - Section 4.3 Factor Rings of Polynomials</td>
+	<td>12/5 - Section 4.2 Factorization of Polynomials</td>
 	<td>12/7 - Section 4.3 Factor Rings of Polynomials</td>
-	<td>12/9 - Section 5.1 Irreducibility and Unique Factorization</td>
+	<td>12/9 - Section 4.3 Factor Rings of Polynomials</td>
 </tr>
 <tr>
 	<th>Week 15</th>
-	<td>12/12 - Section 5.2 Principal Ideal Domains</td>
-	<td>12/14 - Last Day of Class</td>
+	<td>12/12 - Section 5.1 Irreducibility and Unique Factorization</td>
+	<td>12/14 - Section 5.2 Principal Ideal Domains</td>
 	<td></td>
 </tr>
 </tbody>

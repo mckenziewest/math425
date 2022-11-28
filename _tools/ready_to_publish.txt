@@ -102,6 +102,10 @@
 ..\Chapter 3\Section 3.4.page
 ..\Chapter 3\Section 3.4.slides
 
+..\Chapter 4\Section 4.1 Part 1.page
+..\Chapter 4\Section 4.1 Part 2.page
+..\Chapter 4\Section 4.1.slides
+
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
 ..\objective_assignments\Intro-3.assignment
