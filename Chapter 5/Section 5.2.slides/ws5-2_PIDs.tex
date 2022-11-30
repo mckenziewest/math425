@@ -1,0 +1,140 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 5.2 Principal Ideal Domains}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		\item Factorization
+		\item Divisibility in Rings
+		\item Irreducible Ring Elements
+	}
+	{
+		\item Principal Ideal Domains
+	}
+
+\slide{
+	\begin{recall}
+		Fields $\subseteq$ UFDs $\subseteq$ Integral Domains $\subseteq$ Commutative Rings $\subseteq$ Rings
+		\vskip 1in
+		In integral domains:
+		\bulletize{
+			\item \textbf{Irreducible} $p\in R$ such that $p=ab$ $\Rightarrow$ $a\sim 1$ or $b\sim 1$
+			\item \textbf{Prime} $p\in R$ such that $p|ab$ $\Rightarrow$ $p|a$ or $p|b$
+			\item Always True: Prime $\Rightarrow$ Irreducible
+			\item In UFDs: Irreducible $\Rightarrow$ Prime
+		}
+	\end{recall}
+}
+
+\slide{
+	\begin{defn}
+		An integral domain $R$ is called a \emph{principal ideal domain (PID)} if every ideal of $R$ is principal. (Principal ideals are ideal of the form $(a)=aR$ for some $a\in R$.
+	\end{defn}
+	\begin{exa}
+		\enumarabic{\item $\Z$\vskip .5in\item if $F$ is a field $F[x]$ is a PID\vskip .5in\item $\Z[i]$}
+	\end{exa}
+}
+
+\slide{
+	\begin{exercise}
+		Show that $\Z[x]$ is not a PID.
+	\end{exercise}
+}
+
+\slide{
+	\begin{exercise}
+		Show that $\Q[x,y]$ is not a PID.
+	\end{exercise}
+}
+
+\slide{
+	\begin{thm}{5.2.1}
+		Let $R$ be a PID and let $a_1,a_2,\dots,a_n$ be nonzero elements of $R$.  Then $d\sim \gcd(a_1,a_2,\dots,a_n)$ exists and there exist $r_1,r_2,\dots,r_n\in R$ such that
+			\[\gcd(a_1,a_2,\dots,a_n)=r_1a_1+r_2a_2+\cdots+r_na_n.\]
+	\end{thm}
+	\begin{proof}
+		Let $R$ be a PID and let $a_1,a_2,\dots,a_n$ nonzero elements of $R$.
+	\end{proof}
+}
+
+\slide{
+	\begin{thm}{5.2.2}
+		Ever PID is a UFD.
+	\end{thm}
+}
+
+\slide{
+	\begin{exercise}
+		Let $A_1,A_2,\dots,A_n$ be ideals of a ring $R$.  We can define the \emph{sum} of the ideals as
+			\[A_1+A_2+\cdots+A_n=\{x_1+x_2+\cdots+x_n\ |\ x_i\in R\ \forall\ i\}.\]
+		How does this work in a PID?
+		\vskip 3in\mbox{}
+	\end{exercise}
+}
+
+\slide{
+	If $a_1,a_2,\dots,a_n\in R$ for $R$ a PID.  What is
+		\[\langle a_1\rangle\cap\langle a_2\rangle\cap\cdots\cap\langle a_n\rangle?\]
+		\vskip 3in\mbox{}
+}
+
+\slide{
+	\begin{thm}{5.2.3}
+		The following are equivalent for a nonzero nonunit $p$ in a PID $R$:
+		\enumarabic{
+			\item $p$ is a prime
+			\item $R/\langle p\rangle$ is a field
+			\item $R/\langle p\rangle$ is an integral domain
+		}
+	\end{thm}
+}
+
+\slide{
+	\begin{exercise}
+		Show that Theorem 5.2.3 does not hold for $\Z[x]$.  In particular, show that $\langle x\rangle$ is a prime. And compute $\Z[x]/\langle x\rangle$.\vskip 3in\mbox{}
+	\end{exercise}
+	}
+
+\begin{frame}[fragile]
+	\frametitle{\fn}
+	\begin{block}{\textbf{Some Number Theory}}
+		Given $d\in Z$ square free, it's not easy to determine in general if $\Z[\sqrt{d}]$ is a PID.
+		
+		There's something called the class number that tells us "how far" it is from being a PID.  There isn't a formula for this though....
+		
+		\begin{block}{Some Sage code}
+		\begin{verbatim}
+		K.<a> = QuadraticField(-5)
+		
+		print(K.ideal(23).factor())
+		
+		J = K.ideal(23).factor()[0][0]
+		
+		print(K)
+		print(J)
+		print(J.is_principal())
+		\end{verbatim}
+		\end{block}
+	\end{block}
+\end{frame}
+
+%\slide{
+%	Let's end here.  Thank you for an amazing semester!
+%	\vskip .25in
+%	We've learned so much.  
+%	\vskip .25in
+%	It's been fun, thanks for interacting! 
+%	\vskip .25in
+%	You're all awesome, and I really look forward to your projects. 
+%	\vskip .25in
+%	Anything you all want to talk about?
+%	\vskip .25in
+%	Shall we do some kind of celebration next week?
+%}
+\end{document}
+
+		

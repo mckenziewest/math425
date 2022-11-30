@@ -114,6 +114,12 @@
 ..\Chapter 4\Section 4.3 Part 2.page
 ..\Chapter 4\Section 4.3.slides
 
+..\Chapter 5\Section 5.1.page
+..\Chapter 5\Section 5.1.slides
+
+..\Chapter 5\Section 5.2.page
+..\Chapter 5\Section 5.2.slides
+
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
 ..\objective_assignments\Intro-3.assignment
