@@ -1,4 +1,4 @@
-# Introduction Objectives 
+# Introduction Objectives
 
 * Intro-1: Prove a map is or is not one-to-one/onto/bijective.
 * Intro-2: Prove that a relation is an equivalence relation then compute the set of unique equivalence classes.
@@ -24,12 +24,12 @@
 * Group-12:	Compute the Cayley table for a quotient group of a group.
 * Group-13:	Use the first isomorphism theorem to prove that a quotient of a group is isomorphic to another group.
 
-# Ring Objectives 
+# Ring Objectives
 
 * Ring-1: Compute properties of a ring with operations other than the standard multiplication and addition.
 * Ring-2: Use the subring test to prove that a subset of a ring is a subring.
 * Ring-3: Compute units and quotients of a number field.
 * Ring-4: Use the first isomorphism theorem for rings to prove that a quotient of a ring is isomorphic to another ring.
-* Ring-5: 	Compute roots of a polynomial in positive characteristic rings.
+* Ring-5: Compute roots of a polynomial in positive characteristic rings.
 * Ring-6:	Prove whether a polynomial of degree 2 or 3 is irreducible over a given base field or not.
 * Ring-7:	Compute addition and multiplication tables for quotients of polynomial rings.
