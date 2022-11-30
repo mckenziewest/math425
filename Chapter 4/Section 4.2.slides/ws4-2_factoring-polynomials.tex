@@ -1,0 +1,200 @@
+\documentclass[t]{beamer}
+
+\subtitle{Section 4.2: Factorization of Polynomials over a Field}
+
+\input{../../_tools/setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		\item Polynomial Rings
+		\item The Division Algorithm
+		\item The Factor Theorem
+		\item The Remainder Theorem
+	}
+	{
+		\item Factoring degree 2 and 3 polynomials
+		\item Unique Factorization
+		\item Factoring in $\C[x]$, $\R[x]$, $\Q[x]$, $\Z[x]$
+	}
+
+\slide{	
+	\begin{defn}
+		Let $F$ be a field and $p\neq 0$ in $F[x]$ a polynomial.  We call $p$ \emph{irreducible over $F$} if $\deg(p)\geq 1$ and
+		\[\text{If }p=fg\text{ for }f,g\in F[x]\text{, then either}\deg f=0\text{ or }\deg g=0.\]
+		
+		Otherwise we call $p$ \emph{reducible}.
+	\end{defn}
+%	\begin{exa}
+%		\enumalph{	\item $ax+b$ is irreducible in $F[x]$ as long as $a\neq 0$
+%			\item $x^2+1$ is irreducible over $\R$ but reducible over $\C$}
+%	\end{exa}
+}
+\slide{
+	\begin{thm}{4.2.1}
+		Let $F$ be a field and consider $p$ in $F[x]$ where $\deg p\geq 2$.
+		\enumarabic{\item If $p$ is irreducible, then $p$ has no root in $F$.
+		\item If $\deg p$ is 2 or 3, then $p$ is irreducible if and only if it has no root in $F$.}
+	\end{thm}
+%	\begin{proof}
+%		Let $F$ be a field and $p\in F[x]$ with $\deg p\geq 2.$
+%		
+%		(1) We prove using the contrapositive.  Let $a\in F$ be a root of $p$.\vskip .5in
+%		
+%		(2) ($\Rightarrow$) True by (1).  To prove ($\Leftarrow$) we again use contrapositive.  Assume $\deg p$ is 2 or 3 and that $p$ is reducible.\vskip 1in\mbox{}
+%	\end{proof}
+}
+
+\slide{
+	\begin{exa}
+		\enumalph{\setlength{\itemsep}{.5in}
+			\item $x^2+1$ is irreducible in $\R[x]$ because it has no root in $\R$
+			\item $x^2-2$ is irreducible over $\Q$
+			\item $p=x^3+3x^2+x+2$ is irreducible over $\Z_5$ because $p(a)\neq 0$ for all $a\in\Z_5$.	
+		}
+\end{exa}}
+
+\slide{
+	\begin{statementblock}{Unique Factorization Theorem (4.2.12)}
+		Let $F$ be a field, and $f$ be a nonconstant polynomial in $F[x]$.  Then
+		\enumarabic{\item $f=ap_1p_2\cdots p_m$, where $a\in F$ and $p_1,p_2,\dots,p_m$ are monic irreducible polynomials in $F[x]$.\item The factorization is unique up to the order of the factors.}
+	\end{statementblock}
+	\begin{nb}
+		The proof for (1) is a pretty straight-forward induction proof.
+		
+		The proof for (2) uses the fact that if
+			\[p| q_1q_2\cdots q_n,\]
+		where $p, q_1,q_2,\dots,q_n$ are irreducible, then $p|q_i$ for some $i$.
+	\end{nb}
+	\begin{block}{\textbf{Remark.}}
+		If $F$ is a field, we call $F[x]$ a \emph{unique factorization domain} because it is a domain and the elements factor uniquely.
+	\end{block}
+}
+
+\slidet{Factorization over $\C$}{
+	\begin{statementblock}{Fundamental Theorem of Algebra (Theorem 4.2.2)}
+		If $f\in \C[x]$ with $\deg f>0$, then $f$ has at least one root in $\C$.
+	\end{statementblock}
+	\begin{thm}{4.2.3}
+		\enumarabic{
+			\item If $\deg f=n\geq 1$, $f\in \C[x]$, then $f$ factors completely as
+				\[f=u(x-a_1)(x-a_2)\cdots(x-a_n),\]
+				for $u\neq 0$, $a_1,a_2,\dots,a_n\in \C$.
+			\item The only irreducible polynomials in $\C[x]$ are linear.
+		}
+	\end{thm}
+}
+\slidet{Factorization over $\C$}{
+	\begin{nb}
+		Complex roots of real polynomials come in pairs, $z=a+bi$ and $\overline{z}=a-bi$.
+		This is because complex conjugation is a ring homomorphism, so \[f(z)=0=\overline{0}=\overline{f(z)}=f(\overline{z}).\]
+	\end{nb}
+}
+\slidet{Factorization over $\R$}{
+	\begin{thm}{4.2.4}
+		Every nonconstant polynomial $f\in \R[x]$ factors as
+			\[f=u(x-r_1)(x-r_2)\cdots(x-r_m)q_1q_2\cdots q_k,\]
+		where $r_1,r_2,\dots,r_m$ are the real roots of $f$ and $q_1,q_2,\dots,q_k$ are monic irreducible quadratics in $\R[x]$.
+	\end{thm}
+	\begin{statementblock}{Corollary}
+		The irreducible polynomials in $\R[x]$ are either linear or quadratic.
+	\end{statementblock}
+}
+
+\slidet{Factoring over $\Q$}{
+	\begin{block}{\textbf{Reduction mod $p$}}
+		Using the mod $p$ map, $\Z\to\Z_p$, we induce a map
+		from $\Z[x]$ to $\Z_p[x]$ given by
+		\[f=a_0+a_1x+a_2x^2+\cdots+ a_nx^n\mapsto \bar f =\bar a_0+\bar a_1x+\bar a_2x^2+\cdots +\bar a_nx^n.\]
+		We call $\bar f$ the \emph{reduction} of $f$ modulo $p$.  This map is in fact an onto ring homomorphism.
+	\end{block}
+}
+\slidet{Factoring over $\Q$}{
+	\begin{statementblock}{Gauss' Lemma (Theorem 4.2.5)}
+		Let $f=gh$ in $\Z[x]$.  If a prime $p\in\Z$ divides every coefficient of $f$, then $p$ divides every coefficient of $g$ or $p$ divides every coefficient of $h$.
+	\end{statementblock}
+%	\begin{proof}[Proof Outline.]
+%		\bulletize{\item $f = gh\ \Rightarrow\ \bar f=\bar g\bar h$
+%		\item $\bar f=0\Rightarrow \bar g\bar h=0$
+%		\item $\Z_p$ a field $\Rightarrow$ $\Z_p[x]$ an integral domain (Theorem 4.1.2)
+%		\item $\bar g\bar h=0\ \Rightarrow\ \bar g=0$ or $\bar h=0$
+%		\item\begin{tabular}{rcl}
+%				$\bar g = 0$&$\Rightarrow$& every coefficient of $g$ is $0\pmod p$
+%			\end{tabular}
+%		\item[]\begin{tabular}{rcl}
+%			{\color{white}$\bar g = 0$}&$\Rightarrow$& every coefficient of $g$ is divisible by $p$
+%		\end{tabular}
+%		}
+%	\end{proof}
+}
+\slidet{Factoring over $\Q$}{
+	\begin{thm}{4.2.6}
+		Let $f\in \Z[x]$ be a non-constant polynomial.
+	\enumarabic{
+		\item If $f=gh$ with $g,h\in\Q[x]$, then $f=g_0h_0$ where $g_0,h_0\in\Z[x]$, $\deg g=\deg g_0$, and $\deg h=\deg h_0$.
+		\item $f$ is irreducible in $\Q[x]$ if and only if $f=ag$ where $a\in\Z$ are the only factorizations of $f$ in $\Z[x]$.
+	}
+	\end{thm}
+%	\begin{proof}[Proof Outline.]
+%		\bulletize{
+%			\item Let $a,b\in\Z$ common denominators of coeffs of $g,h$ respectively.
+%			\item Thus $ag,bh\in\Z[x]$ and $abf = (ag)(bh)$.
+%			\item $p\mid ab\Rightarrow \overline{abf}=0\Rightarrow \overline{ag}=0$ or $\overline{bh}=0$
+%			\item Thus $\frac{ag}{p}\in\Z[x]$ or $\frac{bh}{p}\in\Z[x]$.
+%			\item Repeat for all primes dividing $ab$.
+%		}
+%	\end{proof}
+}
+\slidet{Factoring Over $\Q$}{
+	\begin{exercise}
+		Consider \begin{multline*}
+		4x^8 + 2x^7 - 4x^6 - 5x^5 - 6x^4 - 7x^3 - 3x^2 - x - 1=\\
+		\left(\frac{20}{3} x^{3} + \frac{10}{3} x^{2} + \frac{5}{3}\right)\left(\frac{3}{5} x^{5} - \frac{3}{5} x^{3} - \frac{3}{5} x^{2} - \frac{3}{5} x - \frac{3}{5}\right).
+		\end{multline*}  Write this polynomial as a product of polynomials in $\Z[x]$.\vskip 3in\mbox{}
+	\end{exercise}
+}
+\slidet{Factoring Over $\Q$}{
+	\begin{statementblock}{Modular Irreducibility (Theorem 4.2.7)}
+		Let $0\neq f\in\Z[x]$ and suppose that a prime $p$ exists such that
+		\enumarabic{
+			\item $p$ does not divide the leading coefficient of $f$.
+			\item The reduction, $\bar f$ of $f$ modulo $p$ is irreducible in $\Z_p[x]$.
+		}
+		Then $f$ is irreducible over $\Q$.
+	\end{statementblock}
+}
+\slidet{Factoring Over $\Q$}{
+	\begin{exercise}
+		Show that $f=32x^3-51x^2-2x+25$ is irreducible over $\Q$.\\  (Hint: Check mod 3.)\vskip 3in\mbox{}
+	\end{exercise}
+}
+\slidet{Factoring Over $\Q$}{
+	\begin{statementblock}{Eisenstein's Criterion (Theorem 4.2.8)}
+		Consider $f=a_0+a_1x+a_2x^2+\cdots+a_nx^n$ in $\Z[x]$, where $n\geq 1$ and $a_0\neq 0$.  Let $p\in\Z$ be a prime number satisfying
+		\enumarabic{
+			\item $p$ divides each of $a_0,a_1,a_2,\dots,a_{n-1}$.
+			\item $p$ does not divide $a_n$.
+			\item $p^2$ does not divide $a_0$.
+		}
+		Then $f$ is irreducible in $\Q[x]$.
+	\end{statementblock}
+}
+\slidet{Factoring Over $\Q$}{
+	\begin{exercise}
+		Show that $x^5-3x^2+6x-12$ is irreducible in $\Q[x]$.\vskip 1in\mbox{}
+	\end{exercise}
+	\begin{exercise}
+		Show that $f=x^n-2$ is irreducible in $\Q[x]$ for all $n$.\vskip 3in\mbox{}
+	\end{exercise}
+}
+\slidet{Factoring Over $\Q$}{
+	\begin{block}{\textbf{So What's the Point?}}
+		If $f\in \Q[x]$ and we want to find the roots, we can think of $f_1\in\Z[x]$.\vskip 1in\mbox{}
+		Polynomials in $\Z[x]$ are ``easier'' than those in $\Q[x]$.\vskip 1in\mbox{}
+		Polynomials in $\Z_p[x]$ are way easier than those in $\Q[x]$!!
+	\end{block}
+}
+\end{document}
+
+		

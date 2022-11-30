@@ -23,6 +23,7 @@
 ..\assignments_with_submissions\Rewrites 8.assignment
 ..\assignments_with_submissions\Rewrites 9.assignment
 ..\assignments_with_submissions\Rewrites 10.assignment
+..\assignments_with_submissions\Rewrites 11.assignment
 
 ..\Chapter 0\Section 0.1.page
 ..\Chapter 0\Section 0.1.slides
@@ -106,6 +107,13 @@
 ..\Chapter 4\Section 4.1 Part 2.page
 ..\Chapter 4\Section 4.1.slides
 
+..\Chapter 4\Section 4.2.page
+..\Chapter 4\Section 4.2.slides
+
+..\Chapter 4\Section 4.3 Part 1.page
+..\Chapter 4\Section 4.3 Part 2.page
+..\Chapter 4\Section 4.3.slides
+
 ..\objective_assignments\Intro-1.assignment
 ..\objective_assignments\Intro-2.assignment
 ..\objective_assignments\Intro-3.assignment
@@ -173,7 +181,7 @@
 ..\project\instructions.file
 ..\project\idea_choice.assignment
 ..\project\peer_review_agreement.assignment
-..\project\source_and_questions.assignment 
+..\project\source_and_questions.assignment
 ..\project\artifact_draft_1.assignment
 ..\project\peer_review_1.assignment
 ..\project\artifact_draft_2.assignment
@@ -182,8 +190,8 @@
 ..\project\artifact_final_2.assignment
 ..\project\question_reflection.assignment
 ..\project\response_to_comments.assignment
-..\project\artifact-lesson_plan.page 
-..\project\artifact-video.page 
-..\project\artifact-paper.page 
-..\project\artifact-wiki.page 
-..\project\artifact-code.page 
+..\project\artifact-lesson_plan.page
+..\project\artifact-video.page
+..\project\artifact-paper.page
+..\project\artifact-wiki.page
+..\project\artifact-code.page
