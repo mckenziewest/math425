@@ -4,7 +4,7 @@
     "name": "Ring-5",
     "unlock_at": "2022-09-11T14:00:00",
     "lock_at": "2022-12-14T16:00:00",
-    "due_at": "2022-10-07T16:00:00",
+    "due_at": "2022-12-09T16:00:00",
     "type": "assignment",
     "points_possible": 1,
     "submission_types": "external_tool",

@@ -196,15 +196,17 @@
         <h2 id="Ring-5" class="section">Ring-5: 	Compute roots of a polynomial in positive characteristic rings.</h2>
         <div class="content">
             First Due: <a href="assignment: 🏠 Homework 12">🏠 Homework 12</a>, 12/9<br />
-            Additional Exercises <a href="..\objective_assignments\Ring-5.assignment\Ring-5.pdf">(pdf)</a>
-            <a href="..\objective_assignments\Ring-5.assignment\Ring-5.tex">(tex)</a>
+            This is a WeBWorK exercise. To access it, click the link from the
+            <a href="assignment: Ring-5">assignment for the objective</a>.<br>
+            You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
         </div>
 
-        <h2 id="Ring-6" class="section">Ring-6:	Prove whether a polynomial of degree 2 or 3 is irreducible over a given base field or not.</h2>
+        <h2 id="Ring-6" class="section">Ring-6:	Prove whether a polynomial is irreducible over a given base field or not.</h2>
         <div class="content">
             First Due: <a href="assignment: 🏠 Homework 12">🏠 Homework 12</a>, 12/9<br />
-            Additional Exercises <a href="..\objective_assignments\Ring-6.assignment\Ring-6.pdf">(pdf)</a>
-            <a href="..\objective_assignments\Ring-6.assignment\Ring-6.tex">(tex)</a>
+            This is a WeBWorK exercise. To access it, click the link from the
+            <a href="assignment: Ring-6">assignment for the objective</a>.<br>
+            You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
         </div>
 
         <h2 id="Ring-7" class="section">Ring-7:	Compute addition and multiplication tables for quotients of polynomial rings.</h2>
