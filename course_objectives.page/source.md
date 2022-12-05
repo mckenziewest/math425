@@ -111,7 +111,7 @@
     <div class="content">
         First Due: <a href="assignment: 🏠 Homework 8">🏠 Homework 8</a>, 11/4<br />
         This is a WeBWorK exercise. To access it, click the link from the
-        <a href="assignment: Intro-7">assignment for the objective</a>.<br>
+        <a href="assignment: Group-7">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
     </div>
 
