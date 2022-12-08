@@ -211,9 +211,10 @@
 
         <h2 id="Ring-7" class="section">Ring-7:	Compute addition and multiplication tables for quotients of polynomial rings.</h2>
         <div class="content">
-            First Due: <a href="assignment: 🏠 Homework 13">🏠 Homework 13</a>, 12/14<br />
-            Additional Exercises <a href="..\objective_assignments\Ring-7.assignment\Ring-7.pdf">(pdf)</a>
-            <a href="..\objective_assignments\Ring-7.assignment\Ring-7.tex">(tex)</a>
+            First Due: 12/14<br />
+            This is a WeBWorK exercise. To access it, click the link from the
+            <a href="assignment: Ring-7">assignment for the objective</a>.<br>
+            You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
         </div>
   </div>
 </div>

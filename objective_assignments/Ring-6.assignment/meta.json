@@ -1,5 +1,5 @@
 {
-    "link": "https://webwork.uwec.edu/webwork2//425_West/Ring_6-Irreducible_or_Not",
+    "link": "https://webwork.uwec.edu/webwork2/425_West/Ring_6-Irreducible_or_Not/",
     "ww_name": "Ring_6-Ireducible_or_Not",
     "name": "Ring-6",
     "unlock_at": "2022-09-12T14:00:00",
@@ -9,7 +9,7 @@
     "points_possible": 1,
     "submission_types": "external_tool",
     "external_tool_tag_attributes": {
-        "url": "https://webwork.uwec.edu/webwork2//425_West/Ring_6-Irreducible_or_Not",
+        "url": "https://webwork.uwec.edu/webwork2/425_West/Ring_6-Irreducible_or_Not/",
         "new_tab": true
     },
   	"omit_from_final_grade":"True"

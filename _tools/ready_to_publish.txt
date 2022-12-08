@@ -150,6 +150,7 @@
 ..\objective_assignments\Ring-4.assignment
 ..\objective_assignments\Ring-5.assignment
 ..\objective_assignments\Ring-6.assignment
+..\objective_assignments\Ring-7.assignment
 
 ..\supplemental_assignments\Supp-1.assignment
 ..\supplemental_assignments\Supp-2.assignment
