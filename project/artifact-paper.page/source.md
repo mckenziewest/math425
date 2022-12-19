@@ -34,12 +34,12 @@ What follows describes the components I expect. The scores listed are guidelines
   </td>
   <td>
     <ul>
-      <li>5pts: Every definition and theorem includes 1-2 examples that illustrate their idea and purpose.</li>
+      <li>6pts: Every definition and theorem includes 1-2 examples that illustrate their idea and purpose.</li>
       <li>3pts: Some of the examples lack context or are redundant.</li>
       <li>1pt: Illustrative examples are missing.</li>
     </ul>
   </td>
-  <td>5</td>
+  <td>6</td>
 </tr>
 
 <tr>
@@ -50,12 +50,12 @@ What follows describes the components I expect. The scores listed are guidelines
   </td>
   <td>
     <ul>
-      <li>5pts: All items that were not defined in class have clear definitions and those definitions are correct.</li>
-      <li>3pts: There is a term that should be defined but is not.</li>
+      <li>8pts: All items that were not defined in class have clear definitions and those definitions are correct.</li>
+      <li>4pts: There is a term that should be defined but is not.</li>
       <li>1pt: There are definitions that are not mentioned.</li>
     </ul>
   </td>
-  <td>5</td>
+  <td>8</td>
 </tr>
 
 <tr>
@@ -66,12 +66,12 @@ What follows describes the components I expect. The scores listed are guidelines
   </td>
   <td>
     <ul>
-      <li>5pts: The theorem is stated in generality, it is clear how the theorem fits with the surrounding narrative, and the reader is ready to apply the Theorem to examples.</li>
-      <li>3pts: The theorem is not precise or lacks context/relation.</li>
+      <li>8pts: The theorem is stated in generality, it is clear how the theorem fits with the surrounding narrative, and the reader is ready to apply the Theorem to examples.</li>
+      <li>4pts: The theorem is not precise or lacks context/relation.</li>
       <li>1pt: The theorem is stated incorrectly or vaguely.</li>
     </ul>
   </td>
-  <td>5</td>
+  <td>8</td>
 </tr>
 
 <tr>
@@ -82,12 +82,12 @@ What follows describes the components I expect. The scores listed are guidelines
   </td>
   <td>
     <ul>
-      <li>5pts: The proof is well-written and persuasive, it references any necessary results and invites the reader to apply it in similar examples. The proof would have been difficult for the reader to come up with on their own, but can, after reading, be applied to other, similar, statements. The proof is not a direct copy from another source.</li>
-      <li>3pts: The proof satisfies most of the requirements for 5pts but not all.</li>
+      <li>8pts: The proof is well-written and persuasive, it references any necessary results and invites the reader to apply it in similar examples. The proof would have been difficult for the reader to come up with on their own, but can, after reading, be applied to other, similar, statements. The proof is not a direct copy from another source.</li>
+      <li>4pts: The proof satisfies most of the requirements for 5pts but not all.</li>
       <li>1pt: The proof is a copy from another source and does not match the content of your work.</li>
     </ul>
   </td>
-  <td>5</td>
+  <td>8</td>
 </tr>
 
 <tr>

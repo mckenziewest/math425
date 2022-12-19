@@ -85,13 +85,13 @@ What follows describes the components I expect. Each of these should be clearly 
   </td>
   <td>
     <ul>
-      <li>20pts: All necessary content is given in detail, so that an instructor could use them as class notes.</li>
-      <li>15pts: All necessary content is given. One or two components might not have sufficient detail.</li>
-      <li>10pts: All but one of the 4 listed necessary content are given with some detail, but maybe not a sufficient amount of detail</li>
+      <li>25pts: All necessary content is given in detail, so that an instructor could use them as class notes.</li>
+      <li>20pts: All necessary content is given. One or two components might not have sufficient detail.</li>
+      <li>15pts: All but one of the 4 listed necessary content are given with some detail, but maybe not a sufficient amount of detail</li>
       <li>5pts: There's a start for at least 2 of the list necessary content, but it would be hard to lecture on the content.</li>
     </ul>
   </td>
-  <td>20</td>
+  <td>25</td>
 </tr>
 
 <tr>
