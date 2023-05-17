@@ -2,7 +2,8 @@
  Content for Math 425, Abstract Algebra
  
  This is full Canvas content for Math 425, abstract algebra.
- I taught this course with specifications grading covering 60% of the grades in the course.
+ I taught this course with specifications grading, for more on that, see the syllabus.
+
  Included here are:
    * [Course Calendar](https://github.com/mckenziewest/math425/blob/main/course_calendar.page/source.md), a day-to-Day summary of content covered from Nicholson's 4th edition book.
    * [Syllabus](https://github.com/mckenziewest/math425/blob/main/syllabus.page/source.md), which includes a full description of the specifications grading scheme.
