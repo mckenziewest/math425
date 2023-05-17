@@ -1,10 +1,11 @@
-# Math 425 for Canvas
- Content for Math 425, Abstract Algebra
- 
- This is full Canvas content for Math 425, abstract algebra.
- I taught this course with specifications grading, for more on that, see the syllabus.
+# Abstract Algebra through Specifications and Projects
 
- Included here are:
+ Content for Math 425, Abstract Algebra at UWEC in a format that can be uploaded automatically to Canvas using [markdown2Canvas](https://github.com/ofloveandhate/markdown2canvas).
+ 
+ I taught this course with specifications grading, for more on that, see the syllabus.
+ Please let me know if you find this useful for your course. You may adapt this content for your course. I would appreciate if you let me know you were doing so, it would validate my work making it 😄.
+
+## Links and Descriptions
    * [Course Calendar](https://github.com/mckenziewest/math425/blob/main/course_calendar.page/source.md), a day-to-Day summary of content covered from Nicholson's 4th edition book.
    * [Syllabus](https://github.com/mckenziewest/math425/blob/main/syllabus.page/source.md), which includes a full description of the specifications grading scheme.
    * [List of Objectives](https://github.com/mckenziewest/math425/blob/main/course_objectives.page/objectives.md), statements of the explicit course objectives.
