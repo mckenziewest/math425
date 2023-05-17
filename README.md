@@ -4,7 +4,7 @@
  
  I taught this course with specifications grading, for more on that, see the syllabus.
  
- Please let me know if you find this useful for your course. You may adapt this content for your course. I would appreciate if you let me know you were doing so, it would validate my work making it 😄.
+ Please let me know if you find this useful for your course. You may adapt this content for your course. I would appreciate if you let me know you were doing so, it would validate my work making it 😄. Of course, feel free to add [Issues](https://github.com/mckenziewest/math425/issues) if you find them.
 
 ## Links and Descriptions
    * [Course Calendar](https://github.com/mckenziewest/math425/blob/main/course_calendar.page/source.md), a day-to-Day summary of content covered from Nicholson's 4th edition book.
