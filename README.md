@@ -3,6 +3,7 @@
  Content for Math 425, Abstract Algebra at UWEC in a format that can be uploaded automatically to Canvas using [markdown2Canvas](https://github.com/ofloveandhate/markdown2canvas).
  
  I taught this course with specifications grading, for more on that, see the syllabus.
+ 
  Please let me know if you find this useful for your course. You may adapt this content for your course. I would appreciate if you let me know you were doing so, it would validate my work making it 😄.
 
 ## Links and Descriptions
