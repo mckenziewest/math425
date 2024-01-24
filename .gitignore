@@ -1,6 +1,3 @@
-## Access keys
-_tools/maccess.py
-
 ## Updated too much
 _tools/publish_this_time.txt
 
@@ -10,6 +7,7 @@ assignments_with_submissions/**/hw*.pdf
 objective_assignments/**/*.pdf
 supplemental_assignments/**/*.pdf
 **/result.html
+**/styled_source.md
 
 ## Python
 *.pyc
