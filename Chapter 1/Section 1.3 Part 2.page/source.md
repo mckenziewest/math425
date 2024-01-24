@@ -13,3 +13,17 @@ Section 1.3 Exercise 11
 
 ## Optional Reading
 pages 47-49
+ 
+<hr class="dashed double-spacing">
+
+<div class = "justify" style="display:flex;justify-content:space-between;">
+    <div sytle="align:left">
+        <a class="btn info" href="page:📓 Section 1.3 Part 1">⬅ | Section 1.3</a>
+    </div>
+    <div style="align:center">
+        <a class="btn warning" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+    </div>
+    <div style="align:right">
+        <a class="btn info" href="page:📓 Section 1.4 Part 1">Section 1.4 | ➡</a>
+    </div>
+</div>

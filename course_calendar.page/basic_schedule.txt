@@ -1,0 +1,43 @@
+Section 0.1 Proofs,📓 Section 0.1
+Section 0.2 Sets,📓 Section 0.2
+Section 0.3 Mappings,📓 Section 0.3
+Section 0.4 Equivalence Relations,📓 Section 0.4
+Section 1.1 Induction,📓 Section 1.1
+Section 1.2 The Division Algorithm and Prime Factorization,📓 Section 1.2
+Section 1.3 Integers Modulo n,📓 Section 1.3 Part 1
+Section 1.3 (Continued),📓 Section 1.3 Part 2
+Section 1.4 The Symmetric Group,📓 Section 1.4 Part 1
+Section 1.4 (Continued),📓 Section 1.4 Part 2
+Exam Review Time
+Chapter 0 and 1 Exam
+Section 2.1 Monoids
+Section 2.2 Groups 
+Section 2.2 (Continued)
+Section 2.3 Subgroups
+Section 2.3 (Continued)
+Section 2.4 Cyclic Groups and Order
+Section 2.5 Homomorphisms
+Section 2.5 Continued
+Chapter 2 Part 1 Exam
+Section 2.6 Cosets and Lagrange's Theorem
+Section 2.6 (Continued)
+Section 2.7 Dihedral Groups 
+Section 2.8 Normal Subgroups 
+Section 2.8 (Continued)
+Section 2.9 Factor (Quotient) Groups
+Section 2.10 The Isomorphism Theorem 
+Section 2.10 (Continued)
+Chapter 2 Part 2 Exam
+Section 3.1 Rings 
+Section 3.1 (Continued)
+Section 3.2 Integral Domains and Fields
+Section 3.3 Ideals and Factor Rings
+Section 3.3 (Continued)
+Section 3.4 Ring Homomorphisms 
+Section 4.1 Polynomials
+Section 4.1 (Continued)
+Section 4.2 Factorization of Polynomials
+Section 4.3 Factor Rings of Polynomials
+Section 4.3 (Continued)
+Section 5.1 Irreducibility and Unique Factorization
+Section 5.2 Principal Ideal Domains

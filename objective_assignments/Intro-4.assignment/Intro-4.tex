@@ -4,40 +4,117 @@
 \pagestyle{empty}
 
 
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\Q}{\mathbb{Q}}
+%CUSTOM COMMANDS
+
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Z}{\mathbb{Z}}
+	
+
+
 
 \setlength{\parindent}{0pt}
 \begin{document}
 	\begin{center}
-		{\Large \bf Math 425 Objective Intro-4 Instructions}
+		{\Large \bf Math 425 Objective Intro-4 Exercises}
 	\end{center}
 	\section*{Purpose}
 	\begin{itemize}
-		\item This document is intended to provide information about completing the objective
+		\item This document is intended to provide additional opportunities to complete the objective
 		
-			\textbf{Intro-4:} Execute the division algorithm and Aryabhata’s (Bézout’s) algorithm.
-
+		\textbf{Intro-4:} Prove a property of non-negative integers using induction.
 	\end{itemize}
 	\section*{Task}
 	\begin{itemize}
-		\item If you have not yet earned a \textbf{Satisfactory} mark on an exercise labeled with the objective here, you may submit another attempt to WeBWorK at any time.
+		\item If you have not yet earned a \textbf{Satisfactory} or \textbf{Exceptional} mark on an exercise labeled with the objective here, you may submit a single one of the following exercises, that you have not yet attempted via Canvas by 4pm on any following Wednesday.
+		\item I strongly recommend you use LaTeX to typeset your proofs.
+		\item You may work in groups but everyone should submit their own assignment written in their own words.  Do NOT copy your classmates.
 		\item Allowed resources: our textbook, classmates, your notes, videos linked in Canvas.
 		\item Unacceptable resources: anything you find on an internet search. Do NOT use a homework help website (e.g., Chegg). Their solutions are often wrong or use incorrect context.  I want you to practice making arguments that are yours. Take some ownership.
 	\end{itemize}
 	\section*{Criteria}
-	All items will earn a score using the following scale:
-	\begin{itemize}
-		\item \textbf{Satisfactory} - WeBWorK assignment was completed for full credit in at most 5 attempts.
-		\item \textbf{Unsatisfactory} - WeBWorK assignment either either not completed fully or more than 5 attempts were used.
-	\end{itemize}
-	Recall from the syllabus
-	\begin{itemize}
-		\item If you earn a \textbf{Satisfactory} mark on an objective exercise assigned via WeBWorK  then you may consider that item complete. 
-		\item If you earn an \textbf{Unsatisfactory} mark on an objective exercise then you have not yet completed this objective.
-		\item You may submit a new attempt at completing that objective on a future Wednesday. You must select a new WeBWorK assignment labeled with the given objective, you cannot resubmit a version you have attempted previously.  The only limit you have on number of attempts is the number of exercises available for the objective.
-	\end{itemize}
+		All items will earn a score using the following scale:
+		\begin{itemize}
+			\item \textbf{Exceptional} - Solution is succinct, references the correct theorems and definitions, and is entirely correct.
+			\item \textbf{Satisfactory} - Solution is essentially correct. It still references the correct theorems and definitions. 
+					It may be longer than necessary, have inconsequential errors, or have some grammatical mistakes.
+			\item \textbf{Nearly Complete} - Solution has some errors and should be re-written.
+			\item \textbf{Unsatisfactory} - Solution has major errors, references content not covered in class or in the textbook, or is incomplete in some major way.
+		\end{itemize}
+		Recall from the syllabus
+		\begin{itemize}
+			\item If you earn either an \textbf{Exceptional} or \textbf{Satisfactory} mark on an objective exercise (labeled Intro-, Group-, or Ring-) then you may consider that item complete. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on a an objective exercise (labeled Intro-, Group-, or Ring-) then you have not yet completed this objective.
+			\item You may submit a new attempt at completing that objective on a future Wednesday. You must select a new exercise listed under the given objective, you cannot resubmit a version you have attempted previously.  The only limit you have on number of attempts is the number of exercises available for the objective.
+			\item If you earn an \textbf{Exceptional} mark on an additional exercise (labeled A-) then you will earn one half point toward the ten total points in that section of your overall grade.
+			\item If you earn an \textbf{Satisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0.25 points toward the ten total points in that section of your overall grade. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0 points toward the ten total points in that section of your overall grade. 
+		\end{itemize}
+	
+	
+
+
+
+
+%%%%
+
+\newpage
+Name: \underline{\hspace*{3in}}
+	\vskip .25in
+
+\textbf{Intro-4.2}
+ Let $f\colon \Z^+\to\R$ be defined recursively by $f(1)=1$ and $f(n+1)=\sqrt{2+f(n)}$ for all $n\in\Z^+$. Prove that $f(n)<2$ for all $n\in\Z^+$.
+	
+
+
+%%%%
+
+\newpage
+Name: \underline{\hspace*{3in}}
+	\vskip .25in
+
+\textbf{Intro-4.3}
+ Prove that for all integers $n\geq 1$
+		\[1+5+5^2+\cdots + 5^n=\frac{5^{n+1}-1}{4}\]
+	
+
+
+%%%%
+
+\newpage
+Name: \underline{\hspace*{3in}}
+	\vskip .25in
+
+\textbf{Intro-4.4}
+ The Fibonacci numbers $f_n$, $n=1,2,3,\dots$ are defined by the formulas $f_1=1$, $f_2=1$, $f_n=f_{n-1}+f_{n-2}$ for all $n\geq 3$. 
+	
+Prove by induction that for all $n\geq 1$, $f_1+f_2+\cdots+f_n = f_{n+2}-f_2$.
+	
+
+
+%%%%
+
+\newpage
+Name: \underline{\hspace*{3in}}
+	\vskip .25in
+
+\textbf{Intro-4.5}
+ The Fibonacci numbers $f_n$, $n=1,2,3,\dots$ are defined by the formulas $f_1=1$, $f_2=1$, $f_n=f_{n-1}+f_{n-2}$ for all $n\geq 3$. 
+	
+Prove by induction that for all $n\geq 1$, $f_1^2+f_2^2+\cdots+f_n^2 = f_{n}f_{n+1}$.
+	
+
+
+%%%%
+
+\newpage
+Name: \underline{\hspace*{3in}}
+	\vskip .25in
+
+\textbf{Intro-4.6}
+ Let $A$ and $B$ be $2\times 2$ matrices with real entries such that $AB=BA$. Use induction to show that for all $n\geq 1$, we have $AB^n = B^nA$.
+	
+	
+
+	
 	
 \end{document}

@@ -14,3 +14,19 @@
  
 ## Optional reading
  * pages 5-8 and 9-12
+
+
+ 
+<hr class="dashed double-spacing">
+
+<div class = "justify" style="display:flex;justify-content:space-between;">
+    <div sytle="align:left">
+        <a class="btn info" href="page:📓 Section 0.1">⬅ | Section 0.1</a>
+    </div>
+    <div style="align:center">
+        <a class="btn warning" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+    </div>
+    <div style="align:right">
+        <a class="btn info" href="page:📓 Section 0.3">Section 0.3 | ➡</a>
+    </div>
+</div>

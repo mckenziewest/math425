@@ -11,3 +11,19 @@ Section 1.1 Exercises 1(a) and 2(a)
 
 ## Optional reading
 page 25
+
+
+ 
+<hr class="dashed double-spacing">
+
+<div class = "justify" style="display:flex;justify-content:space-between;">
+    <div sytle="align:left">
+        <a class="btn info" href="page:📓 Section 0.4">⬅ | Section 0.4</a>
+    </div>
+    <div style="align:center">
+        <a class="btn warning" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+    </div>
+    <div style="align:right">
+        <a class="btn info" href="page:📓 Section 1.2">Section 1.2 | ➡</a>
+    </div>
+</div>

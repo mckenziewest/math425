@@ -13,3 +13,19 @@ Section 1.2 Exercises 1(a) and 2(a)
 
 ##Optional Reading
 <a href="https://en.wikipedia.org/wiki/Division_algorithm">Wikipedia article about division algorithm implementation
+
+
+ 
+<hr class="dashed double-spacing">
+
+<div class = "justify" style="display:flex;justify-content:space-between;">
+    <div sytle="align:left">
+        <a class="btn info" href="page:📓 Section 1.1">⬅ | Section 1.1</a>
+    </div>
+    <div style="align:center">
+        <a class="btn warning" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+    </div>
+    <div style="align:right">
+        <a class="btn info" href="page:📓 Section 1.3 Part 1">Section 1.3 | ➡</a>
+    </div>
+</div>
