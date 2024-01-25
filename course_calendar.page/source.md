@@ -249,15 +249,15 @@
     </th>
     <td>
      4/22 -
-     Section 3.3 Ideals and Factor Rings
+     No class - Math Retreat
     </td>
     <td>
      4/24 -
-     Section 3.3 (Continued)
+     Section 3.3 Ideals and Factor Rings
     </td>
     <td>
      4/26 -
-     Section 3.4 Ring Homomorphisms
+     Section 3.3 (Continued)
     </td>
    </tr>
    <tr>
@@ -266,15 +266,15 @@
     </th>
     <td>
      4/29 -
-     Section 4.1 Polynomials
+     Section 3.4 Ring Homomorphisms
     </td>
     <td>
      5/1 -
-     Section 4.1 (Continued)
+     Section 4.1 Polynomials
     </td>
     <td>
      5/3 -
-     Section 4.2 Factorization of Polynomials
+     Section 4.1 (Continued)
     </td>
    </tr>
    <tr>
@@ -283,15 +283,15 @@
     </th>
     <td>
      5/6 -
-     Section 4.3 Factor Rings of Polynomials
+     Section 4.2 Factorization of Polynomials
     </td>
     <td>
      5/8 -
-     Section 4.3 (Continued)
+     Section 4.3 Factor Rings of Polynomials
     </td>
     <td>
      5/10 -
-     Section 5.1 Irreducibility and Unique Factorization
+     Section 4.3 (Continued)
     </td>
    </tr>
   </tbody>

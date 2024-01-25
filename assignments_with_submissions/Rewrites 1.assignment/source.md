@@ -11,11 +11,3 @@ Useful links available here:
     <li><a href="assignment:Intro-1">Intro-1</a></li>
   </ul>
 </li>
-<li>
-  Supplemental Exercises Assigned by this Time
-  <ul>
-    <li><a href="assignment:Supp-1">Supp-1</a></li>
-    <li><a href="assignment:Supp-2">Supp-2</a></li>
-    <li><a href="assignment:Supp-3">Supp-3</a></li>
-  </ul>
-</li>

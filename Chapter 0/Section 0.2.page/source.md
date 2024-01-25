@@ -2,7 +2,7 @@
 
 * After class time today you will be able to
     * use the Principle of Set Equality to show two sets are equal,
-    * recognize the difference between the operators \(\in\) and \(\subseteq\).
+    * recognize the difference between the operators \\(\in\\) and \\(\subseteq\\).
 
 ## Watch
 * Sets and Operations<br>
@@ -24,7 +24,7 @@
         <a class="btn info" href="page:📓 Section 0.1">⬅ | Section 0.1</a>
     </div>
     <div style="align:center">
-        <a class="btn warning" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+        <a class="btn danger" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
     </div>
     <div style="align:right">
         <a class="btn info" href="page:📓 Section 0.3">Section 0.3 | ➡</a>

@@ -16,9 +16,9 @@ names = [d for d in soup.find_all('h2') if d.get_attribute_list('class') == ['se
 contents = [d for d in soup.find_all('div') if d.get_attribute_list('class') == ['content']]
 
 
-mini_names = [n.text.split(':')[0] for n in names]
+mini_names = [n.text.split(':')[0] for n in names] + ['','','']
 names_with_descriptions = {n.text.split(':')[0]:n.text.split(':',1)[1].strip() for n in names}
-first_due = [d.text.strip().split('\n')[0].split()[-1] for d in contents]
+first_due = [d.text.strip().split('\n')[0].split()[-1] for d in contents] + ['','','']
 
 offset = len(mini_names)//3
 for i in range(offset):
@@ -28,7 +28,8 @@ for i in range(offset):
     due2 = first_due[i+offset]
     mn3 = mini_names[i+2*offset]
     due3 = first_due[i+2*offset]
-    print(f"&&{mn}&{due}&&&{mn2}&{due2}&&&{mn3}&{due3}\\\\\\hline")
+    print(f"&&{mn}&&&&{mn2}&&&&{mn3}&\\\\\\hline")
+    #print(f"&&&{mn}&{due}&&&&{mn2}&{due2}&&&&{mn3}&{due3}\\\\\\hline")
 
 num_supps=36
 offset = num_supps//3

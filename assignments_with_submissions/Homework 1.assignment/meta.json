@@ -1,0 +1,9 @@
+{
+  "name": "🏠 Homework 1", 
+  "type": "assignment",
+  "allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload"],
+  "modules": ["🌱 Homework"],
+  "due_at": "2024-02-02T16:00:00",
+	"assignment_group_name":"Turn In Assignments"
+}

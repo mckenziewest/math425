@@ -1,5 +1,5 @@
 ## Math 425
-Fall 2022<br>
+Spring 2024<br>
 MWF 1:00-1:50 pm HHH 308
 
 ## Instructor
@@ -41,10 +41,10 @@ This course is going to be graded, in part, using the scheme known as Specs grad
 ### Purpose
 There are many reasons instructors choose to use specifications grading in their classrooms. Among those reasons are improved learning and interest in the content, more time for student questions, and faster turnaround on grading. The freedom of choice offered by specs grading often results in a moral boost for both the students and the professor. 
 ### Grading Scheme
-*	40% - Completion of Objectives
+*	50% - Completion of Objectives
 *	10% - Completion of Supplemental Exercises
 *   25% - In Class Quizzes and Exams
-*	25% - Final Project
+*	15% - Final Project
 #### Completion of Objectives
 I have specified 26 topics which you are expected to learn in this course. Of these 26, you will need to complete all of them at a level of exceptional or satisfactory. You will be given a homework assignment each week with associated objectives that is due on the following Friday at 4pm. Most of the objectives will require you to write a proof. Some will require you to complete a computational assignment using WeBWorK or on paper. Your assignments will be graded on a scale of Exceptional/Satisfactory/Nearly compete/Unsatisfactory. 
 
@@ -58,10 +58,10 @@ The score you earn for the 40% of your grade that is “completion of specificat
 Each week, you will be presented with about two exercises that do not fit into the list of objectives. These will be graded according to the same scale as the objectives exercises, Exceptional/Satisfactory/Nearly complete/Unsatisfactory. Each of the supplemental exercises that you complete at an exceptional level will award you one half percentage point toward this 10% of your grade, each that you complete at a satisfactory level will earn you one quarter percentage point toward this score. For example, if you complete 8 of these exercises at an exceptional level and complete 6 at the satisfactory level, then you will earn 8/2+6/4 = 5.5% toward your overall grade.   You will not be able to earn more than 10% though this category. No rewrites will be accepted for supplemental exercises.
 
 #### In Class Quizzes and Exams
-Throughout the semester, you will be required to complete in-class assessments. You can find when these occur in the [course calendar](page:📅 Full Course Schedule - Subject to Change). 
+Throughout the semester, you will be required to complete in-class assessments. You can find when these occur in the [course calendar](page:📅 Full Course Schedule - Subject to Change). Changes to timing may need to be made, but we will do our best to keep to the established schedule. This does include a cumulative final exam.
 
-#### Final Project
-You will be researching, writing about, and creating a video about a topic related to the course. This portion of the course will be assigned a grade using a standard point-based grading scheme. Rubrics for each task, and additional details will be available when the time comes.
+#### Project
+You will be researching, writing about, or creating a video about a topic related to the course. This portion of the course will be assigned a grade using a standard point-based grading scheme. Rubrics for each task, and additional details will be available when the time comes.
 
 ## Attendance Policy
 You are expected to attend class every day. Consistent with university policy, attendance will be taken each class period to ensure you keep your insurance and financial aid.
@@ -72,7 +72,7 @@ Students are encouraged not to engage in disruptive use of technology. The use o
 ## Health and Safety
 This class will adhere to UWEC COVID-19 policies and guidelines as found here [HTTPS://WWW.UWEC.EDU/CORONAVIRUS-UPDATES/](HTTPS://WWW.UWEC.EDU/CORONAVIRUS-UPDATES/). Each of us shares responsibility for the health and safety of all in the classroom environment.
 
-If you are sick, please stay home and get notes from your classmates. Do not expect that the days lecture will be recorded.
+If you are sick, please stay home and get notes from your classmates. Course lectures will not be recorded.
 
 ## Collaboration
 You are expected to work together on homework sets, though everyone is required to write up and submit their own solutions, unless otherwise stated. Solutions that appear to be direct copies of a classmate’s or of ones found online will require a one-on-one meeting with me to discuss the source and next steps.
@@ -100,5 +100,3 @@ I ask that you only submit your own work in order to ensure that you are indeed 
 ## Course Notes
 **Do Not Post Class Notes Online** – *This includes posting homework assignments to sites like Chegg.*<br>
 I do not consent to having notes from my class uploaded to the internet, including commercial note-selling websites such as StudySoup. Some companies target students and solicit course material acting as if they are working in coordination with colleges and universities, but that is not true for this class. This means that you do not have the right to provide your notes to anyone else or to make any commercial use of them without express prior permission from me. Unless you are a qualified disabled student, you do not have the right to record my lectures. Inappropriate use of notes may be in violation of the Blugold Conduct Code and sanctions will be pursued accordingly.
-
-</div>

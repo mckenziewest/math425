@@ -28,7 +28,7 @@ page 9-11 (through Example 3 of Section 0.3)
         <a class="btn info" href="page:📓 Section 0.2">⬅ | Section 0.2</a>
     </div>
     <div style="align:center">
-        <a class="btn warning" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+        <a class="btn danger" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
     </div>
     <div style="align:right">
         <a class="btn info" href="page:📓 Section 0.4">Section 0.4 | ➡</a>

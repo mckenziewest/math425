@@ -3,7 +3,7 @@
   "type": "assignment",
 	"allowed_extensions": ["pdf"],
   "submission_types": ["online_upload"],
-  "modules": ["Week 3"],
-  "due_at": "2022-09-21T21:00:00Z",
+  "modules": ["🎡 Rewrite Assignments"],
+  "due_at": "2024-02-07T16:00:00",
   "grading_type": "pass_fail"
 }

@@ -4,5 +4,6 @@
     "assignment_group_name": "Completion of Objectives",
     "omit_from_final_grade": "True",
     "objective_type": "proof",
-    "objective_description": "Write a standard proof of a known mathematical property."
+    "objective_description": "Write a standard proof of a known mathematical property.",
+    "points":3
 }

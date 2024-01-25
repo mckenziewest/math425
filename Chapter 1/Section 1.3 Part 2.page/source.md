@@ -21,7 +21,7 @@ pages 47-49
         <a class="btn info" href="page:📓 Section 1.3 Part 1">⬅ | Section 1.3</a>
     </div>
     <div style="align:center">
-        <a class="btn warning" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+        <a class="btn danger" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
     </div>
     <div style="align:right">
         <a class="btn info" href="page:📓 Section 1.4 Part 1">Section 1.4 | ➡</a>

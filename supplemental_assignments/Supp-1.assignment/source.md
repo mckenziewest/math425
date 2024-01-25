@@ -1,13 +1,11 @@
-This exercise first appeared in <a title="🏠 Homework 1" href="https://uweau.instructure.com/courses/496410/assignments/5200731" data-api-endpoint="https://uweau.instructure.com/api/v1/courses/496410/assignments/5200731" data-api-returntype="Assignment">🏠 Homework 1</a>.
+This exercise appeared in <a href="assignment: 🏠 Homework 1">🏠 Homework 1</a>.
 
-Standalone version of the exercise: [pdf](Supp-1.pdf) [tex](Supp-1.tex).
+Recall that an Exceptional mark will earn you 0.5% of your overall course grade, and a Satisfactory mark will earn you 0.25% of your overall course grade.
 
-You may improve your mark on this assignment by submitted rewrites of it on future assignments.
+* A score of 3 on this assignment corresponds to you having earned an Exceptional mark on Supp-1.
 
-Recall that an objective is considered complete when you earn a Satisfactory or Exceptional grade on it.
+* A score of 2 on this assignment corresponds to you having earned a Satisfactory mark on Supp-1.
 
-* A score of 2 on this assignment corresponds to you having earned an Exceptional mark on Supp-1.
+* A score of 1 on this assignment corresponds to you having earned a Nearly complete mark on Supp-1.
 
-* A score of 1 on this assignment corresponds to you having earned a Satisfactory mark on Supp-1.
-
-* A score of 0 on this assignment corresponds to you having earned an unsatisfactory mark on Supp-1.
+* A score of 0 on this assignment corresponds to you having earned an Unsatisfactory mark on Supp-1.

@@ -31,6 +31,7 @@ Chapter 2 Part 2 Exam
 Section 3.1 Rings 
 Section 3.1 (Continued)
 Section 3.2 Integral Domains and Fields
+No class - Math Retreat
 Section 3.3 Ideals and Factor Rings
 Section 3.3 (Continued)
 Section 3.4 Ring Homomorphisms 

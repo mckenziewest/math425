@@ -28,7 +28,7 @@ with open(filename,'r') as f:
 with open(do_not_upload,'r') as f:
     do_not_replace = f.read().split('\n')
 
-ready_files = [f'{f}' for f in ready_files if f and not f in do_not_replace]
+ready_files = [f'{f}' for f in ready_files if f and not f in do_not_replace and not (f.startswith("#") or f.startswith("%"))]
 
 print(ready_files)
 
