@@ -8,9 +8,9 @@ Mckenzie West<br>
 Preferred Names: Prof. West, Dr. West, Mckenzie<br>
 Pronouns: She/Her/Hers<br>
 Office: HHH 524<br>
-Drop-in Hours: M 10-11 am, or whenever my door is open
+Drop-in Hours: M 11-12, or whenever my door is open
 
-Group Working Time: W 12-12:50 and F 2-2:50 in HHH 308
+Group Working Time: W 12-1 and F 2-2:50 in HHH 308
 
 E-mail: [westmr@uwec.edu](mailto:westmr@uwec.edu)<br>
 Textbook: Introduction to Abstract Algebra, Fourth Edition, by W. Keith Nicholson

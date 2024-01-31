@@ -1,0 +1,254 @@
+\documentclass[12pt]{article}
+
+\newcommand{\secname}{Section 0.3: Mappings}
+
+\input{../../_tools/handout_setup}
+\begin{document} 
+	\startdoc
+	\begin{defn}
+		A \emph{mapping} or \emph{function} $\alpha$ from $A$ to $B$ is a rule that assigns to every input $a\in A$ exactly one output $\alpha(a)\in B$.  
+		
+		\textbf{Notation:}
+		\[\alpha\colon A\to B\textup{ or }A\xrightarrow{\alpha}B.\]
+		
+		Once we have verified that each input maps to exactly one output then we say the mapping is \emph{well-defined}.
+	\end{defn}
+
+
+\exam{
+	\enumarabic{
+		\item (Calculus) The map $\alpha:\R\to[-1,1]$ defined by $\alpha(x)=\sin(x)$.
+		\item (Linear Algebra) The map $\beta:\R^2\to\R^2$ defined by $\beta(\vec{v})=\begin{bmatrix}
+			1&3\\0&1
+		\end{bmatrix}\vec{v}$
+	}
+}
+\exer{
+	You define a mapping $\gamma: \Z\to \{0,1\}$.\vskip 1in
+}	%	\begin{nb}
+		%		We will get into the concept of well-defined later in the course when we start discussing maps on equivalence classes.
+		%	\end{nb}
+{
+	\begin{defn} Assume $\alpha:A \to B$ is a mapping.
+		\begin{itemize}[label=--]
+			\item We call $A$ the \emph{domain} of $\alpha$ and $B$ the \emph{codomain} of $\alpha$.
+			\item If $C\subseteq A$, then the \emph{image} of $C$ is \[\alpha(C)=\{b\in B : b=\alpha(c)\text{ for some } c\in C\}.\] 
+			\item The \emph{range} of $\alpha$ is the image of the domain, \[\im(\alpha)=\alpha(A)=\{\alpha(a)\in B : a\in A\}.\]
+		\end{itemize}
+	\end{defn}
+}
+{
+	\begin{exercise}
+		Define $\alpha:\Z\to\Z$ by $\alpha(n)=3n+1$. \enumarabic{\item Compute the image of $C=\{2,4,6\}$. \vskip 1in \item What is the range of $\alpha$?\vskip 1in}
+	\end{exercise}
+}
+
+\newpage
+{
+	\begin{defn}
+		Let $\alpha\colon A\to B$ be a mapping.
+		\enumalph{
+			\item We call $\alpha$ \emph{one-to-one} or \emph{injective} if:
+				\begin{center}
+					for all $a_1,a_2\in A$ if $\alpha(a_1)=\alpha(a_2)$, then $a_1=a_2$.
+				\end{center} 
+			\item We call $\alpha$ \emph{onto} or \emph{surjective} if 
+			\begin{center}
+				for all $b\in B$ there is an $a\in A$ such that $\alpha(a)=b$.
+			\end{center} 
+			\item We call $\alpha$ a \emph{bijection} or \emph{bijective} if $\alpha$ is both one-to-one and onto.
+		}
+		
+	\end{defn}
+	\begin{exercise}
+		Define $\alpha:\Z\to\Z$ by $\alpha(n)=3n+1$. 
+		\enumarabic{
+			\item Is $\alpha$ one-to one?  \vskip .5in
+			\item Is $\alpha$ onto? \vskip .5in
+			\item Is $\alpha$ a bijection?\vskip .5in
+		}
+	\end{exercise}
+}
+{
+	{\textbf{Generic Proof of One-to-One.}}
+	
+		Statement: The map $\alpha:A\to B$ defined by $\alpha(a)=....$ is one-to-one.
+		\begin{proof}
+			Let $a_1,a_2\in A$ and assume $\alpha(a_1)=\alpha(a_2)$.
+			
+			\begin{center}
+			$\vdots$\\
+			use the definition of $\alpha$ and whatever theorems\\
+			$\vdots$
+			\end{center}
+			
+			Therefore $a_1=a_2$.  And so we can conclude that $\alpha$ is one-to-one.
+		\end{proof}
+		
+	
+}
+{
+	{\textbf{Generic Proof of Onto.}}
+	
+	Statement: The map $\alpha:A\to B$ defined by $\alpha(a)=....$ is onto.
+	\begin{proof}
+		Let $b\in B$.
+		
+		\begin{center}
+			$\vdots$\\
+			do some reverse engineering to pick just the right $a$\\
+			$\vdots$
+		\end{center}
+		
+		Therefore with this $a$ as we have defined it, $\alpha(a)=b$.  And so we can conclude that $\alpha$ is onto.
+	\end{proof}
+		
+	
+}
+\newpage
+\exer{
+	Prove that the map $f:\R\to\R$ defined by $f(x)=4x-2$ is one-to-one.
+	\vfill
+}
+\exer{
+	Prove that the map $g:\R\to\R$ defined by $g(x)=x^3-1$ is onto.
+	\vfill
+}
+\exer{
+	Prove that the map $h:\R\to\R$ defined by $h(x)=x^2$ is neither one-to-one or onto.  
+	
+	You really should use counterexamples here, not generic ``Let $a\in \R$'' statements.  That is, you should write something like ``Consider $x_1=1$ and $x_2=-1$.''
+	\vfill
+}
+\newpage
+{
+	\begin{exercise}
+		Write down a mapping $\alpha\colon \Z\to \Z$ that is
+		\enumalph{
+				\item neither one-to-one nor onto,\vskip 1in
+				\item one-to-one and not onto,\vskip 1in
+				\item onto and not one-to-one,\vskip 1in
+				\item a bijection.\vskip 1in
+				}
+	\end{exercise}
+	}
+{
+%	{\textbf{Brain Break.}}
+%		What is your favorite class you've taken and why?
+%	
+%}
+{
+		\begin{defn}
+				The \emph{identity map} for the set $A$ is the map $1_A:A\to A$ defined by $1_A(a)=a$ for all $a\in A$.
+				
+				If $\alpha:A\to B$ and $\beta:B\to C$ are mappings, we can write
+					\[A\xrightarrow{\alpha}B\xrightarrow{\beta}C,\]
+				and the \emph{composition} of the maps is the mapping $\beta\alpha:A\to C$ defined by
+					\[\beta\circ\alpha(a)=\beta\alpha(a)=\beta[\alpha(a)]\text{ for all }a\in A.\]
+			\end{defn}
+	}
+\exer{
+	Let $\alpha:\N\to\R$ be defined by $\alpha(n)=\sqrt{n}$ and let $\beta:\R\to\Z$ be defined by $\beta(x)=\lfloor x\rfloor$ (the largest integer less than or equal to $x$.)
+	\enumalph{
+		\item Which of the following are allowable compositions and which are not?
+			\begin{multicols}{3}
+				\begin{enumerate}[label=(\roman*)]
+					\item $1_\N \circ \alpha$\\
+					\item $\alpha \circ 1_\N$
+					\item $1_\R \circ \alpha$\\
+					\item $\alpha \circ 1_\R$
+					\item $\alpha \beta$\\
+					\item $\beta\alpha$
+				\end{enumerate}
+			\end{multicols}
+		\item Describe $\beta\alpha$.  (Find a formula for $\beta\alpha(n)$.)
+			\vskip 1in
+	}
+}
+{
+		\textbf{Theorem 0.3.3}
+				Let $A\xrightarrow{\alpha}B\xrightarrow{\beta}C\xrightarrow{\gamma}D$ be mappings on sets.  Then
+					\enumarabic{
+							\item (identity) $\alpha 1_A=\alpha$ and $1_B\alpha=\alpha$
+							\item (associativity) $\gamma(\beta\alpha)=(\gamma\beta)\alpha$
+							\item If $\alpha$ and $\beta$ are both one-to-one (resp.~onto), then $\beta\alpha$ is one-to-one (resp.~onto) too.
+						}
+	%	\begin{exa}
+		%		We will prove part 3 next time.
+		%	\end{exa}
+	}
+
+\begin{defn}
+	If $\alpha:A\to B$ is a mapping of sets, then we call $\beta:B\to A$ an \emph{inverse} of $\alpha$ if
+		\[\beta\alpha = 1_A\text{ and }\alpha\beta=1_B.\]
+\end{defn}
+\exer{Define
+	$\alpha:\R\to\R$ by $\alpha(x)=3x+1$ and 
+	$\beta:\R\to \R$ by $\beta(x)=\frac{1}{3}x-\frac{1}{3}$.
+	
+	Show that $\alpha=\beta^{-1}$ by computing both $\alpha\beta(x)$ and $\beta\alpha(x)$.\vskip 1in
+}
+
+{
+		\textbf{Theorem 0.3.4}
+				If $\alpha:A\to B$ has an inverse, then the inverse mapping is unique.
+		\begin{proof}
+				Let $\alpha:A\to B$ be a mapping with an inverse.  Let $\beta$ and $\beta'$ be two inverses of $\alpha$.
+				We compute
+					$$\begin{array}{rcll}
+							\beta &=& \beta 1_B&\text{Theorem 0.3.3(a)}\\
+								 &=&\beta(\alpha\beta')&\beta'\text{ inverse of }\alpha\\
+								 &=&(\beta\alpha)\beta'&\text{Theorem 0.3.3(b)}\\
+								 &=&1_A\beta'&\beta\text{ inverse of }\alpha\\
+								 &=&\beta'&\text{Theorem 0.3.3(a)}.
+						\end{array}$$
+				Therefore $\beta=\beta'$, and the inverse of $\alpha$ is unique.
+			\end{proof}
+		{\textbf{Result.}}
+				The notation $\alpha^{-1}$ is valid.
+
+	}
+{
+		\textbf{Theorem 0.3.5}
+				Let $\alpha:A\to B$ and $\beta: B \to C$ denote mappings.
+				\enumarabic{
+						\item The identity map, $1_A:A\to A$ is invertible and $1_A^{-1}=1_A$.
+						\item If $\alpha$ is invertible, then $\alpha^{-1}$ is invertible and $(\alpha^{-1})^{-1}=\alpha$.
+						\item If $\alpha$ and $\beta$ are both invertible, then $\beta\alpha$ is invertible with $(\beta\alpha)^{-1}=\alpha^{-1}\beta^{-1}$.
+					}
+
+	}
+\newpage
+\textbf{Invertibility Theorem (Theorem 0.3.6)}
+		A mapping $\alpha:A\to B$ is invertible if and only if $\alpha$ is a bijection.
+	\begin{proof}
+		($\Rightarrow$) Assume that $\alpha:A\to B$ is invertible.  Denote its inverse by $\beta:B\to A$.  We now show $\alpha$ is one-to-one and onto.
+		
+		Let $a_1,a_2\in A$ such that $\alpha(a_1)=\alpha(a_2)$. By definition of inverse, we have
+			$$ a_1=\beta\alpha(a_1)\quad\text{and}\quad a_2=\beta\alpha(a_2).$$
+		So now we can use substitution to find that
+			$$a_1=\beta\alpha(a_1)=\beta\alpha(a_2)=a_2.$$
+		Thus $a_1=a_2$, so $\alpha$ is one-to-one.
+		
+		Now let $b\in B$. Then $a=\beta(b)\in A$.  Furthermore, $$\alpha(a)=\alpha\beta(b)=b,$$
+		by definition of inverse.  Therefore $b$ is in the image of $\alpha$, so $\alpha$ is onto.
+	\end{proof}
+
+	
+
+{
+	\begin{defn}
+		We will call two maps $\alpha:A\to B$ and $\beta:A\to B$ equal if $\alpha(a)=\beta(a)$ for all $a\in A$.
+	\end{defn}
+	\begin{exa}
+		Consider $\alpha:\Z\to \{0,1\}$ and $\beta:\Z\to \{0,1\}$ defined by 
+		\[\alpha(n)=\begin{cases}
+			0&\text{ if }n\text{ is even}\\
+			1&\text{ if }n\text{ is odd}
+		\end{cases}\text{ and }
+		\beta(n)=\left\lceil \frac{n}{2}\right\rceil-\left\lfloor \frac{n}{2}\right\rfloor.\]
+		These are equal but have very different feeling descriptions.
+	\end{exa}
+}
+\end{document}
+
