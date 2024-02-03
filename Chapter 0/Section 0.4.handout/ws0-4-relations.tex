@@ -1,0 +1,183 @@
+\documentclass[12pt]{article}
+
+\newcommand{\secname}{Section 0.4: Relations}
+
+\input{../../_tools/handout_setup}
+
+\begin{document} 
+\startdoc
+
+\topics{
+	% Last Time
+	\item Mappings
+	\item Codomain vs Range
+	\item Image and Inverse Image
+	\item One-to-One, Onto, Bijection
+	\item Identity Map
+	\item Inverse Mappings
+	\item Invertibility Theorem
+}
+{
+	% This time
+	\item Relations
+	\item Equivalence Relations
+	\item Equivalence Classes
+}
+\slide{
+	\begin{defn}
+		If $A$ is a set, any subset of $A\times A$ is called a \emph{relation} on $A$.
+	\end{defn}
+	\begin{nb}
+		We often call this set $R$ and we denote the elements as $a\equiv b$ or $a\sim b$.
+	\end{nb}
+	\begin{exercise}
+		Describe the relation.  That is, determine the subset $R$ of $A\times A$ that is being described, and write it in set notation.
+		\enumalph{\setlength{\itemsep}{.5in}
+			\item $A=\Z$, every integer is related to every other integer
+			
+			\item $A=\R$, $a\sim b$ exactly when $a>b$
+			
+			\item $A=\{0,1,2\}$, $a\equiv b$ exactly when $a=b$\vskip .5in
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		A relation $\equiv$ on a set $A$ is called an \emph{equivalence relation} if it satisfies all of the following conditions for all $a,b,c\in A$,
+		\enumarabic{
+			\item $a\equiv a$ (\emph{reflexivity}),
+			\item If $a\equiv b$ then $b\equiv a$ (\emph{symmetric}),
+			\item If $a\equiv b$ and $b\equiv c$, then $a\equiv c$ (\emph{transitive}).
+		}
+	\end{defn}
+	\begin{exercise}
+		For integers $m$ and $n$, say $m\equiv n$ if and only if $m-n$ is even. Show that $\equiv$ defines an equivalence relation.
+	\end{exercise}
+}
+\newpage
+
+\slide{ 
+	\begin{defn}
+		Given an equivalence relation $\equiv$ on a set $A$, we define the \emph{equivalence class} of $a$ to be the set
+		\[[a]=\{x\in A\ |\ x\equiv a\}.\]
+	\end{defn}
+	\begin{exercise}
+		What are the equivalence classes from the previous exercise? ($m\equiv n$ if and only if $m-n\in2\Z$)\vskip 1in
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		What are the equivalence classes for each of the following relations?
+		\enumalph{
+			\item Equivalence given by equality.\vskip 1in\mbox{}
+			\item $A=\R$, $a\equiv b$ if and only if $a^2=b^2$.\vskip 1in\mbox{}
+		}
+	\end{exercise}
+}
+\slide{
+	{\textbf{Notation.}}
+		The book uses $A_\equiv$ to be the set of unique equivalence classes of $A$ under the equivalence relation $\equiv$. 
+		We may also call this set the \emph{quotient set} of $A$ by $\equiv$.
+	
+	\begin{exercise}\label{exercise:compute equiv classes}
+		Let $U=\{1,2,3\}$ and $A=U\times U$.  Define the relation $\equiv$ on $A$ by $(a,b)\equiv(c,d)$ if $b=d$. 
+		\enumalph{
+			\item First, let's write down all of $A$.  You should find that $|A|=9$.\vskip 1in
+			\item Assuming that $\equiv$ is an equivalence relation on $A$, determine
+				\begin{enumerate}[label=(\roman*)]
+					\item $[(1,1)]$\vskip .5in
+					\item $[(1,2)]$\vskip .5in
+					\item $[(1,3)]$\vskip .5in
+				\end{enumerate}
+			\item What do you notice about $[(1,1)]$, $[(1,2)]$, and $[(1,3)]$?\vskip 1in
+		}
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		Given an equivalence $\equiv$ on a set $A$,
+		the \emph{natural map} is the mapping $\phi\colon A\to A_\equiv$ given by $\phi(a)=[a]$ for all $a\in A$.
+	\end{defn}
+	\begin{exercise}
+		Fill in the arrows for the natural map for the relation described in exercise \ref{exercise:compute equiv classes}.
+		\begin{center}
+			\begin{tabular}{ccc}
+				$A$& $\xrightarrow{\phi}$ & $A_\equiv$\\
+				(1,1)&\hspace*{1in}&\\
+				(1,2) && [(1,1)]\\
+				(1,3)&&\\
+				(2,1)&&\\
+				(2,2) && [(1,2)]\\
+				(2,3)&&\\
+				(3,1)&&\\
+				(2,3) && [(1,3)]\\
+				(3,3)
+			\end{tabular}
+		\end{center}
+	\end{exercise}
+}
+\slide{
+	\textbf{Theorem 0.4.1}
+		Let $\equiv$ be an equivalence relation on a set $A$ and let $a$ and $b$ denote elements of $A$. Then
+		\enumarabic{
+			\item $a\in [a]$ for all $a\in A$.
+			\item $[a]=[b]$ if and only if $a\equiv b$.
+			\item If $a\in [b]$ then $[a]=[b]$.
+			\item If $[a]\neq[b]$ then $[a]\cap [b]=\emptyset$.
+		}
+}
+
+\exer{
+	Let's prove part (c) of this theorem. Note that $[a]$ and $[b]$ are sets, so we will probably have the best time if we use the Principle of Set Equality.
+	\begin{proof}
+		Let $\equiv$ be an equivalence relation on a set $A$ and let $a$ and $b$ denote elements of $A$. Assume $a\in [b]$.  We will show that $[a]=[b]$.
+		\vfill
+	\end{proof}
+}
+\newpage
+
+\slide{
+	\begin{nb}
+		We say that an equivalence relation \emph{partitions} a set because every element of that set will appear in \textit{exactly one} equivalence class.
+		
+		We call the collection of distinct equivalence classes the \emph{quotient set} of $A$ by $\equiv$.
+	\end{nb}
+	\begin{exercise}
+		Explore this property for the equivalence relation on $\Z$ given by $a\equiv b$ if and only if $a^2=b^2$.  What is the partition of $\Z$ given by this relation?\vfill
+	\end{exercise}
+}
+\slide{
+	\begin{defn}
+		Two sets $X$ and $Y$ are \emph{disjoint} if $X\cap Y=\emptyset$, and a collection of sets is \emph{pairwise disjoint} if any two distinct sets in the family are disjoint.
+	\end{defn}
+	\begin{defn}
+		If $A$ is a nonempty set and $\cal P$ is a family of subsets of $A$, we say that $\cal P$ \emph{partitions} $A$ if
+		\enumalph{
+			\item $\emptyset\not\in \cal P$
+			\item $\cal P$ is pairwise disjoint
+			\item The union of the sets in $\cal P$ is $A$
+		}
+	\end{defn}
+}
+\slide{
+	\begin{exercise}
+		What are all of the partitions of $\{a,b,c\}$?
+	\end{exercise}
+}
+\slide{
+	\textbf{Theorem 0.4.2}
+		If $\equiv$ is any equivalence on a nonempty set $A$, then the collection of all equivalence classes of $A$ under $\equiv$ partitions $A$.
+
+	\exer{
+		What is the partition of $\Z$ given by $m\equiv n$ if and only if $m-n$ is even?
+		\vfill
+	}
+}
+\slide{
+	\begin{exercise}
+		How does this partitioning question change if we use $m\equiv n$ if and only if $m-n$ is divisible by 3?
+		\vfill
+	\end{exercise}
+}
+\end{document}
+

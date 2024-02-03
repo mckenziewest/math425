@@ -50,14 +50,14 @@
     </div>
     <h2 id="Intro-6" class="section">Intro-6: Solve congruence equations.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework 3">🏠 Homework 3</a><br>
+        First Due: <a href="assignment: 🏠 Homework 4">🏠 Homework 4</a><br>
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Intro-6">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
     </div>
     <h2 id="Intro-7" class="section">Intro-7: Complete algebraic computations with permutations. Then determine whether those permutations are even or odd.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework 3">🏠 Homework 3</a><br>
+        First Due: <a href="assignment: 🏠 Homework 4">🏠 Homework 4</a><br>
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Intro-7">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.

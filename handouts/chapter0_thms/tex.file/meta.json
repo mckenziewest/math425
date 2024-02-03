@@ -3,5 +3,6 @@
 	"title":"💻 Chapter0_Theorems.tex",
 	"filename":"../Chapter0_Theorems.tex",
 	"modules":["📜 Handouts"],
-	"destination": "handouts"
+	"destination": "handouts",
+	"indent": 1
 }

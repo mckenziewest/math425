@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,enumitem}
+\usepackage[margin=.75in]{geometry}
+\pagestyle{empty}
+
+
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\setlength{\parindent}{0pt}
+\begin{document}
+	\begin{center}
+		{\Large \bf Math 425 Assignment 2}
+	\end{center}
+	\section*{Purpose}
+		\begin{itemize}
+			\item Assess objectives and additional exercises from section 0.3-0.4, namely
+				\begin{itemize}
+					\item Intro-2: Prove a map is or is not one-to-one/onto/bijective.
+					\item Intro-3: Prove that a relation is an equivalence relation then compute the set of unique equivalence classes.
+					\item Supplemental exercises Supp-3, Supp-4, and Supp-5. 
+				\end{itemize}
+			\item Build a strong foundation of creative critical thinking and proof-writing techniques.
+		\end{itemize}
+	\section*{Task}
+		\begin{itemize}
+			\item Complete the exercises listed on the following page(s) of this document and submit your solutions as a pdf to Canvas.
+			\item I strongly recommend you use LaTeX to typeset your proofs.
+			\item You may work in groups but everyone should submit their own assignment written in their own words.  Do NOT copy your classmates.
+			\item Allowed resources: our textbook, classmates, your notes, videos linked in Canvas.
+			\item Unacceptable resources: anything you find on an internet search. Do NOT use a homework help website (e.g., Chegg). Their solutions are often wrong or use incorrect context.  I want you to practice making arguments that are yours. Take some ownership.
+		\end{itemize}
+	\section*{Criteria}
+		All items will earn a score using the following scale:
+		\begin{itemize}
+			\item \textbf{Exceptional} - Solution is succinct, references the correct theorems and definitions, and is entirely correct.
+			\item \textbf{Satisfactory} - Solution is essentially correct. It still references the correct theorems and definitions. 
+					It may be longer than necessary, have inconsequential errors, or have some grammatical mistakes.
+			\item \textbf{Nearly Complete} - Solution has some errors and should be re-written.
+			\item \textbf{Unsatisfactory} - Solution has major errors, references content not covered in class or in the textbook, or is incomplete in some major way.
+		\end{itemize}
+		Recall from the syllabus
+		\begin{itemize}
+			\item If you earn either an \textbf{Exceptional} or \textbf{Satisfactory} mark on an objective exercise (labeled Intro-, Group-, or Ring-) then you may consider that item complete. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on a an objective exercise (labeled Intro-, Group-, or Ring-) then you have not yet completed this objective.
+			\item You may submit a new attempt at completing that objective on a future Wednesday. You must select a new exercise listed under the given objective, you cannot resubmit a version you have attempted previously.  The only limit you have on number of attempts is the number of exercises available for the objective.
+			\item If you earn an \textbf{Exceptional} mark on an additional exercise (labeled A-) then you will earn one half point toward the ten total points in that section of your overall grade.
+			\item If you earn an \textbf{Satisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0.25 points toward the ten total points in that section of your overall grade. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0 points toward the ten total points in that section of your overall grade. 
+		\end{itemize}
+	
+	
+\newpage
+Name: \underline{\hspace*{3in}}
+\vskip .25in
+
+\textbf{(Intro-2.1)} Let $A\xrightarrow{\alpha}B\xrightarrow{\beta}C$ be mappings.  If $\beta\alpha$ is one-to-one and $\alpha$ is onto, show that $\beta$ is one-to-one.
+
+
+\newpage
+\textbf{(Intro-3.1)} Let $U=\{1,3,5\}$ and $A=U\times U$. Define $\equiv$ on $A$ by $(a,b)\equiv (c,d)$ if and only if $a+b=c+d$.
+\begin{enumerate}
+	\item How many elements are in $A$ and what are the?\vskip 1.5in 
+	\item Prove that $\equiv$ is an equivalence relation on $A$.\vfill
+	\item Describe the set of unique equivalence classes of $A$ given by $\equiv$.\vfill
+\end{enumerate}
+
+
+\newpage
+\textbf{(Supp-3)} Show that $\alpha:\R^+\to\{x\in \R\ :\ x>1\}$ defined by $\alpha(x)=x^2+1$ is invertible and fully describe its inverse.  
+
+To ``fully describe its inverse'', write a sentence like that boxed here, with the blanks filled in.
+\begin{center}	
+	\fbox{\begin{minipage}{4.5in}
+		The inverse of $\alpha$ is the map $\alpha^{-1}:\underline{\hspace*{.5in}}\to\underline{\hspace*{.5in}}$ defined by $$\alpha^{-1}(x)=\underline{\hspace*{.5in}}.$$
+	\end{minipage}}
+\end{center}
+
+
+\newpage
+\textbf{(Supp-4)} For this problem we will denote the composition of the map $\alpha$ with itself by $\alpha^2$.  
+\begin{enumerate}[label=(\alph*)]
+	\item Verify that the map $\alpha:\Z\to \Z$ defined by $\alpha(n)=1$ for all $n\in\Z$ satisfies the property that $\alpha^2=\alpha$ by proving that $\alpha^2(n)=\alpha(n)$ for all $n\in \Z$.\vskip 1in
+	\item Let $A$ be any set and $\alpha:A\to A$ a map. Show that
+		\begin{center}
+			$\alpha^2=\alpha$ \quad if and only if \quad $\alpha(x)=x$ for all $x\in \alpha(A)$.
+		\end{center}  
+		(Note that just as in part(a), $\alpha^2=\alpha$ means that $\alpha^2(x)=\alpha(x)$ for all $x\in A$.)
+		\vfill
+	\item Let $A$ be any set and $\alpha:A\to A$ a map that satisfies $\alpha^2=\alpha$. Show that
+		\begin{center}
+			 $\alpha$ is onto if and only if $\alpha$ is one-to-one.
+		\end{center}  
+		(Note that you should definitely be using part (b) here.) 
+		\vfill
+\end{enumerate}
+
+
+\newpage
+\textbf{(Supp-5)} Let $\alpha\colon A\to B$ be a mapping of sets. Define a relation on $A$ by $a_1\equiv a_2$ if and only if $\alpha(a_1)=\alpha(a_2)$. This is in fact an equivalence relation. Thus there is a set of equivalence classes we will denote by $A_\equiv$. 
+
+Define $\sigma\colon A_\equiv \to B$ by $\sigma([a]) = \alpha(a)$.
+\begin{enumerate}[label=(\alph*)]
+	\item Show that $\sigma$ is well-defined. That is, show that if $[a_1]=[a_2]$, then $\sigma([a_1])=\sigma([a_2])$.\vfill
+	\item Show that $\sigma$ is one-to-one.\vfill 
+	\item Show that if $\alpha$ is onto then $\sigma$ is also onto.\vfill
+\end{enumerate}
+
+
+
+	
+
+\end{document}

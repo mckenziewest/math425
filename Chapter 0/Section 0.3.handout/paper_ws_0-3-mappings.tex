@@ -63,9 +63,9 @@
 	\begin{exercise}
 		Define $\alpha:\Z\to\Z$ by $\alpha(n)=3n+1$. 
 		\enumarabic{
-			\item Is $\alpha$ one-to one?  \vskip .5in
-			\item Is $\alpha$ onto? \vskip .5in
-			\item Is $\alpha$ a bijection?\vskip .5in
+			\item Is $\alpha$ one-to one?  \vfill
+			\item Is $\alpha$ onto? \vfill
+			\item Is $\alpha$ a bijection?\vfill
 		}
 	\end{exercise}
 }
@@ -100,7 +100,7 @@
 			$\vdots$
 		\end{center}
 		
-		Therefore with this $a$ as we have defined it, $\alpha(a)=b$.  And so we can conclude that $\alpha$ is onto.
+		Therefore with this $a$ as we have defined it, we have $a\in A$ and $\alpha(a)=b$.  We can conclude that $\alpha$ is onto.
 	\end{proof}
 		
 	
@@ -115,7 +115,7 @@
 	\vfill
 }
 \exer{
-	Prove that the map $h:\R\to\R$ defined by $h(x)=x^2$ is neither one-to-one or onto.  
+	Prove that the map $h:\R\to\R$ defined by $h(x)=x^2$ is neither one-to-one nor onto.  
 	
 	You really should use counterexamples here, not generic ``Let $a\in \R$'' statements.  That is, you should write something like ``Consider $x_1=1$ and $x_2=-1$.''
 	\vfill
@@ -161,7 +161,7 @@
 					\item $\beta\alpha$
 				\end{enumerate}
 			\end{multicols}
-		\item Describe $\beta\alpha$.  (Find a formula for $\beta\alpha(n)$.)
+		\item Describe $\beta\alpha$.  (Write $\beta\alpha:\underline{\hspace*{.5in}}\to\underline{\hspace*{.5in}}$ and find a formula for $\beta\alpha(n)$.)
 			\vskip 1in
 	}
 }
@@ -186,7 +186,7 @@
 	$\alpha:\R\to\R$ by $\alpha(x)=3x+1$ and 
 	$\beta:\R\to \R$ by $\beta(x)=\frac{1}{3}x-\frac{1}{3}$.
 	
-	Show that $\alpha=\beta^{-1}$ by computing both $\alpha\beta(x)$ and $\beta\alpha(x)$.\vskip 1in
+	Show that $\alpha=\beta^{-1}$ by verifying that both $\alpha\beta(x)$ and $\beta\alpha(x)$ equal $x$ for all $x\in\R$.\vfill
 }
 
 {
@@ -219,8 +219,11 @@
 
 	}
 \newpage
-\textbf{Invertibility Theorem (Theorem 0.3.6)}
+
+\begin{block}{Invertibility Theorem (Theorem 0.3.6)}
 		A mapping $\alpha:A\to B$ is invertible if and only if $\alpha$ is a bijection.
+	\end{block}
+\exer{Here, I have completed the first half of the proof of the Invertibility theorem.  You complete the second half.
 	\begin{proof}
 		($\Rightarrow$) Assume that $\alpha:A\to B$ is invertible.  Denote its inverse by $\beta:B\to A$.  We now show $\alpha$ is one-to-one and onto.
 		
@@ -232,8 +235,10 @@
 		
 		Now let $b\in B$. Then $a=\beta(b)\in A$.  Furthermore, $$\alpha(a)=\alpha\beta(b)=b,$$
 		by definition of inverse.  Therefore $b$ is in the image of $\alpha$, so $\alpha$ is onto.
+		
+		($\Leftarrow$) Assume that $\alpha$ is a bijection.  \vfill
 	\end{proof}
-
+}
 	
 
 {

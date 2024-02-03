@@ -1,4 +1,4 @@
-\usepackage{amsthm,amsmath,amsfonts,hyperref,graphicx,color,multicol,soul}
+\usepackage{amsthm,amsmath,amsfonts,hyperref,graphicx,multicol,color,soul}
 \usepackage{enumitem,tikz,tikz-cd,setspace,mathtools}
 \usepackage{colortbl}
 \usepackage[margin=1in]{geometry}
@@ -55,6 +55,8 @@
 
 \definecolor{backcolour}{RGB}{237,236,230}
 \definecolor{myblue}{RGB}{42,157,189}
+\definecolor{Green}{RGB}{16, 163, 80}
+\definecolor{Orange}{RGB}{245, 131, 10}
 
 \lstdefinestyle{mystyle}{
 	language=Python,
@@ -93,7 +95,7 @@
 
 \newcommand{\ds}{\displaystyle}
 
-\newcommand{\fn}{\insertframenumber}
+\newcommand{\fn}{}
 
 \newcommand{\id}{\operatorname{id}}
 \newcommand{\im}{\operatorname{im}}
@@ -121,6 +123,24 @@
 \newtheorem*{defn}{Definition}
 \newtheorem*{disc}{Group Discussion}
 \newtheorem*{recall}{Recall}
+\newtheorem*{nb}{Note}
+%\newtheorem*{block}{}
+
+
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{thm}[1]
+{\renewcommand\theinnercustomthm{#1}\innercustomthm}
+{\endinnercustomthm}
+
+\newcommand{\theblock}{BLOCK}
+\newtheorem*{innerblock}{\theblock}
+\newenvironment{block}[1]
+{\renewcommand\theblock{#1}\innerblock}
+{\endinnerblock}
+\newenvironment{statementblock}[1]
+{\renewcommand\theblock{#1}\innerblock}
+{\endinnerblock}
+
 \renewcommand{\emph}[1]{{\color{blue}\texttt{#1}}}
 
 \definecolor{Gold}{RGB}{237, 172, 26}
@@ -196,22 +216,24 @@
 		#1
 	\end{itemize}
 }
-%\newcommand{\slide}[1]{
+%\newcommand{\frame}{}
+\newcommand{\slide}[1]{
 %	\begin{frame}{\fn}
-%		#1
+		#1
 %	\end{frame}
-%}
-%\newcommand{\slidec}[1]{
+}
+\newcommand{\slidec}[1]{
 %\begin{frame}[c]{\fn}
-%	#1
+	#1
 %\end{frame}
-%}
-%\newcommand{\slidet}[2]{
+}
+\newcommand{\slidet}[2]{
 %	\begin{frame}{\fn\ - #1}
-%		#2
+		#2
 %	\end{frame}
-%}
+}
 
+\newcommand{\frametitle}[1]{}
 
 \setlength{\parindent}{0pt}
 
@@ -227,12 +249,15 @@
 \newcommand{\startdoc}{}
 
 \newcommand{\topics}[2]{
+	\begin{multicols}{2}\raggedcolumns
 		{\textbf{Previously.}}
-			\begin{itemize}[label=--]
-				#1
-			\end{itemize}
+		\begin{itemize}[label=--]
+			#1
+		\end{itemize}
+		\columnbreak
 		{\textbf{This Section.}}
-			\begin{itemize}[label=--]
-				#2
-			\end{itemize}
+		\begin{itemize}[label=--]
+			#2
+		\end{itemize}
+	\end{multicols}
 }

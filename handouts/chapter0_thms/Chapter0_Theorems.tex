@@ -43,11 +43,13 @@
 \newcommand{\bbar}{\overline{b}}
 \newcommand{\cbar}{\overline{c}}
 
+
+\usepackage{fancyhdr}
+\fancyhead[L]{\textbf{Math 425: Abstract Algebra I}}
+\fancyhead[R]{\textbf{Theorems from the Textbook - Chapter 0}}
+\pagestyle{fancy}
+
 \begin{document}
-			\noindent Math 425: Abstract Algebra I
-		
-		\noindent	Theorems from the Textbook - Chapter 0
-\vskip .25in
 
 \section*{Notation}
 \begin{tabular}{cll}
@@ -75,6 +77,13 @@
 \end{tabular}
 
 \section*{Theorems}
+\begin{thm}{0.3.1}
+	If $\alpha\colon A\to B$ and $\beta\colon A\to B$ are mappings then 
+		\[\alpha=\beta \quad\text{if and only if}\quad \alpha(a)=\alpha(b)\text{ for all }a\in A.\]
+\end{thm}
+\begin{thm}{0.3.2}
+	Let $\alpha\colon A\to B$ be a mapping where $A$ and $B$ are nonempty finite sets with $|A|=|B|$.  Then $\alpha$ is one-to-one if and only if $\alpha$ is onto.
+\end{thm}
 \begin{thm}{0.3.3}
 	Let $A\xrightarrow{\alpha}B\xrightarrow{\beta}C\xrightarrow{\gamma}D$ be mappings on sets.  Then
 	\enumarabic{
@@ -110,6 +119,27 @@ A mapping $\alpha:A\to B$ is invertible if and only if $\alpha$ is a bijection.
 	If $\equiv$ is any equivalence on a nonempty set $A$, then the collection of all equivalence classes of $A$ under $\equiv$ partitions $A$.
 \end{thm}
 \section*{Definitions}
+\begin{defn}[Method of Direct Proof]
+	To prove $p\Rightarrow p$, demonstrate directly that $q$ is true whenever $p$ is true.
+\end{defn}
+\begin{defn}[Method of Reduction to Cases]
+	To prove $p\Rightarrow q$, show that $p$ implies at at least one of a list $p_1,p_2,\dots,p_n$ of statements (the cases) and that $p_i\Rightarrow q$ for each $i$.
+\end{defn}
+\begin{defn}[Method of Proof by Contradiction]
+	To prove $p\Rightarrow p$, show that the assumption that both $p$ is true and $q$ is false leads to a logical contradiction.
+\end{defn}
+\begin{defn}
+	A \emph{counterexample} to the statement $p\Rightarrow q$ is an example set of values and inputs that has $q$ true and $p$ false.
+\end{defn}
+\begin{defn}
+	Two statements $p$ and $q$ are logically equivalent if both $p\Rightarrow q$ and $q\Rightarrow p$ are true.  In which case we write $p\Leftrightarrow q$ and say ``$p$ if and only if $q$''. To prove such a statement, we must prove both that $p\Rightarrow q$ and $q\Rightarrow p$.
+\end{defn}
+\begin{defn}
+	A \emph{set} is a collection of objects called \emph{elements}.  If $a$ is an element of $A$, we write $a\in A$ or $A\ni a$.
+\end{defn}
+\begin{defn}
+	If $A$ and $B$ are sets such that for all $a\in A$, we also have $a\in B$, then we call $A$ a \emph{subset} of $B$.  This is denoted by $A\subseteq B$. If we know further that $A\neq B$, we can write $A\subset B$ or $A\subsetneq B$, in which case $A$ is a \emph{proper subset} of $B$.
+\end{defn}
 \begin{defn}[Principle of Set Equality]
 	If $A$ and $B$ are sets, then
 	\begin{center}
@@ -119,6 +149,8 @@ A mapping $\alpha:A\to B$ is invertible if and only if $\alpha$ is a bijection.
 \begin{defn}
 	If $A$ has $n$-elements then we say the \emph{cardinality} of $A$ is $n$ and we write $|A|=n$. Such sets are called \emph{finite} sets.  
 	Sets with an infinite number of elements are \emph{infinite} sets.
+	
+	The set with cardinality 0 is called the \emph{emptyset} and is denoted $\emptyset$.
 \end{defn}
 \begin{defn}
 	The \emph{power set} of a set $A$ is the set $P(A)$ consisting of all subsets of $A$.
@@ -127,6 +159,15 @@ A mapping $\alpha:A\to B$ is invertible if and only if $\alpha$ is a bijection.
 The \emph{Cartesian Product} of the sets $A$ and $B$ is the set
 \[A\times B:=\{(a,b):a\in A\text{ and }b\in B\}.\]
 Note that the elements, $(a,b)$, are ordered pairs.
+\end{defn}
+\begin{defn}
+	Let $A$ and $B$ be sets.
+	The \emph{union} of $A$ and $B$ is the set of all elements that appear in at least one of $A$ or $B$.  Denote the union of $A$ and $B$ by 
+		\[A\cup B:= \{x\ :\ x\in A\text{ or }x\in B\}.\]
+	The \emph{intersection} of $A$ and $B$ is the set of all elements that appear in both $A$ and $B$. Denote the intersection of $A$ and $B$ by 
+		\[A\cap B:= \{x\ :\ x\in A\text{ and }x\in B\}.\]
+	The difference of $B$ in $A$ is the set of all elements in $a$ that do not appear in $B$. Denote the difference of $B$ in $A$ by
+		\[A\setminus B:=\{x\in A\ :\ x\not\in B\}.\]
 \end{defn}
 \begin{defn}
 A \emph{mapping} or \emph{function} $\alpha$ from $A$ to $B$ is a rule that assigns to every input $a\in A$ exactly one output $\alpha(a)\in B$.  The notation here is
@@ -142,16 +183,12 @@ Once we have verified that each input maps to exactly one output then we say the
 \end{itemize}
 \end{defn}
 \begin{defn}
-We will call two maps $\alpha:A\to B$ and $\beta:A\to B$ equal if $\alpha(a)=\beta(a)$ for all $a\in A$.
-\end{defn}
-\begin{defn}
 Let $\alpha:A\to B$ be a mapping.
 \enumalph{
 	\item We call $\alpha$ \emph{one-to-one} or \emph{injective} if for all $a_1,a_2\in A$ if $\alpha(a_1)=\alpha(a_2)$, then $a_1=a_2$.
 	\item We call $\alpha$ \emph{onto} or \emph{surjective} if for all $b\in B$ there is an $a\in A$ such that $\alpha(a)=b$.
 	\item We call $\alpha$ a \emph{bijection} or \emph{bijective} if $\alpha$ is both one-to-one and onto.
 }
-
 \end{defn}
 \begin{defn}
 The \emph{identity map} for the set $A$ is the map $1_A:A\to A$ defined by $1_A(a)=a$ for all $a\in A$.
@@ -164,6 +201,7 @@ and the \emph{composition} of the maps is the mapping $\beta\alpha:A\to C$ defin
 \begin{defn}
 If $\alpha:A\to B$ is a mapping of sets, then we call $\beta:B\to A$ an \emph{inverse} of $\alpha$ if
 \[\beta\alpha = 1_A\text{ and }\alpha\beta=1_B.\]
+Any map that has an inverse is called \emph{invertible}[
 \end{defn}
 \begin{defn}
 If $A$ is a set, any subset of $A\times A$ is called a \emph{relation} on $A$.
@@ -199,6 +237,9 @@ Given an equivalence relation $\equiv$ on a set $A$, we define the \emph{equival
 		\item $\cal P$ is pairwise disjoint.
 		\item Every element of $A$ is in some element of $\cal P$.
 	}
+\end{defn}
+\begin{defn}
+	If $\equiv$ is an equivalence on $A$, the set of equivalence classes is called the \emph{quotient set} and is denoted $A_\equiv$.
 \end{defn}
 \begin{defn}
 	The mapping $\phi:A\to A_{\equiv}$ given by $\phi(a)=[a]$ for all $a\in A$ is called the \emph{natural mapping}.
