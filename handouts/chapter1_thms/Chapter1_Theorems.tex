@@ -66,7 +66,11 @@ Then $P(n)$ is true for every $n\geq m$.
 Let $n\in\Z$ and $d\geq 1$ be an integer. Then there exists uniquely determined $q,r\in\Z$ such that 
 \[n=qd+r\text{ and }0\leq r<d.\]
 \end{thm}
-\begin{thm}{1.2.2}[B\'ezout's Identity]
+\begin{thm}{1.2.2}
+Let $m,n$ and $d$ denote integers.
+	\enumarabic{\item $n\mid n$ for all $n$.\item If $d\mid m$ and $m\mid n$, then $d\mid n$.\item If $d\mid n$ and $n\mid d$, then $d=\pm n$.\item If $d\mid n$ and $d\mid m$, then $d\mid(xn+ym)$ for all $x,y\in\Z$.}
+\end{thm}
+\begin{thm}{1.2.3}[B\'ezout's Identity]
 Let $a$ and $b$ be integers, not both zero.  Then there exist $r,s\in\Z$ such that $\gcd(a,b)=ra+sb$.
 \end{thm}
 \begin{thm}{1.2.4}
@@ -75,13 +79,12 @@ Let $m,n\in \Z$ not both zero.  Then
 	$m,n$ relatively prime $\Leftrightarrow$ $\exists r,s\in\Z$ such that $1=rm+sn$
 \end{center}
 \end{thm}
-\begin{thm}{1.2.4}
-Let $m,n\in Z$ not both zero.  Then
-\begin{center}
-	$m,n$ relatively prime $\Leftrightarrow$ $\exists r,s\in\Z$ such that $1=rm+sn$
-\end{center}
+\begin{thm}{1.2.5}
+Let $m,n\in \Z$ be relatively prime integers.
+\enumarabic{\item If $m\mid k$ and $n\mid k$ for some integer $k$, then $mn\mid k$.
+\item If $m\mid kn$ for some integer $k$, then $m\mid k$.}
 \end{thm}
-\begin{thm}{}[Euclid's Lemma]
+\begin{thm}{1.2.6}[Euclid's Lemma]
 Let $p$ be a prime number.
 \enumarabic{
 	\item If $p\mid mn$ where $m,n\in\Z$, then $p\mid m$ or $p\mid n$.
@@ -128,11 +131,18 @@ where $k_i=\min(a_i,b_i,c_i,\dots)$ for each $i$, and
 \[\operatorname{lcm}(a,b,c,\dots)=p_1^{m_1}p_2^{m_2}\cdots p_r^{m_r},\]
 where $m_i=\max(a_i,b_i,c_i,\dots)$ for each $i$.
 \end{thm}
+\begin{thm}{1.2.10}[Euclid's Theorem]
+	There are infinitely many primes.
+\end{thm}
 \begin{thm}{1.3.1}
 Congruence modulo $n$ is an equivalence relation on $\Z$.
 \end{thm}
 \begin{thm}{1.3.2}
 Given $n\geq 2$, $\overline{a}=\overline{b}\Leftrightarrow a\equiv b\pmod n$.
+\end{thm}
+\begin{thm}{1.3.3}
+	Let $n\geq 2$ be an integer.
+	\enumarabic{\item If $a\in\Z$, then $\overline{a}=\overline{r}$ for some $r$ where $0\leq r\leq n-1$.\item The residue classes $\overline{0},\overline{1},\dots,\overline{n-1}$ modulo $n$ are distinct.}
 \end{thm}
 \begin{thm}{1.3.4}
 Let $n\geq 2$ be a fixed modulus and let $a,b$ and $c$ denote arbitrary integers. Then the following hold in $\Z_n$.
@@ -163,8 +173,25 @@ If $p$ is prime then $(p-1)!\equiv -1\pmod p$.
 \begin{thm}{1.3.8}[Fermat's Theorem]
 If $p$ is prime then $a^p\equiv a\pmod p$ for all $a\in\Z$.  Moreover, if $\gcd(a,p)=1$, then $a^{p-1}\equiv 1\pmod p$.
 \end{thm}
-\begin{thm}{}
-Disjoint cycles commute.  That is if $\sigma$ and $\tau$ are disjoint cycles then $\sigma\tau=\tau\sigma$.
+\begin{thm}{1.4.1}
+	The set $S_n$ of permutations on $T_n=\{1,2,\dots,n\}$ has $|S_n|=n!$ elements.
+\end{thm}
+\begin{thm}{1.4.2}
+	Let $\sigma,\tau$ and $\mu$ denote permutations in $S_n$.
+		\enumarabic{
+			\item the composition $\sigma\tau$ is in $S_n$
+			\item $\sigma\varepsilon=\sigma=\varepsilon\sigma$
+			\item $\sigma(\tau\mu)=(\sigma\tau)\mu$
+			\item $\sigma\sigma^{-1}=\varepsilon=\sigma^{-1}\sigma$
+		}
+\end{thm}
+\begin{thm}{1.4.3}[Disjoint cycles commute]  That is if $\sigma$ and $\tau$ are disjoint cycles then $\sigma\tau=\tau\sigma$.
+\end{thm}
+\begin{thm}{1.4.4}
+	If $\sigma$ is an $r$-cycle, then $\sigma^{-1}$ is also an $r$-cycle. More precisely, if 
+		$$\sigma=(k_1\ k_2\ \cdots\ k_{r-1}\ k_r),$$
+	then 
+	$$\sigma^{-1}=(k_r\ k_{r-1}\ \cdots\ k_{2}\ k_1),$$
 \end{thm}
 \begin{thm}{1.4.5}[Cycle Decomposition Theorem]
 Every $\sigma \in S_n$ with $\sigma\neq\varepsilon$ can be written as a product of disjoint cycles.
@@ -176,6 +203,13 @@ If $n\geq 2$, then every cycle in $S_n$ can be written as a product of transposi
 If a permutation has two factorizations	
 \[\sigma = \gamma_n\cdots \gamma_2\gamma_1=\mu_m\cdots\mu_s\mu_1,\]
 where each of $\gamma_i$ and $\mu_j$ are transpositions, then $m\equiv n\pmod 2$ ($m$ and $n$ have the same parity).
+\end{thm}
+\begin{thm}{1.4.8}
+	If $n\geq 2$, the set $A_n$ has the following properties:
+	\enumarabic{
+		\item $\varepsilon$ is in $A_n$ and if $\sigma,\tau\in A_n$, then both $\sigma^-1\in A_n$ and $\sigma\tau\in A_n$.
+		\item $|A_n|=\frac{1}{2}n!$.
+	}
 \end{thm}
 \section*{Definitions}
 \begin{defn}
