@@ -11,3 +11,18 @@ After class time today you will be able to
 
 ## Recommended practice
 If \\(G = \mathbb{Z}_3\times\mathbb{Z}_3\\), compute \\(H=\langle (\bar 1,\bar 1)\rangle\\).
+
+
+<hr class="dashed double-spacing">
+
+<div class = "justify" style="display:flex;justify-content:space-between;">
+    <div sytle="align:left">
+        <a class="btn info" href="page:📓 Section 2.3 Part 1">⬅ | Section 2.3</a>
+    </div>
+    <div style="align:center">
+        <a class="btn danger" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+    </div>
+    <div style="align:right">
+        <a class="btn info" href="page:📓 Section 2.4 Part 2">Section 2.4 | ➡</a>
+    </div>
+</div>

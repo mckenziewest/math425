@@ -12,3 +12,17 @@ Section 2.4 Exercise 4
 
 ## Optional reading
 Page 95 and 96, particularly Theorem 2.4.9 and Example 12.
+
+<hr class="dashed double-spacing">
+
+<div class = "justify" style="display:flex;justify-content:space-between;">
+    <div sytle="align:left">
+        <a class="btn info" href="page:📓 Section 2.3 Part 2 and 2.4 Part 1">⬅ | Section 2.3</a>
+    </div>
+    <div style="align:center">
+        <a class="btn danger" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+    </div>
+    <div style="align:right">
+        <a class="btn info" href="page:📓 Section 2.5 Part 1">Section 2.5 | ➡</a>
+    </div>
+</div>

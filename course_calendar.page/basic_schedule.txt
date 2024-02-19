@@ -10,12 +10,12 @@ Section 1.4 The Symmetric Group,📓 Section 1.4 Part 1
 Section 1.4 (Continued),📓 Section 1.4 Part 2
 Exam Review Time
 Chapter 0 and 1 Exam
-Section 2.1 Monoids
-Section 2.2 Groups 
-Section 2.2 (Continued)
-Section 2.3 Subgroups
-Section 2.3 (Continued)
-Section 2.4 Cyclic Groups and Order
+Section 2.1 Monoids,📓 Section 2.1
+Section 2.2 Groups,📓 Section 2.2 Part 1
+Section 2.2 (Continued),📓 Section 2.2 Part 2
+Section 2.3 Subgroups,📓 Section 2.3 Part 1
+Section 2.3 (Continued),📓 Section 2.3 Part 2 and 2.4 Part 1
+Section 2.4 Cyclic Groups and Order,📓 Section 2.4 Part 2
 Section 2.5 Homomorphisms
 Section 2.5 Continued
 Chapter 2 Part 1 Exam

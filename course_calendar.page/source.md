@@ -113,15 +113,21 @@
     </th>
     <td>
      2/26 -
-     Section 2.1 Monoids
+     <a href="page:📓 Section 2.1">
+      Section 2.1 Monoids
+     </a>
     </td>
     <td>
      2/28 -
-     Section 2.2 Groups
+     <a href="page:📓 Section 2.2 Part 1">
+      Section 2.2 Groups
+     </a>
     </td>
     <td>
      3/1 -
-     Section 2.2 (Continued)
+     <a href="page:📓 Section 2.2 Part 2">
+      Section 2.2 (Continued)
+     </a>
     </td>
    </tr>
    <tr>
@@ -130,15 +136,21 @@
     </th>
     <td>
      3/4 -
-     Section 2.3 Subgroups
+     <a href="page:📓 Section 2.3 Part 1">
+      Section 2.3 Subgroups
+     </a>
     </td>
     <td>
      3/6 -
-     Section 2.3 (Continued)
+     <a href="page:📓 Section 2.3 Part 2 and 2.4 Part 1">
+      Section 2.3 (Continued)
+     </a>
     </td>
     <td>
      3/8 -
-     Section 2.4 Cyclic Groups and Order
+     <a href="page:📓 Section 2.4 Part 2">
+      Section 2.4 Cyclic Groups and Order
+     </a>
     </td>
    </tr>
    <tr>

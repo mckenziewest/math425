@@ -11,3 +11,18 @@ Section 2.2 Exercise 1ab
 
 ## Optional reading
 pages 76-77
+
+
+<hr class="dashed double-spacing">
+
+<div class = "justify" style="display:flex;justify-content:space-between;">
+    <div sytle="align:left">
+        <a class="btn info" href="page:📓 Section 2.1">⬅ | Section 2.1</a>
+    </div>
+    <div style="align:center">
+        <a class="btn danger" href="page:📅 Full Course Schedule - Subject to Change">Course Calendar</a>
+    </div>
+    <div style="align:right">
+        <a class="btn info" href="page:📓 Section 2.2 Part 2">Section 2.2 | ➡</a>
+    </div>
+</div>
