@@ -2,6 +2,6 @@
 	"type":"file",
 	"title":"💻 latex_examples.tex",
 	"filename":"../latex_examples.tex",
-	"modules":["📢 Course Information and Links"],
+	"modules":["📜 Handouts"],
 	"destination": "handouts"
 }

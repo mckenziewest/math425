@@ -4,6 +4,6 @@
   "allowed_extensions": ["pdf"],
   "submission_types": ["online_upload"],
   "modules": ["🌱 Homework"],
-  "due_at": "2024-02-23T16:00:00",
+  "due_at": "2024-02-26T16:00:00",
 	"assignment_group_name":"Turn In Assignments"
 }
