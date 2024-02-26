@@ -40,6 +40,7 @@
 	\begin{exercise}
 		Write the equivalence classes of $(\Z,\equiv\pmod 3)$.
 	\end{exercise}
+	\vskip 1in
 }
 \slide{
 	\begin{defn}
@@ -73,9 +74,11 @@
 	\begin{exa}
 		$\Z_7=$
 	\end{exa}
+	\vskip 2em
 	\begin{exercise}
 		What is $\overline{47}$ in $\Z_7$? What is $\overline{-16}$?
 	\end{exercise}
+	\vskip 2in
 }
 \slide{
 	\begin{statementblock}{Claim}
@@ -97,10 +100,12 @@
 		It suffices to show that if $\overline{a_1}=\overline{a_2}$ and $\overline{b_1}=\overline{b_2}$ in $\Z_n$, then
 			\[\overline{a_1+b_1}=\overline{a_2+b_2}\text{ and }\overline{a_1b_1}=\overline{a_2b_2}.\]
 	\end{block}
+	\vskip 2in
 }
 \slide{
 	\begin{exercise}
 		Fill out the addition and multiplication tables for $\Z_4$.
+		\vskip .5in
 		\Large
 		$$
 		\begin{array}{c|c|c|c|c}
@@ -121,9 +126,9 @@
 	\end{exercise}
 }
 \slide{
-	\begin{statementblock}{Claim}
-		An integer $n\in\Z$ is divisible by 9 if and only if the sum of its digits is divisible by 9.
-	\end{statementblock}
+	\begin{exa}
+		We can show that an integer $n\in\Z$ is divisible by 9 if and only if the sum of its digits is divisible by 9, using arithmetic mod 9!\vskip 2in
+	\end{exa}
 }
 \slide{
 	\begin{block}{\textbf{Summary.}}
@@ -154,29 +159,37 @@
 	\end{nb}
 }
 \slide{	
-	Moral from last Theorem: Arithmetic in $\Z_n$ behaves very similarly to arithmetic in $\Z$! 
-	\vskip 2em
-	There's a \emph{zero}, $\overline{0}$, and \emph{unity}, $\overline{1}$, in $\Z_n$.
-	\vskip 2em
-	Every $\abar\in\Z_n$ has an \emph{negative} or \emph{additive inverse}, $\overline{-a}$, in $\Z_n$, which we write as $-\abar$ and satisfies
-	\[\abar+\overline{-a}=\overline{0}.\]
-	\vskip 1em
-	\emph{Subtraction} is then naturally defined as
-	\[\abar-\bbar=\abar+\overline{-b}=\overline{a-b}.\]
+
+	\fbox{
+	\begin{minipage}{\textwidth}
+		\textbf{Moral from last Theorem:}
+		
+		Arithmetic in $\Z_n$ behaves very similarly to arithmetic in $\Z$! 
+		
+		There's a \emph{zero}, $\overline{0}$, and \emph{unity}, $\overline{1}$, in $\Z_n$.
+		
+		Every $\abar\in\Z_n$ has an \emph{negative} or \emph{additive inverse}, $\overline{-a}$, in $\Z_n$, which we write as $-\abar$ and satisfies
+		\[\abar+\overline{-a}=\overline{0}.\]
+		
+		\emph{Subtraction} is then naturally defined as
+		\[\abar-\bbar=\abar+\overline{-b}=\overline{a-b}.\]
+\end{minipage}}
 }
 \slide{
 	\begin{exercise}
 		What is the additive inverse of $\overline{6}$ in $\Z_8$?
-		
+		\vskip 1in
 		%		Be sure to write it as a class in $\{\overline{0},\overline{1},\overline{2},\dots,\overline{7}\}$.
 	\end{exercise}
 }
+\newpage
 \slide{
 	\begin{defn}
 		We call a class $\abar\in\Z_n$ \emph{invertible} if there is some $\bbar\in Z_n$ such that $\abar\bbar=\overline{1}$.
 	\end{defn}
 	\begin{exa}
 		Consider $\Z_4$.
+		\vskip 1in
 %		 $\overline{3}$ is invertible 
 %		%because $\overline{3}\cdot\overline{3}=\overline{9}=\overline{1}$.
 %		\vskip .5in
@@ -194,17 +207,18 @@
 	\end{exercise}
 	\vskip 2in
 	\begin{nb}
-		Looking at this question as a polynomial equation, there is no solution to $\overline{6}x=\overline{1}$ in $\Z_8$.
+		Looking at the question of whether $\overline 6\in\Z_8$ has a multiplicative inverse, we can rephrase it by saying there is no solution to the congruence equation $\overline{6}x=\overline{1}$ in $\Z_8$.
 	\end{nb}
 }
 	\frametitle{\fn}
 	\begin{exercise}
 		\enumalph{
 			\item Solve $\overline{5}x=\overline{1}$ in $\Z_8$, if possible.
-			
-			Brute force is a great plan.
+			\vfill
 			\item Solve $\overline{5}x=\overline{2}$ in $\Z_8$, if possible.
+			\vfill
 			\item Solve $\overline{6}x=\overline{2}$ in $\Z_8$, if possible.
+			\vfill
 		}
 	\end{exercise}
 	\begin{nb}
@@ -217,11 +231,12 @@ sage:     print(f"5*{a}={5*a} mod 8")\end{lstlisting}
 		\end{quote}
 		Use at \url{https://sagecell.sagemath.org/}.
 	\end{nb}
+\newpage
 \slide{
 	\begin{question}
 		What do you notice about the relationship between $n$ and the values in $\Z_n$ that have inverses?
 		
-		This slide and the next have multiplication tables for $\Z_7$, $\Z_8$, $\Z_9$, and $\Z_{10}$.  Identify the rows that have a 1 in them - these are the classes with inverses.
+		Here we have multiplication tables for $\Z_7$, $\Z_8$, $\Z_9$, and $\Z_{10}$.  Identify the rows that have a 1 in them - these are the classes with inverses.
 	\end{question}
 	\vskip 1em
 	\begin{minipage}{.45\textwidth}\small
@@ -257,7 +272,6 @@ sage:     print(f"5*{a}={5*a} mod 8")\end{lstlisting}
 		$
 	\end{minipage}
 	
-	{\small * Overlines omitted for the sake of visual appearance.}
 }
 \slide{\hskip -1em
 	\begin{minipage}{.45\textwidth}
@@ -297,7 +311,6 @@ sage:     print(f"5*{a}={5*a} mod 8")\end{lstlisting}
 			9 & 0 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1
 		\end{array}$
 	\end{minipage}
-	* Overlines omitted for the sake of visual appearance.
 }
 \slide{
 	\begin{statementblock}{Theorem 1.3.5}
@@ -371,6 +384,7 @@ sage:     print(f"5*{a}={5*a} mod 8")\end{lstlisting}
 	\begin{exercise}
 		Solve the equation $\overline{16}x=\overline{9},$ in $\Z_{35}$.
 	\end{exercise}
+	\vskip 2in
 }
 \slide{
 	\begin{exercise}
@@ -380,7 +394,9 @@ sage:     print(f"5*{a}={5*a} mod 8")\end{lstlisting}
 			\overline{2}x+\overline{10}y=\overline{2}.
 		\end{cases}\]
 	\end{exercise}
+	\vskip 2in
 }
+\newpage
 \slide{
 	\begin{statementblock}{Theorem 1.3.6 (The Chinese Remainder Theorem)}
 		Let $m$ and $n$ be relatively prime integers. If $s$ and $t$ are arbitrary integers, then there is an integer $b$ for which

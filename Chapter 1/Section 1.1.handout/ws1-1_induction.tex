@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+
+\newcommand{\secname}{Section 1.1: Induction}
+
+\input{../../_tools/handout_setup}
+
+\begin{document} 
+	\startdoc
+\topics{
+	\item Relations
+	\item Equivalence Relations
+	\item Equivalence Classes
+}{
+	\item Induction
+}
+
+\slide{
+	\begin{statementblock}{Principle of Mathematical Induction}
+		Let $P(n)$ be a statement for each integer $n\geq  m$. Suppose the following conditions are satisfied,
+			\enumarabic{\item $P(m)$ is true, and \item $P(k)\Rightarrow P(k+1)$ for every $k\geq m$.}
+		Then $P(n)$ is true for every $n\geq m$.
+	\end{statementblock}
+%	\begin{exa}
+%		\textbf{Distribution:} It is known that if $a,b,c\in\R$, then $a(b+c)=ab+ac$.
+%		
+%		\textbf{Claim:} For all $x\in \R$ and $n\geq 1$,
+%			\[(1-x)(1+x+\cdots+x^{n-1})=1-x^n.\]
+%		\begin{proof}
+%			\vskip 1in
+%		\end{proof}
+%	\end{exa}
+}
+
+\slide{
+	\begin{exa}
+		\textbf{Claim:} For all $n\geq 4$,
+			\[2^n<n!.\]
+		\vskip 3in
+%		\begin{proof}
+%			\textbf{Base Case:} Notice that when $n=4$, $2^n=16$ and $n!=24$.  Thus $2^n<n!$.
+%			
+%			\textbf{Inductive Step:} Let $k\geq 4$ be an integer.  Assume $2^k<k!$.
+%			\vskip 3in
+%		\end{proof}
+	\end{exa}
+}
+\slide{
+	\begin{exa}
+		Show that $3^{3n}+1$ is a multiple of 7 for all odd $n\geq 1$.
+		\vskip 3in
+%		\begin{proof}
+%			\textbf{Base Case:} Notice that when $n=1$, \vskip .5in
+%			
+%			\textbf{Inductive Step:} Let $k\geq 1$ be an odd integer.
+%			\vskip 3in
+%		\end{proof}
+	\end{exa}
+}
+%\slide{
+%	\begin{exercise}
+%		Consider the statement, for all $n\geq 1$,
+%			\[1^3+2^3+\cdots+n^3=\frac{1}{4}n^2(n+1)^2.\]
+%		Use Induction to prove this statement.
+%			\enumalph{
+%				\item What is the base case?\vskip .5in
+%				\item What is the inductive hypothesis?\vskip .5in
+%				\item Use the inductive hypothesis to complete the proof.
+%			}
+%	\end{exercise}
+%}
+\slide{
+	\begin{block}{\textbf{Induction in Algebra}.}
+		We assume the distributive property $a(b+c)=ab+ac$.
+		
+		Prove that this property can be extended, that is show that for all integers $n\geq 2$, for all $a,b_1,\dots,b_n\in\Z$, we have
+			 $$a(b_1+b_2+\cdots+b_n) = ab_1+ab_2+\cdots+ab_n.$$
+	\end{block}
+}
+\slide{
+\begin{exercise}
+	Consider the statement, for all $n\geq 1$,
+	\[n^3+(n+1)^3+(n+2)^3\]
+	is a multiple of 9.
+	
+	Use Induction to prove this statement.
+	\enumalph{
+		\item What is the base case?\vskip .5in
+		\item What is the inductive hypothesis?\vskip .5in
+		\item Use the inductive hypothesis to complete the proof.
+		
+			Hint: Do NOT do any expanding of the terms $(k+1)^3$ and $(k+2)^3$.
+			\vskip 3in
+	}
+\end{exercise}
+}
+\slide{
+\begin{exercise}
+	Let $a_n=2^{3n}-1$ for $n\geq 0$. Guess a common divisor for each $a_n$ and prove your assertion.
+	(The common divisor should be greater than 1.)
+	\enumalph{
+		\item Use a calculator or math software co compute $a_1,a_2,a_3,a_4$.  What common divisor do you notice?\vskip 1in
+		\item Use induction to prove your claim.
+	}
+		\vskip 3in
+\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Another Induction Principle}
+		Let $P(n)$ be a statement for each integer $n\geq  m$. Suppose the following conditions are satisfied,
+		\enumarabic{\item $P(m)$ and $P(m+1)$ are true, and \item If $k\geq m$ and both $P(k)$ and $P(k+1)$ are true then $P(k+2)$ is true.}
+		Then $P(n)$ is true for every $n\geq m$.
+	\end{statementblock}
+\begin{exercise}
+	Let $a_n$ denote a number for each integer $n\geq 0$ and assume that $a_{n+2}=a_{n+1}+2a_n$ holds for every $n\geq 0$. 
+	
+	Show that if $a_0=1$ and $a_2=2$, then $a_n=2^n$ for each $n\geq 0$.
+\end{exercise}
+}
+\end{document}
+
