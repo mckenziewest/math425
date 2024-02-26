@@ -13,7 +13,7 @@ import tex_ready_docs
 
 from course_info import *
 
-canvas = mc.make_canvas_api_obj(url=canvas_url)
+canvas = mc.make_canvas_api_obj()
 course = canvas.get_course(course_id) 
 
 print("\n-------------\nTeXing documents if needed\n-------------\n")
