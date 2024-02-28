@@ -19,6 +19,9 @@
 	\begin{defn}
 		A \emph{binary operation}, $*$ on a set $S$ is a function that associates to each ordered pair $(a,b)\in S\times S$ an element of $S$ which we call $a*b$.
 	\end{defn}
+	{
+	\vfill
+	}
 	\begin{nb}
 		Since we know that $a*b\in S$ for all $a,b\in S$, we say that the binary operation is \emph{closed under $*$}.
 	\end{nb}
@@ -39,6 +42,9 @@
 		\[a*(b*c)=(a*b)*c,\]
 		for all $a,b,c\in S$.
 	\end{defn}
+	{
+	\vfill
+	}
 }
 \slide{
 	\begin{defn}
@@ -46,6 +52,9 @@
 		\[a*b=b*a,\]
 		for all $a,b\in S$.
 	\end{defn}
+	{
+	\vfill
+	}
 }
 \slide{
 	\begin{defn}
@@ -53,11 +62,16 @@
 			\[a*e=e*a=a,\]
 		for all $a\in S$.
 	\end{defn}
+	{
+	\vfill
+	}
 }
+\newpage
 \slide{
 	\begin{statementblock}{Theorem 2.1.1}
 		If a binary operation $*$ on a set $S$ has an identity, then it is unique.
 	\end{statementblock}
+	\vskip 2in
 }
 
 \slide{
@@ -68,10 +82,10 @@
 
 		If $(S,*)$ is also commutative, then we say $S$ is a \emph{commutative monoid}.
 	\end{defn}
-	\begin{exa}
+	\begin{exa} Here are two monoids:
 		\bulletize{
-			\item $(\Z,\cdot)$
-			\item $(S_n,\circ)$
+			\item $(\Z,\cdot)$\vfill
+			\item $(S_n,\circ)$\vfill
 		}
 	\end{exa}
 }
@@ -85,8 +99,10 @@
 		\item Commutative?
 		\vskip 2em
 	}
-	Therefore, $(\mathbb{N},$\verb|^|$)$ is ...
+	Therefore, $(\mathbb{N},$\verb|^|$)$ is \fbox{commutative} \fbox{a monoid} \fbox{not a monoid}.  (cross out those that do not apply)
 \end{exercise}
+
+\newpage
 
 \slide{
 \begin{exercise}
@@ -99,7 +115,7 @@
 		\item Commutative?
 		\vskip 2em
 	}
-	Therefore, $(\mathbb{Z},-)$ is ...
+	Therefore, $(\mathbb{Z},-)$ is \fbox{commutative} \fbox{a monoid} \fbox{not a monoid}.  (cross out those that do not apply)
 \end{exercise}
 }
 \slide{
@@ -113,7 +129,7 @@
 		\item Commutative?
 		\vskip 2em
 	}
-	Therefore, $(GL_2(\R),\cdot)$ is ...
+	Therefore, $(GL_2(\R),\cdot)$ is is \fbox{commutative} \fbox{a monoid} \fbox{not a monoid}.  (cross out those that do not apply)
 \end{exercise}
 }
 \slide{
@@ -125,15 +141,17 @@
 		An element that has an inverse is called a \emph{unit}.
 	\end{defn}
 }
-\slide{\vskip -.25in
+\newpage
+\slide{
 	\begin{exercise}
-		Fill in the table
+		A nice table of monoids and their units.
 
-			\def\arraystretch{1.5}
+	\begin{center}
+				\def\arraystretch{3}
 			$\begin{array}{c|c|c}
-			\text{Monoid}&\quad e\quad &\quad \text{Set of Units}\quad\\
+			\text{Monoid}&\text{Identity Element} &\quad \text{Set of Units}\quad\\
 			\hline\hline
-			(\Z,+)&&\\\hline
+			(\Z,+)&&\hspace*{3in}\\\hline
 			(\R,+)&&\\\hline
 			(\Z_n,+)&&\\\hline
 			(M_n(\R),+)&&\\\hline
@@ -142,13 +160,14 @@
 			(\Z_4,\cdot)&&\\\hline
 			(\Z_n,\cdot)&&\\\hline
 			(\Z_p,\cdot)&&\\\hline
-			(S_3,\circ)&&\\\hline
+			(S_3,\circ)&&\\
 			\end{array}$
+	\end{center}
 
-		\begin{picture}(0,0)
-		\put(195,132){$\leftarrow$ Matrices with real entries}
-		\put(195,30){$\leftarrow$ $p$ is prime}
-		\end{picture}
+%		\begin{picture}(0,0)
+%		\put(195,102){$\leftarrow$ Matrices with real entries}
+%		\put(195,30){$\leftarrow$ $p$ is prime}
+%		\end{picture}
 	\end{exercise}
 }
 

@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,enumitem}
+\usepackage[margin=.75in]{geometry}
+\pagestyle{empty}
+
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\setlength{\parindent}{0pt}
+\begin{document}
+	\begin{center}
+		{\Large \bf Math 425 Assignment 5}
+	\end{center}
+	\section*{Purpose}
+		\begin{itemize}
+			\item Assess objectives and additional exercises from section 2.1-2.3, namely
+				\begin{itemize}
+					\item Group-1: Use the definition of a group to prove or disprove that a set along with an operation is a group.
+					\item Group-2: Use the subgroup test to prove that a subset of a group is a subgroup.
+					\item Supplemental exercises Supp-12, Supp-13, and Supp-14. 
+				\end{itemize}
+			\item Build a strong foundation of creative critical thinking and proof-writing techniques.
+		\end{itemize}
+	\section*{Task}
+		\begin{itemize}
+			\item Complete the exercises listed on the following page(s) of this document and submit your solutions as a pdf to Canvas.
+			\item I strongly recommend you use LaTeX to typeset your proofs.
+			\item You may work in groups but everyone should submit their own assignment written in their own words.  Do NOT copy your classmates.
+			\item Allowed resources: our textbook, classmates, your notes, videos linked in Canvas.
+			\item Unacceptable resources: anything you find on an internet search. Do NOT use a homework help website (e.g., Chegg). Their solutions are often wrong or use incorrect context.  I want you to practice making arguments that are yours. Take some ownership.
+		\end{itemize}
+	\section*{Criteria}
+		All items will earn a score using the following scale:
+		\begin{itemize}
+			\item \textbf{Exceptional} - Solution is succinct, references the correct theorems and definitions, and is entirely correct.
+			\item \textbf{Satisfactory} - Solution is essentially correct. It still references the correct theorems and definitions. 
+					It may be longer than necessary, have inconsequential errors, or have some grammatical mistakes.
+			\item \textbf{Nearly Complete} - Solution has some errors and should be re-written.
+			\item \textbf{Unsatisfactory} - Solution has major errors, references content not covered in class or in the textbook, or is incomplete in some major way.
+		\end{itemize}
+		Recall from the syllabus
+		\begin{itemize}
+			\item If you earn either an \textbf{Exceptional} or \textbf{Satisfactory} mark on an objective exercise (labeled Intro-, Group-, or Ring-) then you may consider that item complete. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on a an objective exercise (labeled Intro-, Group-, or Ring-) then you have not yet completed this objective.
+			\item You may submit a new attempt at completing that objective on a future Wednesday. You must select a new exercise listed under the given objective, you cannot resubmit a version you have attempted previously.  The only limit you have on number of attempts is the number of exercises available for the objective.
+			\item If you earn an \textbf{Exceptional} mark on an additional exercise (labeled A-) then you will earn one half point toward the ten total points in that section of your overall grade.
+			\item If you earn an \textbf{Satisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0.25 points toward the ten total points in that section of your overall grade. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0 points toward the ten total points in that section of your overall grade. 
+		\end{itemize}
+	
+	
+\newpage
+	
+\mbox{}\hfill {\bf Math 425 Assignment 4}\\
+Name: \underline{\hspace*{3in}}\hfill Due 3/8/24
+\vskip .25in
+
+
+
+\textbf{(Group-1)} Consider the set $M$ of all one-to-one maps from $\Z$ to $\Z$.  In set-builder notation, we would write $$M=\{\sigma:\N\to\N\ |\ \sigma\text{ is one-to-one}\}.$$ 
+ Let $\circ$ represent the composition operation. Show that $(M,\circ)$ is a monoid and not a group.  
+
+(Make sure to reference appropriate Theorems from Section 0.3 when necessary. I highly recommend you take some time to read and process pages 12-15 of the text.)
+
+\newpage
+
+\textbf{(Group-2)} 
+\begin{enumerate}[label=(\alph*)]
+	\item If $G$ is an abelian group with operation $*$ and identity $e$, use the subgroup test to show that $$H=\{a\in G:a*a=e\}$$ is a subgroup of $G$.
+	
+	Note that $H$ is the set of elements of $G$ such that when you square them, or add them to themselves, or $*$ them with themselves, you get the identity element.
+	\vfill
+	
+	\item Give an example of a non-abelian group $G$ such that the subset $H=\{a\in G:a*a=e\}$ is not a subgroup of $G$. 
+	
+	(And at this point, go back to your proof for part (a) and find the spot where you used the fact that the group was abelian if you haven't already done so.)
+	\vskip 2in
+\end{enumerate}
+
+\newpage
+\textbf{(Supp-12)} Let $*$ be the binary operation on $\R$ defined by $a*b=a+b-ab$ for all $a,b\in\R$.
+\begin{enumerate}[label=(\alph*)]
+	\item Prove whether or not $*$ is associative.\vfill
+	\item Prove whether or not $*$ is commutative.\vfill
+	\item Prove whether or not there is an identity $e\in\R$ for the operation $*$.\vfill
+	\item If there is an identity, find all units in $\R$ under the operation $*$.\vfill
+	
+\end{enumerate}
+
+\newpage
+\textbf{(Supp-13)}  Let $a$ and $b$ be elements in a group $G$. If $a^n=b^n$ and $a^m=b^m$ where $\gcd(m,n)=1$, show that $a=b$. (Hint: Theorem 1.2.4)
+
+
+\newpage
+\textbf{(Supp-14)} If $G$ is a group and $g\in G$ is a fixed element, define $C(g)=\{z\in G:z*g=g*z\}$, in other words, $C(g)$ is all of the elements of the group that commute with the specific element $g$.  Show that $C(g)$ is a subgroup of $G$.  (We call $C(g)$ the \underline{centralizer} of $g$ in $G$.)
+
+It might help to compute a few cases first.  Here are some examples:
+\begin{itemize}
+	\item Let $G=\Z_4$ with the operation $+$, then $C(\bar {2})=\{\bar 0,\bar 1,\bar 2,\bar 3\}=\Z_4$ because we can test that $z+\bar 2 = \bar2+z$ for every one of the $z$ in $\Z_4$.
+	\item Let $G= S_3$ and $g=(1\ 2\ 3)$.
+	
+	Again, we want to find all of the $z\in S_3$ such that $z (1\ 2\ 3) = (1\ 2\ 3)z$.  As $S_3$ contains 6 elements, we can test them all:
+	$$\begin{array}{c|c|c|c}
+		z&z(1\ 2\ 3)&(1\ 2\ 3)z & z\in C(g)\\\hline
+		\varepsilon&(1\ 2\ 3) & (1\ 2\ 3)&\text{yes}\\\hline
+		(1\ 2)&(2\ 3) & (1\ 3)&\text{no}\\\hline
+		(1\ 3)&(1\ 2) & (2\ 3)&\text{no}\\\hline
+		(2\ 3)&(1\ 3) & (1\ 2)&\text{no}\\\hline
+		(1\ 2\ 3)&(1\ 3\ 2) & (1\ 3\ 2)&\text{yes}\\\hline
+		(1\ 3\ 2)&\varepsilon & \varepsilon&\text{yes}
+	\end{array}$$ 
+	
+	Therefore  
+	\[C(g)= \{\varepsilon,(1\ 2\ 3),(1\ 3\ 2)\}.\]
+	\item Let $G= S_4$ and $g = (1\ 2)$. Then 
+	\[C(g) = \{\varepsilon,(1\ 2),(3\ 4),(1\ 2)(3\ 4)\}.\]
+	For this example, I'm going to leave the process of working it out to you. 
+\end{itemize}
+
+	Remember, for this proof $g$ is a fixed element, it will never change. 
+
+\end{document}

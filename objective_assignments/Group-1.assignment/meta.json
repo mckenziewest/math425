@@ -1,0 +1,9 @@
+{
+    "name": "Group-1",
+    "type": "assignment",
+    "assignment_group_name": "Completion of Objectives",
+    "omit_from_final_grade": "True",
+    "objective_type": "proof",
+    "objective_description": "Use the definition of a group to prove or disprove that a set along with an operation is a group.",
+    "points": 3
+}
