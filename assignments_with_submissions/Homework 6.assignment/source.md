@@ -1,0 +1,1 @@
+See the document here ([pdf](hw6.pdf)) ([tex](hw6.tex))

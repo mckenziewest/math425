@@ -1,0 +1,16 @@
+{
+    "link": "https://webwork.uwec.edu/webwork2/425_West/Group_4-Groups_Generated_by_Multiple_Elements/",
+    "ww_name": "Group_4-Groups_Generated_by_Multiple_Elements",
+    "name": "Group-4",
+    "unlock_at": "2024-03-06T16:00:00",
+    "lock_at": "2024-05-18T16:00:00",
+    "due_at": "2024-03-15T16:00:00",
+    "type": "assignment",
+    "points_possible": 1,
+    "submission_types": "external_tool",
+    "external_tool_tag_attributes": {
+        "url": "https://webwork.uwec.edu/webwork2/425_West/Group_4-Groups_Generated_by_Multiple_Elements/",
+        "new_tab": true
+    },
+  	"omit_from_final_grade":"True"
+}
