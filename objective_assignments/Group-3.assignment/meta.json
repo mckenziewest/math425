@@ -2,5 +2,7 @@
 	"name":"Group-3",
 	"type":"assignment",
 	"assignment_group_name":"Completion of Objectives",
-	"omit_from_final_grade":"True"
+	"omit_from_final_grade":"True",
+	"objective_description":"Find all subgroups of a cyclic group and draw the subgroup lattice.",
+	"objective_type":"proof"
 }

@@ -7,10 +7,12 @@ assignments_with_submissions/Homework 2.assignment
 assignments_with_submissions/Homework 3.assignment
 assignments_with_submissions/Homework 4.assignment
 assignments_with_submissions/Homework 5.assignment
+assignments_with_submissions/Homework 6.assignment
 assignments_with_submissions/Rewrites 1.assignment
 assignments_with_submissions/Rewrites 2.assignment
 assignments_with_submissions/Rewrites 3.assignment
 assignments_with_submissions/Rewrites 4.assignment
+assignments_with_submissions/Rewrites 5.assignment
 
 Chapter 0/Section 0.1.page
 Chapter 0/Section 0.2.page
@@ -40,6 +42,8 @@ objective_assignments/Intro-6.assignment
 objective_assignments/Intro-7.assignment
 objective_assignments/Group-1.assignment
 objective_assignments/Group-2.assignment
+objective_assignments/Group-3.assignment
+objective_assignments/Group-4.assignment
 
 supplemental_assignments/Supp-1.assignment
 supplemental_assignments/Supp-2.assignment
