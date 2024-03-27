@@ -94,13 +94,13 @@
     </div>
     <h2 id="Group-5" class="section">Group-5: Prove that a map is a homomorphism and prove whether or not it is an isomorphism.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 7">🏠 Homework 7</a><br />
         Additional Exercises <a href="file:Group-5.pdf">(pdf)</a>
         <a href="file:Group-5.tex">(tex)</a>
     </div>
     <h2 id="Group-6" class="section">Group-6:	Compute the right and left cosets of a subgroup of a group.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 7">🏠 Homework 7</a><br />
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Group-6">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.

@@ -1,0 +1,19 @@
+{
+  "link": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
+  "ww_name": "Group_7-Cosets",
+  "name": "Group-6",
+  "unlock_at": "2024-03-06T16:00:00",
+  "lock_at": "2024-05-18T16:00:00",
+  "due_at": "2024-03-28T16:00:00",
+  "type": "assignment",
+	"assignment_group_name":"Completion of Objectives",
+  "points_possible": 1,
+  "submission_types": "external_tool",
+  "external_tool_tag_attributes": {
+      "url": "https://webwork.uwec.edu/webwork2/425_West/Group_7-Cosets/",
+      "new_tab": true
+  },
+  "omit_from_final_grade":"True",
+  "objective_description":"Compute the right and left cosets of a subgroup of a group.",
+  "objective_type":"computation"
+}

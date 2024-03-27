@@ -8,11 +8,13 @@ assignments_with_submissions/Homework 3.assignment
 assignments_with_submissions/Homework 4.assignment
 assignments_with_submissions/Homework 5.assignment
 assignments_with_submissions/Homework 6.assignment
+assignments_with_submissions/Homework 7.assignment
 assignments_with_submissions/Rewrites 1.assignment
 assignments_with_submissions/Rewrites 2.assignment
 assignments_with_submissions/Rewrites 3.assignment
 assignments_with_submissions/Rewrites 4.assignment
 assignments_with_submissions/Rewrites 5.assignment
+assignments_with_submissions/Rewrites 6.assignment
 
 Chapter 0/Section 0.1.page
 Chapter 0/Section 0.2.page
@@ -44,6 +46,8 @@ objective_assignments/Group-1.assignment
 objective_assignments/Group-2.assignment
 objective_assignments/Group-3.assignment
 objective_assignments/Group-4.assignment
+objective_assignments/Group-5.assignment
+objective_assignments/Group-6.assignment
 
 supplemental_assignments/Supp-1.assignment
 supplemental_assignments/Supp-2.assignment
@@ -59,6 +63,8 @@ supplemental_assignments/Supp-11.assignment
 supplemental_assignments/Supp-12.assignment
 supplemental_assignments/Supp-13.assignment
 supplemental_assignments/Supp-14.assignment
+supplemental_assignments/Supp-15.assignment
+supplemental_assignments/Supp-16.assignment
 
 
 # handouts/latex_examples/tex.file
@@ -67,10 +73,10 @@ handouts/chapter0_thms/pdf.file
 handouts/chapter0_thms/tex.file
 handouts/chapter1_thms/pdf.file
 handouts/chapter1_thms/tex.file
-# handouts/chapter2a_thms/pdf.file
-# handouts/chapter2a_thms/tex.file
-# handouts/chapter2b_thms/pdf.file
-# handouts/chapter2b_thms/tex.file
+handouts/chapter2a_thms/pdf.file
+handouts/chapter2a_thms/tex.file
+handouts/chapter2b_thms/pdf.file
+handouts/chapter2b_thms/tex.file
 # handouts/chapter3_thms/pdf.file
 # handouts/chapter3_thms/tex.file
 handouts/objective_checks.file

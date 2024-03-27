@@ -6,6 +6,7 @@
     "lock_at": "2024-05-18T16:00:00",
     "due_at": "2024-03-15T16:00:00",
     "type": "assignment",
+	"assignment_group_name":"Completion of Objectives",
     "points_possible": 1,
     "submission_types": "external_tool",
     "external_tool_tag_attributes": {
