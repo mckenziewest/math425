@@ -111,35 +111,35 @@
         Additional Exercises <a href="file:Group-7.pdf">(pdf)</a>
         <a href="file:Group-7.tex">(tex)</a>
     </div>
-    <h2 id="Group-9" class="section">Group-8:	Compute the group and Cayley table for the symmetry group of a given shape, and determine which of our standard groups it is isomorphic to.</h2>
+    <h2 id="Group-8" class="section">Group-8:	Compute the group and Cayley table for the symmetry group of a given shape, and determine which of our standard groups it is isomorphic to.</h2>
     <div class="content">
         First Due: <a href="assignment: 🏠 Homework 8">🏠 Homework 8</a><br />
         Additional Exercises <a href="file:Group-8.pdf">(pdf)</a>
         <a href="file:Group-8.tex">(tex)</a>
     </div>
-    <h2 id="Group-10" class="section">Group-9:	Prove that a subgroup is normal.</h2>
+    <h2 id="Group-9" class="section">Group-9:	Prove that a subgroup is normal.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 9">🏠 Homework N</a><br />
         Additional Exercises <a href="file:Group-9.pdf">(pdf)</a>
         <a href="file:Group-9.tex">(tex)</a>
     </div>
     <h2 id="Group-10" class="section">Group-10:	Compute the subgroups of a dihedral group and determine which of those subgroups are normal in the group. </h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 9">🏠 Homework 9</a><br />
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Group-10">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
     </div>
     <h2 id="Group-11" class="section">Group-11:	Compute the Cayley table for a quotient group of a group.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 9">🏠 Homework 9</a><br />
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Group-11">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
     </div>
     <h2 id="Group-12" class="section">Group-12:	Use the first isomorphism theorem to prove that a quotient of a group is isomorphic to another group. </h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 10">🏠 Homework 10</a><br />
         Additional Exercises <a href="file:Group-12.pdf">(pdf)</a>
         <a href="file:Group-12.tex">(tex)</a>
     </div>
@@ -153,7 +153,7 @@
         Ring-1: Compute properties of a ring with operations other than the standard multiplication and addition.
     </h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 11">🏠 Homework 11</a><br />
         Additional Exercises <a href="file:Ring-1.pdf">(pdf)</a>
         <a href="file:Ring-1.tex">(tex)</a>
     </div>
@@ -161,7 +161,7 @@
         Ring-2: Use the subring test to prove that a subset of a ring is a subring.
     </h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 11">🏠 Homework 11</a><br />
         Additional Exercises <a href="file:Ring-2.pdf">(pdf)</a>
         <a href="file:Ring-2.tex">(tex)</a>
     </div>
@@ -169,33 +169,33 @@
         Ring-3: Compute units and quotients of a number field.
     </h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 12">🏠 Homework 12</a><br />
         Additional Exercises <a href="file:Ring-3.pdf">(pdf)</a>
         <a href="file:Ring-3.tex">(tex)</a>
     </div>
     <h2 id="Ring-4" class="section">Ring-4: Use the first isomorphism theorem for rings to prove that a quotient of a ring is isomorphic to another ring.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 12">🏠 Homework 12</a><br />
         Additional Exercises <a href="file:Ring-4.pdf">(pdf)</a>
         <a href="file:Ring-4.tex">(tex)</a>
     </div>
     <h2 id="Ring-5" class="section">Ring-5: 	Compute roots of a polynomial in positive characteristic rings.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 13">🏠 Homework 13</a><br />
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Ring-5">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
     </div>
     <h2 id="Ring-6" class="section">Ring-6:	Prove whether a polynomial is irreducible over a given base field or not.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 13">🏠 Homework 13</a><br />
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Ring-6">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
     </div>
     <h2 id="Ring-7" class="section">Ring-7:	Compute addition and multiplication tables for quotients of polynomial rings.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: At the time of the final exam.<br />
         This is a WeBWorK exercise. To access it, click the link from the
         <a href="assignment: Ring-7">assignment for the objective</a>.<br>
         You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.

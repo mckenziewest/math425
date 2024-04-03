@@ -1,0 +1,8 @@
+{
+	"name":"Group-9",
+	"type":"assignment",
+	"assignment_group_name":"Completion of Objectives",
+	"omit_from_final_grade":"True",
+	"objective_description":"Prove that a subgroup is normal.",
+	"objective_type":"proof"
+}

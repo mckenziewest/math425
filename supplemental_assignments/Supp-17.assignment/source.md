@@ -1,13 +1,11 @@
-This exercise first appeared in Homework N.
+This exercise appeared in <a href="assignment: 🏠 Homework 8">🏠 Homework 8</a>.
 
-Standalone version of the exercise: [pdf](Supp-17.pdf) [tex](Supp-17.tex).
+Recall that an Exceptional mark will earn you 0.5% of your overall course grade, and a Satisfactory mark will earn you 0.25% of your overall course grade.
 
-You may improve your mark on this assignment by submitted rewrites of it on future assignments.
+* A score of 3 on this assignment corresponds to you having earned an Exceptional mark on Supp-17.
 
-Recall that an objective is considered complete when you earn a Satisfactory or Exceptional grade on it.
+* A score of 2 on this assignment corresponds to you having earned a Satisfactory mark on Supp-17.
 
-* A score of 2 on this assignment corresponds to you having earned an Exceptional mark on Supp-17.
+* A score of 1 on this assignment corresponds to you having earned a Nearly complete mark on Supp-17.
 
-* A score of 1 on this assignment corresponds to you having earned a Satisfactory mark on Supp-17.
-
-* A score of 0 on this assignment corresponds to you having earned an unsatisfactory mark on Supp-17.
+* A score of 0 on this assignment corresponds to you having earned an Unsatisfactory mark on Supp-17.

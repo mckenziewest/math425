@@ -1,0 +1,1 @@
+See the document here ([pdf](hw12.pdf)) ([tex](hw12.tex))

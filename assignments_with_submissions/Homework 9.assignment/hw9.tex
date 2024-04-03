@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amssymb,hyperref,enumitem}
+\usepackage[margin=.75in]{geometry}
+\pagestyle{empty}
+\usepackage{tikz}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\setlength{\parindent}{0pt}
+\begin{document}
+	\begin{center}
+		{\Large \bf Math 425 Assignment 9}
+	\end{center}
+	\section*{Purpose}
+	\begin{itemize}
+		\item Assess objectives and additional exercises from sections 2.8 and 2.9, namely
+		\begin{itemize} 
+			\item Group-9:	Prove that a subgroup is normal.
+			\item Group-10:	Compute the subgroups of a dihedral group and determine which of those subgroups are normal in the group.
+			\item Group-11:	Compute the Cayley table for a quotient group of a group.
+			\item Supplemental exercises Supp-18 and Supp-19.
+		\end{itemize}
+		\item Build a strong foundation of creative critical thinking and proof-writing techniques.
+	\end{itemize}
+	\section*{Task}
+	\begin{itemize}
+		\item Complete the exercises listed on the following page(s) of this document and submit your solutions as a pdf to Canvas.
+		\item I strongly recommend you use LaTeX to typeset your proofs.
+		\item You may work in groups but everyone should submit their own assignment written in their own words.  Do NOT copy your classmates.
+		\item Allowed resources: our textbook, classmates, your notes, videos linked in Canvas.
+		\item Unacceptable resources: anything you find on an internet search. Do NOT use a homework help website (e.g., Chegg). Their solutions are often wrong or use incorrect context.  I want you to practice making arguments that are yours. Take some ownership.
+	\end{itemize}
+	\section*{Criteria}
+		All items will earn a score using the following scale:
+		\begin{itemize}
+			\item \textbf{Exceptional} - Solution is succinct, references the correct theorems and definitions, and is entirely correct.
+			\item \textbf{Satisfactory} - Solution is essentially correct. It still references the correct theorems and definitions. 
+					It may be longer than necessary, have inconsequential errors, or have some grammatical mistakes.
+			\item \textbf{Nearly Complete} - Solution has some errors and should be re-written.
+			\item \textbf{Unsatisfactory} - Solution has major errors, references content not covered in class or in the textbook, or is incomplete in some major way.
+		\end{itemize}
+		Recall from the syllabus
+		\begin{itemize}
+			\item If you earn either an \textbf{Exceptional} or \textbf{Satisfactory} mark on an objective exercise (labeled Intro-, Group-, or Ring-) then you may consider that item complete. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on a an objective exercise (labeled Intro-, Group-, or Ring-) then you have not yet completed this objective.
+			\item You may submit a new attempt at completing that objective on a future Wednesday. You must select a new exercise listed under the given objective, you cannot resubmit a version you have attempted previously.  The only limit you have on number of attempts is the number of exercises available for the objective.
+			\item If you earn an \textbf{Exceptional} mark on an additional exercise (labeled A-) then you will earn one half point toward the ten total points in that section of your overall grade.
+			\item If you earn an \textbf{Satisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0.25 points toward the ten total points in that section of your overall grade. 
+			\item If you earn a \textbf{Nearly Complete} or \textbf{Unsatisfactory} mark on an additional exercise (labeled Supp-) then you will earn 0 points toward the ten total points in that section of your overall grade. 
+		\end{itemize}
+	
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Group-9.1)} Let $H$ and $K$ be subgroups of a group $G$.
+	\begin{enumerate}[label=(\alph*)]
+		\item Use the subgroup test to show $H\cap K\leq G$.\vfill 
+		\item Assume $H\lhd G$ and $K\lhd G$.  Show that $H\cap K\lhd G$.\vfill
+	\end{enumerate}
+	
+	\newpage
+	
+	\textbf{(Group-10)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-10}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
+	
+	\newpage
+	
+	\textbf{(Group-11)}  Access this exercise on WeBWorK using the link on Canvas.  That is, find the assignment titled \texttt{Group-11}. Once you open this assignment, there will be a link to WeBWorK. This link will bring you directly to the exercise. You will have 5 attempts to answer all questions for the exercise correctly. After those 5 attempts, a new problem will be generated and you can start a new attempt to complete the objective.
+	\vskip .25in
+	To help, I will provide some blank tables for you.  These do not need to be filled out but are available for you to use for your work.
+	
+	\textbf{Exercise 1}
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c||c|c|c|c}
+		+&0+H&1+H&2+H&3+H\\\hline\hline
+		0+H&0+H&1+H&2+H&3+H\\\hline
+		1+H&1+H&&&\\\hline
+		2+H&2+H&&&\\\hline
+		3+H&3+H&&&\\
+		\end{array}$$
+	
+	\textbf{Exercise 2} This exercise includes randomization that doesn't allow as much filling on my end.
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c||c|c|c|c|c|c}
+		\cdot&1H&\hspace*{.25in}&\hspace*{.25in}&\hspace*{.25in}&\hspace*{.25in}&\hspace*{.25in}\\\hline\hline
+		1H&1H&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\\hline
+		&&&&&&\\
+	\end{array}$$
+
+	\textbf{Exercise 3} This exercise has no randomization.
+	$$
+	\renewcommand{\arraystretch}{1.5}
+	\begin{array}{c||c|c|c|c|c|c}
+		\circ&eH&(1,2)H&(1,3)H&(1,4)H&(1,2,3)H&(1,3,2)H\\\hline\hline
+		eH&eH&(1,2)H&(1,3)H&(1,4)H&(1,2,3)H&(1,3,2)H\\\hline
+		(1,2)H&(1,2)H&&&&&\\\hline
+		(1,3)H&(1,3)H&&&&&\\\hline
+		(1,4)H&(1,4)H&&&&&\\\hline
+		(1,2,3)H&(1,2,3)H&&&&&\\\hline
+		(1,3,2)H&(1,3,2)H&&&&&\\
+	\end{array}$$
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Supp-18)} Let $G$ be a group with normal subgroup $K$. Assume $g\in G$ has $o(g)=n$.  Show that the order of the coset $gK$ has order dividing $n$ as an element of the quotient group $G/K$.
+	
+	\newpage
+	Name: \underline{\hspace*{3in}}
+	\vskip .25in
+	
+	\textbf{(Supp-19)} Consider the quotient group $\Q/\Z$.  Show that this is an infinite group in which every element has finite order.  
+	
+	(Note: Recall that the operation in $\Q$ is addition, so the operation in $\Q/\Z$ is coset addition. Thus the order of an element $q+\Z\in \Q/\Z$ is the smallest positive integer $k$ such that $k(q+\Z)=\Z$.)
+	
+	
+\end{document}
