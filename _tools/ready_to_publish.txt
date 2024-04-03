@@ -14,6 +14,7 @@ assignments_with_submissions/Homework 9.assignment
 assignments_with_submissions/Homework 10.assignment
 assignments_with_submissions/Homework 11.assignment
 assignments_with_submissions/Homework 12.assignment
+assignments_with_submissions/Homework 13.assignment
 assignments_with_submissions/Rewrites 1.assignment
 assignments_with_submissions/Rewrites 2.assignment
 assignments_with_submissions/Rewrites 3.assignment
@@ -111,8 +112,8 @@ handouts/chapter2a_thms/pdf.file
 handouts/chapter2a_thms/tex.file
 handouts/chapter2b_thms/pdf.file
 handouts/chapter2b_thms/tex.file
-# handouts/chapter3_thms/pdf.file
-# handouts/chapter3_thms/tex.file
+handouts/chapter3_thms/pdf.file
+handouts/chapter3_thms/tex.file
 handouts/objective_checks.file
 
 project/instructions.file
