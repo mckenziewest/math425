@@ -1,0 +1,217 @@
+\documentclass[12pt]{article}
+
+\newcommand{\secname}{Section 3.1: Rings}
+
+\input{../../_tools/handout_setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		\item Kernels
+		\item The first isomorphism theorem
+	}{
+		\item Rings
+		\item Commutative Rings
+		\item Fields
+		\item Subrings
+		\item Ring Isomorphisms
+	}
+
+\slide{
+	\begin{defn}
+		Suppose $R$ is a set and it has two binary operations on it (written as $+$ and $\cdot$), then the set $R$ is a \emph{ring} if 
+		\enumarabic{
+			\item $(R,+)$ is an abelian group
+			\item $\cdot$ is associative (i.e., $r_1(r_2r_3)=(r_1r_2)r_3$)
+			\item the distributive laws hold:
+				\bulletize{\item $r_1(r_2+r_3)=r_1r_2+r_1r_3$\item $(r_1+r_2)r_3=r_1r_3+r_2r_3$}
+		}
+	\end{defn}
+}
+
+\slide{
+	\begin{exa} Some rings we know and love.
+		\enumarabic{\setlength{\itemsep}{2em}
+			\item $(\Z,+,\cdot)$, $(\Q,+,\cdot)$, $(\R,+,\cdot)$, $(\C,+,\cdot)$
+			\item  $(2\Z,+,\cdot)$
+			\item $\Z[\sqrt{2}]=\{a+b\sqrt{2}\ | a,b\in\Z\}$
+			\item $\Z[i]=\{a+bi\ |\ a,b\in\Z\}$\quad $\leftarrow$\quad The book calls this $\Z(i)$
+			\item $(\Z_n,+,\cdot)$
+			\item $M_2(\R)=\left\{\begin{pmatrix}a&b\\c&d\end{pmatrix}\ |\ a,b,c,d\in\R\right\}$
+		}
+	\end{exa}
+}
+
+\newpage
+
+\slide{
+	\begin{exa}
+		The \emph{direct product} $R_1\times R_2$ of rings $R_1$ and $R_2$ is also a ring with componentwise operations:
+		\bulletize{\item $(a,b)+(c,d)=(a+c,b+d)$\item $(a,b)\cdot(c,d)=(ac,bd)$} 
+	\end{exa}
+}
+\slide{
+	\begin{defn}
+		Given a ring $(R,+,\cdot)$,
+		\enumarabic{
+			\item If $\cdot$ is commutative, then we call $R$ a \emph{commutative ring}.\vfill
+			\item The \emph{additive identity} element in $R$ is denoted $0$ or $0_R$.\vfill
+			\item If there exists a \emph{multiplicative identity} element in $R$, it is denoted $1$ or $1_R$.  A ring that has a $1_R$ is called a \emph{ring with unity}.\vfill
+			\item A non-zero element $a\in R$ is called a \emph{zero-divisor} if there is some non-zero $b\in R$ such that $ab=0$ or $ba=0$.\vfill
+			\item An element $a\in R$ is called \emph{nilpotent} if there is some $n\in \Z^+$ such that $a^n=0$.\vfill
+			\item Suppose $R$ is a rings with unity.  Then an element $a\in R$ is called a \emph{unit} if there is some $b\in R$ such that $ab=ba=1$.\vfill
+			\item The \emph{center} $Z(R)$ of a ring $R$ is defined to be 
+			\[Z(R)=\{x\in R\ |\ xr=rx\ \forall r\in R\}.\]
+		}
+	\end{defn}
+}
+\slide{
+	\begin{question}
+		Why don't we care about all the $x\in R$ such that $x+r=r+x$ for all $r\in R$?
+	\end{question}	\vskip 1in
+}
+\slide{
+		\enumarabic{
+			\item[\textbf{8.}] A ring $R\neq\{0\}$ is called a \emph{division ring} if every non-zero element in $R$ is a unit.\vfill
+			\item[\textbf{9.}] A \emph{field} is a commutative division ring.\vfill
+		}
+}
+\newpage
+\slide{
+	\begin{exercise}
+		Examine these definitions for $(\Z_6,+,\cdot)$?
+		\enumarabic{
+			\item commutative\vfill
+			\item additive identity\vfill
+			\item multiplicative identity\vfill
+			\item zero-divisors\vfill
+			\item nilpotent elements\vfill
+			\item units\vfill
+			\item trivial ring\vfill
+			\item center\vfill
+			\item division ring\vfill
+			\item field\vfill
+		}
+	\end{exercise}
+}
+
+\slide{
+	\begin{exa} A non-commutative ring called the
+		 the quaternions $\quats$. Is defined similar to a vector space, or $\R^4$, with a twist:
+		
+		$$\quats=\{a+bi+cj+dk\ |\ a,b,c,d\in\R\}$$ 
+		
+		with multiplication working as follows:
+		$$i^2=j^2=k^2=-1, \quad ij=-ji=k,\quad jk=-kj=i,\quad ki=-ik=j.$$
+		\vskip 1in\mbox{}
+	\end{exa}
+}
+\slide{
+	\begin{exa}[Some popular commutative division rings.]
+		$\Q$, $\R$, $\C$, $\Z_p$ where $p$ is prime\vskip 1in
+	\end{exa}
+}
+\newpage
+\slide{
+	\begin{thm}{3.1.1}
+		If $0$ is the zero of a ring $R$, then $0r=0=r0$ for every $r\in R$.
+	\end{thm}\vskip 2in
+}
+\slide{
+	\begin{thm}{3.1.2}
+		Let $r$ and $s$ be arbitrary elements of a ring $R$.
+		\enumarabic{
+			\item $(-r)s=r(-s)=-rs$
+			\item $(-r)(-s)=rs$
+			\item $(mr)(ns)=(mn)(rs)$ for all integers $m$ and $n$
+		}
+	\end{thm}\vskip 2in
+}
+\slide{
+	\begin{defn}
+		A subset $S$ of a ring $(R,+,\cdot)$ is called a \emph{subring} if $(S,+,\cdot)$ is also a ring.
+	\end{defn}
+	\begin{exa}
+		$\Z\subseteq\Q\subseteq\R\subseteq \C$
+	\end{exa}
+}
+
+\slide{
+	\begin{statementblock}{The Subring Test}
+		Let $(R,+,\cdot)$ be a ring and $S$ a non-empty subset of $R$.  Then $S$ is a subring of $R$ if
+		\enumarabic{
+			\item $r_1-r_2\in S$ for all $r_1,r_2\in S$
+			\item $r_1r_2\in S$ for all $r_1,r_2\in S$
+			\item $1_R\in S$
+		}
+	\end{statementblock}
+}
+\newpage
+\slide{
+	\begin{exa}
+		Prove $\Z[i]$ is a subring of $\C$.\vskip 2in
+	\end{exa}
+}
+\slide{
+	\begin{exa}
+		Prove $T_2(\R)=\left\{\begin{bmatrix}a&b\\0&c\end{bmatrix}\ |\ a,b,c\in\R\right\}$ is a subring of $M_2(\R)$.\vskip 3in
+	\end{exa}
+}
+
+\slide{
+	\begin{defn}
+		Let $R$ and $S$ be rings. A \emph{ring isomorphism} is a bijective map $\phi:R\to S$ such that for all $r_1,r_2\in R$,
+		\vskip 1em
+		\enumarabic{\setlength{\itemsep}{2em}\item $\phi(r_1+r_2)=$\item $\phi(r_1r_2)=$
+			\item $\phi(1_R)=1_S$}
+		\vskip 1em
+		In this case we say $R$ and $S$ are \emph{isomorphic} and write $R\cong S$.
+	\end{defn}
+}
+\newpage
+\slide{
+	\begin{statementblock}{Some Observations}
+		Let $\phi: R\to S$ be a ring isomorphism.
+		\enumarabic{
+			\item $\phi(0_R)=0_S$
+			\item $\phi(-r)=-\phi(r)$
+			\item $\phi(kr)=k\phi(r)$ for all $k\in\Z$
+			\item If $R$ and $S$ are rings with unity, then $\phi(1_R)=1_S$.
+			\item If $\phi$ is an isomorphism, then it preserves the addition and multiplication tables of both rings.
+		}
+	\end{statementblock}
+}
+\slide{
+	\begin{exa}
+		Prove that $\Z_6$ and $\Z_2\times \Z_3$ are isomorphic as rings.\vskip 3in\mbox{}
+	\end{exa}
+}
+
+\slide{
+	\begin{defn}
+		If there is some finite $n$ for which $$n(1_R)=\underbrace{1_R+1_R+\cdots+1_R}_{n\text{ times}}$$
+		then we say the \emph{characteristic} of a ring $R$ is the smallest such $n$ (aka, the order of $1_R$ in the additive group $(R,+)$.)  Otherwise we say the \emph{characteristic} of $R$ is $0$.  Denote this value by $\operatorname{char} R$.
+	\end{defn}
+	\begin{exercise}\enumalph{\setlength{\itemsep}{2em}\item $\operatorname{char} \Z_3=$\item $\operatorname{char}\R=$\item $\operatorname{char}\Z_4\times\Z_6$=}
+		\vskip 2em\mbox{}
+	\end{exercise}
+}
+
+\slide{
+	\begin{thm}{3.1.3}
+		If $R$ is a ring and $\operatorname{char} R=n$, then
+		\enumarabic{\item If $\operatorname{char} R=n>0$, then $kR=\{0\}$ if and only if $n$ divides $k$.\item If $\operatorname{char} R=0$, then $kR=0$ if and only if $k=0$.}
+		\vfill
+	\end{thm}
+}
+\slide{
+	\begin{statementblock}{Fun Fact}
+		If $r\in R$ is nilpotent, then $1-r$ is a unit.
+	\end{statementblock}
+	\vfill
+}
+
+\end{document}
+
+	

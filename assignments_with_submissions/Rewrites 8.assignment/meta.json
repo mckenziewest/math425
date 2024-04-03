@@ -1,0 +1,9 @@
+{
+  "name": "🎡 Rewrites 8", 
+  "type": "assignment",
+	"allowed_extensions": ["pdf"],
+  "submission_types": ["online_upload"],
+  "modules": ["🎡 Rewrite Assignments"],
+  "due_at": "2024-04-10T16:00:00",
+  "grading_type": "pass_fail"
+}

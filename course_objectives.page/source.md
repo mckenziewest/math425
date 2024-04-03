@@ -107,16 +107,15 @@
     </div>
     <h2 id="Group-7" class="section">Group-7:	Use Lagrange’s theorem or its corollaries to prove a property of a group.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
+        First Due: <a href="assignment: 🏠 Homework 8">🏠 Homework 8</a><br />
         Additional Exercises <a href="file:Group-7.pdf">(pdf)</a>
         <a href="file:Group-7.tex">(tex)</a>
     </div>
     <h2 id="Group-9" class="section">Group-8:	Compute the group and Cayley table for the symmetry group of a given shape, and determine which of our standard groups it is isomorphic to.</h2>
     <div class="content">
-        First Due: <a href="assignment: 🏠 Homework N">🏠 Homework N</a><br />
-        This is a WeBWorK exercise. To access it, click the link from the
-        <a href="assignment: Group-8">assignment for the objective</a>.<br>
-        You will also be given the opportunity to retry the objective immediately if you do not fully complete it within 5 attempts.
+        First Due: <a href="assignment: 🏠 Homework 8">🏠 Homework 8</a><br />
+        Additional Exercises <a href="file:Group-8.pdf">(pdf)</a>
+        <a href="file:Group-8.tex">(tex)</a>
     </div>
     <h2 id="Group-10" class="section">Group-9:	Prove that a subgroup is normal.</h2>
     <div class="content">

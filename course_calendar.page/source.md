@@ -235,7 +235,7 @@
     </td>
     <td>
      4/12 -
-     Chapter 2 Part 2 Exam
+     Section 3.1 Rings
     </td>
    </tr>
    <tr>
@@ -244,11 +244,11 @@
     </th>
     <td>
      4/15 -
-     Section 3.1 Rings
+     Section 3.1 (Continued)
     </td>
     <td>
      4/17 -
-     Section 3.1 (Continued)
+     Chapter 2 Part 2 Exam
     </td>
     <td>
      4/19 -

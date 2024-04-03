@@ -27,9 +27,9 @@ Section 2.8 (Continued)
 Section 2.9 Factor (Quotient) Groups
 Section 2.10 The Isomorphism Theorem 
 Section 2.10 (Continued)
-Chapter 2 Part 2 Exam
 Section 3.1 Rings 
 Section 3.1 (Continued)
+Chapter 2 Part 2 Exam
 Section 3.2 Integral Domains and Fields
 No class - Math Retreat
 Section 3.3 Ideals and Factor Rings

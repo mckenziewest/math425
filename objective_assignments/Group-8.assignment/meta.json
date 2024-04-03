@@ -1,0 +1,8 @@
+{
+	"name":"Group-8",
+	"type":"assignment",
+	"assignment_group_name":"Completion of Objectives",
+	"omit_from_final_grade":"True",
+	"objective_description":"Compute the group and Cayley table for the symmetry group of a given shape, and determine which of our standard groups it is isomorphic to.",
+	"objective_type":"proof"
+}
