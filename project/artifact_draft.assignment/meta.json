@@ -1,0 +1,9 @@
+{
+  "name": "🌱 Artifact Draft", 
+  "type": "assignment",
+  "submission_types": ["online_upload","online_url","media_recording"],
+  "modules": ["🌳 Project"],
+  "due_at": "2024-04-29T16:00:00",
+  "grading_type": "points",
+  "points_possible": 4
+}

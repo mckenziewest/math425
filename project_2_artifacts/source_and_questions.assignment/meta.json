@@ -3,8 +3,8 @@
   "type": "assignment",
 	"allowed_extensions": ["pdf"],
   "submission_types": ["online_upload"],
-  "modules": ["🌳 Project"],
-  "due_at": "2024-04-15T16:00:00",
+  "modules": ["Final Project","Week 10"],
+  "due_at": "2022-11-09T22:00:00Z",
   "grading_type": "points",
   "points_possible": 4
 }

@@ -1,6 +1,6 @@
 ## Task 
 
-Submit a reflection on the comments you received as part of [🌱 Artifact Draft](assignment:🌱 Artifact Draft).
+Submit a reflection on the comments you received as part of [🌱 Artifact Draft 1](assignment:🌱 Artifact Draft 1) and [🌱 Artifact Draft 2](assignment:🌱 Artifact Draft 2).
 This reflection should include:
 <ul>
 <li>
