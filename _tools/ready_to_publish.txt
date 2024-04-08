@@ -100,6 +100,8 @@ supplemental_assignments/Supp-22.assignment
 supplemental_assignments/Supp-23.assignment
 supplemental_assignments/Supp-24.assignment
 supplemental_assignments/Supp-25.assignment
+supplemental_assignments/Supp-26.assignment
+supplemental_assignments/Supp-27.assignment
 
 
 # handouts/latex_examples/tex.file
