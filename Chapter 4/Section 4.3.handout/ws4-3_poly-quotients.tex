@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+
+\newcommand{\secname}{Section 4.3: Quotient Rings of Polynomials}
+
+\input{../../_tools/handout_setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		\item Factoring degree 2 and 3 polynomials
+		\item Unique Factorization
+		\item Factoring in $\C[x]$, $\R[x]$, $\Q[x]$, $\Z[x]$
+	}
+	{
+		\item Algebraic structure of quotients of polynomial rings
+	}
+
+\slide{
+	\begin{exercise}
+		Describe the quotient ring $\Q[x]/A$ where $A=(x^2-2)$ is the ideal containing all multiples of $h=x^2-2$.
+	\end{exercise}
+}
+
+\vskip 2in
+
+\slide{
+	\begin{thm}{4.3.2}
+		Let $h$ be a monic polynomial of degree $m\geq 1$ in $F[x]$, there $F$ is a field.  Then
+		$$F[x]/(h)\cong\{a_0+a_1 t+a_2 t^2+\cdots + a_{m-1}t^{m-1}\ | a_i\in F, h(t)=0\}.$$
+		Moreover, this representation is unique.  That is,
+			\[a_0+a_1t+a_2t^2+\cdots+a_{m-1}t^{m-1}=b_0+b_1t+b_2t^2+\cdots+b_{m-1}t^{m-1}\]
+		if and only if $a_i=b_i$ for all $i$.
+	\end{thm}
+}
+\slide{
+	\begin{exercise}
+		Consider $R=\Z_2[x]/(x^2+x+1)$.  Complete the addition and multiplication tables for $R$: (use $t=\bar{x}\in R$)
+		
+		$$\begin{array}{c||c|c|c|c}
+			+&0&1&t&1+t\\\hline\hline
+			0&{\color{white}1+t}&{\color{white}1+t}&{\color{white}1+t}&\\\hline
+			1&&&&\\\hline
+			t&&&&\\\hline
+			1+t&&&&
+		\end{array}
+		$$
+		\vskip .5in
+		$$\begin{array}{c||c|c|c|c}
+			\cdot&0&1&t&1+t\\\hline\hline
+			0&{\color{white}1+t}&{\color{white}1+t}&{\color{white}1+t}&\\\hline
+			1&&&&\\\hline
+			t&&&&\\\hline
+			1+t&&&&
+		\end{array}
+		$$
+	\end{exercise}
+}
+\newpage
+\slide{
+\begin{exercise}
+	Describe the quotient $\Z_2[x]/(x^2)$. That is write an addition and multiplication table as in exercise 2.
+	\vskip 2in
+\end{exercise}
+}
+\slide{
+\begin{exercise}
+	Describe the quotient
+	$\Z_2[x]/(x^2-1)$. That is write an addition and multiplication table as in exercise 2.
+	\vskip 2in
+\end{exercise}
+}
+\slide{
+\begin{exercise}
+	Describe the ring $R=\Z_2[x]/(x^3+1)$. That is write an addition and multiplication table as in exercise 2.
+	\vskip 2in
+\end{exercise}
+}
+\slide{
+\begin{exercise}
+	Describe the ring $R=\R[x]/(x^2+1)$. That is write an addition and multiplication table as in exercise 2.
+	\vskip 2in
+\end{exercise}
+}
+
+\slide{
+	\begin{exercise}
+		Let $R=\Z_3[x]$ and $A=\{f\in R\ |\ f(1)=0\}$.
+		\enumarabic{
+			\item Use the definition of ideal to show $A$ is an ideal.
+			\vskip .75in
+			\item Find the monic polynomial $h\in R$ such that $A=(h)$.
+			\vskip .75in
+			\item Describe $R/A$.
+			\vskip .75in
+		}
+	\end{exercise}
+}
+
+\slide{
+\begin{thm}{4.3.3}
+	Let $h$ be a monic polynomial of degree $m\geq 1$ in $F[x]$, where $F$ is a field.  Then $F[x]/(h)$ is a field if and only if $h$ is irreducible. 
+\end{thm}
+}
+
+\slide{
+	\begin{exercise}
+		Find a field of order $9$.\vfill
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Consider $F=\Q$ and $h=x^2+7x+3$.  Describe $F[x]/(h)$.\vfill
+	\end{exercise}
+}
+\slide{
+	\begin{thm}{4.3.4 (Kronecker's Theorem)}
+		Let $F$ be a field and $h\in F[x]$ an irreducible polynomial.  Then there is some field $K$ containing $F$ that has a root of $h$.
+	\end{thm}
+}
+\slide{
+	\begin{exercise}
+		Consider $F=\Q$ and $h=x^2+bx+c$ with $b^2-4c$ not a square.  Describe $F[x]/(h)$.\vfill
+	\end{exercise}
+}
+\slide{
+	\begin{exercise}
+		Consider $F=\Q$ and $h=x^3+2$.  Describe $F[x]/(h)$.\vfill
+	\end{exercise}
+}
+\end{document}
+
+		

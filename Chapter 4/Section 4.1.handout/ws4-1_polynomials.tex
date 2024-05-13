@@ -1,0 +1,238 @@
+\documentclass[12pt]{article}
+
+\newcommand{\secname}{Section 4.1: Polynomials}
+
+\input{../../_tools/handout_setup}
+
+\begin{document} 
+	\startdoc
+	
+	\topics{
+		\item Ring Homomorphisms
+		\item First Isomorphism Theorem for Rings
+	}{
+		\item Polynomial Rings
+	}
+\slide{
+	\begin{exercise}
+		We encountered $\R[x]=\{a_0+a_1x+\cdots+a_nx^n\ |\ n\geq 0,\ a_i\in \R\}$ briefly before.
+		
+		It is a ring under polynomial addition and multiplication.
+		
+		\enumalph{
+			\item Give some example elements of $\R[x]$.\vfill
+			\item What's the additive identity of $\R[x]$?\vfill
+			\item What's the multiplicative identity of $\R[x]$?\vfill
+			\item How would you define $\Z[x]$? $\Q[x]$? \vfill
+			\item What do elements of $\Z_3[x]$ look like?\vfill
+		}	
+	\end{exercise}
+}
+
+\slide{
+	\begin{defn}
+		Let $R$ be a ring.  We denote the \emph{set of polynomials over $R$} by $R[x]$ where
+			\[R[x]:=\{r_0+r_1x+r_2x^2+\cdots+r_nx^n\ |\ n\in\Z_{\geq 0}\text{ and }r_i\in R\ \forall\  0\leq i\leq n\}.\]
+		Any particular element $f=a_0+a_1x+a_2x^2+\cdots+a_nx^n$ in $R[x]$ is called a \emph{polynomial}, the elements $a_i\in R$ are called the \emph{coefficients} of $f$.
+	\end{defn}	
+	\begin{nb}
+		The variable $x$ is called an \emph{indeterminate} it is a symbol representing a position in the list.
+	\end{nb}
+}
+\newpage
+\slide{
+	\begin{statementblock}{Theorem}
+		Let $R$ be a ring with unity.  For $f,g\in R[x]$ such that
+			\[f=a_0+a_1x+a_2x^2+\cdots\text{ and } g=b_0+b_1x+b_2x^2+\cdots\]
+		define the operations
+		\bulletize{
+			\item $f+g = (a_0+b_0)+(a_1+b_1)x+(a_2+b_2)x^2+\cdots$
+			\item $f\cdot g=c_0+c_1x+c_2x^2+\cdots$ where
+				$$c_i=a_0b_i+a_1b_{i-1}+\cdots+a_{i-1}b_1+a_ib_0=\sum_{k=0}^i a_kb_{i-k}.$$
+		}
+		Then $(R[x],+,\cdot)$ is a ring with unity.
+	\end{statementblock}
+}
+\slide{
+	\begin{exercise}
+		Let $f=3+2x+4x^2$ and $g=x-3x^2+2x^3$.  Compute the coefficient of $x^4$ in $f\cdot g$ using the formula for $c_4$.
+	\end{exercise}
+	\vfill
+}
+
+\slide{
+	\begin{exercise}
+		In $\Z_3[x]$ compute $(x+2)^4$.
+	\end{exercise}
+	\vfill
+}
+\slide{
+	\begin{defn}
+		Let $R$ be a ring with unity.  For $f,g\in R[x]$ such that
+		\[f=a_0+a_1x+a_2x^2+\cdots\text{ and } g=b_0+b_1x+b_2x^2+\cdots\]
+		define the items:
+		\bulletize{
+			\item We call two polynomials \emph{equal} if the corresponding coefficients are equal.
+			
+			That is, $f=g$ means that $a_0=b_0$, $a_1=b_1$, $a_2=b_2$, $\dots$.  
+		
+			\item We call $a_0$ the \emph{constant term} or \emph{constant coefficient}.
+		
+			\item A polynomial of the form $f=a_0$ is a \emph{constant polynomial}.
+		
+			\item The \emph{zero} of $R[x]$ is \blank{1in} and the \emph{unity} is \blank{1in}.
+		
+			\item The \emph{negative} of $f=a_0+a_1x+a_2x^2+\cdots$ is $-f=-a_0-a_1x-a_2x^2-\cdots$}
+		\end{defn}
+		\newpage
+		\begin{defn}
+			Let $R$ be a ring with unity.  For $f\in R[x]$ such that
+			\[f=a_0+a_1x+a_2x^2+\cdots+a_n x^n\quad a_n\neq 0,\] define the following:
+			\bulletize{
+			\item Since $a_n\neq 0$, we say that the \emph{degree} of $f$ is $n$ and write $\deg(f)=n$.
+			
+			\item We call $a_n$ the \emph{leading coefficient} of $f$.
+			\item If the leading coefficient of $f$ is $1$, we call $f$ \emph{monic}.
+		}
+	\end{defn}
+}
+\slide{
+	\begin{thm}{4.1.1}
+		Let $R$ be a ring and let $x$ be an indeterminate over $R$.  Then
+		\enumarabic{
+			\item $R[x]$ is a ring.
+			\item $R$ is the subring of all constant polynomials in $R[x]$.
+			\item If $Z=Z(R)$ denotes the center of $R$, then the center of $R[x]$ is $Z[x]$.
+			\item In fact, $x$ is in the center of $R[x]$.
+			\item If $R$ is commutative, then $R[x]$ is commutative.
+		}
+	\end{thm}
+}
+\slide{
+\begin{defn}
+	\bulletize{\setlength{\itemsep}{2em}
+		\item If $\deg(f)=1$, we call $f$ a \underline{linear} polynomial.
+		\item If $\deg(f)=2$, we call $f$ a \blank{1in} polynomial.
+		\item If $\deg(f)=3$, we call $f$ a \blank{1in} polynomial.
+		\item If $\deg(f)=4$, we call $f$ a \blank{1in} polynomial.
+		\item If $\deg(f)=5$, we call $f$ a \blank{1in} polynomial.
+	}
+\end{defn}
+}
+\newpage
+\slide{
+\begin{exercise}
+	Consider $S=\{f\in\Z[x]\ :\ f(1)=0\}$.  Is $S$ a subring or an ideal of $\Z[x]$?\vfill
+\end{exercise}
+}
+
+\slide{
+	\begin{exercise}
+		Show that $(x)=\{xf\ |\ f\in \Z[x]\}$ is an ideal of $\Z[x]$ and that $\Z[x]/(x)\cong \Z$.
+	\end{exercise}
+}
+\vfill
+\newpage
+\slide{
+	\begin{thm}{4.1.2}
+		Let $R$ be a domain.  Then
+		\enumarabic{
+			\item $R[x]$ is a domain.
+			\item If $f\neq 0$ and $g\neq 0$ in $R[x]$, then $\deg(fg)=\deg(f)+\deg(g)$.
+			\item The units in $R[x]$ are the units in $R$.
+		}
+	\end{thm}
+	\vskip 3in
+%	\begin{proof}
+%		Let $R$ be a domain.  Let $f=a_0+a_1x+a_2x^2+\cdots+a_mx^m$ and $g=b_0+b_1x+\cdots+b_nx^n$ with $a_m\neq 0$ and $b_n\neq 0$.
+%		\vskip 3in
+%	\end{proof}
+}
+\slide{
+	\begin{exercise}
+		As a non-example to the previous theorem, consider $f=1+2x$ in $\Z_4[x]$.  
+		\enumalph{
+			\item Verify that $\Z_4$ is not a domain.\vfill
+			\item Compute $f^2$ to see $\deg(f^2)\neq 2\deg(f)$.\vfill
+			\item Find some zero divisors in $\Z_4[x]$.\vfill
+		}
+	\end{exercise}
+}
+\newpage
+\slide{
+	\begin{statementblock}{Division Algorithm (Theorem 4.1.4)}
+		Let $R$ be any ring and let $f$ and $g$ be polynomials in $R[x]$.  Assume $f\neq 0$ and that the leading coefficient of $f$ is a unit in $R$.  Then there exist unique $q,r\in R[x]$ such that
+			\enumarabic{\item $g=qf+r$.\item Either $r=0$ or $\deg r<\deg f$.}
+	\end{statementblock}
+	\begin{exercise}
+		Use long division to find $q$ and $r$ given $f=x^2+1$ and $g=x^4+3x^3+x+1$ in $\Z[x]$.\vfill
+	\end{exercise}
+}
+\slide{
+	\begin{statementblock}{Factor Theorem (Theorem 4.1.6(1)}
+		Let $R$ be a commutative ring, $a\in R$, and $f\in R[x]$.
+		Then $f(a)=0$ if and only if $f=(x-a)g$ for some $g\in R[x]$.
+		
+		\textbf{(Remainder Theorem)} Moreover, in general, when dividing $f$ by $x-a$, we get $f=(x-a)q + f(a)$.  That is, the remainder when dividing $f$ by $x-a$ is $f(a)\in R$.
+	\end{statementblock}
+}
+
+\slide{
+	\begin{exercise}
+		Consider $R=\Z_6$ and $f=x^3-x$.
+		
+		Notice $f(0)=f(1)=f(2)=f(3)=f(4)=f(5)=0$. Thus
+		\vskip 1em
+		\bulletize{\setlength{\itemsep}{1em}
+			\item $f = (x-0)(\blank{1in})$
+			\item $f = (x-1)(\blank{1in})$
+			\item $f = (x-2)(\blank{1in})$
+			\item $f = (x-3)(\blank{1in})$
+			\item $f = (x-4)(\blank{1in})$
+			\item $f = (x-5)(\blank{1in})$
+		}
+	\end{exercise}
+	\begin{question}
+		Does this mean $f=x(x-1)(x-2)(x-3)(x-4)(x-5)$?
+	\end{question}
+}
+\newpage
+
+\slide{
+	\begin{statementblock}{Corollary}
+		Let $R$ be a commutative ring, $a\in R$, and $\phi_a:R[x]\to R$ the evaulation map at $a$. Then $$\ker(\phi_a)=(x-a)=\{(x-a)g\ |\ g\in R[x]\}$$ and $R[x]/(x-a)\cong R$.
+	\end{statementblock}
+}
+\vskip 1in
+
+\slide{
+	\begin{defn}
+		Let $f\in R[x]$ and $a\in R$.  We call $a$ a \emph{root} or $f$ if the following conditions (which are all equivalent) are true:
+		\enumarabic{\item $f(a)=0$.\item $f=(x-a)g$ for some $g\in R[x]$.\item $f$ is in the principal ideal $(x-a)$.}
+		
+		If $a\in R$ is a root of $f$, we say it has multiplicity $m\in \Z_{>0}$ if $f=(x-a)^mq$ and $q(a)\neq 0$.
+	\end{defn}
+	\begin{exa}
+		What's the multiplicity of $a=-1$ as a root of $f=t^4+t^3+t+1\in \Z_7[t]$?\vskip 1in\mbox{}
+	\end{exa}
+}
+
+\slide{
+	\begin{thm}{4.1.8}
+		Let $R$ be an integral domain and let $f$ be a nonzero polynomial of degree $n$ in $R[x]$.  Then $f$ has at most $n$ roots in $R$.
+	\end{thm}
+}
+\slide{
+	\begin{statementblock}{Rational Roots Theorem (Theorem 4.1.9)}
+		Let $f=a_0+a_1x+a_2x^2+\cdots+a_nx^n$ be a polynomial in $\Z[x]$ with $a_0,a_n\neq 0$.   Then every root of $f$ in $\Q$ is of the form $\frac{c}{d}$ where $c\mid a_0$ and $d\mid a_n$. 
+	\end{statementblock}
+	\begin{exa}
+		Factor the following as much as possible in $\Q[x]$.
+		\enumalph{\item $2 \, x^{3} - 7 \, x^{2} -7 \, x + 12$\item $x^{4} + 5x^{3} - 4x^{2} + 3x$\item $12 \, x^{4} - 44 \, x^{3} + 39 \, x^{2} + 8 \, x - 12$}
+	\end{exa}
+}
+
+
+\end{document}
+
+	
